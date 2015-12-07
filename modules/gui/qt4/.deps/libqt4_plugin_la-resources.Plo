@@ -1,0 +1,23 @@
+libqt4_plugin_la-resources.lo .libs/libqt4_plugin_la-resources.o:  \
+ resources.cpp \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qglobal.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qglobal.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stddef.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qconfig.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qconfig.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qfeatures.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qfeatures.h
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qglobal.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qglobal.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stddef.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qconfig.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qconfig.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qfeatures.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qfeatures.h:

@@ -1,0 +1,827 @@
+libskins2_plugin_la-builder.lo .libs/libskins2_plugin_la-builder.o:  \
+ parser/builder.cpp parser/builder.hpp ../../../config.h \
+  ../../../include/vlc_fixups.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/time.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/_mingw.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stddef.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdio.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stdarg.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/types.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/dirent.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/io.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/errno.h \
+  parser/builder_data.hpp ../../../include/vlc_common.h \
+  ../../../include/vlc_config.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdlib.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/string.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/inttypes.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdint.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/malloc.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/stat.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windows.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windef.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnt.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winerror.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/basetsd.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/pshpack4.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/poppack.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wincon.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winbase.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wingdi.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winuser.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnls.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winver.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnetwk.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winreg.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winsvc.h \
+  ../../../include/vlc_mtime.h ../../../include/vlc_threads.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/process.h \
+  ../../../include/vlc_arrays.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/tchar.h \
+  ../../../include/vlc_messages.h ../../../include/vlc_objects.h \
+  ../../../include/vlc_variables.h ../../../include/vlc_main.h \
+  ../../../include/vlc_configuration.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/list \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/functexcept.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++config.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/os_defines.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/cpu_defines.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/exception_defines.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_algobase.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstring \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstddef \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/climits \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/limits.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/syslimits.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/limits.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstdlib \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/iosfwd \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++locale.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/clocale \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/locale.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstdio \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstdarg \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++io.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/gthr.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/gthr-default.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cctype \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/ctype.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stringfwd.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/postypes.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cwchar \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ctime \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wchar.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wctype.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_pair.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/cpp_type_traits.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ext/type_traits.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/utility \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_relops.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_iterator_base_types.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_iterator_base_funcs.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/concept_check.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_iterator.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/debug/debug.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/allocator.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++allocator.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ext/new_allocator.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/new \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/exception \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_construct.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_uninitialized.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_list.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/list.tcc \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/map \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_tree.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_function.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_map.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_multimap.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/string \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/char_traits.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/memory \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_raw_storage_iter.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/limits \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/ostream_insert.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_string.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ext/atomicity.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/atomic_word.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/algorithm \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_algo.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_heap.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_tempbuf.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_string.tcc \
+  parser/../src/skin_common.hpp ../../../config.h \
+  ../../../include/vlc_interface.h ../../../include/vlc_charset.h \
+  ../../../include/vlc_fs.h parser/interpreter.hpp \
+  parser/../commands/cmd_generic.hpp \
+  parser/../commands/../src/skin_common.hpp ../../../config.h \
+  parser/../commands/../utils/pointer.hpp parser/skin_parser.hpp \
+  parser/xmlparser.hpp ../../../include/vlc_block.h \
+  ../../../include/vlc_stream.h ../../../include/vlc_xml.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/set \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_set.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_multiset.h \
+  parser/../src/file_bitmap.hpp parser/../src/generic_bitmap.hpp \
+  parser/../src/skin_common.hpp parser/../src/../utils/pointer.hpp \
+  parser/../src/../utils/position.hpp parser/../src/../utils/variable.hpp \
+  parser/../src/../utils/../src/skin_common.hpp ../../../config.h \
+  parser/../src/../utils/pointer.hpp parser/../src/../utils/observer.hpp \
+  parser/../src/os_factory.hpp parser/../src/../src/generic_window.hpp \
+  parser/../src/../src/skin_common.hpp ../../../config.h \
+  parser/../src/../src/../utils/var_bool.hpp \
+  parser/../src/../src/../utils/variable.hpp \
+  parser/../src/../src/../utils/observer.hpp \
+  parser/../src/generic_bitmap.hpp parser/../src/top_window.hpp \
+  parser/../src/generic_window.hpp parser/../src/fsc_window.hpp \
+  parser/../src/../src/top_window.hpp \
+  parser/../src/../commands/cmd_generic.hpp parser/../src/anchor.hpp \
+  parser/../src/generic_layout.hpp parser/../src/top_window.hpp \
+  parser/../src/../utils/bezier.hpp \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/vector \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_vector.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_bvector.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/vector.tcc \
+  parser/../src/bitmap_font.hpp parser/../src/generic_font.hpp \
+  parser/../src/ft2_font.hpp \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ft2build.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/config/ftheader.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/freetype.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/config/ftconfig.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/config/ftoption.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/config/ftstdlib.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/setjmp.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/fterrors.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/ftmoderr.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/fterrdef.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/fttypes.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/ftsystem.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/ftimage.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/ftglyph.h \
+  parser/../src/ini_file.hpp parser/../src/generic_layout.hpp \
+  parser/../src/popup.hpp parser/../src/theme.hpp parser/../src/popup.hpp \
+  parser/../src/../src/window_manager.hpp \
+  parser/../src/../src/top_window.hpp \
+  parser/../src/../src/../utils/position.hpp \
+  parser/../src/../utils/variable.hpp \
+  parser/../src/../controls/ctrl_generic.hpp \
+  parser/../src/../controls/../src/skin_common.hpp ../../../config.h \
+  parser/../src/../controls/../utils/pointer.hpp \
+  parser/../src/../controls/../utils/ustring.hpp \
+  parser/../src/../controls/../utils/../src/skin_common.hpp \
+  ../../../config.h parser/../src/../controls/../utils/pointer.hpp \
+  parser/../src/../controls/../utils/observer.hpp \
+  parser/../src/../controls/../commands/cmd_generic.hpp \
+  parser/../src/window_manager.hpp parser/../src/vout_manager.hpp \
+  ../../../include/vlc_vout.h ../../../include/vlc_picture.h \
+  ../../../include/vlc_es.h ../../../include/vlc_fourcc.h \
+  ../../../include/vlc_filter.h ../../../include/vlc_subpicture.h \
+  ../../../include/vlc_text_style.h ../../../include/vlc_mouse.h \
+  ../../../include/vlc_vout_window.h ../../../include/vlc_keys.h \
+  parser/../src/../controls/ctrl_video.hpp \
+  parser/../src/../controls/ctrl_generic.hpp \
+  parser/../src/../controls/../utils/position.hpp \
+  parser/../src/../controls/../src/vout_window.hpp \
+  parser/../src/../controls/../src/generic_window.hpp \
+  parser/../src/../events/evt_key.hpp \
+  parser/../src/../events/evt_input.hpp \
+  parser/../src/../events/evt_generic.hpp \
+  parser/../src/../events/../src/skin_common.hpp ../../../config.h \
+  parser/../src/../events/evt_scroll.hpp \
+  parser/../src/../src/fsc_window.hpp parser/../controls/ctrl_button.hpp \
+  parser/../controls/ctrl_generic.hpp parser/../controls/../utils/fsm.hpp \
+  parser/../controls/../utils/../src/skin_common.hpp ../../../config.h \
+  parser/../controls/../src/anim_bitmap.hpp \
+  parser/../controls/../src/../commands/cmd_generic.hpp \
+  parser/../controls/../src/../utils/observer.hpp \
+  parser/../controls/../src/../utils/position.hpp \
+  parser/../controls/ctrl_checkbox.hpp \
+  parser/../controls/../utils/observer.hpp \
+  parser/../controls/ctrl_image.hpp \
+  parser/../controls/../commands/cmd_generic.hpp \
+  parser/../controls/ctrl_flat.hpp parser/../controls/ctrl_list.hpp \
+  parser/../controls/../utils/var_list.hpp \
+  parser/../controls/../utils/variable.hpp \
+  parser/../controls/../utils/observer.hpp \
+  parser/../controls/../utils/ustring.hpp \
+  parser/../controls/../utils/var_percent.hpp \
+  parser/../controls/ctrl_move.hpp parser/../controls/ctrl_resize.hpp \
+  parser/../controls/../src/window_manager.hpp \
+  parser/../controls/ctrl_slider.hpp \
+  parser/../controls/../utils/bezier.hpp \
+  parser/../controls/ctrl_radialslider.hpp \
+  parser/../controls/ctrl_text.hpp parser/../controls/ctrl_tree.hpp \
+  parser/../controls/../utils/var_tree.hpp \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/assert.h \
+  parser/../controls/ctrl_video.hpp parser/../utils/bezier.hpp \
+  parser/../utils/position.hpp parser/../utils/var_bool.hpp \
+  parser/../utils/var_text.hpp parser/../utils/variable.hpp \
+  parser/../utils/var_percent.hpp parser/../utils/observer.hpp \
+  parser/../utils/ustring.hpp ../../../include/vlc_image.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/fstream \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/istream \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ios \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/localefwd.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/ios_base.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/locale_classes.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/streambuf \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/streambuf.tcc \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_ios.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/streambuf_iterator.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/locale_facets.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cwctype \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/ctype_base.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/ctype_inline.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/codecvt.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/time_members.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/messages_members.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_ios.tcc \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/istream.tcc \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/locale \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/locale_facets.tcc \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/typeinfo \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ostream \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/ostream.tcc \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/basic_file.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/fstream.tcc
+
+parser/builder.hpp:
+
+../../../config.h:
+
+../../../include/vlc_fixups.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/time.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/_mingw.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stddef.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdio.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stdarg.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/types.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/dirent.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/io.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/errno.h:
+
+parser/builder_data.hpp:
+
+../../../include/vlc_common.h:
+
+../../../include/vlc_config.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdlib.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/string.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/inttypes.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdint.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/malloc.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/stat.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windows.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windef.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnt.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winerror.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/basetsd.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/pshpack4.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/poppack.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wincon.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winbase.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wingdi.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winuser.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnls.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winver.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnetwk.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winreg.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winsvc.h:
+
+../../../include/vlc_mtime.h:
+
+../../../include/vlc_threads.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/process.h:
+
+../../../include/vlc_arrays.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/tchar.h:
+
+../../../include/vlc_messages.h:
+
+../../../include/vlc_objects.h:
+
+../../../include/vlc_variables.h:
+
+../../../include/vlc_main.h:
+
+../../../include/vlc_configuration.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/list:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/functexcept.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++config.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/os_defines.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/cpu_defines.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/exception_defines.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_algobase.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstring:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstddef:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/climits:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/limits.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/syslimits.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/limits.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstdlib:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/iosfwd:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++locale.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/clocale:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/locale.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstdio:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstdarg:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++io.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/gthr.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/gthr-default.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cctype:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/ctype.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stringfwd.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/postypes.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cwchar:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ctime:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wchar.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wctype.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_pair.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/cpp_type_traits.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ext/type_traits.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/utility:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_relops.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_iterator_base_types.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_iterator_base_funcs.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/concept_check.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_iterator.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/debug/debug.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/allocator.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++allocator.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ext/new_allocator.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/new:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/exception:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_construct.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_uninitialized.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_list.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/list.tcc:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/map:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_tree.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_function.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_map.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_multimap.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/string:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/char_traits.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/memory:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_raw_storage_iter.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/limits:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/ostream_insert.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_string.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ext/atomicity.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/atomic_word.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/algorithm:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_algo.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_heap.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_tempbuf.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_string.tcc:
+
+parser/../src/skin_common.hpp:
+
+../../../config.h:
+
+../../../include/vlc_interface.h:
+
+../../../include/vlc_charset.h:
+
+../../../include/vlc_fs.h:
+
+parser/interpreter.hpp:
+
+parser/../commands/cmd_generic.hpp:
+
+parser/../commands/../src/skin_common.hpp:
+
+../../../config.h:
+
+parser/../commands/../utils/pointer.hpp:
+
+parser/skin_parser.hpp:
+
+parser/xmlparser.hpp:
+
+../../../include/vlc_block.h:
+
+../../../include/vlc_stream.h:
+
+../../../include/vlc_xml.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/set:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_set.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_multiset.h:
+
+parser/../src/file_bitmap.hpp:
+
+parser/../src/generic_bitmap.hpp:
+
+parser/../src/skin_common.hpp:
+
+parser/../src/../utils/pointer.hpp:
+
+parser/../src/../utils/position.hpp:
+
+parser/../src/../utils/variable.hpp:
+
+parser/../src/../utils/../src/skin_common.hpp:
+
+../../../config.h:
+
+parser/../src/../utils/pointer.hpp:
+
+parser/../src/../utils/observer.hpp:
+
+parser/../src/os_factory.hpp:
+
+parser/../src/../src/generic_window.hpp:
+
+parser/../src/../src/skin_common.hpp:
+
+../../../config.h:
+
+parser/../src/../src/../utils/var_bool.hpp:
+
+parser/../src/../src/../utils/variable.hpp:
+
+parser/../src/../src/../utils/observer.hpp:
+
+parser/../src/generic_bitmap.hpp:
+
+parser/../src/top_window.hpp:
+
+parser/../src/generic_window.hpp:
+
+parser/../src/fsc_window.hpp:
+
+parser/../src/../src/top_window.hpp:
+
+parser/../src/../commands/cmd_generic.hpp:
+
+parser/../src/anchor.hpp:
+
+parser/../src/generic_layout.hpp:
+
+parser/../src/top_window.hpp:
+
+parser/../src/../utils/bezier.hpp:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/vector:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_vector.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_bvector.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/vector.tcc:
+
+parser/../src/bitmap_font.hpp:
+
+parser/../src/generic_font.hpp:
+
+parser/../src/ft2_font.hpp:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ft2build.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/config/ftheader.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/freetype.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/config/ftconfig.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/config/ftoption.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/config/ftstdlib.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/setjmp.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/fterrors.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/ftmoderr.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/fterrdef.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/fttypes.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/ftsystem.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/ftimage.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/freetype2/freetype/ftglyph.h:
+
+parser/../src/ini_file.hpp:
+
+parser/../src/generic_layout.hpp:
+
+parser/../src/popup.hpp:
+
+parser/../src/theme.hpp:
+
+parser/../src/popup.hpp:
+
+parser/../src/../src/window_manager.hpp:
+
+parser/../src/../src/top_window.hpp:
+
+parser/../src/../src/../utils/position.hpp:
+
+parser/../src/../utils/variable.hpp:
+
+parser/../src/../controls/ctrl_generic.hpp:
+
+parser/../src/../controls/../src/skin_common.hpp:
+
+../../../config.h:
+
+parser/../src/../controls/../utils/pointer.hpp:
+
+parser/../src/../controls/../utils/ustring.hpp:
+
+parser/../src/../controls/../utils/../src/skin_common.hpp:
+
+../../../config.h:
+
+parser/../src/../controls/../utils/pointer.hpp:
+
+parser/../src/../controls/../utils/observer.hpp:
+
+parser/../src/../controls/../commands/cmd_generic.hpp:
+
+parser/../src/window_manager.hpp:
+
+parser/../src/vout_manager.hpp:
+
+../../../include/vlc_vout.h:
+
+../../../include/vlc_picture.h:
+
+../../../include/vlc_es.h:
+
+../../../include/vlc_fourcc.h:
+
+../../../include/vlc_filter.h:
+
+../../../include/vlc_subpicture.h:
+
+../../../include/vlc_text_style.h:
+
+../../../include/vlc_mouse.h:
+
+../../../include/vlc_vout_window.h:
+
+../../../include/vlc_keys.h:
+
+parser/../src/../controls/ctrl_video.hpp:
+
+parser/../src/../controls/ctrl_generic.hpp:
+
+parser/../src/../controls/../utils/position.hpp:
+
+parser/../src/../controls/../src/vout_window.hpp:
+
+parser/../src/../controls/../src/generic_window.hpp:
+
+parser/../src/../events/evt_key.hpp:
+
+parser/../src/../events/evt_input.hpp:
+
+parser/../src/../events/evt_generic.hpp:
+
+parser/../src/../events/../src/skin_common.hpp:
+
+../../../config.h:
+
+parser/../src/../events/evt_scroll.hpp:
+
+parser/../src/../src/fsc_window.hpp:
+
+parser/../controls/ctrl_button.hpp:
+
+parser/../controls/ctrl_generic.hpp:
+
+parser/../controls/../utils/fsm.hpp:
+
+parser/../controls/../utils/../src/skin_common.hpp:
+
+../../../config.h:
+
+parser/../controls/../src/anim_bitmap.hpp:
+
+parser/../controls/../src/../commands/cmd_generic.hpp:
+
+parser/../controls/../src/../utils/observer.hpp:
+
+parser/../controls/../src/../utils/position.hpp:
+
+parser/../controls/ctrl_checkbox.hpp:
+
+parser/../controls/../utils/observer.hpp:
+
+parser/../controls/ctrl_image.hpp:
+
+parser/../controls/../commands/cmd_generic.hpp:
+
+parser/../controls/ctrl_flat.hpp:
+
+parser/../controls/ctrl_list.hpp:
+
+parser/../controls/../utils/var_list.hpp:
+
+parser/../controls/../utils/variable.hpp:
+
+parser/../controls/../utils/observer.hpp:
+
+parser/../controls/../utils/ustring.hpp:
+
+parser/../controls/../utils/var_percent.hpp:
+
+parser/../controls/ctrl_move.hpp:
+
+parser/../controls/ctrl_resize.hpp:
+
+parser/../controls/../src/window_manager.hpp:
+
+parser/../controls/ctrl_slider.hpp:
+
+parser/../controls/../utils/bezier.hpp:
+
+parser/../controls/ctrl_radialslider.hpp:
+
+parser/../controls/ctrl_text.hpp:
+
+parser/../controls/ctrl_tree.hpp:
+
+parser/../controls/../utils/var_tree.hpp:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/assert.h:
+
+parser/../controls/ctrl_video.hpp:
+
+parser/../utils/bezier.hpp:
+
+parser/../utils/position.hpp:
+
+parser/../utils/var_bool.hpp:
+
+parser/../utils/var_text.hpp:
+
+parser/../utils/variable.hpp:
+
+parser/../utils/var_percent.hpp:
+
+parser/../utils/observer.hpp:
+
+parser/../utils/ustring.hpp:
+
+../../../include/vlc_image.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/fstream:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/istream:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ios:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/localefwd.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/ios_base.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/locale_classes.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/streambuf:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/streambuf.tcc:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_ios.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/streambuf_iterator.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/locale_facets.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cwctype:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/ctype_base.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/ctype_inline.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/codecvt.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/time_members.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/messages_members.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_ios.tcc:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/istream.tcc:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/locale:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/locale_facets.tcc:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/typeinfo:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ostream:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/ostream.tcc:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/basic_file.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/fstream.tcc:

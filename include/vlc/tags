@@ -1,0 +1,321 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+LIBVLC_API	./libvlc.h	42;"	d
+LIBVLC_API	./libvlc.h	44;"	d
+LIBVLC_API	./libvlc.h	46;"	d
+LIBVLC_DEPRECATED	./libvlc.h	51;"	d
+LIBVLC_DEPRECATED	./libvlc.h	54;"	d
+LIBVLC_DEPRECATED	./libvlc.h	56;"	d
+LIBVLC_DEPRECATED_H	./deprecated.h	26;"	d
+LIBVLC_EVENTS_H	./libvlc_events.h	26;"	d
+LIBVLC_MEDIA_LIST_H	./libvlc_media_list.h	25;"	d
+LIBVLC_MEDIA_LIST_PLAYER_H	./libvlc_media_list_player.h	25;"	d
+LIBVLC_STRUCTURES_H	./libvlc_structures.h	25;"	d
+LIBVLC_VERSION	./libvlc_version.h	47;"	d
+LIBVLC_VERSION_EXTRA	./libvlc_version.h	44;"	d
+LIBVLC_VERSION_H	./libvlc_version.h	33;"	d
+LIBVLC_VERSION_INT	./libvlc_version.h	51;"	d
+LIBVLC_VERSION_MAJOR	./libvlc_version.h	36;"	d
+LIBVLC_VERSION_MINOR	./libvlc_version.h	39;"	d
+LIBVLC_VERSION_REVISION	./libvlc_version.h	42;"	d
+LIBVLC_VLM_H	./libvlc_vlm.h	26;"	d
+VLC_FORWARD_DECLARE_OBJECT	./libvlc_media.h	398;"	d
+VLC_LIBVLC_H	./libvlc.h	39;"	d
+VLC_LIBVLC_MEDIA_DISCOVERER_H	./libvlc_media_discoverer.h	32;"	d
+VLC_LIBVLC_MEDIA_H	./libvlc_media.h	32;"	d
+VLC_LIBVLC_MEDIA_LIBRARY_H	./libvlc_media_library.h	32;"	d
+VLC_LIBVLC_MEDIA_PLAYER_H	./libvlc_media_player.h	32;"	d
+VLC_VLC_H	./vlc.h	29;"	d
+audio	./libvlc_media.h	/^        } audio;$/;"	m	union:libvlc_media_track_info_t::__anon25	typeref:struct:libvlc_media_track_info_t::__anon25::__anon26
+bottom	./libvlc_media_player.h	/^    int bottom, right;$/;"	m	struct:libvlc_rectangle_t
+f_demux_bitrate	./libvlc_media.h	/^    float       f_demux_bitrate;$/;"	m	struct:libvlc_media_stats_t
+f_input_bitrate	./libvlc_media.h	/^    float       f_input_bitrate;$/;"	m	struct:libvlc_media_stats_t
+f_send_bitrate	./libvlc_media.h	/^    float       f_send_bitrate;$/;"	m	struct:libvlc_media_stats_t
+i_channels	./libvlc_media.h	/^            unsigned    i_channels;$/;"	m	struct:libvlc_media_track_info_t::__anon25::__anon26
+i_codec	./libvlc_media.h	/^    uint32_t    i_codec;$/;"	m	struct:libvlc_media_track_info_t
+i_decoded_audio	./libvlc_media.h	/^    int         i_decoded_audio;$/;"	m	struct:libvlc_media_stats_t
+i_decoded_video	./libvlc_media.h	/^    int         i_decoded_video;$/;"	m	struct:libvlc_media_stats_t
+i_demux_corrupted	./libvlc_media.h	/^    int         i_demux_corrupted;$/;"	m	struct:libvlc_media_stats_t
+i_demux_discontinuity	./libvlc_media.h	/^    int         i_demux_discontinuity;$/;"	m	struct:libvlc_media_stats_t
+i_demux_read_bytes	./libvlc_media.h	/^    int         i_demux_read_bytes;$/;"	m	struct:libvlc_media_stats_t
+i_displayed_pictures	./libvlc_media.h	/^    int         i_displayed_pictures;$/;"	m	struct:libvlc_media_stats_t
+i_height	./libvlc_media.h	/^            unsigned    i_height;$/;"	m	struct:libvlc_media_track_info_t::__anon25::__anon27
+i_id	./libvlc_media.h	/^    int         i_id;$/;"	m	struct:libvlc_media_track_info_t
+i_id	./libvlc_media_player.h	/^    int   i_id;$/;"	m	struct:libvlc_track_description_t
+i_level	./libvlc_media.h	/^    int         i_level;$/;"	m	struct:libvlc_media_track_info_t
+i_lost_abuffers	./libvlc_media.h	/^    int         i_lost_abuffers;$/;"	m	struct:libvlc_media_stats_t
+i_lost_pictures	./libvlc_media.h	/^    int         i_lost_pictures;$/;"	m	struct:libvlc_media_stats_t
+i_played_abuffers	./libvlc_media.h	/^    int         i_played_abuffers;$/;"	m	struct:libvlc_media_stats_t
+i_profile	./libvlc_media.h	/^    int         i_profile;$/;"	m	struct:libvlc_media_track_info_t
+i_rate	./libvlc_media.h	/^            unsigned    i_rate;$/;"	m	struct:libvlc_media_track_info_t::__anon25::__anon26
+i_read_bytes	./libvlc_media.h	/^    int         i_read_bytes;$/;"	m	struct:libvlc_media_stats_t
+i_sent_bytes	./libvlc_media.h	/^    int         i_sent_bytes;$/;"	m	struct:libvlc_media_stats_t
+i_sent_packets	./libvlc_media.h	/^    int         i_sent_packets;$/;"	m	struct:libvlc_media_stats_t
+i_severity	./libvlc_structures.h	/^    int         i_severity;   \/* 0=INFO, 1=ERR, 2=WARN, 3=DBG *\/$/;"	m	struct:libvlc_log_message_t
+i_type	./libvlc_media.h	/^    libvlc_track_type_t i_type;$/;"	m	struct:libvlc_media_track_info_t
+i_width	./libvlc_media.h	/^            unsigned    i_width;$/;"	m	struct:libvlc_media_track_info_t::__anon25::__anon27
+index	./libvlc_events.h	/^            int index;$/;"	m	struct:libvlc_event_t::__anon1::__anon15
+index	./libvlc_events.h	/^            int index;$/;"	m	struct:libvlc_event_t::__anon1::__anon16
+index	./libvlc_events.h	/^            int index;$/;"	m	struct:libvlc_event_t::__anon1::__anon17
+index	./libvlc_events.h	/^            int index;$/;"	m	struct:libvlc_event_t::__anon1::__anon18
+item	./libvlc_events.h	/^            libvlc_media_t * item;$/;"	m	struct:libvlc_event_t::__anon1::__anon15
+item	./libvlc_events.h	/^            libvlc_media_t * item;$/;"	m	struct:libvlc_event_t::__anon1::__anon16
+item	./libvlc_events.h	/^            libvlc_media_t * item;$/;"	m	struct:libvlc_event_t::__anon1::__anon17
+item	./libvlc_events.h	/^            libvlc_media_t * item;$/;"	m	struct:libvlc_event_t::__anon1::__anon18
+item	./libvlc_events.h	/^            libvlc_media_t * item;$/;"	m	struct:libvlc_event_t::__anon1::__anon19
+left	./libvlc_media_player.h	/^    int top, left;$/;"	m	struct:libvlc_rectangle_t
+libvlc_AudioChannel_Dolbys	./libvlc_media_player.h	/^    libvlc_AudioChannel_Dolbys  =  5$/;"	e	enum:libvlc_audio_output_channel_t
+libvlc_AudioChannel_Error	./libvlc_media_player.h	/^    libvlc_AudioChannel_Error   = -1,$/;"	e	enum:libvlc_audio_output_channel_t
+libvlc_AudioChannel_Left	./libvlc_media_player.h	/^    libvlc_AudioChannel_Left    =  3,$/;"	e	enum:libvlc_audio_output_channel_t
+libvlc_AudioChannel_RStereo	./libvlc_media_player.h	/^    libvlc_AudioChannel_RStereo =  2,$/;"	e	enum:libvlc_audio_output_channel_t
+libvlc_AudioChannel_Right	./libvlc_media_player.h	/^    libvlc_AudioChannel_Right   =  4,$/;"	e	enum:libvlc_audio_output_channel_t
+libvlc_AudioChannel_Stereo	./libvlc_media_player.h	/^    libvlc_AudioChannel_Stereo  =  1,$/;"	e	enum:libvlc_audio_output_channel_t
+libvlc_AudioOutputDevice_2F2R	./libvlc_media_player.h	/^    libvlc_AudioOutputDevice_2F2R   =  4,$/;"	e	enum:libvlc_audio_output_device_types_t
+libvlc_AudioOutputDevice_3F2R	./libvlc_media_player.h	/^    libvlc_AudioOutputDevice_3F2R   =  5,$/;"	e	enum:libvlc_audio_output_device_types_t
+libvlc_AudioOutputDevice_5_1	./libvlc_media_player.h	/^    libvlc_AudioOutputDevice_5_1    =  6,$/;"	e	enum:libvlc_audio_output_device_types_t
+libvlc_AudioOutputDevice_6_1	./libvlc_media_player.h	/^    libvlc_AudioOutputDevice_6_1    =  7,$/;"	e	enum:libvlc_audio_output_device_types_t
+libvlc_AudioOutputDevice_7_1	./libvlc_media_player.h	/^    libvlc_AudioOutputDevice_7_1    =  8,$/;"	e	enum:libvlc_audio_output_device_types_t
+libvlc_AudioOutputDevice_Error	./libvlc_media_player.h	/^    libvlc_AudioOutputDevice_Error  = -1,$/;"	e	enum:libvlc_audio_output_device_types_t
+libvlc_AudioOutputDevice_Mono	./libvlc_media_player.h	/^    libvlc_AudioOutputDevice_Mono   =  1,$/;"	e	enum:libvlc_audio_output_device_types_t
+libvlc_AudioOutputDevice_SPDIF	./libvlc_media_player.h	/^    libvlc_AudioOutputDevice_SPDIF  = 10$/;"	e	enum:libvlc_audio_output_device_types_t
+libvlc_AudioOutputDevice_Stereo	./libvlc_media_player.h	/^    libvlc_AudioOutputDevice_Stereo =  2,$/;"	e	enum:libvlc_audio_output_device_types_t
+libvlc_Buffering	./libvlc_media.h	/^    libvlc_Buffering,$/;"	e	enum:libvlc_state_t
+libvlc_Ended	./libvlc_media.h	/^    libvlc_Ended,$/;"	e	enum:libvlc_state_t
+libvlc_Error	./libvlc_media.h	/^    libvlc_Error$/;"	e	enum:libvlc_state_t
+libvlc_MediaDiscovererEnded	./libvlc_events.h	/^    libvlc_MediaDiscovererEnded,$/;"	e	enum:libvlc_event_e
+libvlc_MediaDiscovererStarted	./libvlc_events.h	/^    libvlc_MediaDiscovererStarted=0x500,$/;"	e	enum:libvlc_event_e
+libvlc_MediaDurationChanged	./libvlc_events.h	/^    libvlc_MediaDurationChanged,$/;"	e	enum:libvlc_event_e
+libvlc_MediaFreed	./libvlc_events.h	/^    libvlc_MediaFreed,$/;"	e	enum:libvlc_event_e
+libvlc_MediaListItemAdded	./libvlc_events.h	/^    libvlc_MediaListItemAdded=0x200,$/;"	e	enum:libvlc_event_e
+libvlc_MediaListItemDeleted	./libvlc_events.h	/^    libvlc_MediaListItemDeleted,$/;"	e	enum:libvlc_event_e
+libvlc_MediaListPlayerNextItemSet	./libvlc_events.h	/^    libvlc_MediaListPlayerNextItemSet,$/;"	e	enum:libvlc_event_e
+libvlc_MediaListPlayerPlayed	./libvlc_events.h	/^    libvlc_MediaListPlayerPlayed=0x400,$/;"	e	enum:libvlc_event_e
+libvlc_MediaListPlayerStopped	./libvlc_events.h	/^    libvlc_MediaListPlayerStopped,$/;"	e	enum:libvlc_event_e
+libvlc_MediaListViewItemAdded	./libvlc_events.h	/^    libvlc_MediaListViewItemAdded=0x300,$/;"	e	enum:libvlc_event_e
+libvlc_MediaListViewItemDeleted	./libvlc_events.h	/^    libvlc_MediaListViewItemDeleted,$/;"	e	enum:libvlc_event_e
+libvlc_MediaListViewWillAddItem	./libvlc_events.h	/^    libvlc_MediaListViewWillAddItem,$/;"	e	enum:libvlc_event_e
+libvlc_MediaListViewWillDeleteItem	./libvlc_events.h	/^    libvlc_MediaListViewWillDeleteItem,$/;"	e	enum:libvlc_event_e
+libvlc_MediaListWillAddItem	./libvlc_events.h	/^    libvlc_MediaListWillAddItem,$/;"	e	enum:libvlc_event_e
+libvlc_MediaListWillDeleteItem	./libvlc_events.h	/^    libvlc_MediaListWillDeleteItem,$/;"	e	enum:libvlc_event_e
+libvlc_MediaMetaChanged	./libvlc_events.h	/^    libvlc_MediaMetaChanged=0,$/;"	e	enum:libvlc_event_e
+libvlc_MediaParsedChanged	./libvlc_events.h	/^    libvlc_MediaParsedChanged,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerBackward	./libvlc_events.h	/^    libvlc_MediaPlayerBackward,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerBuffering	./libvlc_events.h	/^    libvlc_MediaPlayerBuffering,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerEncounteredError	./libvlc_events.h	/^    libvlc_MediaPlayerEncounteredError,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerEndReached	./libvlc_events.h	/^    libvlc_MediaPlayerEndReached,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerForward	./libvlc_events.h	/^    libvlc_MediaPlayerForward,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerLengthChanged	./libvlc_events.h	/^    libvlc_MediaPlayerLengthChanged,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerMediaChanged	./libvlc_events.h	/^    libvlc_MediaPlayerMediaChanged=0x100,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerNothingSpecial	./libvlc_events.h	/^    libvlc_MediaPlayerNothingSpecial,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerOpening	./libvlc_events.h	/^    libvlc_MediaPlayerOpening,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerPausableChanged	./libvlc_events.h	/^    libvlc_MediaPlayerPausableChanged,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerPaused	./libvlc_events.h	/^    libvlc_MediaPlayerPaused,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerPlaying	./libvlc_events.h	/^    libvlc_MediaPlayerPlaying,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerPositionChanged	./libvlc_events.h	/^    libvlc_MediaPlayerPositionChanged,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerSeekableChanged	./libvlc_events.h	/^    libvlc_MediaPlayerSeekableChanged,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerSnapshotTaken	./libvlc_events.h	/^    libvlc_MediaPlayerSnapshotTaken,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerStopped	./libvlc_events.h	/^    libvlc_MediaPlayerStopped,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerTimeChanged	./libvlc_events.h	/^    libvlc_MediaPlayerTimeChanged,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerTitleChanged	./libvlc_events.h	/^    libvlc_MediaPlayerTitleChanged,$/;"	e	enum:libvlc_event_e
+libvlc_MediaPlayerVout	./libvlc_events.h	/^    libvlc_MediaPlayerVout,$/;"	e	enum:libvlc_event_e
+libvlc_MediaStateChanged	./libvlc_events.h	/^    libvlc_MediaStateChanged,$/;"	e	enum:libvlc_event_e
+libvlc_MediaSubItemAdded	./libvlc_events.h	/^    libvlc_MediaSubItemAdded,$/;"	e	enum:libvlc_event_e
+libvlc_NothingSpecial	./libvlc_media.h	/^    libvlc_NothingSpecial=0,$/;"	e	enum:libvlc_state_t
+libvlc_Opening	./libvlc_media.h	/^    libvlc_Opening,$/;"	e	enum:libvlc_state_t
+libvlc_Paused	./libvlc_media.h	/^    libvlc_Paused,$/;"	e	enum:libvlc_state_t
+libvlc_Playing	./libvlc_media.h	/^    libvlc_Playing,$/;"	e	enum:libvlc_state_t
+libvlc_Stopped	./libvlc_media.h	/^    libvlc_Stopped,$/;"	e	enum:libvlc_state_t
+libvlc_VlmMediaAdded	./libvlc_events.h	/^    libvlc_VlmMediaAdded=0x600,$/;"	e	enum:libvlc_event_e
+libvlc_VlmMediaChanged	./libvlc_events.h	/^    libvlc_VlmMediaChanged,$/;"	e	enum:libvlc_event_e
+libvlc_VlmMediaInstanceStarted	./libvlc_events.h	/^    libvlc_VlmMediaInstanceStarted,$/;"	e	enum:libvlc_event_e
+libvlc_VlmMediaInstanceStatusEnd	./libvlc_events.h	/^    libvlc_VlmMediaInstanceStatusEnd,$/;"	e	enum:libvlc_event_e
+libvlc_VlmMediaInstanceStatusError	./libvlc_events.h	/^    libvlc_VlmMediaInstanceStatusError$/;"	e	enum:libvlc_event_e
+libvlc_VlmMediaInstanceStatusInit	./libvlc_events.h	/^    libvlc_VlmMediaInstanceStatusInit,$/;"	e	enum:libvlc_event_e
+libvlc_VlmMediaInstanceStatusOpening	./libvlc_events.h	/^    libvlc_VlmMediaInstanceStatusOpening,$/;"	e	enum:libvlc_event_e
+libvlc_VlmMediaInstanceStatusPause	./libvlc_events.h	/^    libvlc_VlmMediaInstanceStatusPause,$/;"	e	enum:libvlc_event_e
+libvlc_VlmMediaInstanceStatusPlaying	./libvlc_events.h	/^    libvlc_VlmMediaInstanceStatusPlaying,$/;"	e	enum:libvlc_event_e
+libvlc_VlmMediaInstanceStopped	./libvlc_events.h	/^    libvlc_VlmMediaInstanceStopped,$/;"	e	enum:libvlc_event_e
+libvlc_VlmMediaRemoved	./libvlc_events.h	/^    libvlc_VlmMediaRemoved,$/;"	e	enum:libvlc_event_e
+libvlc_adjust_Brightness	./libvlc_media_player.h	/^    libvlc_adjust_Brightness,$/;"	e	enum:libvlc_video_adjust_option_t
+libvlc_adjust_Contrast	./libvlc_media_player.h	/^    libvlc_adjust_Contrast,$/;"	e	enum:libvlc_video_adjust_option_t
+libvlc_adjust_Enable	./libvlc_media_player.h	/^    libvlc_adjust_Enable = 0,$/;"	e	enum:libvlc_video_adjust_option_t
+libvlc_adjust_Gamma	./libvlc_media_player.h	/^    libvlc_adjust_Gamma$/;"	e	enum:libvlc_video_adjust_option_t
+libvlc_adjust_Hue	./libvlc_media_player.h	/^    libvlc_adjust_Hue,$/;"	e	enum:libvlc_video_adjust_option_t
+libvlc_adjust_Saturation	./libvlc_media_player.h	/^    libvlc_adjust_Saturation,$/;"	e	enum:libvlc_video_adjust_option_t
+libvlc_audio_cleanup_cb	./libvlc_media_player.h	/^typedef void (*libvlc_audio_cleanup_cb)(void *data);$/;"	t
+libvlc_audio_drain_cb	./libvlc_media_player.h	/^typedef void (*libvlc_audio_drain_cb)(void *data);$/;"	t
+libvlc_audio_flush_cb	./libvlc_media_player.h	/^typedef void (*libvlc_audio_flush_cb)(void *data, int64_t pts);$/;"	t
+libvlc_audio_output_channel_t	./libvlc_media_player.h	/^typedef enum libvlc_audio_output_channel_t {$/;"	g
+libvlc_audio_output_channel_t	./libvlc_media_player.h	/^} libvlc_audio_output_channel_t;$/;"	t	typeref:enum:libvlc_audio_output_channel_t
+libvlc_audio_output_device_types_t	./libvlc_media_player.h	/^typedef enum libvlc_audio_output_device_types_t {$/;"	g
+libvlc_audio_output_device_types_t	./libvlc_media_player.h	/^} libvlc_audio_output_device_types_t;$/;"	t	typeref:enum:libvlc_audio_output_device_types_t
+libvlc_audio_output_t	./libvlc_media_player.h	/^typedef struct libvlc_audio_output_t$/;"	s
+libvlc_audio_output_t	./libvlc_media_player.h	/^} libvlc_audio_output_t;$/;"	t	typeref:struct:libvlc_audio_output_t
+libvlc_audio_pause_cb	./libvlc_media_player.h	/^typedef void (*libvlc_audio_pause_cb)(void *data, int64_t pts);$/;"	t
+libvlc_audio_play_cb	./libvlc_media_player.h	/^typedef void (*libvlc_audio_play_cb)(void *data, const void *samples,$/;"	t
+libvlc_audio_resume_cb	./libvlc_media_player.h	/^typedef void (*libvlc_audio_resume_cb)(void *data, int64_t pts);$/;"	t
+libvlc_audio_set_volume_cb	./libvlc_media_player.h	/^typedef void (*libvlc_audio_set_volume_cb)(void *data,$/;"	t
+libvlc_audio_setup_cb	./libvlc_media_player.h	/^typedef int (*libvlc_audio_setup_cb)(void **data, char *format, unsigned *rate,$/;"	t
+libvlc_callback_t	./libvlc.h	/^typedef void ( *libvlc_callback_t )( const struct libvlc_event_t *, void * );$/;"	t
+libvlc_delay	./libvlc.h	/^static inline int64_t libvlc_delay(int64_t pts)$/;"	f
+libvlc_event_e	./libvlc_events.h	/^enum libvlc_event_e {$/;"	g
+libvlc_event_manager_t	./libvlc.h	/^typedef struct libvlc_event_manager_t libvlc_event_manager_t;$/;"	t	typeref:struct:libvlc_event_manager_t
+libvlc_event_t	./libvlc_events.h	/^typedef struct libvlc_event_t$/;"	s
+libvlc_event_t	./libvlc_events.h	/^} libvlc_event_t;$/;"	t	typeref:struct:libvlc_event_t
+libvlc_event_type_t	./libvlc.h	/^typedef int libvlc_event_type_t;$/;"	t
+libvlc_instance_t	./libvlc_structures.h	/^typedef struct libvlc_instance_t libvlc_instance_t;$/;"	t	typeref:struct:libvlc_instance_t
+libvlc_log_iterator_t	./libvlc_structures.h	/^typedef struct libvlc_log_iterator_t libvlc_log_iterator_t;$/;"	t	typeref:struct:libvlc_log_iterator_t
+libvlc_log_message_t	./libvlc_structures.h	/^typedef struct libvlc_log_message_t$/;"	s
+libvlc_log_message_t	./libvlc_structures.h	/^} libvlc_log_message_t;$/;"	t	typeref:struct:libvlc_log_message_t
+libvlc_log_t	./libvlc_structures.h	/^typedef struct libvlc_log_t libvlc_log_t;$/;"	t	typeref:struct:libvlc_log_t
+libvlc_logo_delay	./libvlc_media_player.h	/^    libvlc_logo_delay,$/;"	e	enum:libvlc_video_logo_option_t
+libvlc_logo_enable	./libvlc_media_player.h	/^    libvlc_logo_enable,$/;"	e	enum:libvlc_video_logo_option_t
+libvlc_logo_file	./libvlc_media_player.h	/^    libvlc_logo_file,           \/**< string argument, "file,d,t;file,d,t;..." *\/$/;"	e	enum:libvlc_video_logo_option_t
+libvlc_logo_opacity	./libvlc_media_player.h	/^    libvlc_logo_opacity,$/;"	e	enum:libvlc_video_logo_option_t
+libvlc_logo_position	./libvlc_media_player.h	/^    libvlc_logo_position$/;"	e	enum:libvlc_video_logo_option_t
+libvlc_logo_repeat	./libvlc_media_player.h	/^    libvlc_logo_repeat,$/;"	e	enum:libvlc_video_logo_option_t
+libvlc_logo_x	./libvlc_media_player.h	/^    libvlc_logo_x,$/;"	e	enum:libvlc_video_logo_option_t
+libvlc_logo_y	./libvlc_media_player.h	/^    libvlc_logo_y,$/;"	e	enum:libvlc_video_logo_option_t
+libvlc_marquee_Color	./libvlc_media_player.h	/^    libvlc_marquee_Color,$/;"	e	enum:libvlc_video_marquee_option_t
+libvlc_marquee_Enable	./libvlc_media_player.h	/^    libvlc_marquee_Enable = 0,$/;"	e	enum:libvlc_video_marquee_option_t
+libvlc_marquee_Opacity	./libvlc_media_player.h	/^    libvlc_marquee_Opacity,$/;"	e	enum:libvlc_video_marquee_option_t
+libvlc_marquee_Position	./libvlc_media_player.h	/^    libvlc_marquee_Position,$/;"	e	enum:libvlc_video_marquee_option_t
+libvlc_marquee_Refresh	./libvlc_media_player.h	/^    libvlc_marquee_Refresh,$/;"	e	enum:libvlc_video_marquee_option_t
+libvlc_marquee_Size	./libvlc_media_player.h	/^    libvlc_marquee_Size,$/;"	e	enum:libvlc_video_marquee_option_t
+libvlc_marquee_Text	./libvlc_media_player.h	/^    libvlc_marquee_Text,                  \/** string argument *\/$/;"	e	enum:libvlc_video_marquee_option_t
+libvlc_marquee_Timeout	./libvlc_media_player.h	/^    libvlc_marquee_Timeout,$/;"	e	enum:libvlc_video_marquee_option_t
+libvlc_marquee_X	./libvlc_media_player.h	/^    libvlc_marquee_X,$/;"	e	enum:libvlc_video_marquee_option_t
+libvlc_marquee_Y	./libvlc_media_player.h	/^    libvlc_marquee_Y$/;"	e	enum:libvlc_video_marquee_option_t
+libvlc_media_discoverer_t	./libvlc_media_discoverer.h	/^typedef struct libvlc_media_discoverer_t libvlc_media_discoverer_t;$/;"	t	typeref:struct:libvlc_media_discoverer_t
+libvlc_media_library_t	./libvlc_media_library.h	/^typedef struct libvlc_media_library_t libvlc_media_library_t;$/;"	t	typeref:struct:libvlc_media_library_t
+libvlc_media_list_player_t	./libvlc_media_list_player.h	/^typedef struct libvlc_media_list_player_t libvlc_media_list_player_t;$/;"	t	typeref:struct:libvlc_media_list_player_t
+libvlc_media_list_t	./libvlc_media_list.h	/^typedef struct libvlc_media_list_t libvlc_media_list_t;$/;"	t	typeref:struct:libvlc_media_list_t
+libvlc_media_option_trusted	./libvlc_media.h	/^    libvlc_media_option_trusted = 0x2,$/;"	e	enum:__anon24
+libvlc_media_option_unique	./libvlc_media.h	/^    libvlc_media_option_unique = 0x100$/;"	e	enum:__anon24
+libvlc_media_player_t	./libvlc_media_player.h	/^typedef struct libvlc_media_player_t libvlc_media_player_t;$/;"	t	typeref:struct:libvlc_media_player_t
+libvlc_media_stats_t	./libvlc_media.h	/^typedef struct libvlc_media_stats_t$/;"	s
+libvlc_media_stats_t	./libvlc_media.h	/^} libvlc_media_stats_t;$/;"	t	typeref:struct:libvlc_media_stats_t
+libvlc_media_t	./libvlc_media.h	/^typedef struct libvlc_media_t libvlc_media_t;$/;"	t	typeref:struct:libvlc_media_t
+libvlc_media_track_info_t	./libvlc_media.h	/^typedef struct libvlc_media_track_info_t$/;"	s
+libvlc_media_track_info_t	./libvlc_media.h	/^} libvlc_media_track_info_t;$/;"	t	typeref:struct:libvlc_media_track_info_t
+libvlc_meta_Album	./libvlc_media.h	/^    libvlc_meta_Album,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_Artist	./libvlc_media.h	/^    libvlc_meta_Artist,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_ArtworkURL	./libvlc_media.h	/^    libvlc_meta_ArtworkURL,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_Copyright	./libvlc_media.h	/^    libvlc_meta_Copyright,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_Date	./libvlc_media.h	/^    libvlc_meta_Date,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_Description	./libvlc_media.h	/^    libvlc_meta_Description,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_EncodedBy	./libvlc_media.h	/^    libvlc_meta_EncodedBy,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_Genre	./libvlc_media.h	/^    libvlc_meta_Genre,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_Language	./libvlc_media.h	/^    libvlc_meta_Language,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_NowPlaying	./libvlc_media.h	/^    libvlc_meta_NowPlaying,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_Publisher	./libvlc_media.h	/^    libvlc_meta_Publisher,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_Rating	./libvlc_media.h	/^    libvlc_meta_Rating,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_Setting	./libvlc_media.h	/^    libvlc_meta_Setting,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_Title	./libvlc_media.h	/^    libvlc_meta_Title,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_TrackID	./libvlc_media.h	/^    libvlc_meta_TrackID$/;"	e	enum:libvlc_meta_t
+libvlc_meta_TrackNumber	./libvlc_media.h	/^    libvlc_meta_TrackNumber,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_URL	./libvlc_media.h	/^    libvlc_meta_URL,$/;"	e	enum:libvlc_meta_t
+libvlc_meta_t	./libvlc_media.h	/^typedef enum libvlc_meta_t {$/;"	g
+libvlc_meta_t	./libvlc_media.h	/^} libvlc_meta_t;$/;"	t	typeref:enum:libvlc_meta_t
+libvlc_module_description_t	./libvlc.h	/^typedef struct libvlc_module_description_t$/;"	s
+libvlc_module_description_t	./libvlc.h	/^} libvlc_module_description_t;$/;"	t	typeref:struct:libvlc_module_description_t
+libvlc_navigate_activate	./libvlc_media_player.h	/^    libvlc_navigate_activate = 0,$/;"	e	enum:libvlc_navigate_mode_t
+libvlc_navigate_down	./libvlc_media_player.h	/^    libvlc_navigate_down,$/;"	e	enum:libvlc_navigate_mode_t
+libvlc_navigate_left	./libvlc_media_player.h	/^    libvlc_navigate_left,$/;"	e	enum:libvlc_navigate_mode_t
+libvlc_navigate_mode_t	./libvlc_media_player.h	/^typedef enum libvlc_navigate_mode_t$/;"	g
+libvlc_navigate_mode_t	./libvlc_media_player.h	/^} libvlc_navigate_mode_t;$/;"	t	typeref:enum:libvlc_navigate_mode_t
+libvlc_navigate_right	./libvlc_media_player.h	/^    libvlc_navigate_right$/;"	e	enum:libvlc_navigate_mode_t
+libvlc_navigate_up	./libvlc_media_player.h	/^    libvlc_navigate_up,$/;"	e	enum:libvlc_navigate_mode_t
+libvlc_playback_mode_default	./libvlc_media_list_player.h	/^    libvlc_playback_mode_default,$/;"	e	enum:libvlc_playback_mode_t
+libvlc_playback_mode_loop	./libvlc_media_list_player.h	/^    libvlc_playback_mode_loop,$/;"	e	enum:libvlc_playback_mode_t
+libvlc_playback_mode_repeat	./libvlc_media_list_player.h	/^    libvlc_playback_mode_repeat$/;"	e	enum:libvlc_playback_mode_t
+libvlc_playback_mode_t	./libvlc_media_list_player.h	/^typedef enum libvlc_playback_mode_t$/;"	g
+libvlc_playback_mode_t	./libvlc_media_list_player.h	/^} libvlc_playback_mode_t;$/;"	t	typeref:enum:libvlc_playback_mode_t
+libvlc_rectangle_t	./libvlc_media_player.h	/^typedef struct libvlc_rectangle_t$/;"	s
+libvlc_rectangle_t	./libvlc_media_player.h	/^} libvlc_rectangle_t;$/;"	t	typeref:struct:libvlc_rectangle_t
+libvlc_state_t	./libvlc_media.h	/^typedef enum libvlc_state_t$/;"	g
+libvlc_state_t	./libvlc_media.h	/^} libvlc_state_t;$/;"	t	typeref:enum:libvlc_state_t
+libvlc_time_t	./libvlc_structures.h	/^typedef int64_t libvlc_time_t;$/;"	t
+libvlc_track_audio	./libvlc_media.h	/^    libvlc_track_audio     = 0,$/;"	e	enum:libvlc_track_type_t
+libvlc_track_description_t	./libvlc_media_player.h	/^typedef struct libvlc_track_description_t$/;"	s
+libvlc_track_description_t	./libvlc_media_player.h	/^} libvlc_track_description_t;$/;"	t	typeref:struct:libvlc_track_description_t
+libvlc_track_text	./libvlc_media.h	/^    libvlc_track_text      = 2$/;"	e	enum:libvlc_track_type_t
+libvlc_track_type_t	./libvlc_media.h	/^typedef enum libvlc_track_type_t$/;"	g
+libvlc_track_type_t	./libvlc_media.h	/^} libvlc_track_type_t;$/;"	t	typeref:enum:libvlc_track_type_t
+libvlc_track_unknown	./libvlc_media.h	/^    libvlc_track_unknown   = -1,$/;"	e	enum:libvlc_track_type_t
+libvlc_track_video	./libvlc_media.h	/^    libvlc_track_video     = 1,$/;"	e	enum:libvlc_track_type_t
+libvlc_video_adjust_option_t	./libvlc_media_player.h	/^enum libvlc_video_adjust_option_t {$/;"	g
+libvlc_video_cleanup_cb	./libvlc_media_player.h	/^typedef void (*libvlc_video_cleanup_cb)(void *opaque);$/;"	t
+libvlc_video_display_cb	./libvlc_media_player.h	/^typedef void (*libvlc_video_display_cb)(void *opaque, void *picture);$/;"	t
+libvlc_video_format_cb	./libvlc_media_player.h	/^typedef unsigned (*libvlc_video_format_cb)(void **opaque, char *chroma,$/;"	t
+libvlc_video_lock_cb	./libvlc_media_player.h	/^typedef void *(*libvlc_video_lock_cb)(void *opaque, void **planes);$/;"	t
+libvlc_video_logo_option_t	./libvlc_media_player.h	/^enum libvlc_video_logo_option_t {$/;"	g
+libvlc_video_marquee_option_t	./libvlc_media_player.h	/^typedef enum libvlc_video_marquee_option_t {$/;"	g
+libvlc_video_marquee_option_t	./libvlc_media_player.h	/^} libvlc_video_marquee_option_t;$/;"	t	typeref:enum:libvlc_video_marquee_option_t
+libvlc_video_unlock_cb	./libvlc_media_player.h	/^typedef void (*libvlc_video_unlock_cb)(void *opaque, void *picture,$/;"	t
+md	./libvlc_events.h	/^            libvlc_media_t * md;$/;"	m	struct:libvlc_event_t::__anon1::__anon6
+media_duration_changed	./libvlc_events.h	/^        } media_duration_changed;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon4
+media_freed	./libvlc_events.h	/^        } media_freed;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon6
+media_list_item_added	./libvlc_events.h	/^        } media_list_item_added;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon15
+media_list_item_deleted	./libvlc_events.h	/^        } media_list_item_deleted;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon17
+media_list_player_next_item_set	./libvlc_events.h	/^        } media_list_player_next_item_set;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon19
+media_list_will_add_item	./libvlc_events.h	/^        } media_list_will_add_item;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon16
+media_list_will_delete_item	./libvlc_events.h	/^        } media_list_will_delete_item;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon18
+media_meta_changed	./libvlc_events.h	/^        } media_meta_changed;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon2
+media_parsed_changed	./libvlc_events.h	/^        } media_parsed_changed;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon5
+media_player_buffering	./libvlc_events.h	/^        } media_player_buffering;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon8
+media_player_length_changed	./libvlc_events.h	/^        } media_player_length_changed;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon21
+media_player_media_changed	./libvlc_events.h	/^        } media_player_media_changed;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon23
+media_player_pausable_changed	./libvlc_events.h	/^        } media_player_pausable_changed;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon13
+media_player_position_changed	./libvlc_events.h	/^        } media_player_position_changed;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon9
+media_player_seekable_changed	./libvlc_events.h	/^        } media_player_seekable_changed;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon12
+media_player_snapshot_taken	./libvlc_events.h	/^        } media_player_snapshot_taken ;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon20
+media_player_time_changed	./libvlc_events.h	/^        } media_player_time_changed;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon10
+media_player_title_changed	./libvlc_events.h	/^        } media_player_title_changed;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon11
+media_player_vout	./libvlc_events.h	/^        } media_player_vout;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon14
+media_state_changed	./libvlc_events.h	/^        } media_state_changed;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon7
+media_subitem_added	./libvlc_events.h	/^        } media_subitem_added;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon3
+meta_type	./libvlc_events.h	/^            libvlc_meta_t meta_type;$/;"	m	struct:libvlc_event_t::__anon1::__anon2
+new_cache	./libvlc_events.h	/^            float new_cache;$/;"	m	struct:libvlc_event_t::__anon1::__anon8
+new_child	./libvlc_events.h	/^            libvlc_media_t * new_child;$/;"	m	struct:libvlc_event_t::__anon1::__anon3
+new_count	./libvlc_events.h	/^            int new_count;$/;"	m	struct:libvlc_event_t::__anon1::__anon14
+new_duration	./libvlc_events.h	/^            int64_t new_duration;$/;"	m	struct:libvlc_event_t::__anon1::__anon4
+new_length	./libvlc_events.h	/^            libvlc_time_t   new_length;$/;"	m	struct:libvlc_event_t::__anon1::__anon21
+new_media	./libvlc_events.h	/^            libvlc_media_t * new_media;$/;"	m	struct:libvlc_event_t::__anon1::__anon23
+new_pausable	./libvlc_events.h	/^            int new_pausable;$/;"	m	struct:libvlc_event_t::__anon1::__anon13
+new_position	./libvlc_events.h	/^            float new_position;$/;"	m	struct:libvlc_event_t::__anon1::__anon9
+new_seekable	./libvlc_events.h	/^            int new_seekable;$/;"	m	struct:libvlc_event_t::__anon1::__anon12
+new_state	./libvlc_events.h	/^            libvlc_state_t new_state;$/;"	m	struct:libvlc_event_t::__anon1::__anon7
+new_status	./libvlc_events.h	/^            int new_status;$/;"	m	struct:libvlc_event_t::__anon1::__anon5
+new_time	./libvlc_events.h	/^            libvlc_time_t new_time;$/;"	m	struct:libvlc_event_t::__anon1::__anon10
+new_title	./libvlc_events.h	/^            int new_title;$/;"	m	struct:libvlc_event_t::__anon1::__anon11
+p_md	./libvlc_media.h	/^libvlc_media_subitems( libvlc_media_t *p_md );$/;"	v
+p_next	./libvlc.h	/^    struct libvlc_module_description_t *p_next;$/;"	m	struct:libvlc_module_description_t	typeref:struct:libvlc_module_description_t::libvlc_module_description_t
+p_next	./libvlc_media_player.h	/^    struct libvlc_audio_output_t *p_next;$/;"	m	struct:libvlc_audio_output_t	typeref:struct:libvlc_audio_output_t::libvlc_audio_output_t
+p_next	./libvlc_media_player.h	/^    struct libvlc_track_description_t *p_next;$/;"	m	struct:libvlc_track_description_t	typeref:struct:libvlc_track_description_t::libvlc_track_description_t
+p_obj	./libvlc_events.h	/^    void *p_obj; \/**< Object emitting the event *\/$/;"	m	struct:libvlc_event_t
+psz_description	./libvlc_media_player.h	/^    char *psz_description;$/;"	m	struct:libvlc_audio_output_t
+psz_filename	./libvlc_events.h	/^             char* psz_filename ;$/;"	m	struct:libvlc_event_t::__anon1::__anon20
+psz_header	./libvlc_structures.h	/^    const char *psz_header;   \/* optional header *\/$/;"	m	struct:libvlc_log_message_t
+psz_help	./libvlc.h	/^    char *psz_help;$/;"	m	struct:libvlc_module_description_t
+psz_instance_name	./libvlc_events.h	/^            const char * psz_instance_name;$/;"	m	struct:libvlc_event_t::__anon1::__anon22
+psz_longname	./libvlc.h	/^    char *psz_longname;$/;"	m	struct:libvlc_module_description_t
+psz_media_name	./libvlc_events.h	/^            const char * psz_media_name;$/;"	m	struct:libvlc_event_t::__anon1::__anon22
+psz_message	./libvlc_structures.h	/^    const char *psz_message;  \/* message *\/$/;"	m	struct:libvlc_log_message_t
+psz_name	./libvlc.h	/^    char *psz_name;$/;"	m	struct:libvlc_module_description_t
+psz_name	./libvlc_media_player.h	/^    char *psz_name;$/;"	m	struct:libvlc_audio_output_t
+psz_name	./libvlc_media_player.h	/^    char *psz_name;$/;"	m	struct:libvlc_track_description_t
+psz_name	./libvlc_structures.h	/^    const char *psz_name;     \/* module name *\/$/;"	m	struct:libvlc_log_message_t
+psz_shortname	./libvlc.h	/^    char *psz_shortname;$/;"	m	struct:libvlc_module_description_t
+psz_type	./libvlc_structures.h	/^    const char *psz_type;     \/* module type *\/$/;"	m	struct:libvlc_log_message_t
+right	./libvlc_media_player.h	/^    int bottom, right;$/;"	m	struct:libvlc_rectangle_t
+top	./libvlc_media_player.h	/^    int top, left;$/;"	m	struct:libvlc_rectangle_t
+type	./libvlc_events.h	/^    int   type; \/**< Event type (see @ref libvlc_event_e) *\/$/;"	m	struct:libvlc_event_t
+u	./libvlc_events.h	/^    } u; \/**< Type-dependent event description *\/$/;"	m	struct:libvlc_event_t	typeref:union:libvlc_event_t::__anon1
+u	./libvlc_media.h	/^    } u;$/;"	m	struct:libvlc_media_track_info_t	typeref:union:libvlc_media_track_info_t::__anon25
+video	./libvlc_media.h	/^        } video;$/;"	m	union:libvlc_media_track_info_t::__anon25	typeref:struct:libvlc_media_track_info_t::__anon25::__anon27
+vlm_media_event	./libvlc_events.h	/^        } vlm_media_event;$/;"	m	union:libvlc_event_t::__anon1	typeref:struct:libvlc_event_t::__anon1::__anon22

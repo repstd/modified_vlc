@@ -1,0 +1,14 @@
+prefix=/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavutil
+Description: Libav utility library
+Version: 51.41.0
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} -lavutil -lm
+Libs.private: 
+Cflags: -I${includedir}

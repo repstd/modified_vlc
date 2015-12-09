@@ -1,0 +1,79 @@
+cachegen.o cachegen.o: cachegen.c ../config.h ../include/vlc_fixups.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/time.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/_mingw.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stddef.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdio.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stdarg.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/types.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/dirent.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/io.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/errno.h \
+  ../include/vlc/vlc.h ../include/vlc/libvlc_structures.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdint.h \
+  ../include/vlc/libvlc.h ../include/vlc/libvlc_media.h \
+  ../include/vlc/libvlc_media_player.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stdbool.h \
+  ../include/vlc/libvlc_media_list.h \
+  ../include/vlc/libvlc_media_list_player.h \
+  ../include/vlc/libvlc_media_library.h \
+  ../include/vlc/libvlc_media_discoverer.h ../include/vlc/libvlc_events.h \
+  ../include/vlc/libvlc_vlm.h ../include/vlc/deprecated.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdlib.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/locale.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/getopt.h
+
+../config.h:
+
+../include/vlc_fixups.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/time.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/_mingw.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stddef.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdio.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stdarg.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/types.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/dirent.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/io.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/errno.h:
+
+../include/vlc/vlc.h:
+
+../include/vlc/libvlc_structures.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdint.h:
+
+../include/vlc/libvlc.h:
+
+../include/vlc/libvlc_media.h:
+
+../include/vlc/libvlc_media_player.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stdbool.h:
+
+../include/vlc/libvlc_media_list.h:
+
+../include/vlc/libvlc_media_list_player.h:
+
+../include/vlc/libvlc_media_library.h:
+
+../include/vlc/libvlc_media_discoverer.h:
+
+../include/vlc/libvlc_events.h:
+
+../include/vlc/libvlc_vlm.h:
+
+../include/vlc/deprecated.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdlib.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/locale.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/getopt.h:

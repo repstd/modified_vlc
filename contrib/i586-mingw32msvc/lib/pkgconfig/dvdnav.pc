@@ -1,0 +1,12 @@
+prefix=/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libdvdnav
+Description: DVD Navigation library
+Version: 4.2.0
+
+Requires.private: dvdread >= 4.1.2
+Cflags: -I${includedir} 
+Libs: -L${libdir} -ldvdnav 

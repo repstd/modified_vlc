@@ -1,0 +1,2 @@
+#! /bin/sh
+exec /home/ylwang/msvc/vlc-2.0.6/_win32/bin/vlc -I "rc" "$@"

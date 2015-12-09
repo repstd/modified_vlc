@@ -1,0 +1,31 @@
+Index: dvdread/src/dvdread/ifo_types.h
+===================================================================
+--- dvdread/src/dvdread/ifo_types.h	(révision 1188)
++++ dvdread/src/dvdread/ifo_types.h	(copie de travail)
+@@ -32,7 +32,7 @@
+ 
+ #if defined(__GNUC__)
+ #if __GNUC__ > 2 || (__GNUC__ == 2 && __GNUC_MINOR__ >= 95)
+-#define ATTRIBUTE_PACKED __attribute__ ((packed))
++#define ATTRIBUTE_PACKED __attribute__ ((packed,gcc_struct))
+ #define PRAGMA_PACK 0
+ #endif
+ #endif
+--- dvdread/src/dvd_reader.c	2013-02-05 20:17:01.886086564 +0100
++++ dvdread.new/src/dvd_reader.c	2013-02-05 20:06:19.694145718 +0100
+@@ -36,6 +36,7 @@
+ /* misc win32 helpers */
+ #ifdef WIN32
+ #include <windows.h>
++#if 0
+ #ifndef HAVE_GETTIMEOFDAY
+ /* replacement gettimeofday implementation */
+ #include <sys/timeb.h>
+@@ -52,6 +53,7 @@
+ #include <io.h> /* read() */
+ #define lseek64 _lseeki64
+ #endif
++#endif
+ 
+ #if defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__NetBSD__) || defined(__bsdi__) || defined(__APPLE__)
+ #define SYS_BSD 1

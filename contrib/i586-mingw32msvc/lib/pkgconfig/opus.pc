@@ -1,0 +1,15 @@
+# opus codec reference implementation pkg-config file
+
+prefix=/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Opus
+Description: Opus IETF low-latency audio codec
+URL: http://opus-codec.org/
+Version: 1.0.1
+Requires:
+Conflicts:
+Libs: -L${libdir} -lopus
+Cflags: -I${includedir}/opus

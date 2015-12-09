@@ -1,0 +1,12 @@
+prefix=/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc
+exec_prefix=/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc
+libdir=/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/lib
+includedir=/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include
+
+
+Name: TagLib C Bindings
+Description: Audio meta-data library (C bindings)
+Requires: taglib
+Version: 1.7.2
+Libs: -L/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/lib -ltag_c
+Cflags: -I/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/taglib 

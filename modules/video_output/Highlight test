@@ -1,0 +1,79 @@
+Highlighting groups for various occasions
+-----------------------------------------
+SpecialKey	SpecialKey
+NonText	NonText
+Directory	Directory
+ErrorMsg	ErrorMsg
+IncSearch	IncSearch
+Search	Search
+MoreMsg	MoreMsg
+ModeMsg	ModeMsg
+LineNr	LineNr
+CursorLineNr	CursorLineNr
+Question	Question
+StatusLine	StatusLine
+StatusLineNC	StatusLineNC
+VertSplit	VertSplit
+Title	Title
+Visual	Visual
+VisualNOS	VisualNOS
+WarningMsg	WarningMsg
+WildMenu	WildMenu
+Folded	Folded
+FoldColumn	FoldColumn
+DiffAdd	DiffAdd
+DiffChange	DiffChange
+DiffDelete	DiffDelete
+DiffText	DiffText
+SignColumn	SignColumn
+Conceal	Conceal
+SpellBad	SpellBad
+SpellCap	SpellCap
+SpellRare	SpellRare
+SpellLocal	SpellLocal
+Pmenu	Pmenu
+PmenuSel	PmenuSel
+PmenuSbar	PmenuSbar
+PmenuThumb	PmenuThumb
+TabLine	TabLine
+TabLineSel	TabLineSel
+TabLineFill	TabLineFill
+CursorColumn	CursorColumn
+CursorLine	CursorLine
+ColorColumn	ColorColumn
+Cursor	Cursor
+
+Syntax highlighting groups
+--------------------------
+lCursor	lCursor
+MatchParen	MatchParen
+Normal	Normal
+Comment	Comment cComment cCommentSkip cCommentL cCommentStart cCppOut cCppOut2 cCppOutIf2 cCppOutSkip cCppInElse2
+Constant	Constant String Character Number Boolean Float cString cCppString cCharacter cIncluded cCommentString cComment2String cNumber cFloat cOctal cConstant cppBoolean cppConstant
+Special	Special Tag SpecialChar Delimiter SpecialComment Debug cSpecial cFormat cSpecialCharacter
+Identifier	Identifier Function
+Statement	Statement Conditional Repeat Label Operator Keyword Exception cStatement cLabel cConditional cRepeat cUserLabel cOperator cppStatement cppAccess cppExceptions cppOperator cppCast
+PreProc	PreProc Include Define Macro PreCondit cOctalZero cPreCondit cPreConditMatch cCppOutWrapper cCppInWrapper cPreProc cInclude cDefine
+Type	Type StorageClass Structure Typedef cType cStructure cStorageClass cppType cppStorageClass cppStructure
+Underlined	Underlined
+Ignore	Ignore
+Error	Error cBadContinuation cError cSpaceError cSpecialError cCurlyError cErrInParen cErrInBracket cParenError cCommentStartError cOctalError cCommentError
+Todo	Todo cTodo
+cCppSkip	cCppSkip
+cBadBlock	cBadBlock
+cCppParen	cCppParen
+cCppBracket	cCppBracket
+cBlock	cBlock
+cBitField	cBitField
+cNumbersCom	cNumbersCom
+cParen	cParen
+cBracket	cBracket
+cNumbers	cNumbers
+cCppInIf	cCppInIf
+cCppInElse	cCppInElse
+cCppOutIf	cCppOutIf
+cCppOutElse	cCppOutElse
+cCppInSkip	cCppInSkip
+cMulti	cMulti
+cUserCont	cUserCont
+cppMinMax	cppMinMax

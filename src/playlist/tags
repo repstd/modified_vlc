@@ -1,0 +1,241 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddItem	./item.c	/^static void AddItem( playlist_t *p_playlist, playlist_item_t *p_item,$/;"	f	file:
+Art	./preparser.c	/^static void Art( playlist_preparser_t *p_preparser, input_item_t *p_item )$/;"	f	file:
+ArtCacheCreateDir	./art.c	/^static void ArtCacheCreateDir( const char *psz_dir )$/;"	f	file:
+ArtCacheGetDirPath	./art.c	/^static char* ArtCacheGetDirPath( const char *psz_arturl, const char *psz_artist,$/;"	f	file:
+ArtCacheName	./art.c	/^static char *ArtCacheName( input_item_t *p_item, const char *psz_type )$/;"	f	file:
+ArtCachePath	./art.c	/^static char *ArtCachePath( input_item_t *p_item )$/;"	f	file:
+ChangeToNode	./item.c	/^static void ChangeToNode( playlist_t *p_playlist, playlist_item_t *p_item )$/;"	f	file:
+DEF	./sort.c	339;"	d	file:
+DEF	./sort.c	349;"	d	file:
+DEF	./sort.c	354;"	d	file:
+DEF	./sort.c	356;"	d	file:
+DeleteFromInput	./item.c	/^static int DeleteFromInput( playlist_t *p_playlist, input_item_t *p_input,$/;"	f	file:
+DownloadArt	./fetcher.c	/^static int DownloadArt( playlist_fetcher_t *p_fetcher, input_item_t *p_item )$/;"	f	file:
+FetchMeta	./fetcher.c	/^static void FetchMeta( playlist_fetcher_t *p_fetcher, input_item_t *p_item )$/;"	f	file:
+FindArt	./fetcher.c	/^static int FindArt( playlist_fetcher_t *p_fetcher, input_item_t *p_item )$/;"	f	file:
+GetNextItem	./tree.c	/^playlist_item_t *GetNextItem( playlist_t *p_playlist,$/;"	f
+GetNextUncle	./tree.c	/^playlist_item_t *GetNextUncle( playlist_t *p_playlist, playlist_item_t *p_item,$/;"	f
+GetPrevItem	./tree.c	/^playlist_item_t *GetPrevItem( playlist_t *p_playlist,$/;"	f
+GetPrevUncle	./tree.c	/^playlist_item_t *GetPrevUncle( playlist_t *p_playlist, playlist_item_t *p_item,$/;"	f
+GoAndPreparse	./item.c	/^static void GoAndPreparse( playlist_t *p_playlist, int i_mode,$/;"	f	file:
+InputEvent	./fetcher.c	/^static int InputEvent( vlc_object_t *p_this, char const *psz_cmd,$/;"	f	file:
+InputEvent	./thread.c	/^static int InputEvent( vlc_object_t *p_this, char const *psz_cmd,$/;"	f	file:
+ItemIndex	./item.c	/^static int ItemIndex ( playlist_item_t *p_item )$/;"	f	file:
+LoopInput	./thread.c	/^static int LoopInput( playlist_t *p_playlist )$/;"	f	file:
+LoopRequest	./thread.c	/^static void LoopRequest( playlist_t *p_playlist )$/;"	f	file:
+NextItem	./thread.c	/^static playlist_item_t *NextItem( playlist_t *p_playlist )$/;"	f	file:
+PLAYLIST_DEBUG	./playlist_internal.h	158;"	d
+PLI_NAME	./playlist_internal.h	173;"	d
+PL_DEBUG	./playlist_internal.h	162;"	d
+PL_DEBUG	./playlist_internal.h	169;"	d
+PL_DEBUG2	./playlist_internal.h	164;"	d
+PL_DEBUG2	./playlist_internal.h	166;"	d
+PL_DEBUG2	./playlist_internal.h	170;"	d
+PL_LOCK_IF	./playlist_internal.h	175;"	d
+PL_UNLOCK_IF	./playlist_internal.h	181;"	d
+PlayItem	./thread.c	/^static int PlayItem( playlist_t *p_playlist, playlist_item_t *p_item )$/;"	f	file:
+PlaylistVAControl	./control.c	/^static int PlaylistVAControl( playlist_t * p_playlist, int i_query, va_list args )$/;"	f	file:
+Preparse	./preparser.c	/^static void Preparse( playlist_t *p_playlist, input_item_t *p_item )$/;"	f	file:
+RandomCallback	./engine.c	/^static int RandomCallback( vlc_object_t *p_this, char const *psz_cmd,$/;"	f	file:
+RateCallback	./engine.c	/^static int RateCallback( vlc_object_t *p_this, char const *psz_cmd,$/;"	f	file:
+RateOffsetCallback	./engine.c	/^static int RateOffsetCallback( vlc_object_t *obj, char const *psz_cmd,$/;"	f	file:
+RecursiveAddIntoParent	./item.c	/^static int RecursiveAddIntoParent ($/;"	f	file:
+RecursiveInsertCopy	./item.c	/^static int RecursiveInsertCopy ($/;"	f	file:
+ResetCurrentlyPlaying	./thread.c	/^void ResetCurrentlyPlaying( playlist_t *p_playlist,$/;"	f
+ResyncCurrentIndex	./thread.c	/^void ResyncCurrentIndex( playlist_t *p_playlist, playlist_item_t *p_cur )$/;"	f
+SORTFN	./sort.c	/^SORTFN( SORT_ALBUM, first, second )$/;"	f
+SORTFN	./sort.c	/^SORTFN( SORT_ARTIST, first, second )$/;"	f
+SORTFN	./sort.c	/^SORTFN( SORT_DESCRIPTION, first, second )$/;"	f
+SORTFN	./sort.c	/^SORTFN( SORT_DURATION, first, second )$/;"	f
+SORTFN	./sort.c	/^SORTFN( SORT_GENRE, first, second )$/;"	f
+SORTFN	./sort.c	/^SORTFN( SORT_ID, first, second )$/;"	f
+SORTFN	./sort.c	/^SORTFN( SORT_RATING, first, second )$/;"	f
+SORTFN	./sort.c	/^SORTFN( SORT_TITLE, first, second )$/;"	f
+SORTFN	./sort.c	/^SORTFN( SORT_TITLE_NODES_FIRST, first, second )$/;"	f
+SORTFN	./sort.c	/^SORTFN( SORT_TITLE_NUMERIC, first, second )$/;"	f
+SORTFN	./sort.c	/^SORTFN( SORT_TRACK_NUMBER, first, second )$/;"	f
+SORTFN	./sort.c	/^SORTFN( SORT_URI, first, second )$/;"	f
+SORTFN	./sort.c	214;"	d	file:
+SORTFN	./sort.c	329;"	d	file:
+Thread	./fetcher.c	/^static void *Thread( void *p_data )$/;"	f	file:
+Thread	./preparser.c	/^static void *Thread( void *data )$/;"	f	file:
+Thread	./thread.c	/^static void *Thread ( void *data )$/;"	f	file:
+UpdateActivity	./thread.c	/^static void UpdateActivity( playlist_t *p_playlist, int i_delta )$/;"	f	file:
+VLC_INTERNAL_PLAYLIST_SORT_FUNCTIONS	./sort.c	31;"	d	file:
+VariablesInit	./engine.c	/^static void VariablesInit( playlist_t *p_playlist )$/;"	f	file:
+VideoSplitterCallback	./engine.c	/^static int VideoSplitterCallback( vlc_object_t *p_this, char const *psz_cmd,$/;"	f	file:
+WaitPreparsed	./fetcher.c	/^static void WaitPreparsed( playlist_fetcher_t *p_fetcher, input_item_t *p_item )$/;"	f	file:
+_PLAYLIST_ART_H	./art.h	26;"	d
+_PLAYLIST_FETCHER_H	./fetcher.h	26;"	d
+_PLAYLIST_PREPARSER_H	./preparser.h	26;"	d
+__LIBVLC_PLAYLIST_INTERNAL_H	./playlist_internal.h	26;"	d
+b_auto_preparse	./playlist_internal.h	/^    bool     b_auto_preparse;$/;"	m	struct:playlist_private_t
+b_doing_ml	./playlist_internal.h	/^    bool     b_doing_ml; \/**< Doing media library stuff  get quicker *\/$/;"	m	struct:playlist_private_t
+b_found	./art.h	/^    bool b_found;$/;"	m	struct:__anon1
+b_live	./fetcher.c	/^    bool            b_live;$/;"	m	struct:playlist_fetcher_t	file:
+b_live	./preparser.c	/^    bool            b_live;$/;"	m	struct:playlist_preparser_t	file:
+b_request	./playlist_internal.h	/^        bool          b_request;\/**< Set to true by the requester$/;"	m	struct:playlist_private_t::__anon3
+b_reset_currently_playing	./playlist_internal.h	/^    bool     b_reset_currently_playing; \/** Reset current item array *\/$/;"	m	struct:playlist_private_t
+b_tree	./playlist_internal.h	/^    bool     b_tree; \/**< Display as a tree *\/$/;"	m	struct:playlist_private_t
+category	./services_discovery.c	/^    int category;$/;"	m	struct:__anon4	file:
+find_sorting_fn	./sort.c	/^static inline sortfn_t find_sorting_fn( unsigned i_mode, unsigned i_type )$/;"	f	file:
+get_current_status_item	./engine.c	/^playlist_item_t * get_current_status_item( playlist_t * p_playlist )$/;"	f
+get_current_status_node	./engine.c	/^playlist_item_t * get_current_status_node( playlist_t * p_playlist )$/;"	f
+global_lock	./control.c	/^static vlc_mutex_t global_lock = VLC_STATIC_MUTEX;$/;"	v	file:
+i_art_policy	./fetcher.c	/^    int             i_art_policy;$/;"	m	struct:playlist_fetcher_t	file:
+i_art_policy	./preparser.c	/^    int             i_art_policy;$/;"	m	struct:playlist_preparser_t	file:
+i_last_playlist_id	./playlist_internal.h	/^    int      i_last_playlist_id; \/**< Last id to an item *\/$/;"	m	struct:playlist_private_t
+i_sds	./playlist_internal.h	/^    int                   i_sds;   \/**< Number of service discovery modules *\/$/;"	m	struct:playlist_private_t
+i_skip	./playlist_internal.h	/^        int                 i_skip;   \/**< Number of items to skip *\/$/;"	m	struct:playlist_private_t::__anon3
+i_status	./playlist_internal.h	/^        playlist_status_t   i_status;  \/**< Current status of playlist *\/$/;"	m	struct:playlist_private_t::__anon2
+i_status	./playlist_internal.h	/^        playlist_status_t   i_status; \/**< requested playlist status *\/$/;"	m	struct:playlist_private_t::__anon3
+i_waiting	./fetcher.c	/^    int             i_waiting;$/;"	m	struct:playlist_fetcher_t	file:
+i_waiting	./preparser.c	/^    int             i_waiting;$/;"	m	struct:playlist_preparser_t	file:
+input_item_add_subitem_tree	./item.c	/^static void input_item_add_subitem_tree ( const vlc_event_t * p_event,$/;"	f	file:
+input_item_changed	./item.c	/^static void input_item_changed( const vlc_event_t * p_event,$/;"	f	file:
+input_item_subitem_tree_added	./loadsave.c	/^static void input_item_subitem_tree_added( const vlc_event_t * p_event,$/;"	f	file:
+install_input_item_observer	./item.c	/^static void install_input_item_observer( playlist_item_t * p_item )$/;"	f	file:
+items_to_delete	./playlist_internal.h	/^    playlist_item_array_t items_to_delete; \/**< Array of items and nodes to$/;"	m	struct:playlist_private_t
+last_rebuild_date	./playlist_internal.h	/^    mtime_t  last_rebuild_date;$/;"	m	struct:playlist_private_t
+lock	./fetcher.c	/^    vlc_mutex_t     lock;$/;"	m	struct:playlist_fetcher_t	file:
+lock	./playlist_internal.h	/^        vlc_mutex_t         lock;     \/**< Lock to protect request *\/$/;"	m	struct:playlist_private_t::__anon3
+lock	./playlist_internal.h	/^    vlc_mutex_t lock; \/**< dah big playlist global lock *\/$/;"	m	struct:playlist_private_t
+lock	./preparser.c	/^    vlc_mutex_t     lock;$/;"	m	struct:playlist_preparser_t	file:
+longname	./services_discovery.c	/^    char *longname;$/;"	m	struct:__anon4	file:
+meta_sort	./sort.c	/^static inline int meta_sort( const playlist_item_t *first,$/;"	f	file:
+meta_strcasecmp_title	./sort.c	/^static inline int meta_strcasecmp_title( const playlist_item_t *first,$/;"	f	file:
+name	./services_discovery.c	/^    char *name;$/;"	m	struct:__anon4	file:
+p_fetcher	./playlist_internal.h	/^    playlist_fetcher_t   *p_fetcher;    \/**< Meta and art fetcher data *\/$/;"	m	struct:playlist_private_t
+p_fetcher	./preparser.c	/^    playlist_fetcher_t  *p_fetcher;$/;"	m	struct:playlist_preparser_t	file:
+p_input	./playlist_internal.h	/^    input_thread_t *      p_input;  \/**< the input thread associated$/;"	m	struct:playlist_private_t
+p_input_resource	./playlist_internal.h	/^    input_resource_t *   p_input_resource; \/**< input resources *\/$/;"	m	struct:playlist_private_t
+p_item	./playlist_internal.h	/^        playlist_item_t *   p_item;   \/**< requested item to play in the node *\/$/;"	m	struct:playlist_private_t::__anon3
+p_item	./playlist_internal.h	/^        playlist_item_t *   p_item; \/**< Currently playing\/active item *\/$/;"	m	struct:playlist_private_t::__anon2
+p_node	./playlist_internal.h	/^        playlist_item_t *   p_node;   \/**< requested node to play from *\/$/;"	m	struct:playlist_private_t::__anon3
+p_node	./playlist_internal.h	/^        playlist_item_t *   p_node; \/**< Current node to play from *\/$/;"	m	struct:playlist_private_t::__anon2
+p_node	./services_discovery.c	/^    playlist_item_t      *p_node;$/;"	m	struct:vlc_sd_internal_t	file:
+p_playlist	./fetcher.c	/^    playlist_t      *p_playlist;$/;"	m	struct:playlist_fetcher_t	file:
+p_playlist	./preparser.c	/^    playlist_t          *p_playlist;$/;"	m	struct:playlist_preparser_t	file:
+p_preparser	./playlist_internal.h	/^    playlist_preparser_t *p_preparser;  \/**< Preparser data *\/$/;"	m	struct:playlist_private_t
+p_sd	./services_discovery.c	/^    services_discovery_t *p_sd; \/**< Loaded service discovery modules *\/$/;"	m	struct:vlc_sd_internal_t	file:
+pl_Deactivate	./control.c	/^void pl_Deactivate (libvlc_int_t *p_libvlc)$/;"	f
+pl_Get	./control.c	/^playlist_t *pl_Get (vlc_object_t *obj)$/;"	f
+pl_Get	./control.c	44;"	d	file:
+pl_lock_if	./playlist_internal.h	/^static inline void pl_lock_if( playlist_t * p_playlist, bool cond )$/;"	f
+pl_priv	./playlist_internal.h	96;"	d
+pl_unlock_if	./playlist_internal.h	/^static inline void pl_unlock_if( playlist_t * p_playlist, bool cond )$/;"	f
+playlist_Activate	./thread.c	/^void playlist_Activate( playlist_t *p_playlist )$/;"	f
+playlist_Add	./item.c	/^int playlist_Add( playlist_t *p_playlist, const char *psz_uri,$/;"	f
+playlist_AddExt	./item.c	/^int playlist_AddExt( playlist_t *p_playlist, const char * psz_uri,$/;"	f
+playlist_AddInput	./item.c	/^int playlist_AddInput( playlist_t* p_playlist, input_item_t *p_input,$/;"	f
+playlist_AskForArtEnqueue	./control.c	/^int playlist_AskForArtEnqueue( playlist_t *p_playlist, input_item_t *p_item )$/;"	f
+playlist_AssertLocked	./control.c	/^void playlist_AssertLocked( playlist_t *pl )$/;"	f
+playlist_ChildSearchName	./tree.c	/^playlist_item_t *playlist_ChildSearchName( playlist_item_t *p_node,$/;"	f
+playlist_Clear	./item.c	/^void playlist_Clear( playlist_t * p_playlist, bool b_locked )$/;"	f
+playlist_Control	./control.c	/^int playlist_Control( playlist_t * p_playlist, int i_query,$/;"	f
+playlist_Create	./engine.c	/^playlist_t * playlist_Create( vlc_object_t *p_parent )$/;"	f
+playlist_CurrentInput	./engine.c	/^input_thread_t * playlist_CurrentInput( playlist_t * p_playlist )$/;"	f
+playlist_CurrentPlayingItem	./engine.c	/^playlist_item_t * playlist_CurrentPlayingItem( playlist_t * p_playlist )$/;"	f
+playlist_Deactivate	./thread.c	/^void playlist_Deactivate( playlist_t *p_playlist )$/;"	f
+playlist_DeleteFromInput	./item.c	/^int playlist_DeleteFromInput( playlist_t *p_playlist, input_item_t *p_input,$/;"	f
+playlist_DeleteFromInputInParent	./item.c	/^int playlist_DeleteFromInputInParent( playlist_t *p_playlist,$/;"	f
+playlist_DeleteFromItemId	./item.c	/^int playlist_DeleteFromItemId( playlist_t *p_playlist, int i_id )$/;"	f
+playlist_DeleteItem	./item.c	/^int playlist_DeleteItem( playlist_t * p_playlist, playlist_item_t *p_item,$/;"	f
+playlist_Destroy	./engine.c	/^void playlist_Destroy( playlist_t *p_playlist )$/;"	f
+playlist_Export	./loadsave.c	/^int playlist_Export( playlist_t * p_playlist, const char *psz_filename,$/;"	f
+playlist_FindArtInCache	./art.c	/^int playlist_FindArtInCache( input_item_t *p_item )$/;"	f
+playlist_FindInput	./engine.c	/^static input_thread_t *playlist_FindInput( vlc_object_t *object )$/;"	f	file:
+playlist_GetNextLeaf	./tree.c	/^playlist_item_t *playlist_GetNextLeaf( playlist_t *p_playlist,$/;"	f
+playlist_GetPrevLeaf	./tree.c	/^playlist_item_t *playlist_GetPrevLeaf( playlist_t *p_playlist,$/;"	f
+playlist_Import	./loadsave.c	/^int playlist_Import( playlist_t *p_playlist, const char *psz_file )$/;"	f
+playlist_InsertInputItemTree	./item.c	/^int playlist_InsertInputItemTree ($/;"	f
+playlist_IsServicesDiscoveryLoaded	./services_discovery.c	/^bool playlist_IsServicesDiscoveryLoaded( playlist_t * p_playlist,$/;"	f
+playlist_ItemArraySort	./sort.c	/^void playlist_ItemArraySort( unsigned i_items, playlist_item_t **pp_items,$/;"	f	file:
+playlist_ItemFindFromInputAndRoot	./item.c	/^playlist_item_t *playlist_ItemFindFromInputAndRoot( playlist_t *p_playlist,$/;"	f
+playlist_ItemGetById	./search.c	/^playlist_item_t* playlist_ItemGetById( playlist_t * p_playlist , int i_id )$/;"	f
+playlist_ItemGetByInput	./search.c	/^playlist_item_t* playlist_ItemGetByInput( playlist_t * p_playlist,$/;"	f
+playlist_ItemNewFromInput	./item.c	/^playlist_item_t *playlist_ItemNewFromInput( playlist_t *p_playlist,$/;"	f
+playlist_ItemRelease	./item.c	/^int playlist_ItemRelease( playlist_item_t *p_item )$/;"	f
+playlist_LiveSearchClean	./search.c	/^static void playlist_LiveSearchClean( playlist_item_t *p_root )$/;"	f	file:
+playlist_LiveSearchUpdate	./search.c	/^int playlist_LiveSearchUpdate( playlist_t *p_playlist, playlist_item_t *p_root,$/;"	f
+playlist_LiveSearchUpdateInternal	./search.c	/^static bool playlist_LiveSearchUpdateInternal( playlist_item_t *p_root,$/;"	f	file:
+playlist_Lock	./control.c	/^void playlist_Lock( playlist_t *pl )$/;"	f
+playlist_MLDump	./loadsave.c	/^int playlist_MLDump( playlist_t *p_playlist )$/;"	f
+playlist_MLLoad	./loadsave.c	/^int playlist_MLLoad( playlist_t *p_playlist )$/;"	f
+playlist_NodeAddCopy	./item.c	/^int playlist_NodeAddCopy ($/;"	f
+playlist_NodeAddInput	./item.c	/^playlist_item_t * playlist_NodeAddInput( playlist_t *p_playlist,$/;"	f
+playlist_NodeAppend	./tree.c	/^int playlist_NodeAppend( playlist_t *p_playlist,$/;"	f
+playlist_NodeCreate	./tree.c	/^playlist_item_t * playlist_NodeCreate( playlist_t *p_playlist,$/;"	f
+playlist_NodeDelete	./tree.c	/^int playlist_NodeDelete( playlist_t *p_playlist, playlist_item_t *p_root,$/;"	f
+playlist_NodeEmpty	./tree.c	/^int playlist_NodeEmpty( playlist_t *p_playlist, playlist_item_t *p_root,$/;"	f
+playlist_NodeInsert	./tree.c	/^int playlist_NodeInsert( playlist_t *p_playlist,$/;"	f
+playlist_NodeRemoveItem	./tree.c	/^int playlist_NodeRemoveItem( playlist_t *p_playlist,$/;"	f
+playlist_PreparseEnqueue	./control.c	/^int playlist_PreparseEnqueue( playlist_t *p_playlist, input_item_t *p_item )$/;"	f
+playlist_RecursiveNodeSort	./sort.c	/^int playlist_RecursiveNodeSort( playlist_t *p_playlist, playlist_item_t *p_node,$/;"	f
+playlist_SaveArt	./art.c	/^int playlist_SaveArt( playlist_t *p_playlist, input_item_t *p_item,$/;"	f
+playlist_SendAddNotify	./item.c	/^void playlist_SendAddNotify( playlist_t *p_playlist, int i_item_id,$/;"	f
+playlist_ServicesDiscoveryAdd	./services_discovery.c	/^int playlist_ServicesDiscoveryAdd( playlist_t *p_playlist,$/;"	f
+playlist_ServicesDiscoveryControl	./services_discovery.c	/^int playlist_ServicesDiscoveryControl( playlist_t *p_playlist, const char *psz_name, int i_control, ... )$/;"	f
+playlist_ServicesDiscoveryKillAll	./services_discovery.c	/^void playlist_ServicesDiscoveryKillAll( playlist_t *p_playlist )$/;"	f
+playlist_ServicesDiscoveryRemove	./services_discovery.c	/^int playlist_ServicesDiscoveryRemove( playlist_t * p_playlist,$/;"	f
+playlist_Status	./engine.c	/^int playlist_Status( playlist_t * p_playlist )$/;"	f
+playlist_TreeMove	./item.c	/^int playlist_TreeMove( playlist_t * p_playlist, playlist_item_t *p_item,$/;"	f
+playlist_TreeMoveMany	./item.c	/^int playlist_TreeMoveMany( playlist_t *p_playlist,$/;"	f
+playlist_Unlock	./control.c	/^void playlist_Unlock( playlist_t *pl )$/;"	f
+playlist_album_t	./art.h	/^} playlist_album_t;$/;"	t	typeref:struct:__anon1
+playlist_fetcher_Delete	./fetcher.c	/^void playlist_fetcher_Delete( playlist_fetcher_t *p_fetcher )$/;"	f
+playlist_fetcher_New	./fetcher.c	/^playlist_fetcher_t *playlist_fetcher_New( playlist_t *p_playlist )$/;"	f
+playlist_fetcher_Push	./fetcher.c	/^void playlist_fetcher_Push( playlist_fetcher_t *p_fetcher,$/;"	f
+playlist_fetcher_t	./fetcher.c	/^struct playlist_fetcher_t$/;"	s	file:
+playlist_fetcher_t	./fetcher.h	/^typedef struct playlist_fetcher_t playlist_fetcher_t;$/;"	t	typeref:struct:playlist_fetcher_t
+playlist_preparser_Delete	./preparser.c	/^void playlist_preparser_Delete( playlist_preparser_t *p_preparser )$/;"	f
+playlist_preparser_New	./preparser.c	/^playlist_preparser_t *playlist_preparser_New( playlist_t *p_playlist, playlist_fetcher_t *p_fetcher )$/;"	f
+playlist_preparser_Push	./preparser.c	/^void playlist_preparser_Push( playlist_preparser_t *p_preparser, input_item_t *p_item )$/;"	f
+playlist_preparser_t	./preparser.c	/^struct playlist_preparser_t$/;"	s	file:
+playlist_preparser_t	./preparser.h	/^typedef struct playlist_preparser_t playlist_preparser_t;$/;"	t	typeref:struct:playlist_preparser_t
+playlist_private_t	./playlist_internal.h	/^typedef struct playlist_private_t$/;"	s
+playlist_private_t	./playlist_internal.h	/^} playlist_private_t;$/;"	t	typeref:struct:playlist_private_t
+playlist_sd_item_added	./services_discovery.c	/^static void playlist_sd_item_added( const vlc_event_t * p_event, void * user_data )$/;"	f	file:
+playlist_sd_item_removed	./services_discovery.c	/^static void playlist_sd_item_removed( const vlc_event_t * p_event, void * user_data )$/;"	f	file:
+pp_sds	./playlist_internal.h	/^    vlc_sd_internal_t   **pp_sds;$/;"	m	struct:playlist_private_t
+pp_waiting	./fetcher.c	/^    input_item_t    **pp_waiting;$/;"	m	struct:playlist_fetcher_t	file:
+pp_waiting	./preparser.c	/^    input_item_t  **pp_waiting;$/;"	m	struct:playlist_preparser_t	file:
+psz_album	./art.h	/^    char *psz_album;$/;"	m	struct:__anon1
+psz_artist	./art.h	/^    char *psz_artist;$/;"	m	struct:__anon1
+psz_arturl	./art.h	/^    char *psz_arturl;$/;"	m	struct:__anon1
+psz_name	./services_discovery.c	/^    char                 *psz_name;$/;"	m	struct:vlc_sd_internal_t	file:
+public_data	./playlist_internal.h	/^    playlist_t           public_data;$/;"	m	struct:playlist_private_t
+recursiveNodeSort	./sort.c	/^static int recursiveNodeSort( playlist_t *p_playlist, playlist_item_t *p_node,$/;"	f	file:
+request	./playlist_internal.h	/^    } request;$/;"	m	struct:playlist_private_t	typeref:struct:playlist_private_t::__anon3
+services_discovery_AddItem	./services_discovery.c	/^services_discovery_AddItem ( services_discovery_t * p_sd, input_item_t * p_item,$/;"	f
+services_discovery_Destructor	./services_discovery.c	/^static void services_discovery_Destructor ( vlc_object_t *p_obj )$/;"	f	file:
+services_discovery_EventManager	./services_discovery.c	/^services_discovery_EventManager ( services_discovery_t * p_sd )$/;"	f
+services_discovery_GetLocalizedName	./services_discovery.c	/^services_discovery_GetLocalizedName ( services_discovery_t * p_sd )$/;"	f
+services_discovery_RemoveItem	./services_discovery.c	/^services_discovery_RemoveItem ( services_discovery_t * p_sd, input_item_t * p_item )$/;"	f
+set_current_status_item	./engine.c	/^void set_current_status_item( playlist_t * p_playlist,$/;"	f
+set_current_status_node	./engine.c	/^void set_current_status_node( playlist_t * p_playlist,$/;"	f
+signal	./playlist_internal.h	/^    vlc_cond_t signal; \/**< wakes up the playlist engine thread *\/$/;"	m	struct:playlist_private_t
+sortfn_t	./sort.c	/^typedef int (*sortfn_t)(const void *,const void *);$/;"	t	file:
+sorting_fns	./sort.c	/^static const sortfn_t sorting_fns[NUM_SORT_FNS][2] =$/;"	v	file:
+sorting_fns	./sort.c	/^static const sortfn_t sorting_fns[NUM_SORT_FNS][2];$/;"	v	file:
+status	./playlist_internal.h	/^    } status;$/;"	m	struct:playlist_private_t	typeref:struct:playlist_private_t::__anon2
+thread	./playlist_internal.h	/^    vlc_thread_t thread; \/**< engine thread *\/$/;"	m	struct:playlist_private_t
+uninstall_input_item_observer	./item.c	/^static void uninstall_input_item_observer( playlist_item_t * p_item )$/;"	f	file:
+vlc_sd_Create	./services_discovery.c	/^services_discovery_t *vlc_sd_Create( vlc_object_t *p_super,$/;"	f
+vlc_sd_Destroy	./services_discovery.c	/^void vlc_sd_Destroy( services_discovery_t *p_sd )$/;"	f
+vlc_sd_GetNames	./services_discovery.c	/^char **vlc_sd_GetNames (vlc_object_t *obj, char ***pppsz_longnames, int **pp_categories)$/;"	f
+vlc_sd_GetNames	./services_discovery.c	59;"	d	file:
+vlc_sd_Start	./services_discovery.c	/^bool vlc_sd_Start ( services_discovery_t * p_sd )$/;"	f
+vlc_sd_Stop	./services_discovery.c	/^void vlc_sd_Stop ( services_discovery_t * p_sd )$/;"	f
+vlc_sd_internal_t	./playlist_internal.h	/^typedef struct vlc_sd_internal_t vlc_sd_internal_t;$/;"	t	typeref:struct:vlc_sd_internal_t
+vlc_sd_internal_t	./services_discovery.c	/^struct vlc_sd_internal_t$/;"	s	file:
+vlc_sd_probe_Add	./services_discovery.c	/^int vlc_sd_probe_Add (vlc_probe_t *probe, const char *name,$/;"	f
+vlc_sd_probe_t	./services_discovery.c	/^} vlc_sd_probe_t;$/;"	t	typeref:struct:__anon4	file:
+wait	./fetcher.c	/^    vlc_cond_t      wait;$/;"	m	struct:playlist_fetcher_t	file:
+wait	./preparser.c	/^    vlc_cond_t      wait;$/;"	m	struct:playlist_preparser_t	file:

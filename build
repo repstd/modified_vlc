@@ -1,0 +1,2 @@
+#! /bin/sh
+./configure --host=i586-mingw32msvc --disable-taglib --disable-gnutls --disable-sse --disable-mmx --disable-dxav2 --disable-neon --disable-x265 --disable-vlm --disable-dxva2

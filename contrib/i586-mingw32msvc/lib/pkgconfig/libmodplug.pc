@@ -1,0 +1,11 @@
+prefix=/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libmodplug
+Description: The ModPlug mod file playing library.
+Version: 0.8.8.4
+Requires:
+Cflags: -I${includedir} -I${includedir}/libmodplug
+Libs:  -L${libdir} -lmodplug   -lstdc++ -lm

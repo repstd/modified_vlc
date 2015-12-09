@@ -1,2 +1,0 @@
-dialogs/libqt4_plugin_la-vlm.moc.lo \
-  dialogs/.libs/libqt4_plugin_la-vlm.moc.o: dialogs/vlm.moc.cpp

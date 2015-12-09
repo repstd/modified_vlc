@@ -1,0 +1,14 @@
+# ogg pkg-config file
+
+prefix=/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: ogg
+Description: ogg is a library for manipulating ogg bitstreams
+Version: 1.3.0
+Requires:
+Conflicts:
+Libs: -L${libdir} -logg
+Cflags: -I${includedir}

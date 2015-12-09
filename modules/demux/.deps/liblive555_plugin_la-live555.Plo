@@ -1,0 +1,621 @@
+liblive555_plugin_la-live555.lo .libs/liblive555_plugin_la-live555.o:  \
+ live555.cpp ../../config.h ../../include/vlc_fixups.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/time.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/_mingw.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stddef.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdio.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stdarg.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/types.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/dirent.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/io.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/errno.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/inttypes.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdint.h \
+  ../../include/vlc_common.h ../../include/vlc_config.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdlib.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/string.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/malloc.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/stat.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windows.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windef.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnt.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winerror.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/basetsd.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/pshpack4.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/poppack.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wincon.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winbase.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wingdi.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winuser.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnls.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winver.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnetwk.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winreg.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winsvc.h \
+  ../../include/vlc_mtime.h ../../include/vlc_threads.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/process.h \
+  ../../include/vlc_arrays.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/tchar.h \
+  ../../include/vlc_messages.h ../../include/vlc_objects.h \
+  ../../include/vlc_variables.h ../../include/vlc_main.h \
+  ../../include/vlc_configuration.h ../../include/vlc_plugin.h \
+  ../../include/vlc_input.h ../../include/vlc_es.h \
+  ../../include/vlc_fourcc.h ../../include/vlc_meta.h \
+  ../../include/vlc_epg.h ../../include/vlc_events.h \
+  ../../include/vlc_input_item.h ../../include/vlc_demux.h \
+  ../../include/vlc_stream.h ../../include/vlc_block.h \
+  ../../include/vlc_es_out.h ../../include/vlc_dialog.h \
+  ../../include/vlc_url.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/ctype.h \
+  ../../include/vlc_strings.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/limits.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/syslimits.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/limits.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/assert.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winsock2.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/UsageEnvironment.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/UsageEnvironment_version.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/NetCommon.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/ws2tcpip.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/Boolean.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/strDup.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/BasicUsageEnvironment.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/BasicUsageEnvironment0.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/BasicUsageEnvironment_version.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DelayQueue.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/GroupsockHelper.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/NetAddress.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/HashTable.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/liveMedia.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2AudioRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AudioRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MultiFramedRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/RTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MediaSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/FramedSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MediaSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/Media.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/liveMedia_version.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/RTPInterface.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/Groupsock.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/groupsock_version.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/NetInterface.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/GroupEId.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3ADURTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2VideoRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/VideoRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4ESVideoRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AMRAudioFileSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/FileSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H264VideoFileSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/BasicUDPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/GSMAudioRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H263plusVideoRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H264VideoRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/FramedFilter.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DVVideoRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MultiFramedRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/RTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DVVideoRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DVVideoStreamFramer.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H264VideoStreamDiscreteFramer.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H264VideoStreamFramer.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEGVideoStreamFramer.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/JPEGVideoRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SimpleRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/uLawAudioFilter.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2IndexFromTransportStream.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportStreamTrickModeFilter.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportStreamIndexFile.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ByteStreamMultiFileSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ByteStreamFileSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/FramedFileSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ByteStreamMemoryBufferSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/BasicUDPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SimpleRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2AudioRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4LATMAudioRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4LATMAudioRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4ESVideoRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4GenericRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3ADURTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/QCELPAudioRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AMRAudioRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AMRAudioSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/JPEGVideoRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/JPEGVideoSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2VideoRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/VorbisAudioRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/VP8VideoRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportStreamFromPESSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportStreamMultiplexor.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2Demux.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2DemuxedElementaryStream.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportStreamFromESSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportStreamFramer.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ADTSAudioFileSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H261VideoRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H263plusVideoRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H264VideoRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3FileSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3ADU.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3ADUinterleaving.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3Transcoder.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3ADUTranscoder.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2AudioStreamFramer.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H263plusVideoStreamFramer.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AC3AudioStreamFramer.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AC3AudioRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AC3AudioRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/VorbisAudioRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/VP8VideoRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4GenericRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2VideoStreamDiscreteFramer.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2VideoStreamFramer.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4VideoStreamDiscreteFramer.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4VideoStreamFramer.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DeviceSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AudioInputDevice.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/WAVAudioFileSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/StreamReplicator.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/RTSPServerSupportingHTTPStreaming.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/RTSPServer.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ServerMediaSession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DigestAuthentication.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/TCPStreamSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/RTSPClient.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MediaSession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/RTCP.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SIPClient.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/QuickTimeFileSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/QuickTimeGenericRTPSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AVIFileSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/PassiveServerMediaSubsession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4VideoFileServerMediaSubsession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/FileServerMediaSubsession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/OnDemandServerMediaSubsession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H264VideoFileServerMediaSubsession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/WAVAudioFileServerMediaSubsession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AMRAudioFileServerMediaSubsession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AMRAudioFileSource.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AMRAudioRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/T140TextRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/TextRTPSink.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3AudioFileServerMediaSubsession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2VideoFileServerMediaSubsession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2FileServerDemux.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportFileServerMediaSubsession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H263plusVideoFileServerMediaSubsession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ADTSAudioFileServerMediaSubsession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DVVideoFileServerMediaSubsession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AC3AudioFileServerMediaSubsession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportUDPServerMediaSubsession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MatroskaFileServerDemux.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MatroskaFile.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ProxyServerMediaSession.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DarwinInjector.hh \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/liveMedia_version.hh \
+  ../access/mms/asf.h ../access/mms/../../demux/asf/libasf_guid.h \
+  ../../include/vlc_codecs.h
+
+../../config.h:
+
+../../include/vlc_fixups.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/time.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/_mingw.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stddef.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdio.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stdarg.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/types.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/dirent.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/io.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/errno.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/inttypes.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdint.h:
+
+../../include/vlc_common.h:
+
+../../include/vlc_config.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdlib.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/string.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/malloc.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/stat.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windows.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windef.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnt.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winerror.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/basetsd.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/pshpack4.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/poppack.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wincon.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winbase.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wingdi.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winuser.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnls.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winver.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnetwk.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winreg.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winsvc.h:
+
+../../include/vlc_mtime.h:
+
+../../include/vlc_threads.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/process.h:
+
+../../include/vlc_arrays.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/tchar.h:
+
+../../include/vlc_messages.h:
+
+../../include/vlc_objects.h:
+
+../../include/vlc_variables.h:
+
+../../include/vlc_main.h:
+
+../../include/vlc_configuration.h:
+
+../../include/vlc_plugin.h:
+
+../../include/vlc_input.h:
+
+../../include/vlc_es.h:
+
+../../include/vlc_fourcc.h:
+
+../../include/vlc_meta.h:
+
+../../include/vlc_epg.h:
+
+../../include/vlc_events.h:
+
+../../include/vlc_input_item.h:
+
+../../include/vlc_demux.h:
+
+../../include/vlc_stream.h:
+
+../../include/vlc_block.h:
+
+../../include/vlc_es_out.h:
+
+../../include/vlc_dialog.h:
+
+../../include/vlc_url.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/ctype.h:
+
+../../include/vlc_strings.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/limits.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/syslimits.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/limits.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/assert.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winsock2.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/UsageEnvironment.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/UsageEnvironment_version.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/NetCommon.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/ws2tcpip.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/Boolean.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/strDup.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/BasicUsageEnvironment.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/BasicUsageEnvironment0.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/BasicUsageEnvironment_version.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DelayQueue.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/GroupsockHelper.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/NetAddress.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/HashTable.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/liveMedia.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2AudioRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AudioRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MultiFramedRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/RTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MediaSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/FramedSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MediaSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/Media.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/liveMedia_version.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/RTPInterface.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/Groupsock.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/groupsock_version.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/NetInterface.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/GroupEId.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3ADURTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2VideoRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/VideoRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4ESVideoRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AMRAudioFileSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/FileSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H264VideoFileSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/BasicUDPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/GSMAudioRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H263plusVideoRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H264VideoRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/FramedFilter.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DVVideoRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MultiFramedRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/RTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DVVideoRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DVVideoStreamFramer.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H264VideoStreamDiscreteFramer.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H264VideoStreamFramer.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEGVideoStreamFramer.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/JPEGVideoRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SimpleRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/uLawAudioFilter.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2IndexFromTransportStream.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportStreamTrickModeFilter.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportStreamIndexFile.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ByteStreamMultiFileSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ByteStreamFileSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/FramedFileSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ByteStreamMemoryBufferSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/BasicUDPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SimpleRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2AudioRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4LATMAudioRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4LATMAudioRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4ESVideoRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4GenericRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3ADURTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/QCELPAudioRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AMRAudioRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AMRAudioSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/JPEGVideoRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/JPEGVideoSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2VideoRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/VorbisAudioRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/VP8VideoRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportStreamFromPESSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportStreamMultiplexor.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2Demux.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2DemuxedElementaryStream.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportStreamFromESSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportStreamFramer.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ADTSAudioFileSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H261VideoRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H263plusVideoRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H264VideoRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3FileSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3ADU.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3ADUinterleaving.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3Transcoder.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3ADUTranscoder.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2AudioStreamFramer.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H263plusVideoStreamFramer.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AC3AudioStreamFramer.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AC3AudioRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AC3AudioRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/VorbisAudioRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/VP8VideoRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4GenericRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2VideoStreamDiscreteFramer.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2VideoStreamFramer.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4VideoStreamDiscreteFramer.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4VideoStreamFramer.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DeviceSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AudioInputDevice.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/WAVAudioFileSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/StreamReplicator.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/RTSPServerSupportingHTTPStreaming.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/RTSPServer.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ServerMediaSession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DigestAuthentication.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/TCPStreamSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/RTSPClient.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MediaSession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/RTCP.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SIPClient.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/QuickTimeFileSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/QuickTimeGenericRTPSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AVIFileSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/PassiveServerMediaSubsession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG4VideoFileServerMediaSubsession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/FileServerMediaSubsession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/OnDemandServerMediaSubsession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H264VideoFileServerMediaSubsession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/WAVAudioFileServerMediaSubsession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AMRAudioFileServerMediaSubsession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AMRAudioFileSource.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AMRAudioRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/T140TextRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/TextRTPSink.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MP3AudioFileServerMediaSubsession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2VideoFileServerMediaSubsession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG1or2FileServerDemux.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportFileServerMediaSubsession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/H263plusVideoFileServerMediaSubsession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ADTSAudioFileServerMediaSubsession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DVVideoFileServerMediaSubsession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/AC3AudioFileServerMediaSubsession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MPEG2TransportUDPServerMediaSubsession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MatroskaFileServerDemux.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/MatroskaFile.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/ProxyServerMediaSession.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/DarwinInjector.hh:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/liveMedia_version.hh:
+
+../access/mms/asf.h:
+
+../access/mms/../../demux/asf/libasf_guid.h:
+
+../../include/vlc_codecs.h:

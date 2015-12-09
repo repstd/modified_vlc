@@ -1,0 +1,15 @@
+# This is the pkg-config file for libkate
+prefix=/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Kate
+Description: libkate is a codec library for the Kate bitstream format
+Version: 0.4.1
+URL: http://libkate.googlecode.com/
+Requires: 
+Conflicts: 
+Libs: -L${libdir} -lkate
+Libs.private: 
+Cflags: -I${includedir}

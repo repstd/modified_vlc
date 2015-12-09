@@ -1,0 +1,10 @@
+prefix=/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libbluray
+Description: library supporting Blu-ray playback
+Version: 0.2.3
+Libs: -L${libdir} -lbluray
+Cflags: -I${includedir}

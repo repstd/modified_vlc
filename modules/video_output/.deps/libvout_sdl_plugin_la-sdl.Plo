@@ -1,0 +1,248 @@
+libvout_sdl_plugin_la-sdl.lo .libs/libvout_sdl_plugin_la-sdl.o: sdl.c \
+  ../../config.h ../../include/vlc_fixups.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/time.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/_mingw.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stddef.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdio.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stdarg.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/types.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/dirent.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/io.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/errno.h \
+  ../../include/vlc_common.h ../../include/vlc_config.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdlib.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/string.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/inttypes.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdint.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stdbool.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/malloc.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/stat.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windows.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windef.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnt.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winerror.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/basetsd.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/pshpack4.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/poppack.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wincon.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winbase.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wingdi.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winuser.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnls.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winver.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnetwk.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winreg.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winsvc.h \
+  ../../include/vlc_mtime.h ../../include/vlc_threads.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/process.h \
+  ../../include/vlc_arrays.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/tchar.h \
+  ../../include/vlc_messages.h ../../include/vlc_objects.h \
+  ../../include/vlc_variables.h ../../include/vlc_main.h \
+  ../../include/vlc_configuration.h ../../include/vlc_plugin.h \
+  ../../include/vlc_vout_display.h ../../include/vlc_es.h \
+  ../../include/vlc_fourcc.h ../../include/vlc_picture.h \
+  ../../include/vlc_picture_pool.h ../../include/vlc_subpicture.h \
+  ../../include/vlc_text_style.h ../../include/vlc_keys.h \
+  ../../include/vlc_mouse.h ../../include/vlc_vout_window.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/assert.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_main.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_stdinc.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_config.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_platform.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/strings.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/ctype.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/begin_code.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/close_code.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_audio.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_error.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_endian.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_mutex.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_thread.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_rwops.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_cdrom.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_cpuinfo.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_events.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_active.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_keyboard.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_keysym.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_mouse.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_video.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_joystick.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_quit.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_loadso.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_timer.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_version.h
+
+../../config.h:
+
+../../include/vlc_fixups.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/time.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/_mingw.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stddef.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdio.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stdarg.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/types.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/dirent.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/io.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/errno.h:
+
+../../include/vlc_common.h:
+
+../../include/vlc_config.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdlib.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/string.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/inttypes.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdint.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stdbool.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/malloc.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/stat.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windows.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windef.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnt.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winerror.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/basetsd.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/pshpack4.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/poppack.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wincon.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winbase.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wingdi.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winuser.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnls.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winver.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnetwk.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winreg.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winsvc.h:
+
+../../include/vlc_mtime.h:
+
+../../include/vlc_threads.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/process.h:
+
+../../include/vlc_arrays.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/tchar.h:
+
+../../include/vlc_messages.h:
+
+../../include/vlc_objects.h:
+
+../../include/vlc_variables.h:
+
+../../include/vlc_main.h:
+
+../../include/vlc_configuration.h:
+
+../../include/vlc_plugin.h:
+
+../../include/vlc_vout_display.h:
+
+../../include/vlc_es.h:
+
+../../include/vlc_fourcc.h:
+
+../../include/vlc_picture.h:
+
+../../include/vlc_picture_pool.h:
+
+../../include/vlc_subpicture.h:
+
+../../include/vlc_text_style.h:
+
+../../include/vlc_keys.h:
+
+../../include/vlc_mouse.h:
+
+../../include/vlc_vout_window.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/assert.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_main.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_stdinc.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_config.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_platform.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/strings.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/ctype.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/begin_code.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/close_code.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_audio.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_error.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_endian.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_mutex.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_thread.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_rwops.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_cdrom.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_cpuinfo.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_events.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_active.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_keyboard.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_keysym.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_mouse.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_video.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_joystick.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_quit.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_loadso.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_timer.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/SDL/SDL_version.h:

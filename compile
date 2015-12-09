@@ -1,0 +1,8 @@
+#! /bin/bash
+rm -f .error$$
+ERROR=0
+export PATH="/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games" LANG=C
+(make V=1 $@ 2>&1 || touch .error$$)| ./extras/buildsystem/make.pl
+test -f .error$$ && ERROR=1
+rm -f .error$$
+exit $ERROR

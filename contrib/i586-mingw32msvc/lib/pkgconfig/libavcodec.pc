@@ -1,0 +1,14 @@
+prefix=/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavcodec
+Description: Libav codec library
+Version: 54.30.0
+Requires: libavutil = 51.41.0
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} -lavcodec -lvpx -lopenjpeg -lmp3lame -lgsm -lm -lz -lpsapi -lshell32
+Libs.private: 
+Cflags: -I${includedir}

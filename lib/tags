@@ -1,0 +1,1418 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/ylwang\/msvc\/vlc-2.0.6\/autotools\/missing aclocal-1.14$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ALIASES	Makefile	/^ALIASES =  cvlc rvlc svlc qvlc$/;"	m
+ALSA_CFLAGS	Makefile	/^ALSA_CFLAGS = $/;"	m
+ALSA_LIBS	Makefile	/^ALSA_LIBS = $/;"	m
+AMTAR	Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AM_CFLAGS	Makefile	/^AM_CFLAGS = $(CFLAGS_libvlc)$/;"	m
+AM_CPPFLAGS	Makefile	/^AM_CPPFLAGS = -DMODULE_STRING=\\"libvlc\\"$/;"	m
+AM_DEFAULT_VERBOSITY	Makefile	/^AM_DEFAULT_VERBOSITY = 0$/;"	m
+AM_V_CC	Makefile	/^AM_V_CC = $(am__v_CC_$(V))$/;"	m
+AM_V_CCLD	Makefile	/^AM_V_CCLD = $(am__v_CCLD_$(V))$/;"	m
+AM_V_GEN	Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m
+AM_V_P	Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m
+AM_V_at	Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m
+AM_V_lt	Makefile	/^AM_V_lt = $(am__v_lt_$(V))$/;"	m
+AR	Makefile	/^AR = i586-mingw32msvc-ar$/;"	m
+ARCH	Makefile	/^ARCH = i586$/;"	m
+AS	Makefile	/^AS = i586-mingw32msvc-as$/;"	m
+ASM	Makefile	/^ASM = $/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/home\/ylwang\/msvc\/vlc-2.0.6\/autotools\/missing autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/home\/ylwang\/msvc\/vlc-2.0.6\/autotools\/missing autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/home\/ylwang\/msvc\/vlc-2.0.6\/autotools\/missing automake-1.14$/;"	m
+AVCODEC_CFLAGS	Makefile	/^AVCODEC_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+AVCODEC_LIBS	Makefile	/^AVCODEC_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lavcodec -lvpx -lopenjpeg -lmp3lame -lgsm -lz -lpsapi -lshell32 -lavutil -lm  $/;"	m
+AVFORMAT_CFLAGS	Makefile	/^AVFORMAT_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+AVFORMAT_LIBS	Makefile	/^AVFORMAT_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lavformat -lavcodec -lvpx -lopenjpeg -lmp3lame -lgsm -lz -lpsapi -lshell32 -lavutil -lm  $/;"	m
+AWK	Makefile	/^AWK = mawk$/;"	m
+BLURAY_CFLAGS	Makefile	/^BLURAY_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+BLURAY_LIBS	Makefile	/^BLURAY_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lbluray  $/;"	m
+BONJOUR_CFLAGS	Makefile	/^BONJOUR_CFLAGS = $/;"	m
+BONJOUR_LIBS	Makefile	/^BONJOUR_LIBS = $/;"	m
+BUILT_SOURCES	Makefile	/^BUILT_SOURCES = $(nodist_pkginclude_HEADERS)$/;"	m
+CACA_CFLAGS	Makefile	/^CACA_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+CACA_LIBS	Makefile	/^CACA_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lcaca  $/;"	m
+CC	Makefile	/^CC = i586-mingw32msvc-gcc -std=gnu99$/;"	m
+CCAS	Makefile	/^CCAS = i586-mingw32msvc-gcc -std=gnu99$/;"	m
+CCASDEPMODE	Makefile	/^CCASDEPMODE = depmode=gcc3$/;"	m
+CCASFLAGS	Makefile	/^CCASFLAGS = -g -O2$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2 -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include -mms-bitfields -Wall -Wextra -Wsign-compare -Wundef -Wpointer-arith -Wbad-function-cast -Wwrite-strings -Wmissing-prototypes -Wvolatile-register-var -Werror-implicit-function-declaration -pipe  -ffast-math -funroll-loops -fomit-frame-pointer -mtune=pentium2$/;"	m
+CFLAGS_access_avio	Makefile	/^CFLAGS_access_avio =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_access_dv	Makefile	/^CFLAGS_access_dv = $/;"	m
+CFLAGS_access_gnomevfs	Makefile	/^CFLAGS_access_gnomevfs = $/;"	m
+CFLAGS_access_http	Makefile	/^CFLAGS_access_http = $/;"	m
+CFLAGS_access_jack	Makefile	/^CFLAGS_access_jack = $/;"	m
+CFLAGS_access_mtp	Makefile	/^CFLAGS_access_mtp = $/;"	m
+CFLAGS_access_output_shout	Makefile	/^CFLAGS_access_output_shout =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_avcodec	Makefile	/^CFLAGS_avcodec =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+CFLAGS_avformat	Makefile	/^CFLAGS_avformat =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_bonjour	Makefile	/^CFLAGS_bonjour = $/;"	m
+CFLAGS_caca	Makefile	/^CFLAGS_caca =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_cdda	Makefile	/^CFLAGS_cdda =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+CFLAGS_dbus	Makefile	/^CFLAGS_dbus = $/;"	m
+CFLAGS_dc1394	Makefile	/^CFLAGS_dc1394 = $/;"	m
+CFLAGS_deinterlace	Makefile	/^CFLAGS_deinterlace = $/;"	m
+CFLAGS_dirac	Makefile	/^CFLAGS_dirac = $/;"	m
+CFLAGS_dtstofloat32	Makefile	/^CFLAGS_dtstofloat32 =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/libdca   $/;"	m
+CFLAGS_dvdnav	Makefile	/^CFLAGS_dvdnav =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+CFLAGS_dvdread	Makefile	/^CFLAGS_dvdread =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_flac	Makefile	/^CFLAGS_flac =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/FLAC -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_fluidsynth	Makefile	/^CFLAGS_fluidsynth =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_globalhotkeys	Makefile	/^CFLAGS_globalhotkeys = $/;"	m
+CFLAGS_goom	Makefile	/^CFLAGS_goom =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_hildon	Makefile	/^CFLAGS_hildon = $/;"	m
+CFLAGS_i420_yuy2_altivec	Makefile	/^CFLAGS_i420_yuy2_altivec = $/;"	m
+CFLAGS_inhibit	Makefile	/^CFLAGS_inhibit = $/;"	m
+CFLAGS_jack	Makefile	/^CFLAGS_jack = $/;"	m
+CFLAGS_kate	Makefile	/^CFLAGS_kate =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_libass	Makefile	/^CFLAGS_libass =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/fribidi -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/freetype2  $/;"	m
+CFLAGS_libbluray	Makefile	/^CFLAGS_libbluray =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_libmpeg2	Makefile	/^CFLAGS_libmpeg2 =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/mpeg2dec   $/;"	m
+CFLAGS_libvlccore	Makefile	/^CFLAGS_libvlccore = $/;"	m
+CFLAGS_linsys_sdi	Makefile	/^CFLAGS_linsys_sdi = $/;"	m
+CFLAGS_lua	Makefile	/^CFLAGS_lua =  -I\/usr\/local\/include  $/;"	m
+CFLAGS_memcpyaltivec	Makefile	/^CFLAGS_memcpyaltivec = $/;"	m
+CFLAGS_motion	Makefile	/^CFLAGS_motion = $/;"	m
+CFLAGS_mtp	Makefile	/^CFLAGS_mtp = $/;"	m
+CFLAGS_mux_ogg	Makefile	/^CFLAGS_mux_ogg =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_ncurses	Makefile	/^CFLAGS_ncurses = $/;"	m
+CFLAGS_notify	Makefile	/^CFLAGS_notify = $/;"	m
+CFLAGS_ogg	Makefile	/^CFLAGS_ogg =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_opencv_example	Makefile	/^CFLAGS_opencv_example = $/;"	m
+CFLAGS_opencv_wrapper	Makefile	/^CFLAGS_opencv_wrapper = $/;"	m
+CFLAGS_opus	Makefile	/^CFLAGS_opus =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/opus   $/;"	m
+CFLAGS_panoramix	Makefile	/^CFLAGS_panoramix = $/;"	m
+CFLAGS_portaudio	Makefile	/^CFLAGS_portaudio =  -mthreads -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_postproc	Makefile	/^CFLAGS_postproc =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_samplerate	Makefile	/^CFLAGS_samplerate =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_schroedinger	Makefile	/^CFLAGS_schroedinger =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/schroedinger-1.0 -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/orc-0.4   $/;"	m
+CFLAGS_sdl_image	Makefile	/^CFLAGS_sdl_image =  -D_GNU_SOURCE=1 -Dmain=SDL_main -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/SDL  $/;"	m
+CFLAGS_sid	Makefile	/^CFLAGS_sid =  -DHAVE_UNIX -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+CFLAGS_speex	Makefile	/^CFLAGS_speex =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_sqlite	Makefile	/^CFLAGS_sqlite = $/;"	m
+CFLAGS_stream_out_switcher	Makefile	/^CFLAGS_stream_out_switcher = $/;"	m
+CFLAGS_svg	Makefile	/^CFLAGS_svg = $/;"	m
+CFLAGS_swscale	Makefile	/^CFLAGS_swscale =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+CFLAGS_telepathy	Makefile	/^CFLAGS_telepathy = $/;"	m
+CFLAGS_theora	Makefile	/^CFLAGS_theora =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_twolame	Makefile	/^CFLAGS_twolame =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_udev	Makefile	/^CFLAGS_udev = $/;"	m
+CFLAGS_upnp	Makefile	/^CFLAGS_upnp =  -DPTW32_STATIC_LIB -DUPNP_STATIC_LIB -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/upnp   $/;"	m
+CFLAGS_vcdx	Makefile	/^CFLAGS_vcdx = $/;"	m
+CFLAGS_vorbis	Makefile	/^CFLAGS_vorbis =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   $/;"	m
+CFLAGS_vout_ios	Makefile	/^CFLAGS_vout_ios = $/;"	m
+CFLAGS_vout_sdl	Makefile	/^CFLAGS_vout_sdl =  -D_GNU_SOURCE=1 -Dmain=SDL_main -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/SDL  $/;"	m
+CFLAGS_x264	Makefile	/^CFLAGS_x264 =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+CFLAGS_xcb_window	Makefile	/^CFLAGS_xcb_window = $/;"	m
+CFLAGS_xml	Makefile	/^CFLAGS_xml =  -DLIBXML_STATIC -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/libxml2   $/;"	m
+CFLAGS_xosd	Makefile	/^CFLAGS_xosd = $/;"	m
+CFLAGS_zvbi	Makefile	/^CFLAGS_zvbi =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+CLEANFILES	Makefile	/^CLEANFILES = $(BUILT_SOURCES) $(pkgconfig_DATA)$/;"	m
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CONTRIB_DIR	Makefile	/^CONTRIB_DIR = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc$/;"	m
+COPYRIGHT_MESSAGE	Makefile	/^COPYRIGHT_MESSAGE = Copyright © 1996-2013 VLC authors and VideoLAN$/;"	m
+COPYRIGHT_YEARS	Makefile	/^COPYRIGHT_YEARS = 1996-2013$/;"	m
+CPP	Makefile	/^CPP = i586-mingw32msvc-gcc -std=gnu99 -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = -I$(top_srcdir)\/include -I$(top_builddir)\/include  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include -D__USE_MINGW_ANSI_STDIO=1$/;"	m
+CPPFLAGS_a52tofloat32	Makefile	/^CPPFLAGS_a52tofloat32 =  $/;"	m
+CPPFLAGS_access_dv	Makefile	/^CPPFLAGS_access_dv = $/;"	m
+CPPFLAGS_access_gnomevfs	Makefile	/^CPPFLAGS_access_gnomevfs = $/;"	m
+CPPFLAGS_access_jack	Makefile	/^CPPFLAGS_access_jack = $/;"	m
+CPPFLAGS_access_mtp	Makefile	/^CPPFLAGS_access_mtp = $/;"	m
+CPPFLAGS_access_output_shout	Makefile	/^CPPFLAGS_access_output_shout = $/;"	m
+CPPFLAGS_bonjour	Makefile	/^CPPFLAGS_bonjour = $/;"	m
+CPPFLAGS_caca	Makefile	/^CPPFLAGS_caca = $/;"	m
+CPPFLAGS_dc1394	Makefile	/^CPPFLAGS_dc1394 = $/;"	m
+CPPFLAGS_decklink	Makefile	/^CPPFLAGS_decklink = $/;"	m
+CPPFLAGS_dirac	Makefile	/^CPPFLAGS_dirac = $/;"	m
+CPPFLAGS_directfb	Makefile	/^CPPFLAGS_directfb = $/;"	m
+CPPFLAGS_dmo	Makefile	/^CPPFLAGS_dmo = $/;"	m
+CPPFLAGS_dtstofloat32	Makefile	/^CPPFLAGS_dtstofloat32 = $/;"	m
+CPPFLAGS_dvdread	Makefile	/^CPPFLAGS_dvdread = $/;"	m
+CPPFLAGS_faad	Makefile	/^CPPFLAGS_faad = $/;"	m
+CPPFLAGS_flac	Makefile	/^CPPFLAGS_flac = $/;"	m
+CPPFLAGS_fluidsynth	Makefile	/^CPPFLAGS_fluidsynth = $/;"	m
+CPPFLAGS_freetype	Makefile	/^CPPFLAGS_freetype =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/freetype2 -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/fribidi   -DHAVE_FRIBIDI$/;"	m
+CPPFLAGS_goom	Makefile	/^CPPFLAGS_goom = $/;"	m
+CPPFLAGS_jack	Makefile	/^CPPFLAGS_jack = $/;"	m
+CPPFLAGS_kate	Makefile	/^CPPFLAGS_kate = $/;"	m
+CPPFLAGS_libass	Makefile	/^CPPFLAGS_libass =  -DHAVE_FONTCONFIG$/;"	m
+CPPFLAGS_libbluray	Makefile	/^CPPFLAGS_libbluray = $/;"	m
+CPPFLAGS_libmpeg2	Makefile	/^CPPFLAGS_libmpeg2 = $/;"	m
+CPPFLAGS_mpgatofixed32	Makefile	/^CPPFLAGS_mpgatofixed32 = $/;"	m
+CPPFLAGS_mtp	Makefile	/^CPPFLAGS_mtp = $/;"	m
+CPPFLAGS_mux_ogg	Makefile	/^CPPFLAGS_mux_ogg = $/;"	m
+CPPFLAGS_notify	Makefile	/^CPPFLAGS_notify = $/;"	m
+CPPFLAGS_ogg	Makefile	/^CPPFLAGS_ogg = $/;"	m
+CPPFLAGS_opencv_example	Makefile	/^CPPFLAGS_opencv_example = $/;"	m
+CPPFLAGS_opencv_wrapper	Makefile	/^CPPFLAGS_opencv_wrapper = $/;"	m
+CPPFLAGS_opus	Makefile	/^CPPFLAGS_opus = $/;"	m
+CPPFLAGS_portaudio	Makefile	/^CPPFLAGS_portaudio = $/;"	m
+CPPFLAGS_qt4	Makefile	/^CPPFLAGS_qt4 = $/;"	m
+CPPFLAGS_quicktime	Makefile	/^CPPFLAGS_quicktime = $/;"	m
+CPPFLAGS_realvideo	Makefile	/^CPPFLAGS_realvideo = $/;"	m
+CPPFLAGS_samplerate	Makefile	/^CPPFLAGS_samplerate = $/;"	m
+CPPFLAGS_schroedinger	Makefile	/^CPPFLAGS_schroedinger = $/;"	m
+CPPFLAGS_skins2	Makefile	/^CPPFLAGS_skins2 =  -I${top_srcdir}\/modules\/access\/zip\/unzip -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/freetype2 -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include   -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/fribidi   -DHAVE_FRIBIDI -U_OFF_T_ -U_off_t -Imodules\/gui\/skins2 -DWIN32_SKINS$/;"	m
+CPPFLAGS_speex	Makefile	/^CPPFLAGS_speex = $/;"	m
+CPPFLAGS_sqlite	Makefile	/^CPPFLAGS_sqlite = $/;"	m
+CPPFLAGS_svg	Makefile	/^CPPFLAGS_svg = $/;"	m
+CPPFLAGS_theora	Makefile	/^CPPFLAGS_theora = $/;"	m
+CPPFLAGS_twolame	Makefile	/^CPPFLAGS_twolame =   -DLIBTWOLAME_STATIC$/;"	m
+CPPFLAGS_udev	Makefile	/^CPPFLAGS_udev = $/;"	m
+CPPFLAGS_upnp	Makefile	/^CPPFLAGS_upnp = $/;"	m
+CPPFLAGS_vorbis	Makefile	/^CPPFLAGS_vorbis = $/;"	m
+CPPFLAGS_x264	Makefile	/^CPPFLAGS_x264 = $/;"	m
+CPPFLAGS_xml	Makefile	/^CPPFLAGS_xml = $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CXX	Makefile	/^CXX = i586-mingw32msvc-g++$/;"	m
+CXXCPP	Makefile	/^CXXCPP = i586-mingw32msvc-g++ -E$/;"	m
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2 -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include -mms-bitfields -Wall -Wextra -Wsign-compare -Wundef -Wpointer-arith -Wvolatile-register-var  -ffast-math -funroll-loops -fomit-frame-pointer$/;"	m
+CXXFLAGS_dshow	Makefile	/^CXXFLAGS_dshow =  $/;"	m
+CXXFLAGS_live555	Makefile	/^CXXFLAGS_live555 =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/liveMedia -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/groupsock -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/BasicUsageEnvironment -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/UsageEnvironment$/;"	m
+CXXFLAGS_mkv	Makefile	/^CXXFLAGS_mkv =  $/;"	m
+CXXFLAGS_mod	Makefile	/^CXXFLAGS_mod =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/libmodplug  $/;"	m
+CXXFLAGS_projectm	Makefile	/^CXXFLAGS_projectm =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+CXXFLAGS_qt4	Makefile	/^CXXFLAGS_qt4 =  -DQT_NODLL -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/qt4 -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/qt4\/QtCore -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/qt4\/QtGui  $/;"	m
+CXXFLAGS_skins2	Makefile	/^CXXFLAGS_skins2 =  -O2 -fno-rtti$/;"	m
+CXXFLAGS_taglib	Makefile	/^CXXFLAGS_taglib = $/;"	m
+CXXFLAGS_upnp	Makefile	/^CXXFLAGS_upnp =  -DPTW32_STATIC_LIB -DUPNP_STATIC_LIB -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/upnp  $/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+DATA	Makefile	/^DATA = $(pkgconfig_DATA)$/;"	m
+DBUS_CFLAGS	Makefile	/^DBUS_CFLAGS = $/;"	m
+DBUS_LIBS	Makefile	/^DBUS_LIBS = $/;"	m
+DC1394_CFLAGS	Makefile	/^DC1394_CFLAGS = $/;"	m
+DC1394_LIBS	Makefile	/^DC1394_LIBS = $/;"	m
+DCA_CFLAGS	Makefile	/^DCA_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/libdca  $/;"	m
+DCA_LIBS	Makefile	/^DCA_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -ldca  $/;"	m
+DEF	event.c	247;"	d	file:
+DEF	event.c	312;"	d	file:
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEFS_BIGENDIAN	Makefile	/^DEFS_BIGENDIAN = $/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DESKTOP_FILE_VALIDATE	Makefile	/^DESKTOP_FILE_VALIDATE = desktop-file-validate$/;"	m
+DIRAC_CFLAGS	Makefile	/^DIRAC_CFLAGS = $/;"	m
+DIRAC_LIBS	Makefile	/^DIRAC_LIBS = $/;"	m
+DIRECTFB_CFLAGS	Makefile	/^DIRECTFB_CFLAGS = $/;"	m
+DIRECTFB_CONFIG	Makefile	/^DIRECTFB_CONFIG = $/;"	m
+DIRECTFB_LIBS	Makefile	/^DIRECTFB_LIBS = $/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.in $(srcdir)\/Makefile.am \\$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(libvlc_la_SOURCES)$/;"	m
+DLLTOOL	Makefile	/^DLLTOOL = i586-mingw32msvc-dlltool$/;"	m
+DSYMUTIL	Makefile	/^DSYMUTIL = $/;"	m
+DUMPBIN	Makefile	/^DUMPBIN = $/;"	m
+DVBPSI_CFLAGS	Makefile	/^DVBPSI_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+DVBPSI_LIBS	Makefile	/^DVBPSI_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -ldvbpsi  $/;"	m
+DVDNAV_CFLAGS	Makefile	/^DVDNAV_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+DVDNAV_LIBS	Makefile	/^DVDNAV_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -ldvdnav -ldvdread -ldvdcss  $/;"	m
+DVDREAD_CFLAGS	Makefile	/^DVDREAD_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+DVDREAD_LIBS	Makefile	/^DVDREAD_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -ldvdread -ldvdcss  $/;"	m
+DV_CFLAGS	Makefile	/^DV_CFLAGS = $/;"	m
+DV_LIBS	Makefile	/^DV_LIBS = $/;"	m
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGL_CFLAGS	Makefile	/^EGL_CFLAGS = $/;"	m
+EGL_LIBS	Makefile	/^EGL_LIBS = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = .exe$/;"	m
+EXTRA_DIST	Makefile	/^EXTRA_DIST = libvlc.pc.in libvlc.sym ..\/include\/vlc\/libvlc_version.h.in$/;"	m
+EventDidHappen	media_list.c	/^    EventDidHappen$/;"	e	enum:EventPlaceInTime	file:
+EventPlaceInTime	media_list.c	/^typedef enum EventPlaceInTime {$/;"	g	file:
+EventPlaceInTime	media_list.c	/^} EventPlaceInTime;$/;"	t	typeref:enum:EventPlaceInTime	file:
+EventWillHappen	media_list.c	/^    EventWillHappen,$/;"	e	enum:EventPlaceInTime	file:
+FGREP	Makefile	/^FGREP = \/bin\/grep -F$/;"	m
+FILE_LIBVLCCORE_DLL	Makefile	/^FILE_LIBVLCCORE_DLL = $/;"	m
+FILE_LIBVLC_DLL	Makefile	/^FILE_LIBVLC_DLL = $/;"	m
+FLAC_CFLAGS	Makefile	/^FLAC_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/FLAC -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+FLAC_LIBS	Makefile	/^FLAC_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lFLAC -lm -logg  $/;"	m
+FLUIDSYNTH_CFLAGS	Makefile	/^FLUIDSYNTH_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+FLUIDSYNTH_LIBS	Makefile	/^FLUIDSYNTH_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lfluidsynth -ldsound -lwinmm  $/;"	m
+FREETYPE_CFLAGS	Makefile	/^FREETYPE_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/freetype2 -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+FREETYPE_LIBS	Makefile	/^FREETYPE_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lfreetype  $/;"	m
+FRIBIDI_CFLAGS	Makefile	/^FRIBIDI_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/fribidi  $/;"	m
+FRIBIDI_LIBS	Makefile	/^FRIBIDI_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lfribidi  $/;"	m
+GCRYPT_CFLAGS	Makefile	/^GCRYPT_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include$/;"	m
+GCRYPT_LIBS	Makefile	/^GCRYPT_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lgcrypt -lgpg-error$/;"	m
+GETTEXT_MACRO_VERSION	Makefile	/^GETTEXT_MACRO_VERSION = 0.18$/;"	m
+GL_CFLAGS	Makefile	/^GL_CFLAGS = $/;"	m
+GL_LIBS	Makefile	/^GL_LIBS = -lGL$/;"	m
+GMSGFMT	Makefile	/^GMSGFMT = \/usr\/bin\/msgfmt$/;"	m
+GMSGFMT_015	Makefile	/^GMSGFMT_015 = \/usr\/bin\/msgfmt$/;"	m
+GNOMEVFS_CFLAGS	Makefile	/^GNOMEVFS_CFLAGS = $/;"	m
+GNOMEVFS_LIBS	Makefile	/^GNOMEVFS_LIBS = $/;"	m
+GNUGETOPT_LIBS	Makefile	/^GNUGETOPT_LIBS = $/;"	m
+GNUTLS_CFLAGS	Makefile	/^GNUTLS_CFLAGS = $/;"	m
+GNUTLS_LIBS	Makefile	/^GNUTLS_LIBS = $/;"	m
+GOOM_CFLAGS	Makefile	/^GOOM_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+GOOM_LIBS	Makefile	/^GOOM_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lgoom2  $/;"	m
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+GetAOut	audio.c	/^static audio_output_t *GetAOut( libvlc_media_player_t *mp )$/;"	f	file:
+GetVout	video.c	/^static vout_thread_t *GetVout (libvlc_media_player_t *mp, size_t num)$/;"	f	file:
+GetVouts	video.c	/^static vout_thread_t **GetVouts( libvlc_media_player_t *p_mi, size_t *n )$/;"	f	file:
+HEADERS	Makefile	/^HEADERS = $(nodist_pkginclude_HEADERS) $(pkginclude_HEADERS)$/;"	m
+HILDON_CFLAGS	Makefile	/^HILDON_CFLAGS = $/;"	m
+HILDON_FM_CFLAGS	Makefile	/^HILDON_FM_CFLAGS = $/;"	m
+HILDON_FM_LIBS	Makefile	/^HILDON_FM_LIBS = $/;"	m
+HILDON_LIBS	Makefile	/^HILDON_LIBS = $/;"	m
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INTLLIBS	Makefile	/^INTLLIBS = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/libintl.a \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/libiconv.a$/;"	m
+INTL_MACOSX_LIBS	Makefile	/^INTL_MACOSX_LIBS = $/;"	m
+JACK_CFLAGS	Makefile	/^JACK_CFLAGS = $/;"	m
+JACK_LIBS	Makefile	/^JACK_LIBS = $/;"	m
+KAI_LIBS	Makefile	/^KAI_LIBS = $/;"	m
+KATE_CFLAGS	Makefile	/^KATE_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+KATE_LIBS	Makefile	/^KATE_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lkate  $/;"	m
+KDE4_CONFIG	Makefile	/^KDE4_CONFIG = kde4-config$/;"	m
+KVA_LIBS	Makefile	/^KVA_LIBS = $/;"	m
+LD	Makefile	/^LD = \/usr\/i586-mingw32msvc\/bin\/ld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS =  -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib$/;"	m
+LDFLAGS_android_surface	Makefile	/^LDFLAGS_android_surface = $/;"	m
+LDFLAGS_plugin	Makefile	/^LDFLAGS_plugin = $/;"	m
+LDFLAGS_vlc	Makefile	/^LDFLAGS_vlc = -mwindows $/;"	m
+LDFLAGS_x264	Makefile	/^LDFLAGS_x264 = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lx264   $/;"	m
+LIBASS_CFLAGS	Makefile	/^LIBASS_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/fribidi -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/freetype2  $/;"	m
+LIBASS_LIBS	Makefile	/^LIBASS_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lass -lm -lfontconfig -lxml2 -liconv -lfribidi -lfreetype  $/;"	m
+LIBCDDB_CFLAGS	Makefile	/^LIBCDDB_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+LIBCDDB_LIBS	Makefile	/^LIBCDDB_LIBS = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/libregex.a -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lcddb -lregex -lws2_32  $/;"	m
+LIBCDIO_CFLAGS	Makefile	/^LIBCDIO_CFLAGS = $/;"	m
+LIBCDIO_LIBS	Makefile	/^LIBCDIO_LIBS = $/;"	m
+LIBDL	Makefile	/^LIBDL = $/;"	m
+LIBEXT	Makefile	/^LIBEXT = .dll$/;"	m
+LIBICONV	Makefile	/^LIBICONV = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/libiconv.a$/;"	m
+LIBINTL	Makefile	/^LIBINTL = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/libintl.a \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/libiconv.a$/;"	m
+LIBM	Makefile	/^LIBM = -lm$/;"	m
+LIBMODPLUG_CFLAGS	Makefile	/^LIBMODPLUG_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/libmodplug  $/;"	m
+LIBMODPLUG_LIBS	Makefile	/^LIBMODPLUG_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lmodplug -lstdc++ -lm  $/;"	m
+LIBMPEG2_CFLAGS	Makefile	/^LIBMPEG2_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/mpeg2dec  $/;"	m
+LIBMPEG2_LIBS	Makefile	/^LIBMPEG2_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lmpeg2  $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS =  ${LIBOBJDIR}dirfd$U.o ${LIBOBJDIR}fdopendir$U.o ${LIBOBJDIR}flockfile$U.o ${LIBOBJDIR}fsync$U.o ${LIBOBJDIR}getdelim$U.o ${LIBOBJDIR}gmtime_r$U.o ${LIBOBJDIR}inet_pton$U.o ${LIBOBJDIR}localtime_r$U.o ${LIBOBJDIR}nrand48$U.o ${LIBOBJDIR}setenv$U.o ${LIBOBJDIR}strcasestr$U.o ${LIBOBJDIR}strlcpy$U.o ${LIBOBJDIR}strndup$U.o ${LIBOBJDIR}strnlen$U.o ${LIBOBJDIR}strsep$U.o ${LIBOBJDIR}strtok_r$U.o ${LIBOBJDIR}tdestroy$U.o ${LIBOBJDIR}asprintf$U.o ${LIBOBJDIR}vasprintf$U.o$/;"	m
+LIBPROXY_CFLAGS	Makefile	/^LIBPROXY_CFLAGS = $/;"	m
+LIBPROXY_LIBS	Makefile	/^LIBPROXY_LIBS = $/;"	m
+LIBS	Makefile	/^LIBS = -lmingw32 $/;"	m
+LIBS_a52tofloat32	Makefile	/^LIBS_a52tofloat32 =  -la52 -lm $/;"	m
+LIBS_aa	Makefile	/^LIBS_aa = $/;"	m
+LIBS_access_avio	Makefile	/^LIBS_access_avio = -Wl,-Bsymbolic -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lavformat -lavcodec -lvpx -lopenjpeg -lmp3lame -lgsm -lz -lpsapi -lshell32 -lavutil -lm    -lm $/;"	m
+LIBS_access_dv	Makefile	/^LIBS_access_dv = $/;"	m
+LIBS_access_eyetv	Makefile	/^LIBS_access_eyetv = $/;"	m
+LIBS_access_ftp	Makefile	/^LIBS_access_ftp = -lws2_32 $/;"	m
+LIBS_access_gnomevfs	Makefile	/^LIBS_access_gnomevfs = $/;"	m
+LIBS_access_http	Makefile	/^LIBS_access_http = -lz -lws2_32 $/;"	m
+LIBS_access_imem	Makefile	/^LIBS_access_imem = -lm $/;"	m
+LIBS_access_jack	Makefile	/^LIBS_access_jack = $/;"	m
+LIBS_access_mms	Makefile	/^LIBS_access_mms = -lws2_32 $/;"	m
+LIBS_access_mtp	Makefile	/^LIBS_access_mtp = $/;"	m
+LIBS_access_output_shout	Makefile	/^LIBS_access_output_shout = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lshout -lvorbis -ltheora -lspeex -lm -logg    -lws2_32 $/;"	m
+LIBS_access_output_udp	Makefile	/^LIBS_access_output_udp = -lws2_32 $/;"	m
+LIBS_access_realrtsp	Makefile	/^LIBS_access_realrtsp = -lws2_32 $/;"	m
+LIBS_access_rtmp	Makefile	/^LIBS_access_rtmp = -lws2_32 $/;"	m
+LIBS_access_sftp	Makefile	/^LIBS_access_sftp = $/;"	m
+LIBS_access_smb	Makefile	/^LIBS_access_smb = $/;"	m
+LIBS_access_tcp	Makefile	/^LIBS_access_tcp = -lws2_32 $/;"	m
+LIBS_access_udp	Makefile	/^LIBS_access_udp = -lws2_32 $/;"	m
+LIBS_adjust	Makefile	/^LIBS_adjust = -lm $/;"	m
+LIBS_audiobargraph_a	Makefile	/^LIBS_audiobargraph_a = -lm -lws2_32 $/;"	m
+LIBS_audioqueue	Makefile	/^LIBS_audioqueue = $/;"	m
+LIBS_audioscrobbler	Makefile	/^LIBS_audioscrobbler = -lws2_32 $/;"	m
+LIBS_auhal	Makefile	/^LIBS_auhal = $/;"	m
+LIBS_avcodec	Makefile	/^LIBS_avcodec = -Wl,-Bsymbolic -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lavcodec -lvpx -lopenjpeg -lmp3lame -lgsm -lz -lpsapi -lshell32 -lavutil -lm   -lm $/;"	m
+LIBS_avformat	Makefile	/^LIBS_avformat = -Wl,-Bsymbolic -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lavformat -lavcodec -lvpx -lopenjpeg -lmp3lame -lgsm -lz -lpsapi -lshell32 -lavutil -lm    -lm $/;"	m
+LIBS_ball	Makefile	/^LIBS_ball = -lm $/;"	m
+LIBS_bonjour	Makefile	/^LIBS_bonjour = $/;"	m
+LIBS_caca	Makefile	/^LIBS_caca = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lcaca    $/;"	m
+LIBS_cdda	Makefile	/^LIBS_cdda = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/libregex.a -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lcddb -lregex -lws2_32   -lwinmm $/;"	m
+LIBS_chorus_flanger	Makefile	/^LIBS_chorus_flanger = -lm $/;"	m
+LIBS_colorthres	Makefile	/^LIBS_colorthres = -lm $/;"	m
+LIBS_compressor	Makefile	/^LIBS_compressor = -lm $/;"	m
+LIBS_crystalhd	Makefile	/^LIBS_crystalhd = $/;"	m
+LIBS_dbus	Makefile	/^LIBS_dbus = -lm $/;"	m
+LIBS_dc1394	Makefile	/^LIBS_dc1394 = $/;"	m
+LIBS_dirac	Makefile	/^LIBS_dirac = $/;"	m
+LIBS_direct2d	Makefile	/^LIBS_direct2d = -lgdi32 -lole32 -luuid $/;"	m
+LIBS_direct3d	Makefile	/^LIBS_direct3d = -lole32 -luuid -lgdi32 $/;"	m
+LIBS_directfb	Makefile	/^LIBS_directfb = $/;"	m
+LIBS_directx	Makefile	/^LIBS_directx = -lole32 -luuid -luser32 -lgdi32 $/;"	m
+LIBS_dmo	Makefile	/^LIBS_dmo = -lole32 -luuid -lm $/;"	m
+LIBS_dshow	Makefile	/^LIBS_dshow = -lole32 -loleaut32 -luuid -lstrmiids -lksuser $/;"	m
+LIBS_dtstofloat32	Makefile	/^LIBS_dtstofloat32 = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -ldca    -lm $/;"	m
+LIBS_dvdnav	Makefile	/^LIBS_dvdnav = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -ldvdnav -ldvdread -ldvdcss   $/;"	m
+LIBS_dvdread	Makefile	/^LIBS_dvdread = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -ldvdread -ldvdcss    $/;"	m
+LIBS_equalizer	Makefile	/^LIBS_equalizer = -lm $/;"	m
+LIBS_extract	Makefile	/^LIBS_extract = -lm $/;"	m
+LIBS_faad	Makefile	/^LIBS_faad = -lm $/;"	m
+LIBS_flac	Makefile	/^LIBS_flac = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lFLAC -lm -logg    -lm -lws2_32 $/;"	m
+LIBS_fluidsynth	Makefile	/^LIBS_fluidsynth = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lfluidsynth -ldsound -lwinmm    $/;"	m
+LIBS_freetype	Makefile	/^LIBS_freetype = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lfribidi   -lgdi32 -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lfreetype   -liconv -lz -lm -lm $/;"	m
+LIBS_gaussianblur	Makefile	/^LIBS_gaussianblur = -lm $/;"	m
+LIBS_globalhotkeys	Makefile	/^LIBS_globalhotkeys = $/;"	m
+LIBS_glwin32	Makefile	/^LIBS_glwin32 = -lole32 -luuid -lopengl32 -lgdi32 $/;"	m
+LIBS_gme	Makefile	/^LIBS_gme = -lgme $/;"	m
+LIBS_gnutls	Makefile	/^LIBS_gnutls = -lws2_32 $/;"	m
+LIBS_goom	Makefile	/^LIBS_goom = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lgoom2    -lm $/;"	m
+LIBS_gradient	Makefile	/^LIBS_gradient = -lm $/;"	m
+LIBS_grain	Makefile	/^LIBS_grain = -lm $/;"	m
+LIBS_growl	Makefile	/^LIBS_growl = $/;"	m
+LIBS_headphone_channel_mixer	Makefile	/^LIBS_headphone_channel_mixer = -lm $/;"	m
+LIBS_hildon	Makefile	/^LIBS_hildon = $/;"	m
+LIBS_hotkeys	Makefile	/^LIBS_hotkeys = -lm $/;"	m
+LIBS_hqdn3d	Makefile	/^LIBS_hqdn3d = -lm $/;"	m
+LIBS_i420_rgb	Makefile	/^LIBS_i420_rgb = -lm $/;"	m
+LIBS_i420_rgb_mmx	Makefile	/^LIBS_i420_rgb_mmx = $/;"	m
+LIBS_inhibit	Makefile	/^LIBS_inhibit = $/;"	m
+LIBS_jack	Makefile	/^LIBS_jack = $/;"	m
+LIBS_kate	Makefile	/^LIBS_kate = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lkate    -lm $/;"	m
+LIBS_libass	Makefile	/^LIBS_libass = -lfontconfig -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lass -lm -lfontconfig -lxml2 -liconv -lfribidi -lfreetype   $/;"	m
+LIBS_libbluray	Makefile	/^LIBS_libbluray = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lbluray    $/;"	m
+LIBS_libmpeg2	Makefile	/^LIBS_libmpeg2 = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lmpeg2    $/;"	m
+LIBS_libvlc	Makefile	/^LIBS_libvlc = $/;"	m
+LIBS_libvlccore	Makefile	/^LIBS_libvlccore = -lnetapi32 -lwinmm $/;"	m
+LIBS_linsys_sdi	Makefile	/^LIBS_linsys_sdi = $/;"	m
+LIBS_lirc	Makefile	/^LIBS_lirc = $/;"	m
+LIBS_live555	Makefile	/^LIBS_live555 = -lliveMedia -lgroupsock -lBasicUsageEnvironment -lUsageEnvironment -lws2_32 $/;"	m
+LIBS_lua	Makefile	/^LIBS_lua = -L\/usr\/local\/lib -llua -lm    -lm -lws2_32 $/;"	m
+LIBS_macosx	Makefile	/^LIBS_macosx = $/;"	m
+LIBS_macosx_dialog_provider	Makefile	/^LIBS_macosx_dialog_provider = $/;"	m
+LIBS_memcpyaltivec	Makefile	/^LIBS_memcpyaltivec = $/;"	m
+LIBS_minimal_macosx	Makefile	/^LIBS_minimal_macosx = $/;"	m
+LIBS_mkv	Makefile	/^LIBS_mkv = -lmatroska -lebml -lz $/;"	m
+LIBS_mod	Makefile	/^LIBS_mod = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lmodplug -lstdc++ -lm   -lm $/;"	m
+LIBS_mono	Makefile	/^LIBS_mono = -lm $/;"	m
+LIBS_mosaic	Makefile	/^LIBS_mosaic = -lm $/;"	m
+LIBS_motion	Makefile	/^LIBS_motion = $/;"	m
+LIBS_mp4	Makefile	/^LIBS_mp4 = -lz $/;"	m
+LIBS_mpc	Makefile	/^LIBS_mpc = -lmpcdec -lm $/;"	m
+LIBS_mpgatofixed32	Makefile	/^LIBS_mpgatofixed32 = -lmad $/;"	m
+LIBS_mtp	Makefile	/^LIBS_mtp = $/;"	m
+LIBS_mux_ogg	Makefile	/^LIBS_mux_ogg = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -logg    $/;"	m
+LIBS_ncurses	Makefile	/^LIBS_ncurses = $/;"	m
+LIBS_netsync	Makefile	/^LIBS_netsync = -lws2_32 -lws2_32 $/;"	m
+LIBS_noise	Makefile	/^LIBS_noise = -lm $/;"	m
+LIBS_normvol	Makefile	/^LIBS_normvol = -lm $/;"	m
+LIBS_notify	Makefile	/^LIBS_notify = $/;"	m
+LIBS_ogg	Makefile	/^LIBS_ogg = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -logg    $/;"	m
+LIBS_oldrc	Makefile	/^LIBS_oldrc = -lws2_32 $/;"	m
+LIBS_omxil	Makefile	/^LIBS_omxil = $/;"	m
+LIBS_opencv_example	Makefile	/^LIBS_opencv_example = $/;"	m
+LIBS_opencv_wrapper	Makefile	/^LIBS_opencv_wrapper = $/;"	m
+LIBS_opus	Makefile	/^LIBS_opus = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -logg -lopus    -lm $/;"	m
+LIBS_panoramix	Makefile	/^LIBS_panoramix = -lm $/;"	m
+LIBS_param_eq	Makefile	/^LIBS_param_eq = -lm $/;"	m
+LIBS_plugin	Makefile	/^LIBS_plugin = $/;"	m
+LIBS_png	Makefile	/^LIBS_png = -lpng -lz -lm $/;"	m
+LIBS_portaudio	Makefile	/^LIBS_portaudio = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lportaudio -lwinmm -lm -lole32 -luuid    $/;"	m
+LIBS_postproc	Makefile	/^LIBS_postproc = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lpostproc -lavutil -lm    -lm $/;"	m
+LIBS_projectm	Makefile	/^LIBS_projectm = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lprojectM -lMilkdropPresetFactory -lRenderer -lglu32 -lglew32 -lopengl32   $/;"	m
+LIBS_psychedelic	Makefile	/^LIBS_psychedelic = -lm $/;"	m
+LIBS_qt4	Makefile	/^LIBS_qt4 = -lole32 -Wl,--subsystem,windows -mwindows -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lqjpeg -lqtaccessiblewidgets -lQtGui -lQtCore -lrpcrt4 -loleaut32 -lole32 -luuid -lwinspool -lwinmm -lshell32 -lcomctl32 -lcomdlg32 -ladvapi32 -lgdi32 -limm32 -lwsock32   -lm $/;"	m
+LIBS_quartztext	Makefile	/^LIBS_quartztext = $/;"	m
+LIBS_quicktime	Makefile	/^LIBS_quicktime = -lm $/;"	m
+LIBS_realvideo	Makefile	/^LIBS_realvideo =  -lm $/;"	m
+LIBS_remoteosd	Makefile	/^LIBS_remoteosd = -lws2_32 $/;"	m
+LIBS_ripple	Makefile	/^LIBS_ripple = -lm $/;"	m
+LIBS_rotate	Makefile	/^LIBS_rotate = -lm $/;"	m
+LIBS_rtp	Makefile	/^LIBS_rtp = -lws2_32 $/;"	m
+LIBS_samplerate	Makefile	/^LIBS_samplerate = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lsamplerate    -lm $/;"	m
+LIBS_sap	Makefile	/^LIBS_sap = -lz -lws2_32 $/;"	m
+LIBS_scene	Makefile	/^LIBS_scene = -lm $/;"	m
+LIBS_schroedinger	Makefile	/^LIBS_schroedinger = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lschroedinger-1.0 -lorc-0.4 -lm    $/;"	m
+LIBS_screen	Makefile	/^LIBS_screen = -lgdi32 $/;"	m
+LIBS_sdl_image	Makefile	/^LIBS_sdl_image = -mwindows -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lSDL_image -ljpeg -ltiff -lmingw32 -lSDLmain -lSDL -lm -luser32 -lgdi32 -lwinmm   -lwinmm $/;"	m
+LIBS_sid	Makefile	/^LIBS_sid = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/libsidplay2.la   -lresid-builder $/;"	m
+LIBS_skins2	Makefile	/^LIBS_skins2 = -lgdi32 -lole32 -luuid -lmsimg32 -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lfribidi   -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lfreetype   ${top_builddir}\/modules\/access\/zip\/unzip\/libunzip.la -lz -lm $/;"	m
+LIBS_spatializer	Makefile	/^LIBS_spatializer = -lm $/;"	m
+LIBS_speex	Makefile	/^LIBS_speex = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -logg -lspeex -lm    -lm $/;"	m
+LIBS_sqlite	Makefile	/^LIBS_sqlite = $/;"	m
+LIBS_stream_out_raop	Makefile	/^LIBS_stream_out_raop = -lws2_32 $/;"	m
+LIBS_stream_out_rtp	Makefile	/^LIBS_stream_out_rtp = -lws2_32 $/;"	m
+LIBS_stream_out_select	Makefile	/^LIBS_stream_out_select = -lws2_32 $/;"	m
+LIBS_stream_out_standard	Makefile	/^LIBS_stream_out_standard = -lws2_32 $/;"	m
+LIBS_stream_out_switcher	Makefile	/^LIBS_stream_out_switcher = $/;"	m
+LIBS_svg	Makefile	/^LIBS_svg = $/;"	m
+LIBS_swscale	Makefile	/^LIBS_swscale = -Wl,-Bsymbolic -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lswscale -lavutil -lm   -lm $/;"	m
+LIBS_taglib	Makefile	/^LIBS_taglib = $/;"	m
+LIBS_telepathy	Makefile	/^LIBS_telepathy = $/;"	m
+LIBS_theora	Makefile	/^LIBS_theora = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -ltheoraenc -ltheoradec -logg    $/;"	m
+LIBS_tremor	Makefile	/^LIBS_tremor = $/;"	m
+LIBS_ts	Makefile	/^LIBS_ts = -lws2_32 $/;"	m
+LIBS_twolame	Makefile	/^LIBS_twolame = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -ltwolame    -lm $/;"	m
+LIBS_udev	Makefile	/^LIBS_udev = $/;"	m
+LIBS_unzip	Makefile	/^LIBS_unzip = -lz $/;"	m
+LIBS_upnp	Makefile	/^LIBS_upnp = -DPTW32_STATIC_LIB -DUPNP_STATIC_LIB -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lupnp -lthreadutil -lixml -liphlpapi -lpthreadGC2 -lws2_32    $/;"	m
+LIBS_vcd	Makefile	/^LIBS_vcd = $/;"	m
+LIBS_vcdx	Makefile	/^LIBS_vcdx = -lwinmm $/;"	m
+LIBS_visual	Makefile	/^LIBS_visual = -lm $/;"	m
+LIBS_vlc	Makefile	/^LIBS_vlc = $/;"	m
+LIBS_vod_rtsp	Makefile	/^LIBS_vod_rtsp = -lws2_32 $/;"	m
+LIBS_vorbis	Makefile	/^LIBS_vorbis = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lvorbisenc -lvorbis -lm -logg    $/;"	m
+LIBS_vout_ios	Makefile	/^LIBS_vout_ios = $/;"	m
+LIBS_vout_macosx	Makefile	/^LIBS_vout_macosx = $/;"	m
+LIBS_vout_sdl	Makefile	/^LIBS_vout_sdl = -mwindows -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lmingw32 -lSDLmain -lSDL -lm -luser32 -lgdi32 -lwinmm   -lwinmm $/;"	m
+LIBS_wave	Makefile	/^LIBS_wave = -lm $/;"	m
+LIBS_waveout	Makefile	/^LIBS_waveout = -lwinmm $/;"	m
+LIBS_win32text	Makefile	/^LIBS_win32text = -lgdi32 $/;"	m
+LIBS_wingapi	Makefile	/^LIBS_wingapi = $/;"	m
+LIBS_wingdi	Makefile	/^LIBS_wingdi = -lgdi32 -lole32 -luuid $/;"	m
+LIBS_x264	Makefile	/^LIBS_x264 = -Wl,-Bsymbolic -lm -lm $/;"	m
+LIBS_xml	Makefile	/^LIBS_xml = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lxml2 -lws2_32    $/;"	m
+LIBS_xosd	Makefile	/^LIBS_xosd = $/;"	m
+LIBS_zip	Makefile	/^LIBS_zip = -lz $/;"	m
+LIBS_zvbi	Makefile	/^LIBS_zvbi =  -lpthreadGC2 -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lzvbi -lpthreadGC2 -lwsock32 -lm -liconv -lpng -lz   -lws2_32 $/;"	m
+LIBTOOL	Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LIBV4L2_CFLAGS	Makefile	/^LIBV4L2_CFLAGS = $/;"	m
+LIBV4L2_LIBS	Makefile	/^LIBV4L2_LIBS = $/;"	m
+LIBVA_CFLAGS	Makefile	/^LIBVA_CFLAGS = $/;"	m
+LIBVA_LIBS	Makefile	/^LIBVA_LIBS = $/;"	m
+LIBVCDINFO_CFLAGS	Makefile	/^LIBVCDINFO_CFLAGS = $/;"	m
+LIBVCDINFO_LIBS	Makefile	/^LIBVCDINFO_LIBS = $/;"	m
+LIBVLC_EVENT_TYPES_KEEP_DEFINE	event.c	29;"	d	file:
+LIBXML2_CFLAGS	Makefile	/^LIBXML2_CFLAGS = -DLIBXML_STATIC -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/libxml2  $/;"	m
+LIBXML2_LIBS	Makefile	/^LIBXML2_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lxml2 -lws2_32  $/;"	m
+LINK	Makefile	/^LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LINSYS_SDI_CFLAGS	Makefile	/^LINSYS_SDI_CFLAGS = $/;"	m
+LINSYS_SDI_LIBS	Makefile	/^LINSYS_SDI_LIBS = $/;"	m
+LIPO	Makefile	/^LIPO = $/;"	m
+LN_S	Makefile	/^LN_S = ln -s$/;"	m
+LTCOMPILE	Makefile	/^LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LTLIBICONV	Makefile	/^LTLIBICONV = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -liconv$/;"	m
+LTLIBINTL	Makefile	/^LTLIBINTL = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lintl -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -liconv$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS =  ${LIBOBJDIR}dirfd$U.lo ${LIBOBJDIR}fdopendir$U.lo ${LIBOBJDIR}flockfile$U.lo ${LIBOBJDIR}fsync$U.lo ${LIBOBJDIR}getdelim$U.lo ${LIBOBJDIR}gmtime_r$U.lo ${LIBOBJDIR}inet_pton$U.lo ${LIBOBJDIR}localtime_r$U.lo ${LIBOBJDIR}nrand48$U.lo ${LIBOBJDIR}setenv$U.lo ${LIBOBJDIR}strcasestr$U.lo ${LIBOBJDIR}strlcpy$U.lo ${LIBOBJDIR}strndup$U.lo ${LIBOBJDIR}strnlen$U.lo ${LIBOBJDIR}strsep$U.lo ${LIBOBJDIR}strtok_r$U.lo ${LIBOBJDIR}tdestroy$U.lo ${LIBOBJDIR}asprintf$U.lo ${LIBOBJDIR}vasprintf$U.lo$/;"	m
+LTLIBRARIES	Makefile	/^LTLIBRARIES = $(lib_LTLIBRARIES)$/;"	m
+LTLIBa52tofloat32	Makefile	/^LTLIBa52tofloat32 = liba52tofloat32_plugin.la$/;"	m
+LTLIBaa	Makefile	/^LTLIBaa = $/;"	m
+LTLIBaccess_avio	Makefile	/^LTLIBaccess_avio = libaccess_avio_plugin.la$/;"	m
+LTLIBaccess_dv	Makefile	/^LTLIBaccess_dv = $/;"	m
+LTLIBaccess_eyetv	Makefile	/^LTLIBaccess_eyetv = $/;"	m
+LTLIBaccess_gnomevfs	Makefile	/^LTLIBaccess_gnomevfs = $/;"	m
+LTLIBaccess_jack	Makefile	/^LTLIBaccess_jack = $/;"	m
+LTLIBaccess_mtp	Makefile	/^LTLIBaccess_mtp = $/;"	m
+LTLIBaccess_output_shout	Makefile	/^LTLIBaccess_output_shout = libaccess_output_shout_plugin.la$/;"	m
+LTLIBaccess_realrtsp	Makefile	/^LTLIBaccess_realrtsp = $/;"	m
+LTLIBaccess_sftp	Makefile	/^LTLIBaccess_sftp = $/;"	m
+LTLIBaccess_shm	Makefile	/^LTLIBaccess_shm = $/;"	m
+LTLIBaccess_smb	Makefile	/^LTLIBaccess_smb = libaccess_smb_plugin.la$/;"	m
+LTLIBandroid_surface	Makefile	/^LTLIBandroid_surface = $/;"	m
+LTLIBaout_directx	Makefile	/^LTLIBaout_directx = libaout_directx_plugin.la$/;"	m
+LTLIBatmo	Makefile	/^LTLIBatmo = libatmo_plugin.la$/;"	m
+LTLIBaudioqueue	Makefile	/^LTLIBaudioqueue = $/;"	m
+LTLIBauhal	Makefile	/^LTLIBauhal = $/;"	m
+LTLIBavcodec	Makefile	/^LTLIBavcodec = libavcodec_plugin.la$/;"	m
+LTLIBavformat	Makefile	/^LTLIBavformat = libavformat_plugin.la$/;"	m
+LTLIBbonjour	Makefile	/^LTLIBbonjour = $/;"	m
+LTLIBcaca	Makefile	/^LTLIBcaca = libcaca_plugin.la$/;"	m
+LTLIBcdda	Makefile	/^LTLIBcdda = libcdda_plugin.la$/;"	m
+LTLIBcrystalhd	Makefile	/^LTLIBcrystalhd = libcrystalhd_plugin.la$/;"	m
+LTLIBdbus	Makefile	/^LTLIBdbus = $/;"	m
+LTLIBdc1394	Makefile	/^LTLIBdc1394 = $/;"	m
+LTLIBdecklink	Makefile	/^LTLIBdecklink = $/;"	m
+LTLIBdirac	Makefile	/^LTLIBdirac = $/;"	m
+LTLIBdirect2d	Makefile	/^LTLIBdirect2d = libdirect2d_plugin.la$/;"	m
+LTLIBdirect3d	Makefile	/^LTLIBdirect3d = libdirect3d_plugin.la$/;"	m
+LTLIBdirectfb	Makefile	/^LTLIBdirectfb = $/;"	m
+LTLIBdirectx	Makefile	/^LTLIBdirectx = libdirectx_plugin.la$/;"	m
+LTLIBdmo	Makefile	/^LTLIBdmo = libdmo_plugin.la$/;"	m
+LTLIBdshow	Makefile	/^LTLIBdshow = libdshow_plugin.la$/;"	m
+LTLIBdtstofloat32	Makefile	/^LTLIBdtstofloat32 = libdtstofloat32_plugin.la$/;"	m
+LTLIBdvdnav	Makefile	/^LTLIBdvdnav = libdvdnav_plugin.la$/;"	m
+LTLIBdvdread	Makefile	/^LTLIBdvdread = libdvdread_plugin.la$/;"	m
+LTLIBdynamicoverlay	Makefile	/^LTLIBdynamicoverlay = $/;"	m
+LTLIBegl	Makefile	/^LTLIBegl = $/;"	m
+LTLIBfaad	Makefile	/^LTLIBfaad = $/;"	m
+LTLIBfb	Makefile	/^LTLIBfb = $/;"	m
+LTLIBfbosd	Makefile	/^LTLIBfbosd = $/;"	m
+LTLIBflac	Makefile	/^LTLIBflac = libflac_plugin.la$/;"	m
+LTLIBfluidsynth	Makefile	/^LTLIBfluidsynth = libfluidsynth_plugin.la$/;"	m
+LTLIBfreetype	Makefile	/^LTLIBfreetype = libfreetype_plugin.la$/;"	m
+LTLIBgl	Makefile	/^LTLIBgl = $/;"	m
+LTLIBglobalhotkeys	Makefile	/^LTLIBglobalhotkeys = libglobalhotkeys_plugin.la$/;"	m
+LTLIBglwin32	Makefile	/^LTLIBglwin32 = libglwin32_plugin.la$/;"	m
+LTLIBgme	Makefile	/^LTLIBgme = libgme_plugin.la$/;"	m
+LTLIBgnutls	Makefile	/^LTLIBgnutls = $/;"	m
+LTLIBgoom	Makefile	/^LTLIBgoom = libgoom_plugin.la$/;"	m
+LTLIBgrowl	Makefile	/^LTLIBgrowl = $/;"	m
+LTLIBhildon	Makefile	/^LTLIBhildon = $/;"	m
+LTLIBinhibit	Makefile	/^LTLIBinhibit = $/;"	m
+LTLIBiomx	Makefile	/^LTLIBiomx = $/;"	m
+LTLIBjack	Makefile	/^LTLIBjack = $/;"	m
+LTLIBkate	Makefile	/^LTLIBkate = libkate_plugin.la$/;"	m
+LTLIBlibass	Makefile	/^LTLIBlibass = liblibass_plugin.la$/;"	m
+LTLIBlibbluray	Makefile	/^LTLIBlibbluray = liblibbluray_plugin.la$/;"	m
+LTLIBlibmpeg2	Makefile	/^LTLIBlibmpeg2 = liblibmpeg2_plugin.la$/;"	m
+LTLIBlinsys_hdsdi	Makefile	/^LTLIBlinsys_hdsdi = $/;"	m
+LTLIBlinsys_sdi	Makefile	/^LTLIBlinsys_sdi = $/;"	m
+LTLIBlirc	Makefile	/^LTLIBlirc = $/;"	m
+LTLIBlive555	Makefile	/^LTLIBlive555 = liblive555_plugin.la$/;"	m
+LTLIBmacosx	Makefile	/^LTLIBmacosx = $/;"	m
+LTLIBmacosx_dialog_provider	Makefile	/^LTLIBmacosx_dialog_provider = $/;"	m
+LTLIBmce	Makefile	/^LTLIBmce = $/;"	m
+LTLIBmedia_library	Makefile	/^LTLIBmedia_library = $/;"	m
+LTLIBminimal_macosx	Makefile	/^LTLIBminimal_macosx = $/;"	m
+LTLIBmkv	Makefile	/^LTLIBmkv = libmkv_plugin.la$/;"	m
+LTLIBmod	Makefile	/^LTLIBmod = libmod_plugin.la$/;"	m
+LTLIBmpc	Makefile	/^LTLIBmpc = libmpc_plugin.la$/;"	m
+LTLIBmpgatofixed32	Makefile	/^LTLIBmpgatofixed32 = libmpgatofixed32_plugin.la$/;"	m
+LTLIBmtp	Makefile	/^LTLIBmtp = $/;"	m
+LTLIBmux_ogg	Makefile	/^LTLIBmux_ogg = libmux_ogg_plugin.la$/;"	m
+LTLIBncurses	Makefile	/^LTLIBncurses = $/;"	m
+LTLIBnotify	Makefile	/^LTLIBnotify = $/;"	m
+LTLIBogg	Makefile	/^LTLIBogg = libogg_plugin.la$/;"	m
+LTLIBomxil	Makefile	/^LTLIBomxil = $/;"	m
+LTLIBopencv_example	Makefile	/^LTLIBopencv_example = $/;"	m
+LTLIBopencv_wrapper	Makefile	/^LTLIBopencv_wrapper = $/;"	m
+LTLIBopensles_android	Makefile	/^LTLIBopensles_android = $/;"	m
+LTLIBopus	Makefile	/^LTLIBopus = libopus_plugin.la$/;"	m
+LTLIBosd_parser	Makefile	/^LTLIBosd_parser = libosd_parser_plugin.la$/;"	m
+LTLIBosdmenu	Makefile	/^LTLIBosdmenu = libosdmenu_plugin.la$/;"	m
+LTLIBpanoramix	Makefile	/^LTLIBpanoramix = libpanoramix_plugin.la$/;"	m
+LTLIBpng	Makefile	/^LTLIBpng = libpng_plugin.la$/;"	m
+LTLIBportaudio	Makefile	/^LTLIBportaudio = libportaudio_plugin.la$/;"	m
+LTLIBpostproc	Makefile	/^LTLIBpostproc = libpostproc_plugin.la$/;"	m
+LTLIBprojectm	Makefile	/^LTLIBprojectm = libprojectm_plugin.la$/;"	m
+LTLIBpvr	Makefile	/^LTLIBpvr = $/;"	m
+LTLIBqt4	Makefile	/^LTLIBqt4 = libqt4_plugin.la$/;"	m
+LTLIBqtcapture	Makefile	/^LTLIBqtcapture = $/;"	m
+LTLIBqtsound	Makefile	/^LTLIBqtsound = $/;"	m
+LTLIBquartztext	Makefile	/^LTLIBquartztext = $/;"	m
+LTLIBquicktime	Makefile	/^LTLIBquicktime = $/;"	m
+LTLIBrealvideo	Makefile	/^LTLIBrealvideo = $/;"	m
+LTLIBsamplerate	Makefile	/^LTLIBsamplerate = libsamplerate_plugin.la$/;"	m
+LTLIBschroedinger	Makefile	/^LTLIBschroedinger = libschroedinger_plugin.la$/;"	m
+LTLIBscreen	Makefile	/^LTLIBscreen = libscreen_plugin.la$/;"	m
+LTLIBsdl_image	Makefile	/^LTLIBsdl_image = libsdl_image_plugin.la$/;"	m
+LTLIBshine	Makefile	/^LTLIBshine = $/;"	m
+LTLIBsid	Makefile	/^LTLIBsid = libsid_plugin.la$/;"	m
+LTLIBskins2	Makefile	/^LTLIBskins2 = libskins2_plugin.la$/;"	m
+LTLIBspeex	Makefile	/^LTLIBspeex = libspeex_plugin.la$/;"	m
+LTLIBsqlite	Makefile	/^LTLIBsqlite = $/;"	m
+LTLIBstream_out_switcher	Makefile	/^LTLIBstream_out_switcher = $/;"	m
+LTLIBsvg	Makefile	/^LTLIBsvg = $/;"	m
+LTLIBswscale	Makefile	/^LTLIBswscale = libswscale_plugin.la$/;"	m
+LTLIBtaglib	Makefile	/^LTLIBtaglib = $/;"	m
+LTLIBtelepathy	Makefile	/^LTLIBtelepathy = $/;"	m
+LTLIBtelx	Makefile	/^LTLIBtelx = libtelx_plugin.la$/;"	m
+LTLIBtheora	Makefile	/^LTLIBtheora = libtheora_plugin.la$/;"	m
+LTLIBtremor	Makefile	/^LTLIBtremor = $/;"	m
+LTLIBtwolame	Makefile	/^LTLIBtwolame = libtwolame_plugin.la$/;"	m
+LTLIBudev	Makefile	/^LTLIBudev = $/;"	m
+LTLIBupnp	Makefile	/^LTLIBupnp = libupnp_plugin.la$/;"	m
+LTLIBvcd	Makefile	/^LTLIBvcd = libvcd_plugin.la$/;"	m
+LTLIBvcdx	Makefile	/^LTLIBvcdx = $/;"	m
+LTLIBvisual	Makefile	/^LTLIBvisual = libvisual_plugin.la$/;"	m
+LTLIBvorbis	Makefile	/^LTLIBvorbis = libvorbis_plugin.la$/;"	m
+LTLIBvout_ios	Makefile	/^LTLIBvout_ios = $/;"	m
+LTLIBvout_macosx	Makefile	/^LTLIBvout_macosx = $/;"	m
+LTLIBvout_sdl	Makefile	/^LTLIBvout_sdl = libvout_sdl_plugin.la$/;"	m
+LTLIBwaveout	Makefile	/^LTLIBwaveout = libwaveout_plugin.la$/;"	m
+LTLIBwingapi	Makefile	/^LTLIBwingapi = $/;"	m
+LTLIBwingdi	Makefile	/^LTLIBwingdi = libwingdi_plugin.la$/;"	m
+LTLIBwma_fixed	Makefile	/^LTLIBwma_fixed = $/;"	m
+LTLIBx264	Makefile	/^LTLIBx264 = libx264_plugin.la$/;"	m
+LTLIBxcb_glx	Makefile	/^LTLIBxcb_glx = $/;"	m
+LTLIBxcb_xv	Makefile	/^LTLIBxcb_xv = $/;"	m
+LTLIBxml	Makefile	/^LTLIBxml = libxml_plugin.la$/;"	m
+LTLIBxosd	Makefile	/^LTLIBxosd = $/;"	m
+LTLIBzvbi	Makefile	/^LTLIBzvbi = libzvbi_plugin.la$/;"	m
+LUAC	Makefile	/^LUAC = \/usr\/bin\/luac$/;"	m
+LUA_CFLAGS	Makefile	/^LUA_CFLAGS = -I\/usr\/local\/include  $/;"	m
+LUA_LIBS	Makefile	/^LUA_LIBS = -L\/usr\/local\/lib -llua -lm  $/;"	m
+MACOSX_DEPLOYMENT_TARGET	Makefile	/^MACOSX_DEPLOYMENT_TARGET = $/;"	m
+MAINT	Makefile	/^MAINT = $/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/home\/ylwang\/msvc\/vlc-2.0.6\/autotools\/missing makeinfo$/;"	m
+MANIFEST_TOOL	Makefile	/^MANIFEST_TOOL = :$/;"	m
+MCE_CFLAGS	Makefile	/^MCE_CFLAGS = $/;"	m
+MCE_LIBS	Makefile	/^MCE_LIBS = $/;"	m
+MINIZIP_CFLAGS	Makefile	/^MINIZIP_CFLAGS = -I\\${top_srcdir}\/modules\/access\/zip\/unzip$/;"	m
+MINIZIP_LIBS	Makefile	/^MINIZIP_LIBS = \\${top_builddir}\/modules\/access\/zip\/unzip\/libunzip.la$/;"	m
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MOC	Makefile	/^MOC = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/bin\/moc$/;"	m
+MSGFMT	Makefile	/^MSGFMT = \/usr\/bin\/msgfmt$/;"	m
+MSGFMT_015	Makefile	/^MSGFMT_015 = \/usr\/bin\/msgfmt$/;"	m
+MSGMERGE	Makefile	/^MSGMERGE = \/usr\/bin\/msgmerge$/;"	m
+MTP_CFLAGS	Makefile	/^MTP_CFLAGS = $/;"	m
+MTP_LIBS	Makefile	/^MTP_LIBS = $/;"	m
+MUX_OGG_CFLAGS	Makefile	/^MUX_OGG_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+MUX_OGG_LIBS	Makefile	/^MUX_OGG_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -logg  $/;"	m
+NCURSES_CFLAGS	Makefile	/^NCURSES_CFLAGS = $/;"	m
+NCURSES_LIBS	Makefile	/^NCURSES_LIBS = $/;"	m
+NEON_CFLAGS	Makefile	/^NEON_CFLAGS = $/;"	m
+NM	Makefile	/^NM = \/usr\/bin\/i586-mingw32msvc-nm -B$/;"	m
+NMEDIT	Makefile	/^NMEDIT = $/;"	m
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NOTIFY_CFLAGS	Makefile	/^NOTIFY_CFLAGS = $/;"	m
+NOTIFY_LIBS	Makefile	/^NOTIFY_LIBS = $/;"	m
+OBJC	Makefile	/^OBJC = i586-mingw32msvc-gcc$/;"	m
+OBJCDEPMODE	Makefile	/^OBJCDEPMODE = depmode=gcc3$/;"	m
+OBJCFLAGS	Makefile	/^OBJCFLAGS =  -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  -ffast-math -funroll-loops -fomit-frame-pointer$/;"	m
+OBJCFLAGS_growl	Makefile	/^OBJCFLAGS_growl = $/;"	m
+OBJCFLAGS_macosx	Makefile	/^OBJCFLAGS_macosx = $/;"	m
+OBJCFLAGS_minimal_macosx	Makefile	/^OBJCFLAGS_minimal_macosx = $/;"	m
+OBJCOPY	Makefile	/^OBJCOPY = i586-mingw32msvc-objcopy$/;"	m
+OBJDUMP	Makefile	/^OBJDUMP = i586-mingw32msvc-objdump$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+OGG_CFLAGS	Makefile	/^OGG_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+OGG_LIBS	Makefile	/^OGG_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -logg  $/;"	m
+OPENCV_CFLAGS	Makefile	/^OPENCV_CFLAGS = $/;"	m
+OPENCV_LIBS	Makefile	/^OPENCV_LIBS = $/;"	m
+OPUS_CFLAGS	Makefile	/^OPUS_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/opus  $/;"	m
+OPUS_LIBS	Makefile	/^OPUS_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -logg -lopus  $/;"	m
+OSS_LIBS	Makefile	/^OSS_LIBS = $/;"	m
+OTOOL	Makefile	/^OTOOL = $/;"	m
+OTOOL64	Makefile	/^OTOOL64 = $/;"	m
+PACKAGE	Makefile	/^PACKAGE = vlc$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = $/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = vlc$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = vlc 2.0.6$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = vlc$/;"	m
+PACKAGE_URL	Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 2.0.6$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+PKGDIR	Makefile	/^PKGDIR = vlc$/;"	m
+PKG_CONFIG	Makefile	/^PKG_CONFIG = \/usr\/bin\/pkg-config --static$/;"	m
+PKG_CONFIG_LIBDIR	Makefile	/^PKG_CONFIG_LIBDIR = \/root\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/pkgconfig$/;"	m
+PKG_CONFIG_PATH	Makefile	/^PKG_CONFIG_PATH = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/pkgconfig:$/;"	m
+PORTAUDIO_CFLAGS	Makefile	/^PORTAUDIO_CFLAGS = -mthreads -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+PORTAUDIO_LIBS	Makefile	/^PORTAUDIO_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lportaudio -lwinmm -lm -lole32 -luuid  $/;"	m
+POSTPROC_CFLAGS	Makefile	/^POSTPROC_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+POSTPROC_LIBS	Makefile	/^POSTPROC_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lpostproc -lavutil -lm  $/;"	m
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+POSUB	Makefile	/^POSUB = po$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAMFILES	Makefile	/^PROGRAMFILES = PROGRAMFILES$/;"	m
+PROJECTM2_CFLAGS	Makefile	/^PROJECTM2_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+PROJECTM2_LIBS	Makefile	/^PROJECTM2_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lprojectM -lMilkdropPresetFactory -lRenderer -lglu32 -lglew32 -lopengl32  $/;"	m
+PROJECTM_CFLAGS	Makefile	/^PROJECTM_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+PROJECTM_LIBS	Makefile	/^PROJECTM_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lprojectM -lMilkdropPresetFactory -lRenderer -lglu32 -lglew32 -lopengl32  $/;"	m
+PULSE_CFLAGS	Makefile	/^PULSE_CFLAGS = $/;"	m
+PULSE_LIBS	Makefile	/^PULSE_LIBS = $/;"	m
+QT4_CFLAGS	Makefile	/^QT4_CFLAGS = -DQT_NODLL -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/qt4 -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/qt4\/QtCore -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/qt4\/QtGui  $/;"	m
+QT4_LIBS	Makefile	/^QT4_LIBS = -Wl,--subsystem,windows -mwindows -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lqjpeg -lqtaccessiblewidgets -lQtGui -lQtCore -lrpcrt4 -loleaut32 -lole32 -luuid -lwinspool -lwinmm -lshell32 -lcomctl32 -lcomdlg32 -ladvapi32 -lgdi32 -limm32 -lwsock32  $/;"	m
+RANLIB	Makefile	/^RANLIB = i586-mingw32msvc-ranlib$/;"	m
+RC	Makefile	/^RC = i586-mingw32msvc-windres$/;"	m
+RCC	Makefile	/^RCC = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/bin\/rcc$/;"	m
+SAMPLERATE_CFLAGS	Makefile	/^SAMPLERATE_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+SAMPLERATE_LIBS	Makefile	/^SAMPLERATE_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lsamplerate  $/;"	m
+SCHROEDINGER_CFLAGS	Makefile	/^SCHROEDINGER_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/schroedinger-1.0 -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/orc-0.4  $/;"	m
+SCHROEDINGER_LIBS	Makefile	/^SCHROEDINGER_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lschroedinger-1.0 -lorc-0.4 -lm  $/;"	m
+SDL_CFLAGS	Makefile	/^SDL_CFLAGS = -D_GNU_SOURCE=1 -Dmain=SDL_main -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/SDL  $/;"	m
+SDL_IMAGE_CFLAGS	Makefile	/^SDL_IMAGE_CFLAGS = -D_GNU_SOURCE=1 -Dmain=SDL_main -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/SDL  $/;"	m
+SDL_IMAGE_LIBS	Makefile	/^SDL_IMAGE_LIBS = -mwindows -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lSDL_image -ljpeg -ltiff -lmingw32 -lSDLmain -lSDL -lm -luser32 -lgdi32 -lwinmm  $/;"	m
+SDL_LIBS	Makefile	/^SDL_LIBS = -mwindows -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lmingw32 -lSDLmain -lSDL -lm -luser32 -lgdi32 -lwinmm  $/;"	m
+SED	Makefile	/^SED = \/bin\/sed$/;"	m
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/bash$/;"	m
+SHOUT_CFLAGS	Makefile	/^SHOUT_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+SHOUT_LIBS	Makefile	/^SHOUT_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lshout -lvorbis -ltheora -lspeex -lm -logg  $/;"	m
+SID_CFLAGS	Makefile	/^SID_CFLAGS = -DHAVE_UNIX -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+SID_LIBS	Makefile	/^SID_LIBS = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/libsidplay2.la  $/;"	m
+SOCKET_LIBS	Makefile	/^SOCKET_LIBS = -lws2_32$/;"	m
+SOURCES	Makefile	/^SOURCES = $(libvlc_la_SOURCES)$/;"	m
+SPEEXDSP_CFLAGS	Makefile	/^SPEEXDSP_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+SPEEXDSP_LIBS	Makefile	/^SPEEXDSP_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lspeexdsp -lm  $/;"	m
+SPEEX_CFLAGS	Makefile	/^SPEEX_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+SPEEX_LIBS	Makefile	/^SPEEX_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -logg -lspeex -lm  $/;"	m
+SQLITE_CFLAGS	Makefile	/^SQLITE_CFLAGS = $/;"	m
+SQLITE_LIBS	Makefile	/^SQLITE_LIBS = $/;"	m
+STRIP	Makefile	/^STRIP = i586-mingw32msvc-strip$/;"	m
+SUFFIXES	Makefile	/^SUFFIXES = .pc.in .pc$/;"	m
+SVG_CFLAGS	Makefile	/^SVG_CFLAGS = $/;"	m
+SVG_LIBS	Makefile	/^SVG_LIBS = $/;"	m
+SWSCALE_CFLAGS	Makefile	/^SWSCALE_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+SWSCALE_LIBS	Makefile	/^SWSCALE_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lswscale -lavutil -lm  $/;"	m
+SYS	Makefile	/^SYS = mingw32$/;"	m
+TAGLIB_CFLAGS	Makefile	/^TAGLIB_CFLAGS = $/;"	m
+TAGLIB_LIBS	Makefile	/^TAGLIB_LIBS = $/;"	m
+THEORA_CFLAGS	Makefile	/^THEORA_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+THEORA_LIBS	Makefile	/^THEORA_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -ltheoraenc -ltheoradec -logg  $/;"	m
+TIGER_CFLAGS	Makefile	/^TIGER_CFLAGS = $/;"	m
+TIGER_LIBS	Makefile	/^TIGER_LIBS = $/;"	m
+TWOLAME_CFLAGS	Makefile	/^TWOLAME_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+TWOLAME_LIBS	Makefile	/^TWOLAME_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -ltwolame  $/;"	m
+U2D	Makefile	/^U2D = unix2dos$/;"	m
+UDEV_CFLAGS	Makefile	/^UDEV_CFLAGS = $/;"	m
+UDEV_LIBS	Makefile	/^UDEV_LIBS = $/;"	m
+UIC	Makefile	/^UIC = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/bin\/uic$/;"	m
+UPNP_CFLAGS	Makefile	/^UPNP_CFLAGS = -DPTW32_STATIC_LIB -DUPNP_STATIC_LIB -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/upnp  $/;"	m
+UPNP_LIBS	Makefile	/^UPNP_LIBS = -DPTW32_STATIC_LIB -DUPNP_STATIC_LIB -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lupnp -lthreadutil -lixml -liphlpapi -lpthreadGC2 -lws2_32  $/;"	m
+USE_NLS	Makefile	/^USE_NLS = yes$/;"	m
+VERSION	Makefile	/^VERSION = 2.0.6$/;"	m
+VERSION_EXTRA	Makefile	/^VERSION_EXTRA = 0$/;"	m
+VERSION_MAJOR	Makefile	/^VERSION_MAJOR = 2$/;"	m
+VERSION_MESSAGE	Makefile	/^VERSION_MESSAGE = 2.0.6 Twoflower$/;"	m
+VERSION_MINOR	Makefile	/^VERSION_MINOR = 0$/;"	m
+VERSION_REVISION	Makefile	/^VERSION_REVISION = 6$/;"	m
+VLM_CHANGE	vlm.c	496;"	d	file:
+VLM_CHANGE_CODE	vlm.c	514;"	d	file:
+VLM_CHANGE_CODE	vlm.c	516;"	d	file:
+VLM_CHANGE_CODE	vlm.c	522;"	d	file:
+VLM_CHANGE_CODE	vlm.c	524;"	d	file:
+VLM_CHANGE_CODE	vlm.c	530;"	d	file:
+VLM_CHANGE_CODE	vlm.c	536;"	d	file:
+VLM_CHANGE_CODE	vlm.c	542;"	d	file:
+VLM_CHANGE_CODE	vlm.c	545;"	d	file:
+VLM_CHANGE_CODE	vlm.c	551;"	d	file:
+VLM_CHANGE_CODE	vlm.c	556;"	d	file:
+VLM_CHANGE_CODE	vlm.c	562;"	d	file:
+VLM_CHANGE_CODE	vlm.c	565;"	d	file:
+VLM_CHANGE_CODE	vlm.c	574;"	d	file:
+VLM_CHANGE_CODE	vlm.c	590;"	d	file:
+VLM_RET	vlm.c	187;"	d	file:
+VORBIS_CFLAGS	Makefile	/^VORBIS_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+VORBIS_LIBS	Makefile	/^VORBIS_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lvorbisenc -lvorbis -lm -logg  $/;"	m
+VlmEvent	vlm.c	/^static int VlmEvent( vlc_object_t *p_this, const char * name,$/;"	f	file:
+WINDRES	Makefile	/^WINDRES = i586-mingw32msvc-windres$/;"	m
+WINE_SDK_PATH	Makefile	/^WINE_SDK_PATH = $/;"	m
+X264_CFLAGS	Makefile	/^X264_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+X264_LIBS	Makefile	/^X264_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lx264  $/;"	m
+XCB_CFLAGS	Makefile	/^XCB_CFLAGS = $/;"	m
+XCB_COMPOSITE_CFLAGS	Makefile	/^XCB_COMPOSITE_CFLAGS = $/;"	m
+XCB_COMPOSITE_LIBS	Makefile	/^XCB_COMPOSITE_LIBS = $/;"	m
+XCB_KEYSYMS_CFLAGS	Makefile	/^XCB_KEYSYMS_CFLAGS = $/;"	m
+XCB_KEYSYMS_LIBS	Makefile	/^XCB_KEYSYMS_LIBS = $/;"	m
+XCB_LIBS	Makefile	/^XCB_LIBS = $/;"	m
+XCB_RANDR_CFLAGS	Makefile	/^XCB_RANDR_CFLAGS = $/;"	m
+XCB_RANDR_LIBS	Makefile	/^XCB_RANDR_LIBS = $/;"	m
+XCB_SHM_CFLAGS	Makefile	/^XCB_SHM_CFLAGS = $/;"	m
+XCB_SHM_LIBS	Makefile	/^XCB_SHM_LIBS = $/;"	m
+XCB_XV_CFLAGS	Makefile	/^XCB_XV_CFLAGS = $/;"	m
+XCB_XV_LIBS	Makefile	/^XCB_XV_LIBS = $/;"	m
+XEXT_CFLAGS	Makefile	/^XEXT_CFLAGS = $/;"	m
+XEXT_LIBS	Makefile	/^XEXT_LIBS = $/;"	m
+XGETTEXT	Makefile	/^XGETTEXT = \/usr\/bin\/xgettext$/;"	m
+XGETTEXT_015	Makefile	/^XGETTEXT_015 = \/usr\/bin\/xgettext$/;"	m
+XGETTEXT_EXTRA_OPTIONS	Makefile	/^XGETTEXT_EXTRA_OPTIONS = $/;"	m
+XINERAMA_CFLAGS	Makefile	/^XINERAMA_CFLAGS = $/;"	m
+XINERAMA_LIBS	Makefile	/^XINERAMA_LIBS = $/;"	m
+XMKMF	Makefile	/^XMKMF = $/;"	m
+XPM_CFLAGS	Makefile	/^XPM_CFLAGS = $/;"	m
+XPM_LIBS	Makefile	/^XPM_LIBS = $/;"	m
+XPROTO_CFLAGS	Makefile	/^XPROTO_CFLAGS = $/;"	m
+XPROTO_LIBS	Makefile	/^XPROTO_LIBS = $/;"	m
+X_CFLAGS	Makefile	/^X_CFLAGS = $/;"	m
+X_EXTRA_LIBS	Makefile	/^X_EXTRA_LIBS = $/;"	m
+X_LIBS	Makefile	/^X_LIBS = $/;"	m
+X_PRE_LIBS	Makefile	/^X_PRE_LIBS = $/;"	m
+ZVBI_CFLAGS	Makefile	/^ZVBI_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
+ZVBI_LIBS	Makefile	/^ZVBI_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lzvbi -lpthreadGC2 -lwsock32 -lm -liconv -lpng -lz  $/;"	m
+_LIBVLC_EVENT_H	event_internal.h	26;"	d
+_LIBVLC_INTERNAL_H	libvlc_internal.h	26;"	d
+_LIBVLC_MEDIA_INTERNAL_H	media_internal.h	26;"	d
+_LIBVLC_MEDIA_LIST_INTERNAL_H	media_list_internal.h	26;"	d
+_LIBVLC_MEDIA_LIST_PATH_H	media_list_path.h	26;"	d
+_LIBVLC_MEDIA_PLAYER_INTERNAL_H	media_player_internal.h	26;"	d
+__register_event	media_player.c	/^static inline void __register_event(libvlc_media_player_t *mp, libvlc_event_type_t type)$/;"	f	file:
+_libvlc_media_list_add_media	media_list.c	/^void _libvlc_media_list_add_media( libvlc_media_list_t * p_mlist,$/;"	f
+_libvlc_media_list_insert_media	media_list.c	/^void _libvlc_media_list_insert_media($/;"	f
+_libvlc_media_list_remove_index	media_list.c	/^int _libvlc_media_list_remove_index( libvlc_media_list_t * p_mlist,$/;"	f
+abs_builddir	Makefile	/^abs_builddir = \/home\/ylwang\/msvc\/vlc-2.0.6\/lib$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/home\/ylwang\/msvc\/vlc-2.0.6\/lib$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/home\/ylwang\/msvc\/vlc-2.0.6$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/home\/ylwang\/msvc\/vlc-2.0.6$/;"	m
+ac_ct_AR	Makefile	/^ac_ct_AR = $/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = $/;"	m
+ac_ct_CXX	Makefile	/^ac_ct_CXX = $/;"	m
+ac_ct_DUMPBIN	Makefile	/^ac_ct_DUMPBIN = $/;"	m
+ac_ct_OBJC	Makefile	/^ac_ct_OBJC = $/;"	m
+adjust_option_bynumber	video.c	/^adjust_option_bynumber( unsigned option )$/;"	f	file:
+am__DEPENDENCIES_1	Makefile	/^am__DEPENDENCIES_1 =$/;"	m
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/m4\/flags.m4 \\$/;"	m
+am__append_1	Makefile	/^am__append_1 = ..\/src\/libvlc_win32_rc.$(OBJEXT)$/;"	m
+am__append_2	Makefile	/^am__append_2 = -Wl,..\/src\/libvlc_win32_rc.$(OBJEXT) -avoid-version$/;"	m
+am__base_list	Makefile	/^am__base_list = \\$/;"	m
+am__can_run_installinfo	Makefile	/^am__can_run_installinfo = \\$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__define_uniq_tagged_files	Makefile	/^am__define_uniq_tagged_files = \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__install_max	Makefile	/^am__install_max = 40$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(libdir)" "$(DESTDIR)$(pkgconfigdir)" \\$/;"	m
+am__is_gnu_make	Makefile	/^am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__make_dryrun	Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m
+am__make_keepgoing	Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m
+am__make_running_with_option	Makefile	/^am__make_running_with_option = \\$/;"	m
+am__mv	Makefile	/^am__mv = mv -f$/;"	m
+am__nobase_list	Makefile	/^am__nobase_list = $(am__nobase_strip_setup); \\$/;"	m
+am__nobase_strip	Makefile	/^am__nobase_strip = \\$/;"	m
+am__nobase_strip_setup	Makefile	/^am__nobase_strip_setup = \\$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__strip_dir	Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m
+am__tagged_files	Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)$/;"	m
+am__tar	Makefile	/^am__tar = tar --format=ustar -chf - "$$tardir"$/;"	m
+am__uninstall_files_from_dir	Makefile	/^am__uninstall_files_from_dir = { \\$/;"	m
+am__uniquify_input	Makefile	/^am__uniquify_input = $(AWK) '\\$/;"	m
+am__untar	Makefile	/^am__untar = tar -xf -$/;"	m
+am__v_CCLD_	Makefile	/^am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CCLD_0	Makefile	/^am__v_CCLD_0 = @echo "  CCLD    " $@;$/;"	m
+am__v_CCLD_1	Makefile	/^am__v_CCLD_1 = $/;"	m
+am__v_CC_	Makefile	/^am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CC_0	Makefile	/^am__v_CC_0 = @echo "  CC      " $@;$/;"	m
+am__v_CC_1	Makefile	/^am__v_CC_1 = $/;"	m
+am__v_GEN_	Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_GEN_0	Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m
+am__v_GEN_1	Makefile	/^am__v_GEN_1 = $/;"	m
+am__v_P_	Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_P_0	Makefile	/^am__v_P_0 = false$/;"	m
+am__v_P_1	Makefile	/^am__v_P_1 = :$/;"	m
+am__v_at_	Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_at_0	Makefile	/^am__v_at_0 = @$/;"	m
+am__v_at_1	Makefile	/^am__v_at_1 = $/;"	m
+am__v_lt_	Makefile	/^am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_lt_0	Makefile	/^am__v_lt_0 = --silent$/;"	m
+am__v_lt_1	Makefile	/^am__v_lt_1 = $/;"	m
+am__vpath_adj	Makefile	/^am__vpath_adj = case $$p in \\$/;"	m
+am__vpath_adj_setup	Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m
+am_libvlc_la_OBJECTS	Makefile	/^am_libvlc_la_OBJECTS = core.lo error.lo log.lo playlist.lo vlm.lo \\$/;"	m
+are_mp_callback_cancelled	media_list_player.c	/^    bool                        are_mp_callback_cancelled;$/;"	m	struct:libvlc_media_list_player_t	file:
+assert_locked	media_list_player.c	/^static inline void assert_locked(libvlc_media_list_player_t * p_mlp)$/;"	f	file:
+async_event_queue	event_internal.h	/^    struct libvlc_event_async_queue * async_event_queue;$/;"	m	struct:libvlc_event_manager_t	typeref:struct:libvlc_event_manager_t::libvlc_event_async_queue
+b_read_only	media_list_internal.h	/^    bool                  b_read_only;$/;"	m	struct:libvlc_media_list_t
+b_sublistener_removed	event.c	/^    bool b_sublistener_removed;$/;"	m	struct:libvlc_event_listeners_group_t	file:
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+build	Makefile	/^build = x86_64-unknown-linux-gnu$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+build_cpu	Makefile	/^build_cpu = x86_64$/;"	m
+build_os	Makefile	/^build_os = linux-gnu$/;"	m
+build_triplet	Makefile	/^build_triplet = x86_64-unknown-linux-gnu$/;"	m
+build_vendor	Makefile	/^build_vendor = unknown$/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+catname_to_submedialist	media_discoverer.c	/^    vlc_dictionary_t         catname_to_submedialist;$/;"	m	struct:libvlc_media_discoverer_t	file:
+context	error.c	/^static vlc_threadvar_t context;$/;"	v	file:
+current_playing_item_path	media_list_player.c	/^    libvlc_media_list_path_t    current_playing_item_path;$/;"	m	struct:libvlc_media_list_player_t	file:
+current_thread_is_asynch_thread	event_async.c	/^static inline bool current_thread_is_asynch_thread(libvlc_event_manager_t * p_em)$/;"	f	file:
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/autotools\/depcomp$/;"	m
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+e_playback_mode	media_list_player.c	/^    libvlc_playback_mode_t      e_playback_mode;$/;"	m	struct:libvlc_media_list_player_t	file:
+evcmp	event.c	/^static int evcmp( const void *a, const void *b )$/;"	f	file:
+event	event_async.c	/^    libvlc_event_t event;$/;"	m	struct:queue_elmt	file:
+event_async_loop	event_async.c	/^static void * event_async_loop(void * arg)$/;"	f	file:
+event_attach	event.c	/^int event_attach( libvlc_event_manager_t * p_event_manager,$/;"	f	file:
+event_list	event.c	/^static const event_name_t event_list[] = {$/;"	v	file:
+event_name_t	event.c	/^} event_name_t;$/;"	t	typeref:struct:__anon2	file:
+event_sending_lock	event_internal.h	/^    vlc_mutex_t event_sending_lock;$/;"	m	struct:libvlc_event_manager_t
+event_type	event.c	/^    libvlc_event_type_t event_type;$/;"	m	struct:libvlc_event_listeners_group_t	file:
+event_type	event_internal.h	/^    libvlc_event_type_t event_type;$/;"	m	struct:libvlc_event_listener_t
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+find_input	media_player.c	/^static input_thread_t *find_input (vlc_object_t *obj)$/;"	f	file:
+find_last_item	media_list_player.c	/^find_last_item( libvlc_media_list_t * p_mlist, libvlc_media_list_path_t current_item )$/;"	f	file:
+first_elmt	event_async.c	/^    struct queue_elmt *first_elmt, *last_elmt;$/;"	m	struct:libvlc_event_async_queue	typeref:struct:libvlc_event_async_queue::queue_elmt	file:
+free_error	error.c	/^static void free_error (void)$/;"	f	file:
+from_mtime	libvlc_internal.h	/^static inline libvlc_time_t from_mtime(mtime_t time)$/;"	f
+get_error	error.c	/^static char *get_error (void)$/;"	f	file:
+get_float	video.c	/^get_float( libvlc_media_player_t *p_mi, const char *restrict name,$/;"	f	file:
+get_int	video.c	/^get_int( libvlc_media_player_t *p_mi, const char *restrict name,$/;"	f	file:
+get_media	vlm.c	/^static vlm_media_t *get_media( libvlc_instance_t *p_instance,$/;"	f	file:
+get_next_path	media_list_player.c	/^get_next_path(libvlc_media_list_player_t * p_mlp, bool b_loop)$/;"	f	file:
+get_object	video.c	/^static vlc_object_t *get_object( libvlc_media_player_t * p_mi,$/;"	f	file:
+get_path_rec	media_list_path.h	/^get_path_rec( const libvlc_media_list_path_t path, libvlc_media_list_t * p_current_mlist, libvlc_media_t * p_searched_md )$/;"	f
+get_previous_path	media_list_player.c	/^get_previous_path(libvlc_media_list_player_t * p_mlp, bool b_loop)$/;"	f	file:
+get_string	video.c	/^get_string( libvlc_media_player_t *p_mi, const char *restrict name,$/;"	f	file:
+group_contains_listener	event.c	/^group_contains_listener( libvlc_event_listeners_group_t * group,$/;"	f	file:
+has_asked_preparse	media_internal.h	/^    bool has_asked_preparse;$/;"	m	struct:libvlc_media_t
+host	Makefile	/^host = i586-pc-mingw32msvc$/;"	m
+host_alias	Makefile	/^host_alias = i586-mingw32msvc$/;"	m
+host_cpu	Makefile	/^host_cpu = i586$/;"	m
+host_os	Makefile	/^host_os = mingw32msvc$/;"	m
+host_triplet	Makefile	/^host_triplet = i586-pc-mingw32msvc$/;"	m
+host_vendor	Makefile	/^host_vendor = pc$/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+i_refcount	media_internal.h	/^    int                i_refcount;$/;"	m	struct:libvlc_media_t
+i_refcount	media_library.c	/^    int                      i_refcount;$/;"	m	struct:libvlc_media_library_t	file:
+i_refcount	media_list_internal.h	/^    int                         i_refcount;$/;"	m	struct:libvlc_media_list_t
+i_refcount	media_list_player.c	/^    int                         i_refcount;$/;"	m	struct:libvlc_media_list_player_t	file:
+i_refcount	media_player_internal.h	/^    int                i_refcount;$/;"	m	struct:libvlc_media_player_t
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+input	media_player_internal.h	/^    } input;$/;"	m	struct:libvlc_media_player_t	typeref:struct:libvlc_media_player_t::__anon3
+input_event_changed	media_player.c	/^input_event_changed( vlc_object_t * p_this, char const * psz_cmd,$/;"	f	file:
+input_item_duration_changed	media.c	/^static void input_item_duration_changed( const vlc_event_t *p_event,$/;"	f	file:
+input_item_meta_changed	media.c	/^static void input_item_meta_changed( const vlc_event_t *p_event,$/;"	f	file:
+input_item_preparsed_changed	media.c	/^static void input_item_preparsed_changed(const vlc_event_t *p_event,$/;"	f	file:
+input_item_subitem_added	media.c	/^static void input_item_subitem_added( const vlc_event_t *p_event,$/;"	f	file:
+input_pausable_changed	media_player.c	/^input_pausable_changed( vlc_object_t * p_this, char const * psz_cmd,$/;"	f	file:
+input_seekable_changed	media_player.c	/^input_seekable_changed( vlc_object_t * p_this, char const * psz_cmd,$/;"	f	file:
+install_input_item_observer	media.c	/^static void install_input_item_observer( libvlc_media_t *p_md )$/;"	f	file:
+install_media_player_observer	media_list_player.c	/^install_media_player_observer(libvlc_media_list_player_t * p_mlp)$/;"	f	file:
+install_playlist_observer	media_list_player.c	/^install_playlist_observer(libvlc_media_list_player_t * p_mlp)$/;"	f	file:
+install_sh	Makefile	/^install_sh = ${SHELL} \/home\/ylwang\/msvc\/vlc-2.0.6\/autotools\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+instance_lock	libvlc_internal.h	/^    vlc_mutex_t   instance_lock;$/;"	m	struct:libvlc_instance_t
+is_asynch_dispatch_thread_var	event_async.c	/^    vlc_threadvar_t is_asynch_dispatch_thread_var;$/;"	m	struct:libvlc_event_async_queue	file:
+is_asynchronous	event_internal.h	/^    bool                is_asynchronous;$/;"	m	struct:libvlc_event_listener_t
+is_idle	event_async.c	/^    bool is_idle;$/;"	m	struct:libvlc_event_async_queue	file:
+is_parsed	media_internal.h	/^    bool is_parsed;$/;"	m	struct:libvlc_media_t
+is_queue_initialized	event_async.c	/^static inline bool is_queue_initialized(libvlc_event_manager_t * p_em)$/;"	f	file:
+items	media_list_internal.h	/^    vlc_array_t                items;$/;"	m	struct:libvlc_media_list_t
+last_elmt	event_async.c	/^    struct queue_elmt *first_elmt, *last_elmt;$/;"	m	struct:libvlc_event_async_queue	typeref:struct:libvlc_event_async_queue::	file:
+lib_LTLIBRARIES	Makefile	/^lib_LTLIBRARIES = libvlc.la$/;"	m
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libvlc_add_intf	core.c	/^int libvlc_add_intf( libvlc_instance_t *p_i, const char *name )$/;"	f
+libvlc_audio_filter_list_get	core.c	/^libvlc_module_description_t *libvlc_audio_filter_list_get( libvlc_instance_t *p_instance )$/;"	f
+libvlc_audio_get_channel	audio.c	/^int libvlc_audio_get_channel( libvlc_media_player_t *mp )$/;"	f
+libvlc_audio_get_delay	audio.c	/^int64_t libvlc_audio_get_delay( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_audio_get_mute	audio.c	/^int libvlc_audio_get_mute( libvlc_media_player_t *mp )$/;"	f
+libvlc_audio_get_track	audio.c	/^int libvlc_audio_get_track( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_audio_get_track_count	audio.c	/^int libvlc_audio_get_track_count( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_audio_get_track_description	audio.c	/^        libvlc_audio_get_track_description( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_audio_get_volume	audio.c	/^int libvlc_audio_get_volume( libvlc_media_player_t *mp )$/;"	f
+libvlc_audio_output_device_count	audio.c	/^int libvlc_audio_output_device_count( libvlc_instance_t *p_instance,$/;"	f
+libvlc_audio_output_device_id	audio.c	/^char * libvlc_audio_output_device_id( libvlc_instance_t *p_instance,$/;"	f
+libvlc_audio_output_device_longname	audio.c	/^char * libvlc_audio_output_device_longname( libvlc_instance_t *p_instance,$/;"	f
+libvlc_audio_output_device_set	audio.c	/^void libvlc_audio_output_device_set( libvlc_media_player_t *mp,$/;"	f
+libvlc_audio_output_get_device_type	audio.c	/^int libvlc_audio_output_get_device_type( libvlc_media_player_t *mp )$/;"	f
+libvlc_audio_output_list_get	audio.c	/^        libvlc_audio_output_list_get( libvlc_instance_t *p_instance )$/;"	f
+libvlc_audio_output_list_release	audio.c	/^void libvlc_audio_output_list_release( libvlc_audio_output_t *p_list )$/;"	f
+libvlc_audio_output_set	audio.c	/^int libvlc_audio_output_set( libvlc_media_player_t *mp, const char *psz_name )$/;"	f
+libvlc_audio_output_set_device_type	audio.c	/^void libvlc_audio_output_set_device_type( libvlc_media_player_t *mp,$/;"	f
+libvlc_audio_set_callbacks	media_player.c	/^void libvlc_audio_set_callbacks( libvlc_media_player_t *mp,$/;"	f
+libvlc_audio_set_channel	audio.c	/^int libvlc_audio_set_channel( libvlc_media_player_t *mp, int channel )$/;"	f
+libvlc_audio_set_delay	audio.c	/^int libvlc_audio_set_delay( libvlc_media_player_t *p_mi, int64_t i_delay )$/;"	f
+libvlc_audio_set_format	media_player.c	/^void libvlc_audio_set_format( libvlc_media_player_t *mp, const char *format,$/;"	f
+libvlc_audio_set_format_callbacks	media_player.c	/^void libvlc_audio_set_format_callbacks( libvlc_media_player_t *mp,$/;"	f
+libvlc_audio_set_mute	audio.c	/^void libvlc_audio_set_mute( libvlc_media_player_t *mp, int mute )$/;"	f
+libvlc_audio_set_track	audio.c	/^int libvlc_audio_set_track( libvlc_media_player_t *p_mi, int i_track )$/;"	f
+libvlc_audio_set_volume	audio.c	/^int libvlc_audio_set_volume( libvlc_media_player_t *mp, int volume )$/;"	f
+libvlc_audio_set_volume_callback	media_player.c	/^void libvlc_audio_set_volume_callback( libvlc_media_player_t *mp,$/;"	f
+libvlc_audio_toggle_mute	audio.c	/^void libvlc_audio_toggle_mute( libvlc_media_player_t *mp )$/;"	f
+libvlc_clearerr	error.c	/^void libvlc_clearerr (void)$/;"	f
+libvlc_clock	core.c	/^int64_t libvlc_clock(void)$/;"	f
+libvlc_deinit_threads	error.c	/^void libvlc_deinit_threads (void)$/;"	f
+libvlc_errmsg	error.c	/^const char *libvlc_errmsg (void)$/;"	f
+libvlc_event_async_dispatch	event_async.c	/^libvlc_event_async_dispatch(libvlc_event_manager_t * p_em, libvlc_event_listener_t * listener, libvlc_event_t * event)$/;"	f
+libvlc_event_async_ensure_listener_removal	event_async.c	/^libvlc_event_async_ensure_listener_removal(libvlc_event_manager_t * p_em, libvlc_event_listener_t * listener)$/;"	f
+libvlc_event_async_fini	event_async.c	/^libvlc_event_async_fini(libvlc_event_manager_t * p_em)$/;"	f
+libvlc_event_async_init	event_async.c	/^libvlc_event_async_init(libvlc_event_manager_t * p_em)$/;"	f	file:
+libvlc_event_async_queue	event_async.c	/^struct libvlc_event_async_queue {$/;"	s	file:
+libvlc_event_attach	event.c	/^int libvlc_event_attach( libvlc_event_manager_t * p_event_manager,$/;"	f
+libvlc_event_attach_async	event.c	/^void libvlc_event_attach_async( libvlc_event_manager_t * p_event_manager,$/;"	f
+libvlc_event_detach	event.c	/^void libvlc_event_detach( libvlc_event_manager_t *p_event_manager,$/;"	f
+libvlc_event_listener_t	event_internal.h	/^typedef struct libvlc_event_listener_t$/;"	s
+libvlc_event_listener_t	event_internal.h	/^} libvlc_event_listener_t;$/;"	t	typeref:struct:libvlc_event_listener_t
+libvlc_event_listeners_group_t	event.c	/^typedef struct libvlc_event_listeners_group_t$/;"	s	file:
+libvlc_event_listeners_group_t	event.c	/^} libvlc_event_listeners_group_t;$/;"	t	typeref:struct:libvlc_event_listeners_group_t	file:
+libvlc_event_manager_new	event.c	/^libvlc_event_manager_new( void * p_obj, libvlc_instance_t * p_libvlc_inst )$/;"	f
+libvlc_event_manager_register_event_type	event.c	/^void libvlc_event_manager_register_event_type($/;"	f
+libvlc_event_manager_release	event.c	/^void libvlc_event_manager_release( libvlc_event_manager_t * p_em )$/;"	f
+libvlc_event_manager_t	event_internal.h	/^typedef struct libvlc_event_manager_t$/;"	s
+libvlc_event_send	event.c	/^void libvlc_event_send( libvlc_event_manager_t * p_em,$/;"	f
+libvlc_event_sender_t	event_internal.h	/^} libvlc_event_sender_t;$/;"	t	typeref:struct:libvlc_event_manager_t
+libvlc_event_type_name	event.c	/^const char * libvlc_event_type_name( int event_type )$/;"	f
+libvlc_free	core.c	/^void libvlc_free( void *ptr )$/;"	f
+libvlc_get_changeset	core.c	/^const char * libvlc_get_changeset(void)$/;"	f
+libvlc_get_compiler	core.c	/^const char * libvlc_get_compiler(void)$/;"	f
+libvlc_get_fullscreen	video.c	/^int libvlc_get_fullscreen( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_get_input_thread	media_player.c	/^input_thread_t *libvlc_get_input_thread( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_get_log_verbosity	log.c	/^unsigned libvlc_get_log_verbosity( const libvlc_instance_t *p_instance )$/;"	f
+libvlc_get_track_description	media_player.c	/^        libvlc_get_track_description( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_get_version	core.c	/^const char * libvlc_get_version(void)$/;"	f
+libvlc_init_threads	error.c	/^void libvlc_init_threads (void)$/;"	f
+libvlc_instance_t	libvlc_internal.h	/^struct libvlc_instance_t$/;"	s
+libvlc_la_DEPENDENCIES	Makefile	/^libvlc_la_DEPENDENCIES = libvlc.sym $(am__append_1)$/;"	m
+libvlc_la_LDFLAGS	Makefile	/^libvlc_la_LDFLAGS = $(LDFLAGS_libvlc) -no-undefined -version-info \\$/;"	m
+libvlc_la_LIBADD	Makefile	/^libvlc_la_LIBADD = $(LIBS_libvlc) \\$/;"	m
+libvlc_la_LINK	Makefile	/^libvlc_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+libvlc_la_OBJECTS	Makefile	/^libvlc_la_OBJECTS = $(am_libvlc_la_OBJECTS)$/;"	m
+libvlc_la_SOURCES	Makefile	/^libvlc_la_SOURCES = \\$/;"	m
+libvlc_log_clear	log.c	/^void libvlc_log_clear( libvlc_log_t *p_log )$/;"	f
+libvlc_log_close	log.c	/^void libvlc_log_close( libvlc_log_t *p_log )$/;"	f
+libvlc_log_count	log.c	/^unsigned libvlc_log_count( const libvlc_log_t *p_log )$/;"	f
+libvlc_log_get_iterator	log.c	/^libvlc_log_iterator_t *libvlc_log_get_iterator( const libvlc_log_t *p_log )$/;"	f
+libvlc_log_iterator_free	log.c	/^void libvlc_log_iterator_free( libvlc_log_iterator_t *p_iter )$/;"	f
+libvlc_log_iterator_has_next	log.c	/^int libvlc_log_iterator_has_next( const libvlc_log_iterator_t *p_iter )$/;"	f
+libvlc_log_iterator_next	log.c	/^libvlc_log_message_t *libvlc_log_iterator_next( libvlc_log_iterator_t *p_iter,$/;"	f
+libvlc_log_open	log.c	/^libvlc_log_t *libvlc_log_open( libvlc_instance_t *p_instance )$/;"	f
+libvlc_media_add_option	media.c	/^void libvlc_media_add_option( libvlc_media_t * p_md,$/;"	f
+libvlc_media_add_option_flag	media.c	/^void libvlc_media_add_option_flag( libvlc_media_t * p_md,$/;"	f
+libvlc_media_discoverer_event_manager	media_discoverer.c	/^libvlc_media_discoverer_event_manager( libvlc_media_discoverer_t * p_mdis )$/;"	f
+libvlc_media_discoverer_is_running	media_discoverer.c	/^libvlc_media_discoverer_is_running( libvlc_media_discoverer_t * p_mdis )$/;"	f
+libvlc_media_discoverer_localized_name	media_discoverer.c	/^libvlc_media_discoverer_localized_name( libvlc_media_discoverer_t * p_mdis )$/;"	f
+libvlc_media_discoverer_media_list	media_discoverer.c	/^libvlc_media_discoverer_media_list( libvlc_media_discoverer_t * p_mdis )$/;"	f
+libvlc_media_discoverer_new_from_name	media_discoverer.c	/^libvlc_media_discoverer_new_from_name( libvlc_instance_t * p_inst,$/;"	f
+libvlc_media_discoverer_release	media_discoverer.c	/^libvlc_media_discoverer_release( libvlc_media_discoverer_t * p_mdis )$/;"	f
+libvlc_media_discoverer_t	media_discoverer.c	/^struct libvlc_media_discoverer_t$/;"	s	file:
+libvlc_media_duplicate	media.c	/^libvlc_media_duplicate( libvlc_media_t *p_md_orig )$/;"	f
+libvlc_media_event_manager	media.c	/^libvlc_media_event_manager( libvlc_media_t * p_md )$/;"	f
+libvlc_media_get_duration	media.c	/^libvlc_media_get_duration( libvlc_media_t * p_md )$/;"	f
+libvlc_media_get_meta	media.c	/^char *libvlc_media_get_meta( libvlc_media_t *p_md, libvlc_meta_t e_meta )$/;"	f
+libvlc_media_get_mrl	media.c	/^libvlc_media_get_mrl( libvlc_media_t * p_md )$/;"	f
+libvlc_media_get_state	media.c	/^libvlc_media_get_state( libvlc_media_t *p_md )$/;"	f
+libvlc_media_get_stats	media.c	/^int libvlc_media_get_stats( libvlc_media_t *p_md,$/;"	f
+libvlc_media_get_tracks_info	media.c	/^libvlc_media_get_tracks_info( libvlc_media_t *p_md, libvlc_media_track_info_t ** pp_es )$/;"	f
+libvlc_media_get_user_data	media.c	/^libvlc_media_get_user_data( libvlc_media_t * p_md )$/;"	f
+libvlc_media_is_parsed	media.c	/^libvlc_media_is_parsed(libvlc_media_t *media)$/;"	f
+libvlc_media_library_load	media_library.c	/^int libvlc_media_library_load( libvlc_media_library_t * p_mlib )$/;"	f
+libvlc_media_library_media_list	media_library.c	/^libvlc_media_library_media_list( libvlc_media_library_t * p_mlib )$/;"	f
+libvlc_media_library_new	media_library.c	/^libvlc_media_library_new( libvlc_instance_t * p_inst )$/;"	f
+libvlc_media_library_release	media_library.c	/^void libvlc_media_library_release( libvlc_media_library_t * p_mlib )$/;"	f
+libvlc_media_library_retain	media_library.c	/^void libvlc_media_library_retain( libvlc_media_library_t * p_mlib )$/;"	f
+libvlc_media_library_t	media_library.c	/^struct libvlc_media_library_t$/;"	s	file:
+libvlc_media_list_add_file_content	media_list.c	/^libvlc_media_list_add_file_content( libvlc_media_list_t * p_mlist,$/;"	f
+libvlc_media_list_add_media	media_list.c	/^int libvlc_media_list_add_media( libvlc_media_list_t * p_mlist,$/;"	f
+libvlc_media_list_count	media_list.c	/^int libvlc_media_list_count( libvlc_media_list_t * p_mlist )$/;"	f
+libvlc_media_list_event_manager	media_list.c	/^libvlc_media_list_event_manager( libvlc_media_list_t * p_mlist )$/;"	f
+libvlc_media_list_index_of_item	media_list.c	/^int libvlc_media_list_index_of_item( libvlc_media_list_t * p_mlist,$/;"	f
+libvlc_media_list_insert_media	media_list.c	/^int libvlc_media_list_insert_media( libvlc_media_list_t * p_mlist,$/;"	f
+libvlc_media_list_is_readonly	media_list.c	/^int libvlc_media_list_is_readonly( libvlc_media_list_t * p_mlist )$/;"	f
+libvlc_media_list_item_at_index	media_list.c	/^libvlc_media_list_item_at_index( libvlc_media_list_t * p_mlist,$/;"	f
+libvlc_media_list_item_at_path	media_list_path.h	/^libvlc_media_list_item_at_path( libvlc_media_list_t * p_mlist, const libvlc_media_list_path_t path )$/;"	f
+libvlc_media_list_lock	media_list.c	/^void libvlc_media_list_lock( libvlc_media_list_t * p_mlist )$/;"	f
+libvlc_media_list_media	media_list.c	/^libvlc_media_list_media( libvlc_media_list_t * p_mlist )$/;"	f
+libvlc_media_list_new	media_list.c	/^libvlc_media_list_new( libvlc_instance_t * p_inst )$/;"	f
+libvlc_media_list_parentlist_at_path	media_list_path.h	/^libvlc_media_list_parentlist_at_path( libvlc_media_list_t * p_mlist, const libvlc_media_list_path_t path )$/;"	f
+libvlc_media_list_path_append	media_list_path.h	/^static inline void libvlc_media_list_path_append( libvlc_media_list_path_t * p_path, int index )$/;"	f
+libvlc_media_list_path_copy	media_list_path.h	/^static inline libvlc_media_list_path_t libvlc_media_list_path_copy( const libvlc_media_list_path_t path )$/;"	f
+libvlc_media_list_path_copy_by_appending	media_list_path.h	/^static inline libvlc_media_list_path_t libvlc_media_list_path_copy_by_appending( const libvlc_media_list_path_t path, int index )$/;"	f
+libvlc_media_list_path_depth	media_list_path.h	/^static inline int libvlc_media_list_path_depth( const libvlc_media_list_path_t path )$/;"	f
+libvlc_media_list_path_dump	media_list_path.h	/^static inline void libvlc_media_list_path_dump( const libvlc_media_list_path_t path )$/;"	f
+libvlc_media_list_path_empty	media_list_path.h	/^static inline libvlc_media_list_path_t libvlc_media_list_path_empty( void )$/;"	f
+libvlc_media_list_path_of_item	media_list_path.h	/^static inline libvlc_media_list_path_t libvlc_media_list_path_of_item( libvlc_media_list_t * p_mlist, libvlc_media_t * p_md )$/;"	f
+libvlc_media_list_path_t	media_list_path.h	/^typedef int * libvlc_media_list_path_t; \/* (Media List Player Internal) *\/$/;"	t
+libvlc_media_list_path_with_root_index	media_list_path.h	/^static inline libvlc_media_list_path_t libvlc_media_list_path_with_root_index( int index )$/;"	f
+libvlc_media_list_player_event_manager	media_list_player.c	/^libvlc_media_list_player_event_manager(libvlc_media_list_player_t * p_mlp)$/;"	f
+libvlc_media_list_player_get_state	media_list_player.c	/^libvlc_media_list_player_get_state(libvlc_media_list_player_t * p_mlp)$/;"	f
+libvlc_media_list_player_is_playing	media_list_player.c	/^libvlc_media_list_player_is_playing(libvlc_media_list_player_t * p_mlp)$/;"	f
+libvlc_media_list_player_new	media_list_player.c	/^libvlc_media_list_player_new(libvlc_instance_t * p_instance)$/;"	f
+libvlc_media_list_player_next	media_list_player.c	/^int libvlc_media_list_player_next(libvlc_media_list_player_t * p_mlp)$/;"	f
+libvlc_media_list_player_pause	media_list_player.c	/^void libvlc_media_list_player_pause(libvlc_media_list_player_t * p_mlp)$/;"	f
+libvlc_media_list_player_play	media_list_player.c	/^void libvlc_media_list_player_play(libvlc_media_list_player_t * p_mlp)$/;"	f
+libvlc_media_list_player_play_item	media_list_player.c	/^int libvlc_media_list_player_play_item(libvlc_media_list_player_t * p_mlp, libvlc_media_t * p_md)$/;"	f
+libvlc_media_list_player_play_item_at_index	media_list_player.c	/^int libvlc_media_list_player_play_item_at_index(libvlc_media_list_player_t * p_mlp, int i_index)$/;"	f
+libvlc_media_list_player_previous	media_list_player.c	/^int libvlc_media_list_player_previous(libvlc_media_list_player_t * p_mlp)$/;"	f
+libvlc_media_list_player_release	media_list_player.c	/^void libvlc_media_list_player_release(libvlc_media_list_player_t * p_mlp)$/;"	f
+libvlc_media_list_player_retain	media_list_player.c	/^void libvlc_media_list_player_retain(libvlc_media_list_player_t * p_mlp)$/;"	f
+libvlc_media_list_player_set_media_list	media_list_player.c	/^void libvlc_media_list_player_set_media_list(libvlc_media_list_player_t * p_mlp, libvlc_media_list_t * p_mlist)$/;"	f
+libvlc_media_list_player_set_media_player	media_list_player.c	/^void libvlc_media_list_player_set_media_player(libvlc_media_list_player_t * p_mlp, libvlc_media_player_t * p_mi)$/;"	f
+libvlc_media_list_player_set_playback_mode	media_list_player.c	/^void libvlc_media_list_player_set_playback_mode($/;"	f
+libvlc_media_list_player_stop	media_list_player.c	/^void libvlc_media_list_player_stop(libvlc_media_list_player_t * p_mlp)$/;"	f
+libvlc_media_list_player_t	media_list_player.c	/^struct libvlc_media_list_player_t$/;"	s	file:
+libvlc_media_list_release	media_list.c	/^void libvlc_media_list_release( libvlc_media_list_t * p_mlist )$/;"	f
+libvlc_media_list_remove_index	media_list.c	/^int libvlc_media_list_remove_index( libvlc_media_list_t * p_mlist,$/;"	f
+libvlc_media_list_retain	media_list.c	/^void libvlc_media_list_retain( libvlc_media_list_t * p_mlist )$/;"	f
+libvlc_media_list_set_media	media_list.c	/^void libvlc_media_list_set_media( libvlc_media_list_t * p_mlist,$/;"	f
+libvlc_media_list_sublist_at_path	media_list_path.h	/^libvlc_media_list_sublist_at_path( libvlc_media_list_t * p_mlist, const libvlc_media_list_path_t path )$/;"	f
+libvlc_media_list_t	media_list_internal.h	/^struct libvlc_media_list_t$/;"	s
+libvlc_media_list_unlock	media_list.c	/^void libvlc_media_list_unlock( libvlc_media_list_t * p_mlist )$/;"	f
+libvlc_media_new_as_node	media.c	/^libvlc_media_t * libvlc_media_new_as_node( libvlc_instance_t *p_instance,$/;"	f
+libvlc_media_new_fd	media.c	/^libvlc_media_t *libvlc_media_new_fd( libvlc_instance_t *p_instance, int fd )$/;"	f
+libvlc_media_new_from_input_item	media.c	/^libvlc_media_t * libvlc_media_new_from_input_item($/;"	f
+libvlc_media_new_location	media.c	/^libvlc_media_t *libvlc_media_new_location( libvlc_instance_t *p_instance,$/;"	f
+libvlc_media_new_path	media.c	/^libvlc_media_t *libvlc_media_new_path( libvlc_instance_t *p_instance,$/;"	f
+libvlc_media_parse	media.c	/^libvlc_media_parse(libvlc_media_t *media)$/;"	f
+libvlc_media_parse_async	media.c	/^libvlc_media_parse_async(libvlc_media_t *media)$/;"	f
+libvlc_media_player_can_pause	media_player.c	/^int libvlc_media_player_can_pause( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_destroy	media_player.c	/^static void libvlc_media_player_destroy( libvlc_media_player_t *p_mi )$/;"	f	file:
+libvlc_media_player_event_manager	media_player.c	/^libvlc_media_player_event_manager( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_get_agl	media_player.c	/^uint32_t libvlc_media_player_get_agl( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_get_chapter	media_player.c	/^int libvlc_media_player_get_chapter( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_get_chapter_count	media_player.c	/^int libvlc_media_player_get_chapter_count( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_get_chapter_count_for_title	media_player.c	/^int libvlc_media_player_get_chapter_count_for_title($/;"	f
+libvlc_media_player_get_fps	media_player.c	/^float libvlc_media_player_get_fps( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_get_hwnd	media_player.c	/^void *libvlc_media_player_get_hwnd( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_get_length	media_player.c	/^libvlc_time_t libvlc_media_player_get_length($/;"	f
+libvlc_media_player_get_media	media_player.c	/^libvlc_media_player_get_media( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_get_nsobject	media_player.c	/^void * libvlc_media_player_get_nsobject( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_get_position	media_player.c	/^float libvlc_media_player_get_position( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_get_rate	media_player.c	/^float libvlc_media_player_get_rate( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_get_state	media_player.c	/^libvlc_state_t libvlc_media_player_get_state( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_get_time	media_player.c	/^libvlc_time_t libvlc_media_player_get_time( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_get_title	media_player.c	/^int libvlc_media_player_get_title( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_get_title_count	media_player.c	/^int libvlc_media_player_get_title_count( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_get_xwindow	media_player.c	/^uint32_t libvlc_media_player_get_xwindow( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_has_vout	video.c	/^unsigned libvlc_media_player_has_vout( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_is_playing	media_player.c	/^int libvlc_media_player_is_playing( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_is_seekable	media_player.c	/^int libvlc_media_player_is_seekable( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_navigate	media_player.c	/^void libvlc_media_player_navigate( libvlc_media_player_t* p_mi,$/;"	f
+libvlc_media_player_new	media_player.c	/^libvlc_media_player_new( libvlc_instance_t *instance )$/;"	f
+libvlc_media_player_new_from_media	media_player.c	/^libvlc_media_player_new_from_media( libvlc_media_t * p_md )$/;"	f
+libvlc_media_player_next_chapter	media_player.c	/^void libvlc_media_player_next_chapter( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_next_frame	media_player.c	/^void libvlc_media_player_next_frame( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_pause	media_player.c	/^void libvlc_media_player_pause( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_play	media_player.c	/^int libvlc_media_player_play( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_previous_chapter	media_player.c	/^void libvlc_media_player_previous_chapter( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_release	media_player.c	/^void libvlc_media_player_release( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_retain	media_player.c	/^void libvlc_media_player_retain( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_set_agl	media_player.c	/^void libvlc_media_player_set_agl( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_media_player_set_chapter	media_player.c	/^void libvlc_media_player_set_chapter( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_media_player_set_hwnd	media_player.c	/^void libvlc_media_player_set_hwnd( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_media_player_set_media	media_player.c	/^void libvlc_media_player_set_media($/;"	f
+libvlc_media_player_set_nsobject	media_player.c	/^void libvlc_media_player_set_nsobject( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_media_player_set_pause	media_player.c	/^void libvlc_media_player_set_pause( libvlc_media_player_t *p_mi, int paused )$/;"	f
+libvlc_media_player_set_position	media_player.c	/^void libvlc_media_player_set_position( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_media_player_set_rate	media_player.c	/^int libvlc_media_player_set_rate( libvlc_media_player_t *p_mi, float rate )$/;"	f
+libvlc_media_player_set_time	media_player.c	/^void libvlc_media_player_set_time( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_media_player_set_title	media_player.c	/^void libvlc_media_player_set_title( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_media_player_set_xwindow	media_player.c	/^void libvlc_media_player_set_xwindow( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_media_player_stop	media_player.c	/^void libvlc_media_player_stop( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_player_t	media_player_internal.h	/^struct libvlc_media_player_t$/;"	s
+libvlc_media_player_will_play	media_player.c	/^int libvlc_media_player_will_play( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_media_release	media.c	/^void libvlc_media_release( libvlc_media_t *p_md )$/;"	f
+libvlc_media_retain	media.c	/^void libvlc_media_retain( libvlc_media_t *p_md )$/;"	f
+libvlc_media_save_meta	media.c	/^int libvlc_media_save_meta( libvlc_media_t *p_md )$/;"	f
+libvlc_media_set_meta	media.c	/^void libvlc_media_set_meta( libvlc_media_t *p_md, libvlc_meta_t e_meta, const char *psz_value )$/;"	f
+libvlc_media_set_state	media.c	/^libvlc_media_set_state( libvlc_media_t *p_md,$/;"	f
+libvlc_media_set_user_data	media.c	/^libvlc_media_set_user_data( libvlc_media_t * p_md, void * p_new_user_data )$/;"	f
+libvlc_media_subitems	media.c	/^libvlc_media_subitems( libvlc_media_t * p_md )$/;"	f
+libvlc_media_t	media_internal.h	/^struct libvlc_media_t$/;"	s
+libvlc_module_description_list_release	core.c	/^void libvlc_module_description_list_release( libvlc_module_description_t *p_list )$/;"	f
+libvlc_navigate_to_action	media_player.c	/^static const vlc_action_t libvlc_navigate_to_action[] =$/;"	v	file:
+libvlc_navigate_to_action_size	media_player.c	/^static const uint32_t libvlc_navigate_to_action_size =                        \\$/;"	v	file:
+libvlc_new	core.c	/^libvlc_instance_t * libvlc_new( int argc, const char *const *argv )$/;"	f
+libvlc_playlist_play	playlist.c	/^void libvlc_playlist_play( libvlc_instance_t *p_instance, int i_id,$/;"	f
+libvlc_printerr	error.c	/^const char *libvlc_printerr (const char *fmt, ...)$/;"	f
+libvlc_release	core.c	/^void libvlc_release( libvlc_instance_t *p_instance )$/;"	f
+libvlc_retain	core.c	/^void libvlc_retain( libvlc_instance_t *p_instance )$/;"	f
+libvlc_set_exit_handler	core.c	/^void libvlc_set_exit_handler( libvlc_instance_t *p_i, void (*cb) (void *),$/;"	f
+libvlc_set_fullscreen	video.c	/^void libvlc_set_fullscreen( libvlc_media_player_t *p_mi, int b_fullscreen )$/;"	f
+libvlc_set_log_verbosity	log.c	/^void libvlc_set_log_verbosity( libvlc_instance_t *p_instance, unsigned level )$/;"	f
+libvlc_set_user_agent	core.c	/^void libvlc_set_user_agent (libvlc_instance_t *p_i,$/;"	f
+libvlc_setup_threads	error.c	/^static void libvlc_setup_threads (bool init)$/;"	f	file:
+libvlc_to_vlc_meta	media.c	/^static const vlc_meta_type_t libvlc_to_vlc_meta[] =$/;"	v	file:
+libvlc_toggle_fullscreen	video.c	/^void libvlc_toggle_fullscreen( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_toggle_teletext	video.c	/^void libvlc_toggle_teletext( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_track_description_list_release	media_player.c	/^void libvlc_track_description_list_release( libvlc_track_description_t *p_td )$/;"	f
+libvlc_track_description_release	media_player.c	/^void libvlc_track_description_release( libvlc_track_description_t *p_td )$/;"	f
+libvlc_video_filter_list_get	core.c	/^libvlc_module_description_t *libvlc_video_filter_list_get( libvlc_instance_t *p_instance )$/;"	f
+libvlc_video_get_adjust_float	video.c	/^float libvlc_video_get_adjust_float( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_get_adjust_int	video.c	/^int libvlc_video_get_adjust_int( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_get_aspect_ratio	video.c	/^char *libvlc_video_get_aspect_ratio( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_video_get_chapter_description	video.c	/^        libvlc_video_get_chapter_description( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_get_crop_geometry	video.c	/^char *libvlc_video_get_crop_geometry (libvlc_media_player_t *p_mi)$/;"	f
+libvlc_video_get_cursor	video.c	/^int libvlc_video_get_cursor( libvlc_media_player_t *mp, unsigned num,$/;"	f
+libvlc_video_get_height	video.c	/^int libvlc_video_get_height( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_video_get_logo_int	video.c	/^int libvlc_video_get_logo_int( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_get_marquee_int	video.c	/^int libvlc_video_get_marquee_int( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_get_marquee_string	video.c	/^char * libvlc_video_get_marquee_string( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_get_scale	video.c	/^float libvlc_video_get_scale( libvlc_media_player_t *mp )$/;"	f
+libvlc_video_get_size	video.c	/^int libvlc_video_get_size( libvlc_media_player_t *p_mi, unsigned num,$/;"	f
+libvlc_video_get_spu	video.c	/^int libvlc_video_get_spu( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_video_get_spu_count	video.c	/^int libvlc_video_get_spu_count( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_video_get_spu_delay	video.c	/^int64_t libvlc_video_get_spu_delay( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_video_get_spu_description	video.c	/^        libvlc_video_get_spu_description( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_video_get_teletext	video.c	/^int libvlc_video_get_teletext( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_video_get_title_description	video.c	/^        libvlc_video_get_title_description( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_video_get_track	video.c	/^int libvlc_video_get_track( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_video_get_track_count	video.c	/^int libvlc_video_get_track_count( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_video_get_track_description	video.c	/^        libvlc_video_get_track_description( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_video_get_width	video.c	/^int libvlc_video_get_width( libvlc_media_player_t *p_mi )$/;"	f
+libvlc_video_set_adjust_float	video.c	/^void libvlc_video_set_adjust_float( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_set_adjust_int	video.c	/^void libvlc_video_set_adjust_int( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_set_aspect_ratio	video.c	/^void libvlc_video_set_aspect_ratio( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_set_callbacks	media_player.c	/^void libvlc_video_set_callbacks( libvlc_media_player_t *mp,$/;"	f
+libvlc_video_set_crop_geometry	video.c	/^void libvlc_video_set_crop_geometry( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_set_deinterlace	video.c	/^void libvlc_video_set_deinterlace( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_set_format	media_player.c	/^void libvlc_video_set_format( libvlc_media_player_t *mp, const char *chroma,$/;"	f
+libvlc_video_set_format_callbacks	media_player.c	/^void libvlc_video_set_format_callbacks( libvlc_media_player_t *mp,$/;"	f
+libvlc_video_set_key_input	video.c	/^void libvlc_video_set_key_input( libvlc_media_player_t *p_mi, unsigned on )$/;"	f
+libvlc_video_set_logo_int	video.c	/^void libvlc_video_set_logo_int( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_set_logo_string	video.c	/^void libvlc_video_set_logo_string( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_set_marquee_int	video.c	/^void libvlc_video_set_marquee_int( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_set_marquee_string	video.c	/^void libvlc_video_set_marquee_string( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_set_mouse_input	video.c	/^void libvlc_video_set_mouse_input( libvlc_media_player_t *p_mi, unsigned on )$/;"	f
+libvlc_video_set_scale	video.c	/^void libvlc_video_set_scale( libvlc_media_player_t *p_mp, float f_scale )$/;"	f
+libvlc_video_set_spu	video.c	/^int libvlc_video_set_spu( libvlc_media_player_t *p_mi, int i_spu )$/;"	f
+libvlc_video_set_spu_delay	video.c	/^int libvlc_video_set_spu_delay( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_set_subtitle_file	video.c	/^int libvlc_video_set_subtitle_file( libvlc_media_player_t *p_mi,$/;"	f
+libvlc_video_set_teletext	video.c	/^void libvlc_video_set_teletext( libvlc_media_player_t *p_mi, int i_page )$/;"	f
+libvlc_video_set_track	video.c	/^int libvlc_video_set_track( libvlc_media_player_t *p_mi, int i_track )$/;"	f
+libvlc_video_take_snapshot	video.c	/^libvlc_video_take_snapshot( libvlc_media_player_t *p_mi, unsigned num,$/;"	f
+libvlc_vlm	libvlc_internal.h	/^    libvlc_vlm_t  libvlc_vlm;$/;"	m	struct:libvlc_instance_t
+libvlc_vlm_add_broadcast	vlm.c	/^int libvlc_vlm_add_broadcast( libvlc_instance_t *p_instance,$/;"	f
+libvlc_vlm_add_input	vlm.c	/^int libvlc_vlm_add_input( libvlc_instance_t *p_instance,$/;"	f
+libvlc_vlm_add_vod	vlm.c	/^int libvlc_vlm_add_vod( libvlc_instance_t *p_instance, const char *psz_name,$/;"	f
+libvlc_vlm_change_media	vlm.c	/^int libvlc_vlm_change_media( libvlc_instance_t *p_instance,$/;"	f
+libvlc_vlm_del_media	vlm.c	/^int libvlc_vlm_del_media( libvlc_instance_t *p_instance, const char *psz_name )$/;"	f
+libvlc_vlm_get_event_manager	vlm.c	/^libvlc_vlm_get_event_manager( libvlc_instance_t *p_instance )$/;"	f
+libvlc_vlm_get_media_instance	vlm.c	/^libvlc_vlm_get_media_instance( libvlc_instance_t *p_instance,$/;"	f	file:
+libvlc_vlm_get_media_instance_length	vlm.c	/^int libvlc_vlm_get_media_instance_length( libvlc_instance_t *p_instance,$/;"	f
+libvlc_vlm_get_media_instance_position	vlm.c	/^float libvlc_vlm_get_media_instance_position( libvlc_instance_t *p_instance,$/;"	f
+libvlc_vlm_get_media_instance_rate	vlm.c	/^int libvlc_vlm_get_media_instance_rate( libvlc_instance_t *p_instance,$/;"	f
+libvlc_vlm_get_media_instance_time	vlm.c	/^int libvlc_vlm_get_media_instance_time( libvlc_instance_t *p_instance,$/;"	f
+libvlc_vlm_init	vlm.c	/^static int libvlc_vlm_init( libvlc_instance_t *p_instance )$/;"	f	file:
+libvlc_vlm_pause_media	vlm.c	/^int libvlc_vlm_pause_media( libvlc_instance_t *p_instance,$/;"	f
+libvlc_vlm_play_media	vlm.c	/^int libvlc_vlm_play_media( libvlc_instance_t *p_instance,$/;"	f
+libvlc_vlm_release	vlm.c	/^void libvlc_vlm_release( libvlc_instance_t *p_instance )$/;"	f
+libvlc_vlm_release_func_t	libvlc_internal.h	/^typedef void (*libvlc_vlm_release_func_t)( libvlc_instance_t * ) ;$/;"	t
+libvlc_vlm_release_internal	vlm.c	/^static void libvlc_vlm_release_internal( libvlc_instance_t *p_instance )$/;"	f	file:
+libvlc_vlm_seek_media	vlm.c	/^int libvlc_vlm_seek_media( libvlc_instance_t *p_instance,$/;"	f
+libvlc_vlm_set_enabled	vlm.c	/^int libvlc_vlm_set_enabled( libvlc_instance_t *p_instance,$/;"	f
+libvlc_vlm_set_input	vlm.c	/^int libvlc_vlm_set_input( libvlc_instance_t *p_instance,$/;"	f
+libvlc_vlm_set_loop	vlm.c	/^int libvlc_vlm_set_loop( libvlc_instance_t *p_instance, const char *psz_name,$/;"	f
+libvlc_vlm_set_mux	vlm.c	/^int libvlc_vlm_set_mux( libvlc_instance_t *p_instance, const char *psz_name,$/;"	f
+libvlc_vlm_set_output	vlm.c	/^int libvlc_vlm_set_output( libvlc_instance_t *p_instance,$/;"	f
+libvlc_vlm_show_media	vlm.c	/^const char* libvlc_vlm_show_media( libvlc_instance_t *p_instance,$/;"	f
+libvlc_vlm_stop_media	vlm.c	/^int libvlc_vlm_stop_media( libvlc_instance_t *p_instance,$/;"	f
+libvlc_vlm_t	libvlc_internal.h	/^typedef struct libvlc_vlm_t$/;"	s
+libvlc_vlm_t	libvlc_internal.h	/^} libvlc_vlm_t;$/;"	t	typeref:struct:libvlc_vlm_t
+libvlc_vprinterr	error.c	/^const char *libvlc_vprinterr (const char *fmt, va_list ap)$/;"	f
+libvlc_wait	core.c	/^void libvlc_wait( libvlc_instance_t *p_i )$/;"	f
+listener	event_async.c	/^    libvlc_event_listener_t listener;$/;"	m	struct:queue_elmt	file:
+listeners	event.c	/^    vlc_array_t listeners;$/;"	m	struct:libvlc_event_listeners_group_t	file:
+listeners_are_equal	event_internal.h	/^listeners_are_equal( libvlc_event_listener_t * listener1,$/;"	f
+listeners_groups	event_internal.h	/^    vlc_array_t listeners_groups;$/;"	m	struct:libvlc_event_manager_t
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+lock	event_async.c	/^    vlc_mutex_t lock;$/;"	m	struct:libvlc_event_async_queue	file:
+lock	media_list_player.c	/^static inline void lock(libvlc_media_list_player_t * p_mlp)$/;"	f	file:
+lock	media_player.c	/^static inline void lock(libvlc_media_player_t *mp)$/;"	f	file:
+lock	media_player_internal.h	/^        vlc_mutex_t       lock;$/;"	m	struct:libvlc_media_player_t::__anon3
+lock_input	media_player.c	/^static inline void lock_input(libvlc_media_player_t *mp)$/;"	f	file:
+logo_option_bynumber	video.c	/^logo_option_bynumber( unsigned option )$/;"	f	file:
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+marq_option_bynumber	video.c	/^marq_option_bynumber(unsigned option)$/;"	f	file:
+media_parse	media.c	/^static int media_parse(libvlc_media_t *media)$/;"	f	file:
+media_player_reached_end	media_list_player.c	/^media_player_reached_end(const libvlc_event_t * p_event, void * p_user_data)$/;"	f	file:
+mkdir_p	Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mlist_em	media_list_player.c	/^static inline libvlc_event_manager_t * mlist_em(libvlc_media_list_player_t * p_mlp)$/;"	f	file:
+mlist_is_writable	media_list.c	/^bool mlist_is_writable( libvlc_media_list_t *p_mlist )$/;"	f	file:
+mlist_item_deleted	media_list_player.c	/^mlist_item_deleted(const libvlc_event_t * p_event, void * p_user_data)$/;"	f	file:
+module_description_list_get	core.c	/^static libvlc_module_description_t *module_description_list_get($/;"	f	file:
+mp_callback_lock	media_list_player.c	/^    vlc_mutex_t                 mp_callback_lock;$/;"	m	struct:libvlc_media_list_player_t	file:
+mplayer_em	media_list_player.c	/^static inline libvlc_event_manager_t * mplayer_em(libvlc_media_list_player_t * p_mlp)$/;"	f	file:
+name	event.c	/^    const char name[40];$/;"	m	struct:__anon2	file:
+name	video.c	/^    const char name[20];$/;"	m	struct:__anon1	file:
+next	event_async.c	/^    struct queue_elmt * next;$/;"	m	struct:queue_elmt	typeref:struct:queue_elmt::queue_elmt	file:
+nodist_pkginclude_HEADERS	Makefile	/^nodist_pkginclude_HEADERS = ..\/include\/vlc\/libvlc_version.h$/;"	m
+nomemstr	core.c	/^static const char nomemstr[] = "Insufficient memory";$/;"	v	file:
+notify_item_addition	media_list.c	/^notify_item_addition( libvlc_media_list_t * p_mlist,$/;"	f	file:
+notify_item_deletion	media_list.c	/^notify_item_deletion( libvlc_media_list_t * p_mlist,$/;"	f	file:
+object_lock	event_internal.h	/^    vlc_mutex_t object_lock;$/;"	m	struct:libvlc_event_manager_t
+object_lock	media_list_internal.h	/^    vlc_mutex_t                 object_lock;$/;"	m	struct:libvlc_media_list_t
+object_lock	media_list_player.c	/^    vlc_mutex_t                 object_lock;$/;"	m	struct:libvlc_media_list_player_t	file:
+object_lock	media_player_internal.h	/^    vlc_mutex_t        object_lock;$/;"	m	struct:libvlc_media_player_t
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+oom	error.c	/^static const char oom[] = "Out of memory";$/;"	v	file:
+opt_t	video.c	/^} opt_t;$/;"	t	typeref:struct:__anon1	file:
+p_callback_list	libvlc_internal.h	/^    struct libvlc_callback_entry_list_t *p_callback_list;$/;"	m	struct:libvlc_instance_t	typeref:struct:libvlc_instance_t::libvlc_callback_entry_list_t
+p_current_playing_item	media_list_player.c	/^    libvlc_media_t *            p_current_playing_item;$/;"	m	struct:libvlc_media_list_player_t	file:
+p_event_manager	libvlc_internal.h	/^    libvlc_event_manager_t *p_event_manager;$/;"	m	struct:libvlc_vlm_t
+p_event_manager	media_discoverer.c	/^    libvlc_event_manager_t * p_event_manager;$/;"	m	struct:libvlc_media_discoverer_t	file:
+p_event_manager	media_internal.h	/^    libvlc_event_manager_t * p_event_manager;$/;"	m	struct:libvlc_media_t
+p_event_manager	media_library.c	/^    libvlc_event_manager_t * p_event_manager;$/;"	m	struct:libvlc_media_library_t	file:
+p_event_manager	media_list_internal.h	/^    libvlc_event_manager_t *    p_event_manager;$/;"	m	struct:libvlc_media_list_t
+p_event_manager	media_list_player.c	/^    libvlc_event_manager_t *    p_event_manager;$/;"	m	struct:libvlc_media_list_player_t	file:
+p_event_manager	media_player_internal.h	/^    libvlc_event_manager_t * p_event_manager;$/;"	m	struct:libvlc_media_player_t
+p_flat_mlist	media_list_internal.h	/^    libvlc_media_list_t *       p_flat_mlist;$/;"	m	struct:libvlc_media_list_t
+p_input_item	media_internal.h	/^    input_item_t      *p_input_item;$/;"	m	struct:libvlc_media_t
+p_libvlc_instance	event_internal.h	/^    struct libvlc_instance_t * p_libvlc_instance;$/;"	m	struct:libvlc_event_manager_t	typeref:struct:libvlc_event_manager_t::libvlc_instance_t
+p_libvlc_instance	media_discoverer.c	/^    libvlc_instance_t *      p_libvlc_instance;$/;"	m	struct:libvlc_media_discoverer_t	file:
+p_libvlc_instance	media_internal.h	/^    libvlc_instance_t *p_libvlc_instance;$/;"	m	struct:libvlc_media_t
+p_libvlc_instance	media_library.c	/^    libvlc_instance_t *      p_libvlc_instance;$/;"	m	struct:libvlc_media_library_t	file:
+p_libvlc_instance	media_list_internal.h	/^    libvlc_instance_t *         p_libvlc_instance;$/;"	m	struct:libvlc_media_list_t
+p_libvlc_instance	media_list_player.c	/^    libvlc_instance_t *         p_libvlc_instance;$/;"	m	struct:libvlc_media_list_player_t	file:
+p_libvlc_instance	media_player_internal.h	/^    struct libvlc_instance_t * p_libvlc_instance; \/* Parent instance *\/$/;"	m	struct:libvlc_media_player_t	typeref:struct:libvlc_media_player_t::libvlc_instance_t
+p_libvlc_int	libvlc_internal.h	/^    libvlc_int_t *p_libvlc_int;$/;"	m	struct:libvlc_instance_t
+p_md	media_list_internal.h	/^    libvlc_media_t * p_md; \/* The media from which the$/;"	m	struct:libvlc_media_list_t
+p_md	media_player_internal.h	/^    libvlc_media_t * p_md; \/* current media descriptor *\/$/;"	m	struct:libvlc_media_player_t
+p_mi	media_list_player.c	/^    libvlc_media_player_t *     p_mi;$/;"	m	struct:libvlc_media_list_player_t	file:
+p_mlist	media_discoverer.c	/^    libvlc_media_list_t *    p_mlist;$/;"	m	struct:libvlc_media_discoverer_t	file:
+p_mlist	media_library.c	/^    libvlc_media_list_t *    p_mlist;$/;"	m	struct:libvlc_media_library_t	file:
+p_mlist	media_list_player.c	/^    libvlc_media_list_t *       p_mlist;$/;"	m	struct:libvlc_media_list_player_t	file:
+p_obj	event_internal.h	/^    void * p_obj;$/;"	m	struct:libvlc_event_manager_t
+p_resource	media_player_internal.h	/^        input_resource_t *p_resource;$/;"	m	struct:libvlc_media_player_t::__anon3
+p_sd	media_discoverer.c	/^    services_discovery_t *   p_sd;$/;"	m	struct:libvlc_media_discoverer_t	file:
+p_subitems	media_internal.h	/^    VLC_FORWARD_DECLARE_OBJECT(libvlc_media_list_t*) p_subitems; \/* A media descriptor can have Sub items. This is the only dependancy we really have on media_list *\/$/;"	m	struct:libvlc_media_t
+p_thread	media_player_internal.h	/^        input_thread_t   *p_thread;$/;"	m	struct:libvlc_media_player_t::__anon3
+p_user_data	event_internal.h	/^    void *              p_user_data;$/;"	m	struct:libvlc_event_listener_t
+p_user_data	media_internal.h	/^    void *p_user_data;$/;"	m	struct:libvlc_media_t
+p_vlm	libvlc_internal.h	/^    vlm_t                  *p_vlm;$/;"	m	struct:libvlc_vlm_t
+parsed_cond	media_internal.h	/^    vlc_cond_t parsed_cond;$/;"	m	struct:libvlc_media_t
+parsed_lock	media_internal.h	/^    vlc_mutex_t parsed_lock;$/;"	m	struct:libvlc_media_t
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pf_callback	event_internal.h	/^    libvlc_callback_t   pf_callback;$/;"	m	struct:libvlc_event_listener_t
+pf_release	libvlc_internal.h	/^    libvlc_vlm_release_func_t pf_release;$/;"	m	struct:libvlc_vlm_t
+pkgconfig_DATA	Makefile	/^pkgconfig_DATA = libvlc.pc$/;"	m
+pkgconfigdir	Makefile	/^pkgconfigdir = $(libdir)\/pkgconfig$/;"	m
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/vlc$/;"	m
+pkginclude_HEADERS	Makefile	/^pkginclude_HEADERS = \\$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/vlc$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/vlc$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/vlc$/;"	m
+pop	event_async.c	/^static bool pop(libvlc_event_manager_t * p_em,$/;"	f	file:
+pop_listener	event_async.c	/^static void pop_listener(libvlc_event_manager_t * p_em, libvlc_event_listener_t * listener)$/;"	f	file:
+prefix	Makefile	/^prefix = \/home\/ylwang\/msvc\/vlc-2.0.6\/_win32$/;"	m
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+push	event_async.c	/^static void push(libvlc_event_manager_t * p_em,$/;"	f	file:
+queue	event_async.c	/^static inline struct libvlc_event_async_queue * queue(libvlc_event_manager_t * p_em)$/;"	f	file:
+queue_elmt	event_async.c	/^struct queue_elmt {$/;"	s	file:
+queue_lock	event_async.c	/^static inline void queue_lock(libvlc_event_manager_t * p_em)$/;"	f	file:
+queue_unlock	event_async.c	/^static inline void queue_unlock(libvlc_event_manager_t * p_em)$/;"	f	file:
+recurse_answer	vlm.c	/^static char* recurse_answer( vlm_message_t *p_answer, const char* psz_delim,$/;"	f	file:
+ref_count	libvlc_internal.h	/^    unsigned      ref_count;$/;"	m	struct:libvlc_instance_t
+refcount_lock	media_list_internal.h	/^    vlc_mutex_t                 refcount_lock;$/;"	m	struct:libvlc_media_list_t
+register_event	media_player.c	81;"	d	file:
+release_input_thread	media_player.c	/^static void release_input_thread( libvlc_media_player_t *p_mi, bool b_input_abort )$/;"	f	file:
+running	media_discoverer.c	/^    bool                     running;$/;"	m	struct:libvlc_media_discoverer_t	file:
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+services_discovery_ended	media_discoverer.c	/^static void services_discovery_ended( const vlc_event_t * p_event,$/;"	f	file:
+services_discovery_item_added	media_discoverer.c	/^static void services_discovery_item_added( const vlc_event_t * p_event,$/;"	f	file:
+services_discovery_item_removed	media_discoverer.c	/^static void services_discovery_item_removed( const vlc_event_t * p_event,$/;"	f	file:
+services_discovery_started	media_discoverer.c	/^static void services_discovery_started( const vlc_event_t * p_event,$/;"	f	file:
+set_current_playing_item	media_list_player.c	/^set_current_playing_item(libvlc_media_list_player_t * p_mlp, libvlc_media_list_path_t path)$/;"	f	file:
+set_float	video.c	/^set_float( libvlc_media_player_t *p_mi, const char *restrict name,$/;"	f	file:
+set_int	video.c	/^set_int( libvlc_media_player_t *p_mi, const char *restrict name,$/;"	f	file:
+set_relative_playlist_position_and_play	media_list_player.c	/^static int set_relative_playlist_position_and_play($/;"	f	file:
+set_state	media_player.c	/^static void set_state( libvlc_media_player_t *p_mi, libvlc_state_t state,$/;"	f	file:
+set_string	video.c	/^set_string( libvlc_media_player_t *p_mi, const char *restrict name,$/;"	f	file:
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+signal	event_async.c	/^    vlc_cond_t signal;$/;"	m	struct:libvlc_event_async_queue	file:
+signal_idle	event_async.c	/^    vlc_cond_t signal_idle;$/;"	m	struct:libvlc_event_async_queue	file:
+snapshot_was_taken	media_player.c	/^static int snapshot_was_taken(vlc_object_t *p_this, char const *psz_cmd,$/;"	f	file:
+soliddatadir	Makefile	/^soliddatadir = $/;"	m
+srcdir	Makefile	/^srcdir = .$/;"	m
+state	media_internal.h	/^    libvlc_state_t     state;$/;"	m	struct:libvlc_media_t
+state	media_player_internal.h	/^    libvlc_state_t state;$/;"	m	struct:libvlc_media_player_t
+stop	media_list_player.c	/^static void stop(libvlc_media_list_player_t * p_mlp)$/;"	f	file:
+subdir	Makefile	/^subdir = lib$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+thread	event_async.c	/^    vlc_thread_t thread;$/;"	m	struct:libvlc_event_async_queue	file:
+to_mtime	libvlc_internal.h	/^static inline mtime_t to_mtime(libvlc_time_t time)$/;"	f
+top_build_prefix	Makefile	/^top_build_prefix = ..\/$/;"	m
+top_builddir	Makefile	/^top_builddir = ..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..$/;"	m
+trace	media_list.c	50;"	d	file:
+trace	media_list.c	52;"	d	file:
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+type	event.c	/^    int type;$/;"	m	struct:__anon2	file:
+type	video.c	/^    unsigned type;$/;"	m	struct:__anon1	file:
+uninstall_input_item_observer	media.c	/^static void uninstall_input_item_observer( libvlc_media_t *p_md )$/;"	f	file:
+uninstall_media_player_observer	media_list_player.c	/^uninstall_media_player_observer(libvlc_media_list_player_t * p_mlp)$/;"	f	file:
+uninstall_playlist_observer	media_list_player.c	/^uninstall_playlist_observer(libvlc_media_list_player_t * p_mlp)$/;"	f	file:
+unknown_event_name	event.c	/^static const char unknown_event_name[] = "Unknown Event";$/;"	v	file:
+unlock	media_list_player.c	/^static inline void unlock(libvlc_media_list_player_t * p_mlp)$/;"	f	file:
+unlock	media_player.c	/^static inline void unlock(libvlc_media_player_t *mp)$/;"	f	file:
+unlock_input	media_player.c	/^static inline void unlock_input(libvlc_media_player_t *mp)$/;"	f	file:
+vlc_assert_locked	media_list_player.c	/^static inline void vlc_assert_locked(vlc_mutex_t *mutex)$/;"	f	file:
+vlc_to_libvlc_meta	media.c	/^static const libvlc_meta_t vlc_to_libvlc_meta[] =$/;"	v	file:
+vlcdatadir	Makefile	/^vlcdatadir = ${datadir}\/${PKGDIR}$/;"	m
+vlclibdir	Makefile	/^vlclibdir = ${libdir}\/${PKGDIR}$/;"	m

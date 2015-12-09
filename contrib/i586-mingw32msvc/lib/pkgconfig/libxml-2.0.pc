@@ -1,0 +1,13 @@
+prefix=/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+modules=1
+
+Name: libXML
+Version: 2.8.0
+Description: libXML library version2.
+Requires:
+Libs: -L${libdir} -lxml2
+Libs.private:     -lws2_32 
+Cflags: -I${includedir}/libxml2  -DLIBXML_STATIC

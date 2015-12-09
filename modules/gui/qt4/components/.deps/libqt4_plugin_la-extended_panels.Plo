@@ -1,0 +1,1499 @@
+components/libqt4_plugin_la-extended_panels.lo \
+  components/.libs/libqt4_plugin_la-extended_panels.o:  \
+ components/extended_panels.cpp ../../../config.h \
+  ../../../include/vlc_fixups.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/time.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/_mingw.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stddef.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdio.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stdarg.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/types.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/dirent.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/io.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/errno.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QLabel \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qlabel.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qlabel.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qframe.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qframe.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qwidget.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qwidget.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qwindowdefs.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qwindowdefs.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qobjectdefs.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qobjectdefs.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qnamespace.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qnamespace.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qglobal.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qglobal.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qconfig.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qconfig.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qfeatures.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qfeatures.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qwindowdefs_win.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qwindowdefs_win.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qobject.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qobject.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstring.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qstring.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qchar.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qchar.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qbytearray.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qbytearray.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qatomic.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/thread/qatomic.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qbasicatomic.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/thread/qbasicatomic.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qatomic_arch.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/arch/qatomic_arch.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qatomic_windows.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/arch/qatomic_windows.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qatomic_i386.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/arch/qatomic_i386.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/string.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qlist.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qlist.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qiterator.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qiterator.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qalgorithms.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qalgorithms.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/new \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstddef \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++config.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/os_defines.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/cpu_defines.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/exception \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/limits.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/syslimits.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/limits.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qscopedpointer.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qscopedpointer.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qmargins.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qmargins.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qpaintdevice.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qpaintdevice.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qrect.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qrect.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qsize.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qsize.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qpoint.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qpoint.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qpalette.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qpalette.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qcolor.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qcolor.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qrgb.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qrgb.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstringlist.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qstringlist.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qdatastream.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qdatastream.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qiodevice.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qiodevice.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qregexp.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qregexp.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstringmatcher.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qstringmatcher.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qbrush.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qbrush.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qpair.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qpair.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qvector.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qvector.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdlib.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qmatrix.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qmatrix.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qpolygon.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qpolygon.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qregion.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qregion.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qline.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qline.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtransform.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qtransform.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qpainterpath.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qpainterpath.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qimage.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/image/qimage.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qpixmap.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/image/qpixmap.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qsharedpointer.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qsharedpointer.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qshareddata.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qshareddata.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qsharedpointer_impl.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qsharedpointer_impl.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qfont.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/text/qfont.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qfontmetrics.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/text/qfontmetrics.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qfontinfo.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/text/qfontinfo.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qsizepolicy.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qsizepolicy.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qcursor.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qcursor.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qkeysequence.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qkeysequence.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QVariant \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qvariant.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qvariant.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qmetatype.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qmetatype.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qmap.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qmap.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qhash.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qhash.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QString \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstring.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QFont \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qfont.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QGridLayout \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qgridlayout.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qgridlayout.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qlayout.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qlayout.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qlayoutitem.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qlayoutitem.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qboxlayout.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qboxlayout.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qgridlayout.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QSignalMapper \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qsignalmapper.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qsignalmapper.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QComboBox \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qcombobox.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qcombobox.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qabstractitemdelegate.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/itemviews/qabstractitemdelegate.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qstyleoption.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/styles/qstyleoption.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qvariant.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qabstractspinbox.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qabstractspinbox.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qvalidator.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qvalidator.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qlocale.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qlocale.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qicon.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/image/qicon.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qslider.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qslider.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qabstractslider.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qabstractslider.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qstyle.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/styles/qstyle.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtabbar.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qtabbar.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtabwidget.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qtabwidget.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qrubberband.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qrubberband.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qabstractitemmodel.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qabstractitemmodel.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QTimer \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qtimer.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qtimer.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qbasictimer.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qbasictimer.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QFileDialog \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qfiledialog.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/dialogs/qfiledialog.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qdir.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qdir.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qfileinfo.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qfileinfo.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qfile.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qfile.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qdialog.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/dialogs/qdialog.h \
+  components/extended_panels.hpp ../../../config.h \
+  ../../../include/vlc_common.h ../../../include/vlc_config.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/inttypes.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdint.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/malloc.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/stat.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windows.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windef.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnt.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winerror.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/basetsd.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/pshpack4.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/poppack.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wincon.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winbase.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wingdi.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winuser.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnls.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winver.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnetwk.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winreg.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winsvc.h \
+  ../../../include/vlc_mtime.h ../../../include/vlc_threads.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/process.h \
+  ../../../include/vlc_arrays.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/tchar.h \
+  ../../../include/vlc_messages.h ../../../include/vlc_objects.h \
+  ../../../include/vlc_variables.h ../../../include/vlc_main.h \
+  ../../../include/vlc_configuration.h ui/equalizer.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QVariant \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QAction \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qaction.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qaction.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qactiongroup.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qactiongroup.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qaction.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QApplication \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qapplication.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qapplication.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qcoreapplication.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qcoreapplication.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qcoreevent.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qcoreevent.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qeventloop.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qeventloop.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QButtonGroup \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qbuttongroup.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qbuttongroup.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QCheckBox \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qcheckbox.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qcheckbox.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qabstractbutton.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qabstractbutton.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QComboBox \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QFrame \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qframe.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QGridLayout \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QHBoxLayout \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qboxlayout.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QHeaderView \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qheaderview.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/itemviews/qheaderview.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qabstractitemview.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/itemviews/qabstractitemview.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qabstractscrollarea.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qabstractscrollarea.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qitemselectionmodel.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/itemviews/qitemselectionmodel.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qset.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qset.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QLabel \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QSlider \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qslider.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QSpacerItem \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qlayoutitem.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QWidget \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qwidget.h \
+  ui/video_effects.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QDial \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qdial.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qdial.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QGroupBox \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qgroupbox.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qgroupbox.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QLineEdit \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qlineedit.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qlineedit.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtextcursor.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/text/qtextcursor.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtextformat.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/text/qtextformat.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qpen.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qpen.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtextoption.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/text/qtextoption.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QSpinBox \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qspinbox.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qspinbox.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QTabWidget \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtabwidget.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QToolButton \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtoolbutton.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qtoolbutton.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QTabWidget \
+  dialogs/preferences.hpp util/qvlcframe.hpp \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QWidget \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QDialog \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qdialog.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QHBoxLayout \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QApplication \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QMainWindow \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qmainwindow.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qmainwindow.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QKeyEvent \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qevent.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qevent.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qmime.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qmime.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qmimedata.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qmimedata.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qdrag.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qdrag.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QDesktopWidget \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qdesktopwidget.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qdesktopwidget.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QSettings \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qsettings.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qsettings.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/ctype.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QStyle \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qstyle.h \
+  qt4.hpp ../../../config.h ../../../include/vlc_interface.h \
+  ../../../include/vlc_playlist.h ../../../include/vlc_input.h \
+  ../../../include/vlc_es.h ../../../include/vlc_fourcc.h \
+  ../../../include/vlc_meta.h ../../../include/vlc_epg.h \
+  ../../../include/vlc_events.h ../../../include/vlc_input_item.h \
+  components/simple_preferences.hpp ui/sprefs_input.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QPushButton \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qpushbutton.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qpushbutton.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QRadioButton \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qradiobutton.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qradiobutton.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QVBoxLayout \
+  ui/sprefs_audio.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QDoubleSpinBox \
+  ui/sprefs_video.h ui/sprefs_subtitles.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QFontComboBox \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qfontcombobox.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qfontcombobox.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qcombobox.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qfontdatabase.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/text/qfontdatabase.h \
+  ui/sprefs_interface.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QStackedWidget \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qstackedwidget.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qstackedwidget.h \
+  components/preferences_widgets.hpp qt4.hpp \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/assert.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QCheckBox \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QLineEdit \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QTreeWidget \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtreewidget.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/itemviews/qtreewidget.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtreeview.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/itemviews/qtreeview.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtreewidgetitemiterator.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/itemviews/qtreewidgetitemiterator.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QSpinBox \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QDoubleSpinBox \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QPushButton \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QFontComboBox \
+  util/registry.hpp qt4.hpp input_manager.hpp qt4.hpp util/singleton.hpp \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QObject \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qobject.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QEvent \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qcoreevent.h \
+  util/qt_dirs.hpp \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QDir \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qdir.h \
+  components/../rclog.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/iostream \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ostream \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ios \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/iosfwd \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++locale.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/clocale \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/locale.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstring \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstdio \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstdarg \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++io.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/gthr.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/gthr-default.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cctype \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stringfwd.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/postypes.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cwchar \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ctime \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wchar.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wctype.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/functexcept.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/exception_defines.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/char_traits.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_algobase.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/climits \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstdlib \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_pair.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/cpp_type_traits.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ext/type_traits.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/utility \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_relops.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_iterator_base_types.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_iterator_base_funcs.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/concept_check.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_iterator.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/debug/debug.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/localefwd.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/ios_base.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ext/atomicity.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/atomic_word.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/locale_classes.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/string \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/memory \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/allocator.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++allocator.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ext/new_allocator.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_construct.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_uninitialized.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_raw_storage_iter.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/limits \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/ostream_insert.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_function.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_string.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/algorithm \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_algo.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_heap.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_tempbuf.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_string.tcc \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/streambuf \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/streambuf.tcc \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_ios.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/streambuf_iterator.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/locale_facets.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cwctype \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/ctype_base.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/ctype_inline.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/codecvt.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/time_members.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/messages_members.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_ios.tcc \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/ostream.tcc \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/locale \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/locale_facets.tcc \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/typeinfo \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/istream \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/istream.tcc \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/queue \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/deque \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_deque.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/deque.tcc \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/vector \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_vector.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_bvector.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/vector.tcc \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_queue.h \
+  ../../audio_filter/equalizer_presets.h ../../../include/vlc_aout_intf.h \
+  ../../../include/vlc_intf_strings.h ../../../include/vlc_vout.h \
+  ../../../include/vlc_picture.h ../../../include/vlc_filter.h \
+  ../../../include/vlc_subpicture.h ../../../include/vlc_text_style.h \
+  ../../../include/vlc_mouse.h ../../../include/vlc_osd.h \
+  ../../../include/vlc_spu.h ../../../include/vlc_vout_osd.h \
+  ../../../include/vlc_modules.h ../../../include/vlc_charset.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QToolButton
+
+../../../config.h:
+
+../../../include/vlc_fixups.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/time.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/_mingw.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stddef.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdio.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/stdarg.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/types.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/dirent.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/io.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/errno.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QLabel:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qlabel.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qlabel.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qframe.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qframe.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qwidget.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qwidget.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qwindowdefs.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qwindowdefs.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qobjectdefs.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qobjectdefs.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qnamespace.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qnamespace.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qglobal.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qglobal.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qconfig.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qconfig.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qfeatures.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qfeatures.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qwindowdefs_win.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qwindowdefs_win.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qobject.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qobject.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstring.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qstring.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qchar.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qchar.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qbytearray.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qbytearray.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qatomic.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/thread/qatomic.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qbasicatomic.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/thread/qbasicatomic.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qatomic_arch.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/arch/qatomic_arch.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qatomic_windows.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/arch/qatomic_windows.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qatomic_i386.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/arch/qatomic_i386.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/string.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qlist.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qlist.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qiterator.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qiterator.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qalgorithms.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qalgorithms.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/new:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstddef:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++config.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/os_defines.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/cpu_defines.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/exception:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/limits.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/syslimits.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/limits.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qscopedpointer.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qscopedpointer.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qmargins.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qmargins.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qpaintdevice.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qpaintdevice.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qrect.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qrect.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qsize.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qsize.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qpoint.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qpoint.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qpalette.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qpalette.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qcolor.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qcolor.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qrgb.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qrgb.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstringlist.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qstringlist.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qdatastream.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qdatastream.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qiodevice.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qiodevice.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qregexp.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qregexp.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstringmatcher.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qstringmatcher.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qbrush.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qbrush.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qpair.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qpair.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qvector.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qvector.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdlib.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qmatrix.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qmatrix.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qpolygon.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qpolygon.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qregion.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qregion.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qline.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qline.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtransform.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qtransform.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qpainterpath.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qpainterpath.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qimage.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/image/qimage.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qpixmap.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/image/qpixmap.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qsharedpointer.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qsharedpointer.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qshareddata.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qshareddata.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qsharedpointer_impl.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qsharedpointer_impl.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qfont.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/text/qfont.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qfontmetrics.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/text/qfontmetrics.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qfontinfo.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/text/qfontinfo.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qsizepolicy.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qsizepolicy.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qcursor.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qcursor.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qkeysequence.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qkeysequence.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QVariant:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qvariant.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qvariant.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qmetatype.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qmetatype.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qmap.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qmap.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qhash.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qhash.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QString:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstring.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QFont:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qfont.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QGridLayout:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qgridlayout.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qgridlayout.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qlayout.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qlayout.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qlayoutitem.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qlayoutitem.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qboxlayout.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qboxlayout.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qgridlayout.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QSignalMapper:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qsignalmapper.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qsignalmapper.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QComboBox:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qcombobox.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qcombobox.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qabstractitemdelegate.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/itemviews/qabstractitemdelegate.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qstyleoption.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/styles/qstyleoption.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qvariant.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qabstractspinbox.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qabstractspinbox.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qvalidator.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qvalidator.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qlocale.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qlocale.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qicon.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/image/qicon.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qslider.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qslider.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qabstractslider.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qabstractslider.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qstyle.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/styles/qstyle.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtabbar.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qtabbar.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtabwidget.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qtabwidget.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qrubberband.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qrubberband.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qabstractitemmodel.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qabstractitemmodel.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QTimer:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qtimer.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qtimer.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qbasictimer.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qbasictimer.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QFileDialog:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qfiledialog.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/dialogs/qfiledialog.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qdir.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qdir.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qfileinfo.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qfileinfo.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qfile.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qfile.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qdialog.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/dialogs/qdialog.h:
+
+components/extended_panels.hpp:
+
+../../../config.h:
+
+../../../include/vlc_common.h:
+
+../../../include/vlc_config.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/inttypes.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/stdint.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/malloc.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/sys/stat.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windows.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/windef.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnt.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winerror.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/basetsd.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/pshpack4.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/poppack.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wincon.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winbase.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wingdi.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winuser.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnls.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winver.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winnetwk.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winreg.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/winsvc.h:
+
+../../../include/vlc_mtime.h:
+
+../../../include/vlc_threads.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/process.h:
+
+../../../include/vlc_arrays.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/tchar.h:
+
+../../../include/vlc_messages.h:
+
+../../../include/vlc_objects.h:
+
+../../../include/vlc_variables.h:
+
+../../../include/vlc_main.h:
+
+../../../include/vlc_configuration.h:
+
+ui/equalizer.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QVariant:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QAction:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qaction.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qaction.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qactiongroup.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qactiongroup.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qaction.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QApplication:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qapplication.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qapplication.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qcoreapplication.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qcoreapplication.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qcoreevent.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qcoreevent.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qeventloop.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qeventloop.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QButtonGroup:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qbuttongroup.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qbuttongroup.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QCheckBox:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qcheckbox.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qcheckbox.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qabstractbutton.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qabstractbutton.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QComboBox:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QFrame:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qframe.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QGridLayout:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QHBoxLayout:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qboxlayout.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QHeaderView:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qheaderview.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/itemviews/qheaderview.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qabstractitemview.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/itemviews/qabstractitemview.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qabstractscrollarea.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qabstractscrollarea.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qitemselectionmodel.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/itemviews/qitemselectionmodel.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qset.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qset.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QLabel:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QSlider:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qslider.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QSpacerItem:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qlayoutitem.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QWidget:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qwidget.h:
+
+ui/video_effects.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QDial:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qdial.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qdial.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QGroupBox:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qgroupbox.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qgroupbox.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QLineEdit:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qlineedit.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qlineedit.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtextcursor.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/text/qtextcursor.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtextformat.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/text/qtextformat.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qpen.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/painting/qpen.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtextoption.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/text/qtextoption.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QSpinBox:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qspinbox.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qspinbox.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QTabWidget:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtabwidget.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QToolButton:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtoolbutton.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qtoolbutton.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QTabWidget:
+
+dialogs/preferences.hpp:
+
+util/qvlcframe.hpp:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QWidget:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QDialog:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qdialog.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QHBoxLayout:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QApplication:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QMainWindow:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qmainwindow.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qmainwindow.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QKeyEvent:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qevent.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qevent.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qmime.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qmime.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qmimedata.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qmimedata.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qdrag.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qdrag.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QDesktopWidget:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qdesktopwidget.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/kernel/qdesktopwidget.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QSettings:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qsettings.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qsettings.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/ctype.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QStyle:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qstyle.h:
+
+qt4.hpp:
+
+../../../config.h:
+
+../../../include/vlc_interface.h:
+
+../../../include/vlc_playlist.h:
+
+../../../include/vlc_input.h:
+
+../../../include/vlc_es.h:
+
+../../../include/vlc_fourcc.h:
+
+../../../include/vlc_meta.h:
+
+../../../include/vlc_epg.h:
+
+../../../include/vlc_events.h:
+
+../../../include/vlc_input_item.h:
+
+components/simple_preferences.hpp:
+
+ui/sprefs_input.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QPushButton:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qpushbutton.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qpushbutton.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QRadioButton:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qradiobutton.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qradiobutton.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QVBoxLayout:
+
+ui/sprefs_audio.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QDoubleSpinBox:
+
+ui/sprefs_video.h:
+
+ui/sprefs_subtitles.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QFontComboBox:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qfontcombobox.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qfontcombobox.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qcombobox.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qfontdatabase.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/text/qfontdatabase.h:
+
+ui/sprefs_interface.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QStackedWidget:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qstackedwidget.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/widgets/qstackedwidget.h:
+
+components/preferences_widgets.hpp:
+
+qt4.hpp:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/assert.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QCheckBox:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QLineEdit:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QTreeWidget:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtreewidget.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/itemviews/qtreewidget.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtreeview.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/itemviews/qtreeview.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qtreewidgetitemiterator.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/../src/gui/itemviews/qtreewidgetitemiterator.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QSpinBox:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QDoubleSpinBox:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QPushButton:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QFontComboBox:
+
+util/registry.hpp:
+
+qt4.hpp:
+
+input_manager.hpp:
+
+qt4.hpp:
+
+util/singleton.hpp:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QObject:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qobject.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QEvent:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qcoreevent.h:
+
+util/qt_dirs.hpp:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QDir:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qdir.h:
+
+components/../rclog.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/iostream:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ostream:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ios:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/iosfwd:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++locale.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/clocale:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/locale.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstring:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstdio:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstdarg:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++io.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/gthr.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/gthr-default.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cctype:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stringfwd.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/postypes.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cwchar:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ctime:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wchar.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/wctype.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/functexcept.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/exception_defines.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/char_traits.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_algobase.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/climits:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cstdlib:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_pair.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/cpp_type_traits.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ext/type_traits.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/utility:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_relops.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_iterator_base_types.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_iterator_base_funcs.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/concept_check.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_iterator.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/debug/debug.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/localefwd.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/ios_base.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ext/atomicity.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/atomic_word.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/locale_classes.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/string:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/memory:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/allocator.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/c++allocator.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ext/new_allocator.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_construct.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_uninitialized.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_raw_storage_iter.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/limits:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/ostream_insert.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_function.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_string.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/algorithm:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_algo.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_heap.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_tempbuf.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_string.tcc:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/streambuf:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/streambuf.tcc:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_ios.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/streambuf_iterator.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/locale_facets.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/cwctype:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/ctype_base.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/ctype_inline.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/codecvt.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/time_members.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/i586-mingw32msvc/bits/messages_members.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/basic_ios.tcc:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/ostream.tcc:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/locale:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/locale_facets.tcc:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/typeinfo:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/istream:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/istream.tcc:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/queue:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/deque:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_deque.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/deque.tcc:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/vector:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_vector.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_bvector.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/vector.tcc:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_queue.h:
+
+../../audio_filter/equalizer_presets.h:
+
+../../../include/vlc_aout_intf.h:
+
+../../../include/vlc_intf_strings.h:
+
+../../../include/vlc_vout.h:
+
+../../../include/vlc_picture.h:
+
+../../../include/vlc_filter.h:
+
+../../../include/vlc_subpicture.h:
+
+../../../include/vlc_text_style.h:
+
+../../../include/vlc_mouse.h:
+
+../../../include/vlc_osd.h:
+
+../../../include/vlc_spu.h:
+
+../../../include/vlc_vout_osd.h:
+
+../../../include/vlc_modules.h:
+
+../../../include/vlc_charset.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QToolButton:

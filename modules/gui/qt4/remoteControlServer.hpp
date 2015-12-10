@@ -268,6 +268,7 @@ class PlayListCommand: public RCCommandImpl {
         playlist_item_t* getCurrentPlayListItem(playlist_t *p_playlist);
         char* getCurrentPlayListItemName(playlist_t *p_playlist);
         char* getTotalPlayList(playlist_item_t *p_item, int i_level,char* result);
+        char* getTotalPlayListIdList(playlist_item_t *p_item, int i_level,char* result);
         int playListRemove(playlist_t* p_playlist,int index);
         int playListRemove(playlist_t* p_playlist,std::vector<std::string>& indexes);
         int playListMove(playlist_t* p_playlist,int from,int to);
@@ -304,10 +305,13 @@ class RCInvoker :public RCInvokerImpl{
 class RCPlayListModel {
     public:
         ~RCPlayListModel();
+        /*full name encoded as $id`$mrl,like 1992`E:\\test.mkv.*/
         const char* add(const char* rcmrl);
-        const char* remove(const char* rcmrl);
+        /*name fetched from vlc playlist*/
+        int remove(const char* name);
         static RCPlayListModel* inst();
         const char* getID(const char* name);
+        int getCurrentCount(const char* name);
     private:
         const char* parseFullMrl(const char* rcmrl);
         const char* parseName(const char* mrl);

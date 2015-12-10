@@ -280,6 +280,11 @@ const char* RCPlayListModel::add(const char* rcmrl) {
     RCInputMRL item;
     const char* mrl=parseFullMrl(rcmrl);
     const char* name=parseName(mrl);
+    std::map<std::string,RCInputMRL>::iterator iter=mMRLItem.find(name);
+    if(iter!=mMRLItem.end())
+        item.counter=iter->second.counter+1;
+    else
+        item.counter=1;
     int len=mrl-rcmrl;
     if(len>=2) {
         char temp[MAX_SIZE];
@@ -289,15 +294,69 @@ const char* RCPlayListModel::add(const char* rcmrl) {
     }
     else
         item.id="-1";
-    std::map<std::string,RCInputMRL>::iterator iter=mMRLItem.find(item.name);
-    if(iter!=mMRLItem.end()) {
-        item=iter->second;
-        item.counter++;
-    }
     item.name=name;
     item.mrl=mrl;
     mMRLItem[item.name]=item;
+    char* encode_name;
+    asprintf(&encode_name,"[%s][%s][%s][%d]","Add",item.name.c_str(),item.mrl.c_str(),item.counter);
+    if(encode_name)
+        logger::inst()->log(TAG_DEBUG,"%s\n",encode_name);
+    else
+        logger::inst()->log(TAG_DEBUG,"%s\n","logger error in RCPlayListMode::Add");
+    free(encode_name);
     return mrl;
+}
+int RCPlayListModel::remove(const char* name) {
+    if(!name)
+        return VLC_ENOOBJ;
+    std::map<std::string,RCInputMRL>::iterator iter=mMRLItem.find(name);
+    logger::inst()->log(TAG_DEBUG,"RCPlayListModel::Remove[%s]\n",name);
+    if(iter!=mMRLItem.end()) {
+        char* encode_name;
+        asprintf(&encode_name,"[%s][%s][%s][%d]","Remove", iter->second.name.c_str(),iter->second.mrl.c_str(),iter->second.counter);
+        if(encode_name)
+            logger::inst()->log(TAG_DEBUG,"%s\n",encode_name);
+        else
+            logger::inst()->log(TAG_DEBUG,"%s\n","logger error in RCPlayListMode::Add");
+        free(encode_name);
+        if(iter->second.counter==1)
+            mMRLItem.erase(name);
+        else
+            mMRLItem[name].counter--;
+    }
+    else
+        return VLC_ENOOBJ;
+    return VLC_SUCCESS;
+}
+int RCPlayListModel::getCurrentCount(const char* name) {
+    std::map<std::string,RCInputMRL>::iterator iter=mMRLItem.find(name);
+    if(iter==mMRLItem.end())
+        return 0;
+    return iter->second.counter;
+}
+char* PlayListCommand::getTotalPlayListIdList(playlist_item_t *p_item, int i_level,char* result){
+    char* psz_namelist=(char*)malloc(MAX_SIZE);
+    if(!psz_namelist)
+        return RCUtil::addItem("{}",result);
+    getTotalPlayList(p_item,i_level,psz_namelist);
+    std::vector<std::string> namelist;
+    int failed=RCUtil::parseList(psz_namelist,namelist);
+    free(psz_namelist);
+    if(failed)
+        return RCUtil::addItem("{}",result);
+    char* p=result;
+    for(int i=0;i<namelist.size();i++) {
+        char* id=const_cast<char*>(RCPlayListModel::inst()->getID(namelist[i].c_str()));
+        if(id)
+            p=RCUtil::addItem(id,p);
+        else
+            p=RCUtil::addItem("-1",p);
+    }
+    if(namelist.size()==0)
+        p=RCUtil::addItem("{}",p);
+    if(p)
+        *(p)='\0';
+    return p;
 }
 const char* RCPlayListModel::parseFullMrl(const char* rcmrl){
     if(!rcmrl)
@@ -968,8 +1027,13 @@ int PlayListCommand::PlayListConfig(intf_thread_t* p_intf, const char *psz_cmd,r
     }
     logger::inst()->log(TAG_DEBUG,"PlayListConfig:%s\n",psz_cmd);
     if (!strcmp(psz_cmd, "getPlayList")) {
-        playlist_item_t* item=getCurrentPlayListItem(p_playlist);
         char* tail=getTotalPlayList(p_playlist->p_root_category,0,p_data);
+        tail='\0';
+        if(!strlen(p_data))
+            ENCODE_MSG_WITH_RETURN(p_data,"%s","{}");
+    }
+    else if(!strcmp(psz_cmd,"getPlayListID")) {
+        char* tail=getTotalPlayListIdList(p_playlist->p_root_category,0,p_data);
         tail='\0';
         if(!strlen(p_data))
             ENCODE_MSG_WITH_RETURN(p_data,"%s","{}");
@@ -999,6 +1063,13 @@ int PlayListCommand::PlayListConfig(intf_thread_t* p_intf, const char *psz_cmd,r
         char* name=getCurrentPlayListItemName(p_playlist);
         const char* id=RCPlayListModel::inst()->getID(name);
         ENCODE_MSG_WITH_RETURN(p_data,"%s",id?id:"-1");
+        PL_UNLOCK;
+    }
+    else if(!strcmp(psz_cmd,"getPlayListItemCount")) {
+        PL_LOCK; 
+        char* name=getCurrentPlayListItemName(p_playlist);
+        int count=RCPlayListModel::inst()->getCurrentCount(name);
+        ENCODE_MSG_WITH_RETURN(p_data,"%d",count);
         PL_UNLOCK;
     }
     else if(!strcmp(psz_cmd,"setPlayListRemove")) {
@@ -1097,9 +1168,10 @@ int PlayListCommand::playListRemove(playlist_t* p_playlist,int index) {
                 return playListRemove(p_playlist,index);
         }
     }
+    logger::inst()->log(TAG_DEBUG,"remove [%s] from playlist.\n",target->p_input->psz_name);
+    RCPlayListModel::inst()->remove(target->p_input->psz_name);
     PL_LOCK;
     result=playlist_NodeDelete(p_playlist,target,true,false);
-    logger::inst()->log(TAG_DEBUG,"remove [%s] from playlist.\n",target->p_input->psz_name);
     PL_UNLOCK;
     return result;
 }
@@ -1152,7 +1224,7 @@ int PlayListCommand::playListRemove(playlist_t* p_playlist,vector<string>& index
 }
 int PlayListCommand::playListMove(playlist_t* p_playlist,int from,int to) {
 #define RCHANDLER_ITEM_NAME(playlist_item_t) (playlist_item_t->p_input->psz_name)
-    if(!p_playlist||to<0||to>=p_playlist->i_children)
+    if(!p_playlist||to<0||to>=p_playlist->items.i_size)
         return VLC_ENOOBJ;
     PL_LOCK;
     int i=1;
@@ -1683,7 +1755,8 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
     else if (!strcmp(psz_cmd, "setEnqueue") &&
             newval.psz_string.c_str())
     {
-        input_item_t *p_item = RCUtil::parse_MRL(newval.psz_string.c_str());
+        const char* mrl=RCPlayListModel::inst()->add(newval.psz_string.c_str());
+        input_item_t *p_item = RCUtil::parse_MRL(mrl);
 
         if (p_item)
         {

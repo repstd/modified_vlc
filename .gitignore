@@ -3,6 +3,10 @@
 /_win32
 /win32 (copy)
 /extras
+*.swn
+*.swk
+*.swm
+*.swl
 *.swp
 *.swo
 # Compiled Object files

@@ -112,7 +112,7 @@ struct RC_CONFIG {
     int isDebug;
     int audioConfigMovieIndex;
     int audioConfigKTVIndex;
-    //Informati
+    //Information
     std::vector<std::pair<std::string,std::string> >  audioConfigInfo;
 };
 #define ENCODE_MSG(msg,result)\

@@ -30,6 +30,9 @@
 #include <vlc_input.h>
 #include <vlc_url.h>
 #include "ini/inifile.h"
+#include <QSettings>
+#include <QTextCodec>
+#include <QString>
 using namespace std;
 /*common functions*/
 wstring widen( const string& str )
@@ -629,7 +632,7 @@ void AudioCommand::SaveAudioOutputDevice(intf_thread_t* p_intf,RC_CONFIG& config
         }
         else {
             config.audioConfigInfo.push_back(std::make_pair("aout",aoutlist[i].c_str()));
-            logger::inst()->log("found audio output:[%s]\n",config.audioConfigInfo[cnt++].first.c_str());
+            logger::inst()->log("found audio output:[%s]\n",config.audioConfigInfo[cnt++].second.c_str());
         }
         free(aout);
     }
@@ -641,20 +644,40 @@ void AudioCommand::SaveAudioOutputDevice(intf_thread_t* p_intf,RC_CONFIG& config
     FILE* f=fopen(file,"w");
     fclose(f);
     char* audio_information_section="AudioOutputInformation";
+    QSettings profile(file,QSettings::IniFormat);
+    profile.setIniCodec("UTF-8");
+    //QTextCodec* gbk_codec=QTextCodec::codecForName("GBK");
     for(int i=0;i<config.audioConfigInfo.size();i++) {
         char* key;
         char* value;
-        if(asprintf(&key,"%d",i)==-1) {
+        if(asprintf(&key,"%s/%d",audio_information_section,i)==-1) {
             logger::inst()->log(TAG_INFO,"Error In Saving Audiooutput Information for %s\n",config.audioConfigInfo[i].first.c_str());
+            if(key)
+                free(key);
+            if(value)
+                free(value);
             continue;
         }
         if(asprintf(&value,"[%s][%s]",config.audioConfigInfo[i].first.c_str(),config.audioConfigInfo[i].second.c_str())==-1) {
             logger::inst()->log(TAG_INFO,"Error In Saving Audiooutput Information for %s\n",config.audioConfigInfo[i].first.c_str());
+            if(key)
+                free(key);
+            if(value)
+                free(value);
             continue;
         }
-        write_profile_string(audio_information_section,key,value,file);
-        free(key);
-        free(value);
+        QString qkey=QString::fromUtf8(key);
+        QString qvalue=QString::fromUtf8(value);
+        profile.setValue(qkey,qvalue);
+        char* encode_name;
+        asprintf(&encode_name,"write_profile:[%s][%s]",key,value);
+        logger::inst()->log(TAG_INFO,"%s\n",encode_name);
+        if(encode_name)
+            free(encode_name);
+        if(key)
+            free(key);
+        if(value)
+            free(value);
     }
 
 }
@@ -882,14 +905,27 @@ char* AudioCommand::getAudioOutputDevicesList(vlc_object_t* p_aout,const char* p
                     char* option_list_text=strdup(p_module_config->ppsz_list_text[i]);
                     char* option_list=strdup(p_module_config->ppsz_list[i]);
                     char* option=option_list?option_list:option_list_text;
-                    if(!option)
+                    if(!option) {
+                        if(option_list) 
+                            free(option_list);
+                        if(option_list_text) 
+                            free(option_list_text);
                         continue;
+                    }
                     psz_encode_list=RCUtil::addItem(option,psz_encode_list);
                     if(!psz_encode_list) {
                         logger::inst()->log(TAG_INFO,"Error in get audio out device for[%s]\n",option);
+                        if(option_list) 
+                            free(option_list);
+                        if(option_list_text) 
+                            free(option_list_text);
                         break;
                     }
                     logger::inst()->log(TAG_INFO,"---------------%s\n",option);
+                    if(option_list) 
+                        free(option_list);
+                    if(option_list_text) 
+                        free(option_list_text);
                 }
             }
         }

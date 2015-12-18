@@ -3,12 +3,8 @@
 /_win32
 /win32 (copy)
 /extras
-*.swn
-*.swk
-*.swm
-*.swl
-*.swp
-*.swo
+tags
+*.sw*
 # Compiled Object files
 *.slo
 *.lo
@@ -59,7 +55,7 @@
 *.so
 *.so.*
 *.dylib
-
+*.Plo
 # Executables
 *.exe
 *.out

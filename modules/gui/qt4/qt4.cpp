@@ -422,7 +422,11 @@ static int Open( vlc_object_t *p_this, bool isDialogProvider )
     logger::inst()->setDebug(1);
     logger::inst()->reset();
     readConfig(VAL_RC_CONFIG,"./config.ini");
-    logger::inst()->log("%s\n","gui started.");
+    if(!VAL_RC_CONFIG.isServerAutoStart) {
+        logger::inst()->log("%s\n","RCServer configured not to start automatically.");
+        return VLC_SUCCESS;
+    }
+    logger::inst()->log("%s\n","RCServer Started.");
     //std::auto_ptr<RCHandlerImpl> handler(new RCHandler(intf));
     pRemoteControl = new RCServer(new RCHandler(p_intf));
     pRemoteControl->InitForPort(VAL_RC_CONFIG.port);
@@ -507,7 +511,10 @@ static void *Thread( void *obj )
 
     /* Detect screensize for small screens like TV or Netbooks */
     p_intf->p_sys->i_screenHeight =
-        app.QApplication::desktop()->availableGeometry().height();
+        app.QApplication::desktop()->screenGeometry().height();
+
+    p_intf->p_sys->i_screenWidth=
+        app.QApplication::desktop()->screenGeometry().width();
 
 #ifdef UPDATE_CHECK
     /* Checking for VLC updates */

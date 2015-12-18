@@ -112,6 +112,8 @@ struct RC_CONFIG {
     int isDebug;
     int audioConfigMovieIndex;
     int audioConfigKTVIndex;
+    int isServerAutoStart;
+    int isAutoMatchScreen;
     //Information
     std::vector<std::pair<std::string,std::string> >  audioConfigInfo;
 };
@@ -284,6 +286,8 @@ class BasicCommand:public RCCommandImpl {
         virtual void Execute();
         int BasicControl(intf_thread_t* p_intf, const char *psz_cmd,rc_value_t& newval, char* p_data);
     private:
+        const char* getRatio(int width,int height);
+        int GuaranteeDisplayRatio(intf_thread_t* p_input);
         RCInvokerImpl* m_doc;
 };
 class RCInvoker :public RCInvokerImpl{

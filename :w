@@ -78,8 +78,6 @@ void readConfig(RC_CONFIG& config,const char* file) {
     const char* server_setting_section="ServerSetting";
     const char* port_key="Port";
     const char* isDebug_key="IsDebug";
-    const char* isAutoStart_key="IsAutoStarting";
-    const char* isAutoMatchScreen_key="IsAutoMatchScreen";
     memset(buf,0,sizeof(buf));
     config.port=VAL_RC_DEFAULT_PORT;
     if(read_profile_string(server_setting_section,port_key,buf,MAX_SIZE,"",file)) {
@@ -90,28 +88,27 @@ void readConfig(RC_CONFIG& config,const char* file) {
     config.isDebug=0;
     if(read_profile_string(server_setting_section,isDebug_key,buf,MAX_SIZE,"",file))
         config.isDebug=atoi(buf);
-
-    memset(buf,0,sizeof(buf));
-    config.isAutoMatchScreen=1;
-    if(read_profile_string(server_setting_section,isAutoMatchScreen_key,buf,MAX_SIZE,"",file))
-        config.isAutoMatchScreen=atoi(buf);
-    memset(buf,0,sizeof(buf));
-    config.isServerAutoStart=1;
-    if(read_profile_string(server_setting_section,isAutoStart_key,buf,MAX_SIZE,"",file))
-        config.isServerAutoStart=atoi(buf);
-
     const char* audio_setting_section="AudioOutputSetting";
     const char* movie_audio_output_index_key="Movie";
     const char* ktv_audio_output_index_key="KTV";
     memset(buf,0,sizeof(buf));
     config.audioConfigMovieIndex=-1;
-    if(read_profile_string(audio_setting_section,movie_audio_output_index_key,buf,MAX_SIZE,"",file))
+    if(read_profile_string(audio_setting_section,movie_audio_output_index_key,buf,MAX_SIZE,"",file)) {
         config.audioConfigMovieIndex=atoi(buf);
-
+        if(config.audioConfigMovieIndex<0||config.audioConfigMovieIndex>=config.audioConfigInfo.size())
+            logger::inst()->log(TAG_ERROR,"%s Error.\n","audioConfigMovieIndex");
+        else
+            logger::inst()->log(TAG_INFO,"MovieAudioOutput set to:%s\n",config.audioConfigInfo[config.audioConfigMovieIndex].second.c_str());
+    }
     memset(buf,0,sizeof(buf));
     config.audioConfigKTVIndex=-1;
-    if(read_profile_string(audio_setting_section,ktv_audio_output_index_key,buf,MAX_SIZE,"",file))
+    if(read_profile_string(audio_setting_section,ktv_audio_output_index_key,buf,MAX_SIZE,"",file)) {
         config.audioConfigKTVIndex=atoi(buf);
+        if(config.audioConfigKTVIndex<0||config.audioConfigKTVIndex>=config.audioConfigInfo.size())
+            logger::inst()->log(TAG_ERROR,"%s Error.\n","audioConfigKTVIndex");
+        else
+            logger::inst()->log(TAG_INFO,"KTVAudioOutput set to:%s\n",config.audioConfigInfo[config.audioConfigKTVIndex].second.c_str());
+    }
 }
 
 char* CheckMessage(char* src) {
@@ -1341,6 +1338,7 @@ void BasicCommand::Execute() {
     char* result=(char*)malloc(MAX_SIZE);
     char* psz_cmd=strdup(action.psz_cmd.c_str());
     BasicControl(p_intf,psz_cmd,action.newval,result);
+    GuaranteeDisplayRatio(p_intf);
     m_doc->saveState(result);
     free(psz_cmd);
     free(result);
@@ -1820,7 +1818,7 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
     }
     else if(!strcmp(psz_cmd,"setVideoRatio")||
             !strcmp(psz_cmd,"getVideoRatio")||
-            !strcmp(psz_cmd,"matchscreen")
+            !strcmp(psz_cmd,"setVideoRatioMatch")
             ) 
     {
         vout_thread_t* p_vout=input_GetVout(p_input);
@@ -1835,14 +1833,10 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
                 else {
                     ENCODE_MSG_WITH_RETURN(p_data,"%s","none");
                 }
-            }else if(strstr(psz_cmd,"set")){
+            }else {
                 /*set*/
                 result= var_SetString( p_vout, "aspect-ratio", newval.psz_string.c_str());
                 result= var_SetBool( p_vout, "autoscale", true);
-                ENCODE_MSG(p_data,result);
-            }
-            else {
-                result=GuaranteeDisplayRatio(p_intf);
                 ENCODE_MSG(p_data,result);
             }
         }
@@ -1856,7 +1850,7 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
 
     return result;
 }
-const char* BasicCommand::getRatio(int width,int height) {
+const char* getRatio(int width,int height) {
 #define ABS(a) ((a)>0?(a):(-1.0*(a)))
     const int RATIO_CNT=8;
     float RATIO[RATIO_CNT]=
@@ -1900,7 +1894,7 @@ int BasicCommand::GuaranteeDisplayRatio(intf_thread_t* p_intf) {
     width=p_intf->p_sys->i_screenWidth;
     height=p_intf->p_sys->i_screenHeight;
     char* encode_name;
-    if(asprintf(&encode_name,"Resolution[Width:%d][Height%d]",width,height)) {
+    if(asprintf(&encode_name,"DisplayPara[Width:%d][Height%d]",width,height)) {
         logger::inst()->log(TAG_DEBUG,"%s\n",encode_name);
         free(encode_name);
     }
@@ -1910,9 +1904,8 @@ int BasicCommand::GuaranteeDisplayRatio(intf_thread_t* p_intf) {
         char response[MAX_SIZE];
         BasicControl(p_intf,"setVideoRatio",newval,response);
         logger::inst()->log(TAG_DEBUG,"GuaranteeVideoRatio:%s\n",response);
-        return VLC_SUCCESS;
     }
-    return VLC_ENOOBJ;
+    return VLC_SUCCESS;
 }
 RCHandler::RCHandler(intf_thread_t* p_intf) {
     m_pIntf=p_intf;
@@ -1954,27 +1947,20 @@ void RCInvoker::invoke(RCAction& action){
     int known=0;
     for(std::map<std::string,RCCommandImpl*>::iterator iter=m_commands.begin();iter!=m_commands.end();iter++) {
         if(strstr(action.psz_cmd.c_str(),iter->first.c_str())) {
-            if(iter->second) {
+            if(iter->second)
                 iter->second->Execute();
-            }
             known=1;
             break;
         }
     }
-    const char* misc="Basic";
-    std::map<std::string,RCCommandImpl*>::iterator iter=m_commands.find(misc);
-    if(iter!=m_commands.end()) 
-    {
-        if(!known)
+    if(!known) {
+        const char* misc="Basic";
+        std::map<std::string,RCCommandImpl*>::iterator iter=m_commands.find(misc);
+        if(iter!=m_commands.end())
             iter->second->Execute();
-        if(VAL_RC_CONFIG.isAutoMatchScreen) {
-            action.psz_cmd="matchscreen";
-            writeAction(action);
-            iter->second->Execute();
-        }
+        else
+            saveState("uknown command");
     }
-    else
-        saveState("uknown command");
     return;
 }
 int RCInvoker::writeAction(RCAction& action) {

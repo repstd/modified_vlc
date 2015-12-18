@@ -75,6 +75,7 @@ struct intf_sys_t
 #ifdef WIN32
     bool disable_volume_keys;
 #endif
+    int  i_screenWidth;     /* Detection of Small screens */
 };
 
 #define THEPL pl_Get(p_intf)

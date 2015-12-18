@@ -188,28 +188,23 @@ libqt4_plugin_la-remoteControlServer.lo \
   ../../../include/vlc_epg.h ../../../include/vlc_events.h \
   ../../../include/vlc_input_item.h ../../../include/vlc_aout.h \
   ../../../include/vlc_es.h ../../../include/vlc_block.h \
+  ../../../include/vlc_vout.h ../../../include/vlc_picture.h \
+  ../../../include/vlc_filter.h ../../../include/vlc_subpicture.h \
+  ../../../include/vlc_text_style.h ../../../include/vlc_mouse.h \
   ../../../include/vlc_modules.h ../../../include/vlc_config.h \
   ../../../include/vlc_interface.h ../../../include/vlc_playlist.h \
-  ../../../include/vlc_url.h ini/inifile.h \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QSettings \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qsettings.h \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qsettings.h \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qobject.h \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qobject.h \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qobjectdefs.h \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qobjectdefs.h \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qnamespace.h \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qnamespace.h \
+  ../../../include/vlc_url.h ini/inifile.h qt4.hpp \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QString \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstring.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qstring.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qchar.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qchar.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qglobal.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qglobal.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qconfig.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qconfig.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qfeatures.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qfeatures.h \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstring.h \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qstring.h \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qchar.h \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qchar.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qbytearray.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qbytearray.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qatomic.h \
@@ -222,6 +217,16 @@ libqt4_plugin_la-remoteControlServer.lo \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/arch/qatomic_windows.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qatomic_i386.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/arch/qatomic_i386.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qnamespace.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qnamespace.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QSettings \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qsettings.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qsettings.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qobject.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qobject.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qobjectdefs.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qobjectdefs.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstring.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qlist.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qlist.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qiterator.h \
@@ -246,9 +251,7 @@ libqt4_plugin_la-remoteControlServer.lo \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qpair.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QTextCodec \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qtextcodec.h \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/codecs/qtextcodec.h \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QString \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstring.h
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/codecs/qtextcodec.h
 
 ../../../config.h:
 
@@ -652,6 +655,18 @@ rclog.h:
 
 ../../../include/vlc_block.h:
 
+../../../include/vlc_vout.h:
+
+../../../include/vlc_picture.h:
+
+../../../include/vlc_filter.h:
+
+../../../include/vlc_subpicture.h:
+
+../../../include/vlc_text_style.h:
+
+../../../include/vlc_mouse.h:
+
 ../../../include/vlc_modules.h:
 
 ../../../include/vlc_config.h:
@@ -664,23 +679,17 @@ rclog.h:
 
 ini/inifile.h:
 
-/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QSettings:
+qt4.hpp:
 
-/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qsettings.h:
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QString:
 
-/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qsettings.h:
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstring.h:
 
-/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qobject.h:
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qstring.h:
 
-/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qobject.h:
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qchar.h:
 
-/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qobjectdefs.h:
-
-/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qobjectdefs.h:
-
-/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qnamespace.h:
-
-/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qnamespace.h:
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qchar.h:
 
 /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qglobal.h:
 
@@ -693,14 +702,6 @@ ini/inifile.h:
 /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qfeatures.h:
 
 /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qfeatures.h:
-
-/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstring.h:
-
-/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qstring.h:
-
-/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qchar.h:
-
-/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qchar.h:
 
 /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qbytearray.h:
 
@@ -725,6 +726,26 @@ ini/inifile.h:
 /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qatomic_i386.h:
 
 /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/arch/qatomic_i386.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qnamespace.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/global/qnamespace.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QSettings:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qsettings.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/io/qsettings.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qobject.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qobject.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qobjectdefs.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/kernel/qobjectdefs.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstring.h:
 
 /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qlist.h:
 
@@ -775,7 +796,3 @@ ini/inifile.h:
 /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qtextcodec.h:
 
 /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/codecs/qtextcodec.h:
-
-/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QString:
-
-/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstring.h:

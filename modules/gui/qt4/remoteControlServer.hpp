@@ -206,6 +206,7 @@ class RCUtil {
         static const char* getTrack(const char* psz_cmd);
         static const char* getTrackTextValueByIndex(const vlc_value_t& val,const vlc_value_t& text,int index);
         static const char* getTotalTrackList(const vlc_value_t&val,const vlc_value_t& text,char* result);
+        static const char* getTotalTrackList(const vlc_value_t&val,const vlc_value_t& text,char* result,int type);
         static int ItemIndex ( playlist_item_t *p_item );
 };
 class RCServer:public Thread {

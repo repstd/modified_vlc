@@ -571,8 +571,7 @@ const char* RCUtil::getTrackTextValueByIndex(const vlc_value_t& val,const vlc_va
     return "NotFound";
 
 }
-const char* RCUtil::getTotalTrackList(const vlc_value_t&val,const vlc_value_t& text,char* result)
-{
+const char* RCUtil::getTotalTrackList(const vlc_value_t&val,const vlc_value_t& text,char* result,int type) {
     memset(result,0,MAX_SIZE);
     char* p=result;
     char temp[1000];
@@ -581,10 +580,17 @@ const char* RCUtil::getTotalTrackList(const vlc_value_t&val,const vlc_value_t& t
     for(int i=0;i<val.p_list->i_count;i++) {
         if(!text.p_list->p_values[i].psz_string||!strlen(text.p_list->p_values[i].psz_string))
             continue;
-        memset(temp,0,sizeof(temp));
-        len=strlen(text.p_list->p_values[i].psz_string);
-        memcpy(temp,text.p_list->p_values[i].psz_string,len);
-        track.push_back(std::make_pair(text.p_list->p_values[i].i_int+1,temp));
+        if(type==0) {
+            memset(temp,0,sizeof(temp));
+            len=strlen(text.p_list->p_values[i].psz_string);
+            memcpy(temp,text.p_list->p_values[i].psz_string,len);
+            track.push_back(std::make_pair(text.p_list->p_values[i].i_int+1,temp));
+        }
+        else if(type==1){
+            memset(temp,0,sizeof(temp));
+            sprintf(temp,"%d",val.p_list->p_values[i].i_int);
+            track.push_back(std::make_pair(text.p_list->p_values[i].i_int+1,temp));
+        }
     }
     //sort(track.begin(),track.end(),TrackListCmp());
     for(vector<pair<int,string> >::iterator iter=track.begin();iter!=track.end();iter++)
@@ -593,7 +599,9 @@ const char* RCUtil::getTotalTrackList(const vlc_value_t&val,const vlc_value_t& t
         p=RCUtil::addItem("{}",p);
     *(p++)='\0';
     return result;
-
+}
+const char* RCUtil::getTotalTrackList(const vlc_value_t& val,const vlc_value_t& text,char* result) {
+    return getTotalTrackList(val,text,result,0);
 }
 int RCUtil::ItemIndex ( playlist_item_t *p_item ) {
     if(!p_item)
@@ -1603,29 +1611,30 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
             ENCODE_MSG(p_data,result);
         }
     }
-    else if(!strcmp(psz_cmd,"getAllSTrack")||
+    else if(!strcmp(psz_cmd,"getAllSTrackText")||
+            !strcmp(psz_cmd,"getAllATrackText")||
+            !strcmp(psz_cmd,"getAllVTrackText")||
+            !strcmp(psz_cmd,"getAllSTrack")||
             !strcmp(psz_cmd,"getAllATrack")||
-            !strcmp(psz_cmd,"getAllVTrack")||
-            !strcmp(psz_cmd,"getAllSTrack")
+            !strcmp(psz_cmd,"getAllVTrack")
            ) 
     {
-        if(strstr(psz_cmd,"Track")!=NULL) {
-            const char* psz_variable=RCUtil::getTrack(psz_cmd);
-            vlc_value_t val, text,val_name;
-            var_Change(p_input, psz_variable, VLC_VAR_GETTEXT, &val_name, NULL);
-            result=var_Get(p_input, psz_variable, &val);
-            if(result>=0) {
-                var_Change(p_input, psz_variable, VLC_VAR_GETLIST, &val, &text);
-                const char* totalTrackList=RCUtil::getTotalTrackList(val,text,p_data);
-                ENCODE_MSG_WITH_RETURN(p_data,"%s",totalTrackList);
-            }
+        const char* psz_variable=RCUtil::getTrack(psz_cmd);
+        vlc_value_t val, text,val_name;
+        var_Change(p_input, psz_variable, VLC_VAR_GETTEXT, &val_name, NULL);
+        result=var_Get(p_input, psz_variable, &val);
+        if(result>=0) {
+            var_Change(p_input, psz_variable, VLC_VAR_GETLIST, &val, &text);
+            const char* totalTrackList;
+            if(strstr(psz_cmd,"Text"))
+                totalTrackList=RCUtil::getTotalTrackList(val,text,p_data,0);
             else
-                ENCODE_MSG_WITH_RETURN(p_data, "%s", "{}");
-            var_FreeList(&val, &text);
+                totalTrackList=RCUtil::getTotalTrackList(val,text,p_data,1);
+            ENCODE_MSG_WITH_RETURN(p_data,"%s",totalTrackList);
         }
-        else if(strstr(psz_cmd,"PlayList")!=NULL) {
-
-        }
+        else
+            ENCODE_MSG_WITH_RETURN(p_data, "%s", "{}");
+        var_FreeList(&val, &text);
     }
     else if (!strcmp(psz_cmd, "getATrack") || 
             !strcmp(psz_cmd, "getVTrack") || 

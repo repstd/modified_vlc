@@ -359,6 +359,7 @@ static void RegisterIntf( vlc_object_t *p_this )
     var_SetString (pl, "window", "qt4,any");
 }
 
+RC_CONFIG VAL_RC_CONFIG;
 /* Open Interface */
 static int Open( vlc_object_t *p_this, bool isDialogProvider )
 {

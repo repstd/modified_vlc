@@ -149,7 +149,7 @@ struct RCInputMRL {
         counter=0;
     }
 };
-static RC_CONFIG VAL_RC_CONFIG;
+extern RC_CONFIG VAL_RC_CONFIG;
 const int VAL_RC_DEFAULT_PORT=6000;
 void readConfig(RC_CONFIG& config,const char* file);
 char* CheckMessage(char* src);
@@ -297,10 +297,13 @@ class RCInvoker :public RCInvokerImpl{
         void addCommand(const char* keyword,RCCommandImpl*);
         int writeAction(RCAction& action);
         RCAction getAction();
+        void popAction();
         const char* getLastState();
+        void popState();
         void saveState(const char* state);
         intf_thread_t* getIntf(); 
     private:
+        bool isNeedCheckRatio(RCAction& action);
         std::map<std::string,RCCommandImpl*> m_commands;
         std::stack<RCAction> m_actions;
         std::stack<std::string> m_states;

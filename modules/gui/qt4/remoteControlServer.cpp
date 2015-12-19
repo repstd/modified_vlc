@@ -1948,6 +1948,16 @@ intf_thread_t* RCHandler::getIntf() {
 void RCInvoker::addCommand(const char* keyword,RCCommandImpl* impl){
     m_commands[keyword]=impl;
 }
+bool RCInvoker::isNeedCheckRatio(RCAction& action) {
+    const char* psz_cmd=action.psz_cmd.c_str();
+    if(!psz_cmd)
+        return false;
+    return  !strcmp(psz_cmd,"next")||
+            !strcmp(psz_cmd,"prev")||
+            !strcmp(psz_cmd,"setAdd")||
+            !strcmp(psz_cmd,"setOpen")||
+            strstr(psz_cmd,"setPlayList");
+}
 void RCInvoker::invoke(RCAction& action){
     writeAction(action);
     logger::inst()->log(TAG_DEBUG,"[action:%s]\n",action.psz_cmd.c_str());
@@ -1967,10 +1977,12 @@ void RCInvoker::invoke(RCAction& action){
     {
         if(!known)
             iter->second->Execute();
-        if(VAL_RC_CONFIG.isAutoMatchScreen) {
+        if(VAL_RC_CONFIG.isAutoMatchScreen&&isNeedCheckRatio(action)) {
             action.psz_cmd="matchscreen";
             writeAction(action);
             iter->second->Execute();
+            popAction();
+            popState();
         }
     }
     else
@@ -1982,6 +1994,14 @@ int RCInvoker::writeAction(RCAction& action) {
         m_actions.pop();
     m_actions.push(action);
     return VLC_SUCCESS;
+}
+void RCInvoker::popAction() {
+    if(!m_actions.empty())
+        m_actions.pop();
+}
+void RCInvoker::popState() {
+    if(!m_states.empty())
+        m_states.pop();
 }
 RCAction RCInvoker::getAction() {
     RCAction act;

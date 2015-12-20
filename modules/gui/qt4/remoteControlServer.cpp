@@ -257,18 +257,18 @@ void RCServer::run(void *p) {
     char msgSent[MAX_SIZE] = { 0 };
     int msgSize = -1;
     int id;
+    RCHandlerImpl* handler=new RCHandler(m_intf);
     while (pServer->isSocketOpen()&&m_intf&&vlc_object_alive(m_intf)) {
         logger::inst()->log(TAG_DEBUG,"%s\n","waiting....");
         memset(msgRcv, 0, MAX_SIZE);
         memset(msgSent, 0, MAX_SIZE);
         pServer->getPacket(*(sockaddr*)&addrClient, msgRcv, msgSize, MAX_SIZE);
-        RCHandlerImpl* handler=new RCHandler(m_intf);
         handler->handle(msgRcv,msgSent);
         /*all of the strings,including both english and chinese,haved been encoded to UTF-8 by vlc.@yulw,15-11.20*/
         pServer->sendPacket(*(sockaddr*)&addrClient, msgSent,strlen(msgSent)+1,MAX_LEN);
-        delete handler;
 
     }
+    delete handler;
     logger::inst()->log(TAG_INFO,"%s\n","rcserver exited.");
 
 }

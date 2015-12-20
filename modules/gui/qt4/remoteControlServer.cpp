@@ -151,8 +151,8 @@ void Thread::join() {
 }
 
 /*Server part*/
-RCServer::RCServer(RCHandlerImpl* impl) {
-    m_handlerImpl=impl;
+RCServer::RCServer(intf_thread_t* pIntf) {
+    m_intf=pIntf;
 }
 RCServer::~RCServer() {
     closesocket(m_netSocket);
@@ -257,15 +257,16 @@ void RCServer::run(void *p) {
     char msgSent[MAX_SIZE] = { 0 };
     int msgSize = -1;
     int id;
-    //m_handlerImpl->addCommand("PlayList",new PlayListCommand(reinterpret_cast<RCHandler*>(m_handlerImpl)));
-    while (pServer->isSocketOpen()&&(dynamic_cast<RCHandler*>(m_handlerImpl))->getIntf()&&vlc_object_alive((dynamic_cast<RCHandler*>(m_handlerImpl))->getIntf())) {
+    while (pServer->isSocketOpen()&&m_intf&&vlc_object_alive(m_intf)) {
         logger::inst()->log(TAG_DEBUG,"%s\n","waiting....");
         memset(msgRcv, 0, MAX_SIZE);
         memset(msgSent, 0, MAX_SIZE);
         pServer->getPacket(*(sockaddr*)&addrClient, msgRcv, msgSize, MAX_SIZE);
-        m_handlerImpl->handle(msgRcv,msgSent);
+        RCHandlerImpl* handler=new RCHandler(m_intf);
+        handler->handle(msgRcv,msgSent);
         /*all of the strings,including both english and chinese,haved been encoded to UTF-8 by vlc.@yulw,15-11.20*/
         pServer->sendPacket(*(sockaddr*)&addrClient, msgSent,strlen(msgSent)+1,MAX_LEN);
+        delete handler;
 
     }
     logger::inst()->log(TAG_INFO,"%s\n","rcserver exited.");

@@ -211,7 +211,7 @@ class RCUtil {
 };
 class RCServer:public Thread {
     public:
-        RCServer(RCHandlerImpl* handler);
+        RCServer(intf_thread_t* pIntf);
         ~RCServer();
 
     public:
@@ -224,7 +224,7 @@ class RCServer:public Thread {
         void run(void* p);
         int m_port;
         SOCKET m_netSocket;
-        RCHandlerImpl* m_handlerImpl;
+        intf_thread_t* m_intf;
 };
 class RCHandler:public RCHandlerImpl
 {

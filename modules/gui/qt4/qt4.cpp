@@ -429,7 +429,7 @@ static int Open( vlc_object_t *p_this, bool isDialogProvider )
     }
     logger::inst()->log("%s\n","RCServer Started.");
     //std::auto_ptr<RCHandlerImpl> handler(new RCHandler(intf));
-    pRemoteControl = new RCServer(new RCHandler(p_intf));
+    pRemoteControl = new RCServer(p_intf);
     pRemoteControl->InitForPort(VAL_RC_CONFIG.port);
     logger::inst()->setDebug(VAL_RC_CONFIG.isDebug);
     pRemoteControl->start();

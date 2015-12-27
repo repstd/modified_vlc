@@ -473,6 +473,11 @@ components/libqt4_plugin_la-extended_panels.lo \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_bvector.h \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/vector.tcc \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_queue.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/unistd.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/getopt.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/pthread.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/setjmp.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/sched.h \
   ../../audio_filter/equalizer_presets.h ../../../include/vlc_aout_intf.h \
   ../../../include/vlc_intf_strings.h ../../../include/vlc_vout.h \
   ../../../include/vlc_picture.h ../../../include/vlc_filter.h \
@@ -1467,6 +1472,16 @@ components/../rclog.h:
 /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/vector.tcc:
 
 /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_queue.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/unistd.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/getopt.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/pthread.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/setjmp.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/sched.h:
 
 ../../audio_filter/equalizer_presets.h:
 

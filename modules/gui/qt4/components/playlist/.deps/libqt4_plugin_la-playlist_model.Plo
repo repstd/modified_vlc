@@ -491,6 +491,11 @@ components/playlist/libqt4_plugin_la-playlist_model.lo \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_bvector.h \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/vector.tcc \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_queue.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/unistd.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/getopt.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/pthread.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/setjmp.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/sched.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QIcon \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/qicon.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QFont \
@@ -1544,6 +1549,16 @@ components/playlist/../../rclog.h:
 /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/vector.tcc:
 
 /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_queue.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/unistd.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/getopt.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/pthread.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/setjmp.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/sched.h:
 
 /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtGui/QIcon:
 

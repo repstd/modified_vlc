@@ -2,6 +2,8 @@
 #include <iostream>
 #include <string>
 #include <queue>
+#include <unistd.h>
+#include <pthread.h>
 const int RC_LOGGER_MAX_LEN=2000;
 const int RC_LOGGER_MAX_SIZE=200;
 #define RC_VAR_ARGS 0
@@ -34,5 +36,6 @@ private:
 #endif
     std::string filename;
     std::queue<std::string> logs;
+    pthread_mutex_t m_mutex;
     int isdebug;
 };

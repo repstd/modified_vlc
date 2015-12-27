@@ -30,9 +30,12 @@
 #include <vlc_interface.h> /* intf_thread_t */
 #include <vlc_playlist.h>  /* playlist_t */
 #include <vlc_input.h>
+#include <vlc_events.h>
 #include <vlc_url.h>
 #include <vlc_interface.h>
+#include <vlc_threads.h>
 #include "ini/inifile.h"
+#include "thpool.h"
 #include "qt4.hpp"
 #include <QSettings>
 #include <QTextCodec>
@@ -129,26 +132,6 @@ char* CheckMessage(char* src) {
     }
     return EnsureUTF8(strdup(src));
 }
-Thread::Thread():Runnable() {
-}
-Thread::Thread(Runnable* runnable):Runnable(){
-    m_runnable=runnable;
-}
-void *Thread::loopFunc(void* arg) {
-    ((Thread*)arg)->run(arg);
-}
-
-void Thread::run(void* arg) {
-    if(m_runnable!=NULL) {
-        m_runnable->run((Thread*)arg);
-    }
-}
-void Thread::start() {
-    m_ret= pthread_create(&m_tid, 0, Thread::loopFunc, this);
-}
-void Thread::join() {
-    pthread_join(m_tid,NULL);
-}
 
 /*Server part*/
 RCServer::RCServer(intf_thread_t* pIntf) {
@@ -229,8 +212,7 @@ bool RCServer::sendPacket(sockaddr to, void *data, int size, int maxSize) {
     logger::inst()->log(TAG_DEBUG,"%s\n",(char*)data);
     int len = sizeof(to);
     int result = -1;
-    if (m_netSocket)
-    {
+    if (m_netSocket) {
         result = sendto(m_netSocket, (char*)data, size, 0, (sockaddr*)&to, len);
         if (result == SOCKET_ERROR) {
             logger::inst()->log(TAG_ERROR,"%s\n","error in ::getPacket.SIZE_SENT=0.");
@@ -246,9 +228,11 @@ bool RCServer::sendPacket(sockaddr to, void *data, int size, int maxSize) {
 int RCServer::GetPort() {
     return m_port;
 }
-bool RCServer::isSocketOpen()
-{
+bool RCServer::isSocketOpen() {
     return m_netSocket <= 0 ? false : true;
+}
+void* Serve(void* para) {
+    return 0;
 }
 void RCServer::run(void *p) {
     RCServer* pServer = reinterpret_cast<RCServer*>(p);
@@ -256,8 +240,9 @@ void RCServer::run(void *p) {
     char msgRcv[MAX_SIZE] = { 0 };
     char msgSent[MAX_SIZE] = { 0 };
     int msgSize = -1;
-    int id;
-    RCHandlerImpl* handler=new RCHandler(m_intf);
+    RCHandlerImpl* p_handler=new RCHandler(m_intf);
+    std::auto_ptr<RCHandlerImpl> handler(p_handler);
+    RCPlayListModel::inst()->initCallback(m_intf);
     while (pServer->isSocketOpen()&&m_intf&&vlc_object_alive(m_intf)) {
         logger::inst()->log(TAG_DEBUG,"%s\n","waiting....");
         memset(msgRcv, 0, MAX_SIZE);
@@ -268,26 +253,26 @@ void RCServer::run(void *p) {
         pServer->sendPacket(*(sockaddr*)&addrClient, msgSent,strlen(msgSent)+1,MAX_LEN);
 
     }
-    delete handler;
+    RCPlayListModel::inst()->setInput(NULL);
     logger::inst()->log(TAG_INFO,"%s\n","rcserver exited.");
 
 }
 
 /*remote control server logical*/
 RCPlayListModel::RCPlayListModel() {
-
+    pthread_mutex_init(&m_mutex,NULL);
 }
 RCPlayListModel::~RCPlayListModel() {
 
 }
 RCPlayListModel::RCPlayListModel(const RCPlayListModel& other) {
-
 }
 RCPlayListModel* RCPlayListModel::inst() {
     static RCPlayListModel inst;
     return &inst;
 }
 const char* RCPlayListModel::add(const char* rcmrl) {
+    pthread_mutex_lock(&m_mutex);
     RCInputMRL item;
     const char* mrl=parseFullMrl(rcmrl);
     const char* name=parseName(mrl);
@@ -308,18 +293,15 @@ const char* RCPlayListModel::add(const char* rcmrl) {
     item.name=name;
     item.mrl=mrl;
     mMRLItem[item.name]=item;
-    char* encode_name;
-    asprintf(&encode_name,"[%s][%s][%s][%d]","Add",item.name.c_str(),item.mrl.c_str(),item.counter);
-    if(encode_name)
-        logger::inst()->log(TAG_DEBUG,"%s\n",encode_name);
-    else
-        logger::inst()->log(TAG_DEBUG,"%s\n","logger error in RCPlayListMode::Add");
-    free(encode_name);
+    pthread_mutex_unlock(&m_mutex);
     return mrl;
 }
 int RCPlayListModel::remove(const char* name) {
-    if(!name)
+    pthread_mutex_lock(&m_mutex);
+    if(!name) {
+        pthread_mutex_unlock(&m_mutex);
         return VLC_ENOOBJ;
+    }
     std::map<std::string,RCInputMRL>::iterator iter=mMRLItem.find(name);
     logger::inst()->log(TAG_DEBUG,"RCPlayListModel::Remove[%s]\n",name);
     if(iter!=mMRLItem.end()) {
@@ -335,9 +317,60 @@ int RCPlayListModel::remove(const char* name) {
         else
             mMRLItem[name].counter--;
     }
-    else
+    else {
+        pthread_mutex_unlock(&m_mutex);
         return VLC_ENOOBJ;
+    }
+    pthread_mutex_unlock(&m_mutex);
     return VLC_SUCCESS;
+}
+void RCPlayListModel::addCallback(intf_thread_t* p_intf) {
+    playlist_t *p_playlist = pl_Get(p_intf);
+    input_thread_t* p_input = playlist_CurrentInput(p_playlist);
+    addCallback(p_input);
+}
+void RCPlayListModel::removeCallback(intf_thread_t* p_intf) {
+    playlist_t *p_playlist = pl_Get(p_intf);
+    input_thread_t* p_input = playlist_CurrentInput(p_playlist);
+    removeCallback(p_input);
+}
+void RCPlayListModel::setInput(input_thread_t* p_input) {
+    if(m_pInput)
+        removeCallback(m_pInput);
+    if(p_input&&!p_input->b_dead&&vlc_object_alive(p_input)) {
+        m_pInput=p_input;
+        addCallback(m_pInput);
+    }
+}
+void RCPlayListModel::updateInput(playlist_t* p_playlist) {
+    while(true) {
+        input_thread_t* p_input=playlist_CurrentInput(p_playlist);
+        logger::inst()->log(TAG_DEBUG,"%s\n","waiting to update input...");
+        if(p_input) {
+            RCPlayListModel::inst()->setInput(p_input);
+            break;
+        }
+    }
+}
+void RCPlayListModel::addCallback(input_thread_t* p_input) {
+    pthread_mutex_lock(&m_mutex);
+    if(p_input&&m_callback.get())
+        var_AddCallback(p_input, "intf-event", RCPlayListModel::RCCallback, m_callback.get());
+    else
+        logger::inst()->log(TAG_DEBUG,"%s\n","falied to add input callback.");
+    pthread_mutex_unlock(&m_mutex);
+}
+void RCPlayListModel::removeCallback(input_thread_t* p_input) {
+    pthread_mutex_lock(&m_mutex);
+    if(p_input&&m_callback.get())
+        var_DelCallback( p_input, "intf-event", RCPlayListModel::RCCallback, m_callback.get());
+    else
+        logger::inst()->log(TAG_DEBUG,"%s\n","falied to remove input callback.");
+    pthread_mutex_unlock(&m_mutex);
+}
+void RCPlayListModel::initCallback(intf_thread_t* p_intf) {
+    BasicCallbackImpl* p_callback=new RCStateCallback(p_intf);
+    m_callback.reset(p_callback);
 }
 int RCPlayListModel::getCurrentCount(const char* name) {
     std::map<std::string,RCInputMRL>::iterator iter=mMRLItem.find(name);
@@ -345,7 +378,80 @@ int RCPlayListModel::getCurrentCount(const char* name) {
         return 0;
     return iter->second.counter;
 }
-char* PlayListCommand::getTotalPlayListIdList(playlist_item_t *p_item, int i_level,char* result){
+int RCPlayListModel::RCCallback( vlc_object_t *p_this, const char * psz_cmd, vlc_value_t oldval, vlc_value_t newval, void *param) {
+    input_thread_t* p_input=(input_thread_t*)p_this;
+    RCStateCallback* p_callback=param?reinterpret_cast<RCStateCallback*>(param):NULL;
+    if(!p_callback) {
+        logger::inst()->log(TAG_DEBUG,"%s\n","error in getting callback object");
+        return VLC_ENOOBJ;
+    }
+    int state;
+    switch( newval.i_int )
+    {
+        case INPUT_EVENT_STATE:
+            logger::inst()->log(TAG_DEBUG,"%s\n","INPUT_EVENT_STATE");
+            state = var_GetInteger(p_input, "state");
+            switch(state) {
+                case END_S:
+                    logger::inst()->log(TAG_DEBUG,"%s\n","END");
+                    p_callback->onStop(p_this,psz_cmd,oldval,newval,param);
+                    break;
+                case PAUSE_S:
+                    logger::inst()->log(TAG_DEBUG,"%s\n","PAUSE");
+                    break;
+                case PLAYING_S:
+                    logger::inst()->log(TAG_DEBUG,"%s\n","PLAYING");
+                    p_callback->onStart(p_this,psz_cmd,oldval,newval,param);
+                    break;
+                default:
+                    break;
+            }
+            break;
+        case INPUT_EVENT_RATE:
+            break;
+        case INPUT_EVENT_POSITION:
+        case INPUT_EVENT_LENGTH:
+            break;
+        case INPUT_EVENT_TITLE:
+        case INPUT_EVENT_CHAPTER:
+            break;
+        case INPUT_EVENT_ES:
+            break;
+        case INPUT_EVENT_TELETEXT:
+            break;
+        case INPUT_EVENT_STATISTICS:
+            break;
+        case INPUT_EVENT_VOUT:
+            break;
+        case INPUT_EVENT_AOUT:
+            break;
+        case INPUT_EVENT_ITEM_META: /* Codec MetaData + Art */
+            break;
+        case INPUT_EVENT_ITEM_INFO: /* Codec Info */
+            break;
+        case INPUT_EVENT_ITEM_NAME:
+            break;
+        case INPUT_EVENT_AUDIO_DELAY:
+        case INPUT_EVENT_SUBTITLE_DELAY:
+            break;
+        case INPUT_EVENT_CACHE:
+            break;
+        case INPUT_EVENT_BOOKMARK:
+            break;
+        case INPUT_EVENT_RECORD:
+            break;
+        case INPUT_EVENT_PROGRAM:
+            break;
+        case INPUT_EVENT_ITEM_EPG:
+            break;
+        case INPUT_EVENT_SIGNAL:
+        default:
+            break;
+    }
+    return VLC_SUCCESS;
+}
+char* PlayListCommand::getTotalPlayListIdList(playlist_item_t *p_item, int i_level,char* result)
+{
     char* psz_namelist=(char*)malloc(MAX_SIZE);
     if(!psz_namelist)
         return RCUtil::addItem("{}",result);
@@ -360,6 +466,42 @@ char* PlayListCommand::getTotalPlayListIdList(playlist_item_t *p_item, int i_lev
         char* id=const_cast<char*>(RCPlayListModel::inst()->getID(namelist[i].c_str()));
         if(id)
             p=RCUtil::addItem(id,p);
+        else
+            p=RCUtil::addItem("-1",p);
+    }
+    if(namelist.size()==0)
+        p=RCUtil::addItem("{}",p);
+    if(p)
+        *(p)='\0';
+    return p;
+}
+char* PlayListCommand::getTotalPlayListDetail(playlist_item_t *p_item, int i_level,char* result,int field){
+    char* psz_namelist=(char*)malloc(MAX_SIZE);
+    if(!psz_namelist)
+        return RCUtil::addItem("{}",result);
+    getTotalPlayList(p_item,i_level,psz_namelist);
+    std::vector<std::string> namelist;
+    int failed=RCUtil::parseList(psz_namelist,namelist);
+    free(psz_namelist);
+    if(failed)
+        return RCUtil::addItem("{}",result);
+    char* p=result;
+    for(int i=0;i<namelist.size();i++) {
+        char* detail;
+        switch(field) {
+            case RCInputMRL::ID:
+                detail=const_cast<char*>(RCPlayListModel::inst()->getID(namelist[i].c_str()));
+                break;
+            case RCInputMRL::NAME:
+                detail=const_cast<char*>(namelist[i].c_str());
+                break;
+            default:
+            case RCInputMRL::FULL:
+                detail=const_cast<char*>(RCPlayListModel::inst()->getItem(namelist[i].c_str()));
+                break;
+        }
+        if(detail)
+            p=RCUtil::addItem(detail,p);
         else
             p=RCUtil::addItem("-1",p);
     }
@@ -391,6 +533,18 @@ const char* RCPlayListModel::getID(const char* name) {
     if(iter==mMRLItem.end())
         return NULL;
     return iter->second.id.c_str();
+}
+const char* RCPlayListModel::getMRL(const char* name) {
+    std::map<std::string,RCInputMRL>::iterator iter=mMRLItem.find(name);
+    if(iter==mMRLItem.end())
+        return NULL;
+    return iter->second.mrl.c_str();
+}
+const char* RCPlayListModel::getItem(const char* name) {
+    std::map<std::string,RCInputMRL>::iterator iter=mMRLItem.find(name);
+    if(iter==mMRLItem.end())
+        return NULL;
+    return iter->second.encode();
 }
 //Handler
 input_item_t *RCUtil::parse_MRL( const char *mrl ) {
@@ -480,6 +634,8 @@ input_item_t *RCUtil::parse_MRL( const char *mrl ) {
 int RCUtil::parseList(std::string src,std::vector<std::string>& dst) {
     int n=src.length();
     int i=0;
+    if(!n||src[0]!='{')
+        return 1;
     while(i<n) {
         if(src[i]=='{') {
             int j=i+1;
@@ -1082,8 +1238,13 @@ int PlayListCommand::PlayListConfig(intf_thread_t* p_intf, const char *psz_cmd,r
         if(!strlen(p_data))
             ENCODE_MSG_WITH_RETURN(p_data,"%s","{}");
     }
-    else if (!strcmp(psz_cmd, "setPlayListItem"))
-    {
+    else if(!strcmp(psz_cmd,"getPlayListFull")) {
+        char* tail=getTotalPlayListDetail(p_playlist->p_root_category,0,p_data,RCInputMRL::FULL);
+        tail='\0';
+        if(!strlen(p_data))
+            ENCODE_MSG_WITH_RETURN(p_data,"%s","{}");
+    }
+    else if (!strcmp(psz_cmd, "setPlayListItem")) {
         unsigned i_pos = atoi(newval.psz_string.c_str());
         result=playListJump(p_playlist,i_pos);
         ENCODE_MSG(p_data, result);
@@ -1125,13 +1286,21 @@ int PlayListCommand::PlayListConfig(intf_thread_t* p_intf, const char *psz_cmd,r
             result=playListRemove(p_playlist,indexes);
         ENCODE_MSG(p_data,result);
     }
+    else if(!strcmp(psz_cmd,"PlayListRemoveAll")) {
+        result=playListRemoveAll(p_playlist);
+        ENCODE_MSG(p_data,result);
+    }
     else if(!strcmp(psz_cmd,"setPlayListMove")) {
         vector<string> indexPair;
         int failed=RCUtil::parseList(newval.psz_string,indexPair);
         if(failed||indexPair.size()!=2)
             result=VLC_EGENERIC;
         else
-            result=this->playListMove(p_playlist,atoi(indexPair[0].c_str()),atoi(indexPair[1].c_str()));
+            result=playListMove(p_playlist,atoi(indexPair[0].c_str()),atoi(indexPair[1].c_str()));
+        ENCODE_MSG(p_data,result);
+    }
+    else if(!strcmp(psz_cmd,"setPlayListItemTop")) {
+        result=playListTop(p_playlist,(int)newval.f_float);
         ENCODE_MSG(p_data,result);
     }
     else {
@@ -1208,8 +1377,14 @@ int PlayListCommand::playListRemove(playlist_t* p_playlist,int index) {
         int size=p_current->p_parent->i_children;
         if(size>1) {
             result=playListJump(p_playlist,index+1<size?index+1:0);
-            if(result==VLC_SUCCESS)
+            if(result==VLC_SUCCESS) {
+                while(true) {
+                    current=getCurrentPlayListItemId(p_playlist);
+                    if(current!=index)
+                        break;
+                }
                 return playListRemove(p_playlist,index);
+            }
         }
     }
     logger::inst()->log(TAG_DEBUG,"remove [%s] from playlist.\n",target->p_input->psz_name);
@@ -1254,7 +1429,7 @@ int PlayListCommand::playListRemove(playlist_t* p_playlist,vector<string>& index
             return VLC_ENOOBJ;
     }
     char* encode_name;
-    asprintf(&encode_name,"[%s][%d]\n","remove in batch",targetId.size());
+    asprintf(&encode_name,"[%s][%d]","remove in batch",targetId.size());
     logger::inst()->log(TAG_DEBUG,"%s\n",encode_name);
     free(encode_name);
     int result=VLC_SUCCESS;
@@ -1264,6 +1439,26 @@ int PlayListCommand::playListRemove(playlist_t* p_playlist,vector<string>& index
         if(result!=VLC_SUCCESS)
             break;
     }
+    return result;
+}
+int PlayListCommand::playListRemoveAll(playlist_t* p_playlist){
+    if(!p_playlist)
+        return VLC_ENOOBJ;
+    int current=this->getCurrentPlayListItemId(p_playlist);
+    int result=VLC_EGENERIC;
+    vector<string> index;
+    int size=p_playlist->items.i_size;
+    for(int i=0;i<size;i++) {
+        if(i==current)
+            continue;
+        char* cur;
+        asprintf(&cur,"%d",i);
+        if(cur) {
+            index.push_back(cur);
+            free(cur);
+        }
+    }
+    result=playListRemove(p_playlist,index);
     return result;
 }
 int PlayListCommand::playListMove(playlist_t* p_playlist,int from,int to) {
@@ -1302,15 +1497,22 @@ int PlayListCommand::playListMove(playlist_t* p_playlist,int from,int to) {
     PL_UNLOCK;
     return VLC_SUCCESS;
 }
+int PlayListCommand::playListTop(playlist_t* p_playlist,int from) {
+    if(!p_playlist||from<0||from>=p_playlist->items.i_size)
+        return VLC_EGENERIC;
+    //already on top
+    if(from==0||p_playlist->items.i_size==1)
+        return VLC_SUCCESS;
+    int result=playListMove(p_playlist,from,0);
+    if(result==VLC_SUCCESS)
+        result=playListMove(p_playlist,0,1);
+    return result;
+}
 int PlayListCommand::playListMove(playlist_t* p_playlist,int to,vector<string>& item) {
     /*TODO*/
     return 1;
 }
 int PlayListCommand::playListJump(playlist_t* p_playlist,int i_pos) {
-    char* encode_name;
-    asprintf(&encode_name,"playListJump to [%d]\n",i_pos);
-    logger::inst()->log(TAG_DEBUG,"%s\n",encode_name);
-    free(encode_name);
     PL_LOCK;
     unsigned i_size = p_playlist->items.i_size;
     int result=VLC_EGENERIC;
@@ -1321,8 +1523,11 @@ int PlayListCommand::playListJump(playlist_t* p_playlist,int i_pos) {
             p_parent = p_parent->p_parent;
         result = playlist_Control(p_playlist, PLAYLIST_VIEWPLAY, pl_Locked, p_parent, p_item);
     }
-
     PL_UNLOCK;
+    char* encode_name;
+    asprintf(&encode_name,"playListJump to [%d]",i_pos);
+    logger::inst()->log(TAG_DEBUG,"%s\n",encode_name);
+    free(encode_name);
     return result;
 }
 int PlayListCommand::playListInsert(playlist_t* p_playlist,playlist_item_t* p_item,int pos) {
@@ -1357,6 +1562,7 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
         ENCODE_MSG_WITH_RETURN(p_data, "%s","Add or ReOpen a File First");
         return result;
     }
+    RCPlayListModel::inst()->setInput(p_input);
     if ((!strcmp(psz_cmd, "setAdd")||!strcmp(psz_cmd, "setOpen"))&&newval.psz_string.c_str()){
         const char* mrl=RCPlayListModel::inst()->add(newval.psz_string.c_str());
         input_item_t *p_item = RCUtil::parse_MRL(mrl);
@@ -1366,13 +1572,8 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
         }
         else
             result=VLC_ENOOBJ;
+        RCPlayListModel::inst()->updateInput(p_playlist);
         ENCODE_MSG(p_data, result);
-        /*
-           else {
-           result=VLC_ENOOBJ;
-           ENCODE_MSG_WITH_RETURN(p_data, "%s","Add or ReOpen a File First");
-           }
-           */
     }
     else if (!strcmp(psz_cmd, "getState")) 
     {
@@ -1690,7 +1891,6 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
     }
     else if (!strcmp(psz_cmd, "next")) {
         result = playlist_Next(p_playlist);
-
         ENCODE_MSG(p_data, result);
     }
     else if (!strcmp(psz_cmd, "repeat"))
@@ -1780,28 +1980,11 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
         playlist_Clear(p_playlist, pl_Unlocked);
         ENCODE_MSG(p_data, result);
     }
-    else if (!strcmp(psz_cmd, "setAdd") &&
-            newval.psz_string.c_str())
-    {
-        const char* mrl=RCPlayListModel::inst()->add(newval.psz_string.c_str());
-        input_item_t *p_item = RCUtil::parse_MRL(mrl);
-
-        if (p_item)
-        {
-            result = playlist_AddInput(p_playlist, p_item,
-                    PLAYLIST_GO | PLAYLIST_APPEND, PLAYLIST_END, true,
-                    pl_Unlocked);
-            vlc_gc_decref(p_item);
-        }
-        ENCODE_MSG(p_data, result);
-
-    }
     else if (!strcmp(psz_cmd, "setEnqueue") &&
             newval.psz_string.c_str())
     {
         const char* mrl=RCPlayListModel::inst()->add(newval.psz_string.c_str());
         input_item_t *p_item = RCUtil::parse_MRL(mrl);
-
         if (p_item)
         {
             sprintf(p_data, "trying to enqueue %s to playlist", newval.psz_string.c_str());
@@ -1822,7 +2005,7 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
     else if(!strcmp(psz_cmd,"setVideoRatio")||
             !strcmp(psz_cmd,"getVideoRatio")||
             !strcmp(psz_cmd,"matchscreen")
-            ) 
+           ) 
     {
         vout_thread_t* p_vout=input_GetVout(p_input);
         if(p_vout) {
@@ -1854,14 +2037,57 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
     else {
         ENCODE_MSG_WITH_RETURN(p_data, "%s", "unknown command");
     }
-
     return result;
+}
+RCStateCallback::RCStateCallback(intf_thread_t* p_intf):BasicCallbackImpl(),m_pIntf(p_intf){
+}
+int RCStateCallback::onStart( vlc_object_t *p_this, const char *, vlc_value_t, vlc_value_t newval, void *param) {
+    logger::inst()->log(TAG_DEBUG,"%s\n","RCStateCallback::onStart");
+    return VLC_SUCCESS;
+}
+void *OnStop( void * data) {
+    logger::inst()->log(TAG_DEBUG,"onStop thread:%s\n","step in");
+    RCPlayListThreadPara* para=reinterpret_cast<RCPlayListThreadPara*>(data);
+    if(!para) {
+        return NULL;
+    }
+    if(!para->p_intf)
+        return NULL;
+    RCInvokerImpl* pInvoker=new RCInvoker(para->p_intf);
+    std::auto_ptr<RCInvokerImpl> invoker(pInvoker);
+    RCCommandImpl* pPlayListCmd=new PlayListCommand(invoker.get());
+    std::auto_ptr<RCCommandImpl> playlistCommand(pPlayListCmd);
+    invoker->addCommand("PlayList",playlistCommand.get());
+    RCAction action;
+    //get index of playing item
+    action.psz_cmd="getPlayListItem";
+    invoker->invoke(action);
+    msleep(para->delay);
+
+    const char* index=invoker->getLastState();
+    logger::inst()->log(TAG_DEBUG,"last state:%s\n",index);
+    action.psz_cmd="setPlayListRemove";
+    action.newval.psz_string=index;
+    action.newval.f_float=atof(index);
+    invoker->invoke(action);
+    logger::inst()->log(TAG_DEBUG,"last state:%s\n",invoker->getLastState());
+    free(data);
+    return NULL;
+}
+int RCStateCallback::onStop( vlc_object_t *p_this, const char * psz_cmd, vlc_value_t, vlc_value_t newval, void *param) {
+    logger::inst()->log(TAG_DEBUG,"%s\n","RCStateCallback::onStop");
+    RCPlayListThreadPara* para=(RCPlayListThreadPara*)malloc(sizeof(RCPlayListThreadPara));
+    para->p_intf=m_pIntf;
+    para->delay=100000;
+    vlc_thread_t tid;
+    if(vlc_clone(&tid,OnStop,para,VLC_THREAD_PRIORITY_HIGHEST))
+        logger::inst()->log(TAG_DEBUG,"%s\n","failed to create onStop serving thread");
+    return VLC_SUCCESS;
 }
 const char* BasicCommand::getRatio(int width,int height) {
 #define ABS(a) ((a)>0?(a):(-1.0*(a)))
     const int RATIO_CNT=8;
-    float RATIO[RATIO_CNT]=
-    {
+    float RATIO[RATIO_CNT]= {
         5.0/4.0,
         16.0/9.0,
         16.0/10.0,
@@ -1871,8 +2097,7 @@ const char* BasicCommand::getRatio(int width,int height) {
         2.35/1.0,
         2.39/1.0
     };
-    char* RATIO_STR[RATIO_CNT]=
-    {
+    const char* RATIO_STR[RATIO_CNT]= {
         "5:4",
         "16:9",
         "16:10",
@@ -1917,11 +2142,11 @@ int BasicCommand::GuaranteeDisplayRatio(intf_thread_t* p_intf) {
 }
 RCHandler::RCHandler(intf_thread_t* p_intf) {
     m_pIntf=p_intf;
-    m_invoker= new RCInvoker(getIntf());
-    m_invoker->addCommand("PlayList",new PlayListCommand(m_invoker));
-    m_invoker->addCommand("Audio",new AudioCommand(m_invoker));
-    m_invoker->addCommand("Basic",new BasicCommand(m_invoker));
-    //m_invoder->addCommand()
+    RCInvokerImpl* pinvoker=new RCInvoker(getIntf());
+    m_invoker.reset(pinvoker);
+    m_invoker->addCommand("PlayList",new PlayListCommand(m_invoker.get()));
+    m_invoker->addCommand("Audio",new AudioCommand(m_invoker.get()));
+    m_invoker->addCommand("Basic",new BasicCommand(m_invoker.get()));
 }
 int RCHandler::handle(char *psz_cmd,char* p_data) {
     int result=VLC_EGENERIC;
@@ -1954,10 +2179,10 @@ bool RCInvoker::isNeedCheckRatio(RCAction& action) {
     if(!psz_cmd)
         return false;
     return  !strcmp(psz_cmd,"next")||
-            !strcmp(psz_cmd,"prev")||
-            !strcmp(psz_cmd,"setAdd")||
-            !strcmp(psz_cmd,"setOpen")||
-            strstr(psz_cmd,"setPlayList");
+        !strcmp(psz_cmd,"prev")||
+        !strcmp(psz_cmd,"setAdd")||
+        !strcmp(psz_cmd,"setOpen")||
+        strstr(psz_cmd,"setPlayList");
 }
 void RCInvoker::invoke(RCAction& action){
     writeAction(action);
@@ -1986,7 +2211,7 @@ void RCInvoker::invoke(RCAction& action){
             popState();
         }
     }
-    else
+    else if(!known)
         saveState("uknown command");
     return;
 }

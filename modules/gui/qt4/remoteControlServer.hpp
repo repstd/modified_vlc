@@ -1,4 +1,3 @@
-
 #ifndef QVLC_UDPServer_H_
 #define QVLC_UDPServer_H_
 #ifndef MAX_LEN
@@ -24,89 +23,27 @@
 #include <stack>
 #include <vlc_common.h>
 #include <vlc_aout_intf.h>
-#ifdef REMOTE_CONTROL
-struct intf_thread_t;
+#include <vlc_events.h>
+#include <vlc_interface.h>
+#include "thpool.h"
 
+#ifdef REMOTE_CONTROL
 #define PRINT_ERR(tag,errCode) \
     char err[256];\
 sprintf(err, "%s  Error Code: %d\n", tag, errCode,WSAGetLastError()); \
 __LOG(err);
 
 #define MAX_SIZE 10000
-typedef struct _rc_para
-{
-    int		query_id;
-    char	descr[50];
-    char	val[MAX_SIZE];
-
-} rc_para;
 //<*modified
 //#define TCP_CONN
+#define ENCODE_MSG(msg,result)\
+    if (result == VLC_SUCCESS)\
+sprintf(msg, "%s", "success"); \
+else \
+sprintf(msg, "%s", "failed");
 
-enum REMOTE_CONTROL_ITEM
-{
-    /* input variable "position" */
-    /* input variable "position" */
-    RC_ITEM_GET_POSITION,         /* arg1= double *       res=    */
-    RC_ITEM_SET_POSITION,         /* arg1= double         res=can fail    */
-
-    /* input variable "length" */
-    RC_ITEM_GET_LENGTH,           /* arg1= int64_t *      res=can fail    */
-
-    /* input variable "time" */
-    RC_ITEM_GET_TIME,             /* arg1= int64_t *      res=    */
-    RC_ITEM_SET_TIME,             /* arg1= int64_t        res=can fail    */
-
-    /* input variable "rate" (nominal is RC_ITEM_RATE_DEFAULT) */
-    RC_ITEM_GET_RATE,             /* arg1= int *          res=    */
-    RC_ITEM_SET_RATE,             /* arg1= int            res=can fail    */
-
-    /* input variable "state" */
-    RC_ITEM_GET_STATE,            /* arg1= int *          res=    */
-    RC_ITEM_SET_STATE,            /* arg1= int            res=can fail    */
-
-    /* input variable "audio-delay" and "sub-delay" */
-    RC_ITEM_GET_AUDIO_DELAY,      /* arg1 = int* res=can fail */
-    RC_ITEM_SET_AUDIO_DELAY,      /* arg1 = int  res=can fail */
-    RC_ITEM_GET_SPU_DELAY,        /* arg1 = int* res=can fail */
-    RC_ITEM_SET_SPU_DELAY,        /* arg1 = int  res=can fail */
-
-
-    /* Input properties */
-    RC_ITEM_GET_VIDEO_FPS,         /* arg1= double *        res=can fail */
-
-    /* titles */
-    RC_ITEM_GET_TITLE_INFO,     /* arg1=input_title_t** arg2= int * res=can fail */
-
-    /* ES */
-    RC_ITEM_RESTART_ES,       /* arg1=int (-AUDIO/VIDEO/SPU_ES for the whole category) */
-
-    /* Input ressources
-     * XXX You must call vlc_object_release as soon as possible */
-    RC_ITEM_GET_AOUT,         /* arg1=audio_output_t **              res=can fail */
-    RC_ITEM_GET_VOUTS,        /* arg1=vout_thread_t ***, size_t *        res=can fail */
-    RC_ITEM_GET_ES_OBJECTS,   /* arg1=int id, vlc_object_t **dec, vout_thread_t **, audio_output_t ** */
-
-    /* External clock managments */
-    RC_ITEM_GET_PCR_SYSTEM,   /* arg1=mtime_t *, arg2=mtime_t *       res=can fail */
-    RC_ITEM_MODIFY_PCR_SYSTEM,/* arg1=int absolute, arg2=mtime_t      res=can fail */
-    /*Speed Control.*/
-    RC_ITEM_RATE_FASTER,
-    RC_ITEM_RATE_SLOWER,
-    RC_ITEM_RATE_NORMAL,
-    /*Volume Control*/
-    RC_ITEM_VOLUME_GET,
-    RC_ITEM_VOLUME_UP,
-    RC_ITEM_VOLUME_DOWN,
-    RC_ITEM_VOLUME_MUTE_SHIFT,/*Shift between mute and not mute.*/
-    /*Forward or backward*/
-    RC_ITEM_POSITION_FORWORD,
-    RC_ITEM_POSITION_BACKWORD,
-    /*playlist management.*/
-    RC_ITEM_PLAYLIST_GET,
-    RC_ITEM_PLAYLIST_NEXT,
-    RC_ITEM_PLAYLIST_PREVIOUS, RC_ITEM_PLAYLIST_JUMP
-};
+#define ENCODE_MSG_WITH_RETURN(msg,format,result...) \
+    sprintf(msg, format, result);
 struct RC_CONFIG {
     int port;
     int isDebug;
@@ -117,14 +54,6 @@ struct RC_CONFIG {
     //Information
     std::vector<std::pair<std::string,std::string> >  audioConfigInfo;
 };
-#define ENCODE_MSG(msg,result)\
-    if (result == VLC_SUCCESS)\
-sprintf(msg, "%s", "success"); \
-else \
-sprintf(msg, "%s", "failed");
-
-#define ENCODE_MSG_WITH_RETURN(msg,format,result...) \
-    sprintf(msg, format, result);
 struct rc_value_t
 {
 
@@ -148,6 +77,15 @@ struct RCInputMRL {
     RCInputMRL() {
         counter=0;
     }
+    const char* encode() {
+        return (id+"`"+mrl+"`"+name).c_str();
+    }
+    enum FIELD {
+        ID=0,
+        MRL,
+        NAME,
+        FULL
+    };
 };
 extern RC_CONFIG VAL_RC_CONFIG;
 const int VAL_RC_DEFAULT_PORT=6000;
@@ -156,6 +94,12 @@ char* CheckMessage(char* src);
 bool isNumber(const char* s);
 std::wstring widen( const std::string& str );
 std::string narrow( const std::wstring& str );
+struct RCPlayListThreadPara {
+    intf_thread_t* p_intf;
+    mtime_t delay;
+};
+static  void *Serve( void * rcserver);
+static  void *OnStop( void * delay);
 class RCCommandImpl {
     public:
         virtual void Execute()=0;
@@ -175,25 +119,7 @@ class RCInvokerImpl{
         virtual const char* getLastState()=0;
         virtual void saveState(const char* state)=0;
 };
-class Runnable {
-    public:
-        virtual void run(void* arg)=0;
-};
 class RCInputMRL;
-class Thread:public Runnable {
-    public:
-        Thread();
-        Thread(Runnable* runnable);
-        static void *loopFunc(void* arg);
-        virtual void start();
-        void join();
-    private:
-        virtual void run(void* arg);
-        int m_ret;
-        pthread_t m_tid;
-        Runnable* m_runnable;    
-};
-
 class RCUtil {
     public:
         static input_item_t *parse_MRL( const char *mrl );
@@ -233,11 +159,12 @@ class RCHandler:public RCHandlerImpl
         intf_thread_t* getIntf(); 
     private:
         intf_thread_t* m_pIntf;
-        RCInvokerImpl* m_invoker;
+        std::auto_ptr<RCInvokerImpl> m_invoker;
 };
 class AudioCommand: public RCCommandImpl {
     public:
         AudioCommand(RCInvokerImpl* invoker);
+        AudioCommand(const std::auto_ptr<RCInvokerImpl>& invoker);
         virtual const char* getName();
         virtual void Execute();
         int AudioConfig(intf_thread_t* p_intf,  const char *psz_cmd,rc_value_t& newval, char* p_data);
@@ -260,6 +187,7 @@ class AudioCommand: public RCCommandImpl {
 class PlayListCommand: public RCCommandImpl {
     public:
         PlayListCommand(RCInvokerImpl* invoker);
+        PlayListCommand(const std::auto_ptr<RCInvokerImpl>& invoker);
         virtual const char* getName();
         virtual void Execute();
         int PlayListConfig(intf_thread_t* p_intf, const char *psz_cmd,rc_value_t& newval, char* p_data);
@@ -269,19 +197,37 @@ class PlayListCommand: public RCCommandImpl {
         playlist_item_t* getPlayListItem(playlist_t *p_playlist,int index);
         playlist_item_t* getCurrentPlayListItem(playlist_t *p_playlist);
         char* getCurrentPlayListItemName(playlist_t *p_playlist);
+        char* getTotalPlayListDetail(playlist_item_t *p_item, int i_level,char* result,int field);
         char* getTotalPlayList(playlist_item_t *p_item, int i_level,char* result);
         char* getTotalPlayListIdList(playlist_item_t *p_item, int i_level,char* result);
         int playListRemove(playlist_t* p_playlist,int index);
         int playListRemove(playlist_t* p_playlist,std::vector<std::string>& indexes);
+        int playListRemoveAll(playlist_t* p_playlist);
+        int playListTop(playlist_t* p_playlist,int from);
         int playListMove(playlist_t* p_playlist,int from,int to);
         int playListMove(playlist_t* p_playlist,int to,std::vector<std::string>& item);
         int playListJump(playlist_t* p_playlist,int i_pos);
         int playListInsert(playlist_t* p_playlist,playlist_item_t* p_item,int pos);
         RCInvokerImpl* m_doc;
 };
+class BasicCallbackImpl {
+    public:
+        BasicCallbackImpl(){};
+        virtual int onStart( vlc_object_t *p_this, const char *, vlc_value_t, vlc_value_t newval, void *param)=0;
+        virtual int onStop( vlc_object_t *p_this, const char *, vlc_value_t, vlc_value_t newval, void *param)=0;
+};
+class RCStateCallback:public BasicCallbackImpl {
+    public:
+        RCStateCallback(intf_thread_t* p_intf);
+        virtual int onStart( vlc_object_t *p_this, const char *, vlc_value_t, vlc_value_t newval, void *param);
+        virtual int onStop( vlc_object_t *p_this, const char *, vlc_value_t, vlc_value_t newval, void *param);
+    private:
+        intf_thread_t* m_pIntf;
+};
 class BasicCommand:public RCCommandImpl {
     public:
         BasicCommand(RCInvokerImpl* invoker);
+        BasicCommand(const std::auto_ptr<RCInvokerImpl>& invoker);
         virtual const char* getName();
         virtual void Execute();
         int BasicControl(intf_thread_t* p_intf, const char *psz_cmd,rc_value_t& newval, char* p_data);
@@ -289,6 +235,7 @@ class BasicCommand:public RCCommandImpl {
         const char* getRatio(int width,int height);
         int GuaranteeDisplayRatio(intf_thread_t* p_input);
         RCInvokerImpl* m_doc;
+        BasicCallbackImpl* m_callback;
 };
 class RCInvoker :public RCInvokerImpl{
     public:
@@ -317,15 +264,29 @@ class RCPlayListModel {
         /*name fetched from vlc playlist*/
         int remove(const char* name);
         static RCPlayListModel* inst();
+        const char* getItem(const char* name);
         const char* getID(const char* name);
+        const char* getMRL(const char* name);
         int getCurrentCount(const char* name);
+        static int RCCallback( vlc_object_t *p_this, const char *, vlc_value_t, vlc_value_t newval, void *param);
+        void setInput(input_thread_t* p_input);
+        void updateInput(playlist_t* playlist);
+        void initCallback(intf_thread_t* p_intf);
     private:
+        void addCallback(input_thread_t* p_inpt);
+        void removeCallback(input_thread_t* p_input);
+        void addCallback(intf_thread_t* p_intf);
+        void removeCallback(intf_thread_t* p_intf);
         const char* parseFullMrl(const char* rcmrl);
         const char* parseName(const char* mrl);
         RCPlayListModel();
         RCPlayListModel(const RCPlayListModel& other);
         void operator=(const RCPlayListModel& other);
+    private:
+        pthread_mutex_t m_mutex;
         std::map<std::string,RCInputMRL> mMRLItem;
+        input_thread_t* m_pInput;
+        std::auto_ptr<BasicCallbackImpl> m_callback;
 };
 #endif
 

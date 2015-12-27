@@ -10,6 +10,7 @@ char rc_log_buf[RC_LOGGER_MAX_LEN];
 logger::logger() {
     filename="./rclog.txt";
     isdebug=0;
+    pthread_mutex_init(&m_mutex,NULL);
 }
 logger::logger(const logger& other) {
     return;
@@ -32,6 +33,7 @@ void logger::log(RC_TAG tag,const char* format,...) {
     write(tag,format);
 }
 void logger::write(RC_TAG tag,const char* format,...) {
+    pthread_mutex_lock(&m_mutex);
     if(isDebug()) {
         FILE* rc_debug_fout=fopen(filename.c_str(),"a");
         sprintf(rc_debug_buf,format);
@@ -43,6 +45,7 @@ void logger::write(RC_TAG tag,const char* format,...) {
         logs.pop();
     sprintf(rc_log_buf,"[%d][%s]",tag,rc_debug_buf);
     logs.push(rc_log_buf);
+    pthread_mutex_unlock(&m_mutex);
 }
 #else
 void logger::log(const char* format,const char* data,...){
@@ -52,6 +55,7 @@ void logger::log(RC_TAG tag,const char* format,const char* data,...){
     write(tag,format,data);
 }
 void logger::write(RC_TAG tag,const char* format,const char* data,...){
+    pthread_mutex_lock(&m_mutex);
     if(isDebug()) {
         FILE* rc_debug_fout=fopen(filename.c_str(),"a");
         memset(rc_debug_buf,0,RC_LOGGER_MAX_LEN);
@@ -64,6 +68,7 @@ void logger::write(RC_TAG tag,const char* format,const char* data,...){
         logs.pop();
     sprintf(rc_log_buf,"[%d][%s]",tag,rc_debug_buf);
     logs.push(rc_log_buf);
+    pthread_mutex_unlock(&m_mutex);
 }
 #endif
 void logger::setDebug(int d) {

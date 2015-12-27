@@ -155,7 +155,7 @@ LTLIBRARIES = $(libvlc_LTLIBRARIES)
 am__DEPENDENCIES_1 =
 am__DEPENDENCIES_2 = $(LTLIBVLCCORE) \
 	$(top_builddir)/compat/libcompat.la $(am__DEPENDENCIES_1)
-am__libqt4_plugin_la_SOURCES_DIST = qt4.cpp menus.cpp rclog.cpp remoteControlServer.cpp ini/inifiles.c\
+am__libqt4_plugin_la_SOURCES_DIST = qt4.cpp menus.cpp rclog.cpp remoteControlServer.cpp thpool.c ini/inifiles.c\
 	main_interface.cpp dialogs_provider.cpp input_manager.cpp \
 	actions_manager.cpp extensions_manager.cpp recents.cpp \
 	adapters/seekpoints.cpp variables.cpp dialogs/playlist.cpp \
@@ -197,6 +197,7 @@ am__objects_1 =  \
 	libqt4_plugin_la-main_interface_win32.lo
 am__objects_2 = libqt4_plugin_la-qt4.lo libqt4_plugin_la-menus.lo \
 	libqt4_plugin_la-rclog.lo \
+	libqt4_plugin_la-thpool.lo \
 	libqt4_plugin_la-remoteControlServer.lo \
 	libqt4_plugin_la-inifile.lo \
 	libqt4_plugin_la-main_interface.lo \
@@ -2188,6 +2189,13 @@ libqt4_plugin_la-rclog.lo: rclog.cpp
 #	$(AM_V_CXX)source='rclog.cpp' object='libqt4_plugin_la-rclog.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libqt4_plugin_la_CPPFLAGS) $(CPPFLAGS) $(libqt4_plugin_la_CXXFLAGS) $(CXXFLAGS) -c -o libqt4_plugin_la-rclog.lo `test -f 'rclog.cpp' || echo '$(srcdir)/'`rclog.cpp
+
+libqt4_plugin_la-thpool.lo: thpool.c
+	$(AM_V_CXX)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libqt4_plugin_la_CPPFLAGS) $(CPPFLAGS) $(libqt4_plugin_la_CXXFLAGS) $(CXXFLAGS) -MT libqt4_plugin_la-thpool.lo -MD -MP -MF $(DEPDIR)/libqt4_plugin_la-thpool.Tpo -c -o libqt4_plugin_la-thpool.lo `test -f 'thpool.c' || echo '$(srcdir)/'`thpool.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libqt4_plugin_la-thpool.Tpo $(DEPDIR)/libqt4_plugin_la-thpool.Plo
+#	$(AM_V_CXX)source='thpool.c' object='libqt4_plugin_la-thpool.lo' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(AM_V_CXX_no)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libqt4_plugin_la_CPPFLAGS) $(CPPFLAGS) $(libqt4_plugin_la_CXXFLAGS) $(CXXFLAGS) -c -o libqt4_plugin_la-thpool.lo `test -f 'thpool.c' || echo '$(srcdir)/'`thpool.c
 
 libqt4_plugin_la-remoteControlServer.lo: remoteControlServer.cpp
 	$(AM_V_CXX)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libqt4_plugin_la_CPPFLAGS) $(CPPFLAGS) $(libqt4_plugin_la_CXXFLAGS) $(CXXFLAGS) -MT libqt4_plugin_la-remoteControlServer.lo -MD -MP -MF $(DEPDIR)/libqt4_plugin_la-remoteControlServer.Tpo -c -o libqt4_plugin_la-remoteControlServer.lo `test -f 'remoteControlServer.cpp' || echo '$(srcdir)/'`remoteControlServer.cpp

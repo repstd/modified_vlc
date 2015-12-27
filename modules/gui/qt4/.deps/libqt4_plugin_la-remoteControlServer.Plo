@@ -154,6 +154,10 @@ libqt4_plugin_la-remoteControlServer.lo \
   ../../../include/vlc_messages.h ../../../include/vlc_objects.h \
   ../../../include/vlc_variables.h ../../../include/vlc_main.h \
   ../../../include/vlc_configuration.h ../../../include/vlc_aout_intf.h \
+  ../../../include/vlc_events.h ../../../include/vlc_meta.h \
+  ../../../include/vlc_interface.h thpool.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/unistd.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/getopt.h \
   rclog.h /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/iostream \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ostream \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ios \
@@ -178,22 +182,19 @@ libqt4_plugin_la-remoteControlServer.lo \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/typeinfo \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/istream \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/istream.tcc \
-  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/unistd.h \
-  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/getopt.h \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/sstream \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/sstream.tcc \
   ../../../include/vlc_charset.h ../../../include/vlc_vout_window.h \
   ../../../include/vlc_input.h ../../../include/vlc_es.h \
-  ../../../include/vlc_fourcc.h ../../../include/vlc_meta.h \
-  ../../../include/vlc_epg.h ../../../include/vlc_events.h \
+  ../../../include/vlc_fourcc.h ../../../include/vlc_epg.h \
   ../../../include/vlc_input_item.h ../../../include/vlc_aout.h \
   ../../../include/vlc_es.h ../../../include/vlc_block.h \
   ../../../include/vlc_vout.h ../../../include/vlc_picture.h \
   ../../../include/vlc_filter.h ../../../include/vlc_subpicture.h \
   ../../../include/vlc_text_style.h ../../../include/vlc_mouse.h \
   ../../../include/vlc_modules.h ../../../include/vlc_config.h \
-  ../../../include/vlc_interface.h ../../../include/vlc_playlist.h \
-  ../../../include/vlc_url.h ini/inifile.h qt4.hpp \
+  ../../../include/vlc_playlist.h ../../../include/vlc_url.h \
+  ../../../include/vlc_threads.h ini/inifile.h qt4.hpp \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QString \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstring.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qstring.h \
@@ -573,6 +574,18 @@ remoteControlServer.hpp:
 
 ../../../include/vlc_aout_intf.h:
 
+../../../include/vlc_events.h:
+
+../../../include/vlc_meta.h:
+
+../../../include/vlc_interface.h:
+
+thpool.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/unistd.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/getopt.h:
+
 rclog.h:
 
 /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/iostream:
@@ -623,10 +636,6 @@ rclog.h:
 
 /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/istream.tcc:
 
-/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/unistd.h:
-
-/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/getopt.h:
-
 /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/sstream:
 
 /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/sstream.tcc:
@@ -641,11 +650,7 @@ rclog.h:
 
 ../../../include/vlc_fourcc.h:
 
-../../../include/vlc_meta.h:
-
 ../../../include/vlc_epg.h:
-
-../../../include/vlc_events.h:
 
 ../../../include/vlc_input_item.h:
 
@@ -671,11 +676,11 @@ rclog.h:
 
 ../../../include/vlc_config.h:
 
-../../../include/vlc_interface.h:
-
 ../../../include/vlc_playlist.h:
 
 ../../../include/vlc_url.h:
+
+../../../include/vlc_threads.h:
 
 ini/inifile.h:
 

@@ -507,8 +507,10 @@ libqt4_plugin_la-qt4.lo .libs/libqt4_plugin_la-qt4.o: qt4.cpp \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_queue.h \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/stack \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/stl_stack.h \
-  ../../../include/vlc_aout_intf.h rclog.h \
-  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/iostream \
+  ../../../include/vlc_aout_intf.h thpool.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/unistd.h \
+  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/getopt.h \
+  rclog.h /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/iostream \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ostream \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/ios \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/localefwd.h \
@@ -535,8 +537,6 @@ libqt4_plugin_la-qt4.lo .libs/libqt4_plugin_la-qt4.o: qt4.cpp \
   ini/inifile.h \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/sstream \
   /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/sstream.tcc \
-  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/unistd.h \
-  /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/getopt.h \
   ../../../share/icons/32x32/vlc.xpm \
   ../../../share/icons/32x32/vlc-xmas.xpm ../../../include/vlc_charset.h \
   ../../../include/vlc_plugin.h ../../../include/vlc_vout_window.h \
@@ -1623,6 +1623,12 @@ remoteControlServer.hpp:
 
 ../../../include/vlc_aout_intf.h:
 
+thpool.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/unistd.h:
+
+/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/getopt.h:
+
 rclog.h:
 
 /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/iostream:
@@ -1678,10 +1684,6 @@ ini/inifile.h:
 /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/sstream:
 
 /usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/include/c++/bits/sstream.tcc:
-
-/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/unistd.h:
-
-/usr/lib/gcc/i586-mingw32msvc/4.2.1-sjlj/../../../../i586-mingw32msvc/include/getopt.h:
 
 ../../../share/icons/32x32/vlc.xpm:
 

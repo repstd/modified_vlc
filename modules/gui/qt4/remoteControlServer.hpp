@@ -73,12 +73,13 @@ struct RCInputMRL {
     std::string id;
     std::string mrl;
     std::string name;
+    std::string author;
     int counter;
     RCInputMRL() {
         counter=0;
     }
     const char* encode() {
-        return (id+"`"+mrl+"`"+name).c_str();
+        return (id+"`"+mrl+"`"+name+"`"+author).c_str();
     }
     enum FIELD {
         ID=0,
@@ -267,6 +268,7 @@ class RCPlayListModel {
         const char* getItem(const char* name);
         const char* getID(const char* name);
         const char* getMRL(const char* name);
+        const char* getName(const char* name);
         int getCurrentCount(const char* name);
         static int RCCallback( vlc_object_t *p_this, const char *, vlc_value_t, vlc_value_t newval, void *param);
         void setInput(input_thread_t* p_input);
@@ -279,6 +281,7 @@ class RCPlayListModel {
         void removeCallback(intf_thread_t* p_intf);
         const char* parseFullMrl(const char* rcmrl);
         const char* parseName(const char* mrl);
+        bool parse(const char* cmd,std::vector<std::string>& src);
         RCPlayListModel();
         RCPlayListModel(const RCPlayListModel& other);
         void operator=(const RCPlayListModel& other);

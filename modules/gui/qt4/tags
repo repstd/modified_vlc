@@ -5,6 +5,7 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 ABOUT_H	ui/about.h	12;"	d
+ABS	remoteControlServer.cpp	2103;"	d	file:
 ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/ylwang\/msvc\/vlc-2.0.6\/autotools\/missing aclocal-1.14$/;"	m
 ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
 ACTION_ALWAYS_ENABLED	menus.hpp	/^        ACTION_ALWAYS_ENABLED = 0x1,$/;"	e	enum:VLCMenuBar::actionflag
@@ -153,21 +154,26 @@ BRD	components/open_panels.hpp	/^        BRD$/;"	e	enum:DiscOpenPanel::DiscType
 BROWSEBUTTON_H	util/buttons/BrowseButton.hpp	23;"	d
 BUF_SIZE	ini/main.c	11;"	d	file:
 BUILT_SOURCES	Makefile	/^BUILT_SOURCES = $(nodist_SOURCES_qt4)$/;"	m
-BUTTONACT	qt4.hpp	96;"	d
+BUTTONACT	qt4.hpp	97;"	d
 BUTTON_MAX	components/controller.hpp	/^    BUTTON_MAX,$/;"	e	enum:buttonType_e
-BUTTON_SET	qt4.hpp	98;"	d
-BUTTON_SET_ACT	qt4.hpp	102;"	d
-BUTTON_SET_ACT_I	qt4.hpp	110;"	d
+BUTTON_SET	qt4.hpp	99;"	d
+BUTTON_SET_ACT	qt4.hpp	103;"	d
+BUTTON_SET_ACT_I	qt4.hpp	111;"	d
 BUTTON_SET_BAR	components/controller.cpp	205;"	d	file:
 BUTTON_SET_BAR	components/controller.cpp	630;"	d	file:
 BUTTON_SET_BAR2	components/controller.cpp	208;"	d	file:
 BUTTON_SET_BAR2	components/controller.cpp	631;"	d	file:
-BUTTON_SET_IMG	qt4.hpp	106;"	d
+BUTTON_SET_IMG	qt4.hpp	107;"	d
 BackgroundWidget	components/interface_widgets.cpp	/^BackgroundWidget::BackgroundWidget( intf_thread_t *_p_i )$/;"	f	class:BackgroundWidget
 BackgroundWidget	components/interface_widgets.hpp	/^class BackgroundWidget : public QWidget$/;"	c
 Backward	util/buttons/BrowseButton.hpp	/^        Backward = 0,$/;"	e	enum:BrowseButton::Type
+BasicCallbackImpl	remoteControlServer.hpp	/^        BasicCallbackImpl(){};$/;"	f	class:BasicCallbackImpl
+BasicCallbackImpl	remoteControlServer.hpp	/^class BasicCallbackImpl {$/;"	c
+BasicCommand	remoteControlServer.cpp	/^BasicCommand::BasicCommand(RCInvokerImpl* invoker) {$/;"	f	class:BasicCommand
+BasicCommand	remoteControlServer.hpp	/^class BasicCommand:public RCCommandImpl {$/;"	c
+BasicControl	remoteControlServer.cpp	/^int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_value_t& newval, char* p_data) $/;"	f	class:BasicCommand
 BlurredReflection	util/pictureflow.hpp	/^        BlurredReflection$/;"	e	enum:PictureFlow::ReflectionEffect
-BookmarksChanged_Type	input_manager.hpp	/^    BookmarksChanged_Type,$/;"	e	enum:__anon24
+BookmarksChanged_Type	input_manager.hpp	/^    BookmarksChanged_Type,$/;"	e	enum:__anon1
 BookmarksDialog	dialogs/bookmarks.cpp	/^BookmarksDialog::BookmarksDialog( intf_thread_t *_p_intf ):QVLCFrame( _p_intf )$/;"	f	class:BookmarksDialog
 BookmarksDialog	dialogs/bookmarks.hpp	/^class BookmarksDialog : public QVLCFrame, public Singleton<BookmarksDialog>$/;"	c
 BoolConfigControl	components/preferences_widgets.cpp	/^BoolConfigControl::BoolConfigControl( vlc_object_t *_p_this,$/;"	f	class:BoolConfigControl
@@ -179,7 +185,7 @@ BrowseButton	util/buttons/BrowseButton.hpp	/^class BrowseButton : public RoundBu
 BuildOldPanel	components/open_panels.cpp	/^inline void FileOpenPanel::BuildOldPanel()$/;"	f	class:FileOpenPanel
 CACA_CFLAGS	Makefile	/^CACA_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
 CACA_LIBS	Makefile	/^CACA_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lcaca  $/;"	m
-CAP_SEARCH_ROLE	components/playlist/selector.hpp	/^    CAP_SEARCH_ROLE,$/;"	e	enum:__anon9
+CAP_SEARCH_ROLE	components/playlist/selector.hpp	/^    CAP_SEARCH_ROLE,$/;"	e	enum:__anon18
 CATEGORY_TYPE	components/playlist/selector.hpp	/^    CATEGORY_TYPE,$/;"	e	enum:SelectorItemType
 CB	dialogs/sout.cpp	116;"	d	file:
 CB	dialogs/sout.cpp	88;"	d	file:
@@ -269,19 +275,19 @@ CHECKMUX	components/sout/profile_selector.cpp	340;"	d	file:
 CI	components/complete_preferences.cpp	115;"	d	file:
 CI	components/complete_preferences.cpp	124;"	d	file:
 CLEANFILES	Makefile	/^CLEANFILES = $(BUILT_SOURCES)$/;"	m
-COLUMN_ALBUM	components/playlist/sorting.h	/^    COLUMN_ALBUM          = 0x0010,$/;"	e	enum:__anon6
-COLUMN_ARTIST	components/playlist/sorting.h	/^    COLUMN_ARTIST         = 0x0004,$/;"	e	enum:__anon6
-COLUMN_COVER	components/playlist/sorting.h	/^    COLUMN_COVER          = 0x0400,$/;"	e	enum:__anon6
+COLUMN_ALBUM	components/playlist/sorting.h	/^    COLUMN_ALBUM          = 0x0010,$/;"	e	enum:__anon15
+COLUMN_ARTIST	components/playlist/sorting.h	/^    COLUMN_ARTIST         = 0x0004,$/;"	e	enum:__anon15
+COLUMN_COVER	components/playlist/sorting.h	/^    COLUMN_COVER          = 0x0400,$/;"	e	enum:__anon15
 COLUMN_DEFAULT	components/playlist/sorting.h	47;"	d
-COLUMN_DESCRIPTION	components/playlist/sorting.h	/^    COLUMN_DESCRIPTION    = 0x0040,$/;"	e	enum:__anon6
-COLUMN_DURATION	components/playlist/sorting.h	/^    COLUMN_DURATION       = 0x0002,$/;"	e	enum:__anon6
-COLUMN_END	components/playlist/sorting.h	/^    COLUMN_END          = 0x0800$/;"	e	enum:__anon6
-COLUMN_GENRE	components/playlist/sorting.h	/^    COLUMN_GENRE          = 0x0008,$/;"	e	enum:__anon6
-COLUMN_NUMBER	components/playlist/sorting.h	/^    COLUMN_NUMBER         = 0x0100,$/;"	e	enum:__anon6
-COLUMN_RATING	components/playlist/sorting.h	/^    COLUMN_RATING         = 0x0200,$/;"	e	enum:__anon6
-COLUMN_TITLE	components/playlist/sorting.h	/^    COLUMN_TITLE          = 0x0001,$/;"	e	enum:__anon6
-COLUMN_TRACK_NUMBER	components/playlist/sorting.h	/^    COLUMN_TRACK_NUMBER   = 0x0020,$/;"	e	enum:__anon6
-COLUMN_URI	components/playlist/sorting.h	/^    COLUMN_URI            = 0x0080,$/;"	e	enum:__anon6
+COLUMN_DESCRIPTION	components/playlist/sorting.h	/^    COLUMN_DESCRIPTION    = 0x0040,$/;"	e	enum:__anon15
+COLUMN_DURATION	components/playlist/sorting.h	/^    COLUMN_DURATION       = 0x0002,$/;"	e	enum:__anon15
+COLUMN_END	components/playlist/sorting.h	/^    COLUMN_END          = 0x0800$/;"	e	enum:__anon15
+COLUMN_GENRE	components/playlist/sorting.h	/^    COLUMN_GENRE          = 0x0008,$/;"	e	enum:__anon15
+COLUMN_NUMBER	components/playlist/sorting.h	/^    COLUMN_NUMBER         = 0x0100,$/;"	e	enum:__anon15
+COLUMN_RATING	components/playlist/sorting.h	/^    COLUMN_RATING         = 0x0200,$/;"	e	enum:__anon15
+COLUMN_TITLE	components/playlist/sorting.h	/^    COLUMN_TITLE          = 0x0001,$/;"	e	enum:__anon15
+COLUMN_TRACK_NUMBER	components/playlist/sorting.h	/^    COLUMN_TRACK_NUMBER   = 0x0020,$/;"	e	enum:__anon15
+COLUMN_URI	components/playlist/sorting.h	/^    COLUMN_URI            = 0x0080,$/;"	e	enum:__anon15
 COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
 COMPLETE	components/preferences_widgets.hpp	/^                 COMPLETE, \/\/ aka MPC$/;"	e	enum:InterfacePreviewWidget::enum_style
 CONFIG_BOOL	components/simple_preferences.cpp	138;"	d	file:
@@ -297,15 +303,15 @@ CONFIG_GENERIC_NO_BOOL	components/simple_preferences.cpp	731;"	d	file:
 CONFIG_GENERIC_NO_UI	components/simple_preferences.cpp	149;"	d	file:
 CONFIG_GENERIC_NO_UI	components/simple_preferences.cpp	732;"	d	file:
 CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
-CONNECT	qt4.hpp	92;"	d
+CONNECT	qt4.hpp	93;"	d
 CONNECT_MAP	components/controller.cpp	200;"	d	file:
 CONNECT_MAP	components/controller.cpp	627;"	d	file:
 CONNECT_MAP_SET	components/controller.cpp	202;"	d	file:
 CONNECT_MAP_SET	components/controller.cpp	629;"	d	file:
 CONTRIB_DIR	Makefile	/^CONTRIB_DIR = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc$/;"	m
-CONTROLS_ADVANCED	main_interface.hpp	/^    CONTROLS_ADVANCED = 0x4,$/;"	e	enum:__anon26
-CONTROLS_HIDDEN	main_interface.hpp	/^    CONTROLS_HIDDEN   = 0x2,$/;"	e	enum:__anon26
-CONTROLS_VISIBLE	main_interface.hpp	/^    CONTROLS_VISIBLE  = 0x1,$/;"	e	enum:__anon26
+CONTROLS_ADVANCED	main_interface.hpp	/^    CONTROLS_ADVANCED = 0x4,$/;"	e	enum:__anon29
+CONTROLS_HIDDEN	main_interface.hpp	/^    CONTROLS_HIDDEN   = 0x2,$/;"	e	enum:__anon29
+CONTROLS_VISIBLE	main_interface.hpp	/^    CONTROLS_VISIBLE  = 0x1,$/;"	e	enum:__anon29
 COPYRIGHT_MESSAGE	Makefile	/^COPYRIGHT_MESSAGE = Copyright © 1996-2013 VLC authors and VideoLAN$/;"	m
 COPYRIGHT_YEARS	Makefile	/^COPYRIGHT_YEARS = 1996-2013$/;"	m
 CPP	Makefile	/^CPP = i586-mingw32msvc-gcc -std=gnu99 -E$/;"	m
@@ -400,13 +406,13 @@ CXXLINK	Makefile	/^CXXLINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) 
 CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
 CaC	components/simple_preferences.cpp	797;"	d	file:
 CaC	components/simple_preferences.cpp	809;"	d	file:
-CachingCustom	components/simple_preferences.hpp	/^    CachingCustom = 0,$/;"	e	enum:__anon11
-CachingEvent_Type	input_manager.hpp	/^    CachingEvent_Type,$/;"	e	enum:__anon24
-CachingHigh	components/simple_preferences.hpp	/^    CachingHigh   = 500,$/;"	e	enum:__anon11
-CachingHigher	components/simple_preferences.hpp	/^    CachingHigher = 1000$/;"	e	enum:__anon11
-CachingLow	components/simple_preferences.hpp	/^    CachingLow    = 200,$/;"	e	enum:__anon11
-CachingLowest	components/simple_preferences.hpp	/^    CachingLowest = 100,$/;"	e	enum:__anon11
-CachingNormal	components/simple_preferences.hpp	/^    CachingNormal = 300,$/;"	e	enum:__anon11
+CachingCustom	components/simple_preferences.hpp	/^    CachingCustom = 0,$/;"	e	enum:__anon20
+CachingEvent_Type	input_manager.hpp	/^    CachingEvent_Type,$/;"	e	enum:__anon1
+CachingHigh	components/simple_preferences.hpp	/^    CachingHigh   = 500,$/;"	e	enum:__anon20
+CachingHigher	components/simple_preferences.hpp	/^    CachingHigher = 1000$/;"	e	enum:__anon20
+CachingLow	components/simple_preferences.hpp	/^    CachingLow    = 200,$/;"	e	enum:__anon20
+CachingLowest	components/simple_preferences.hpp	/^    CachingLowest = 100,$/;"	e	enum:__anon20
+CachingNormal	components/simple_preferences.hpp	/^    CachingNormal = 300,$/;"	e	enum:__anon20
 CaptureOpenPanel	components/open_panels.cpp	/^CaptureOpenPanel::CaptureOpenPanel( QWidget *_parent, intf_thread_t *_p_intf ) :$/;"	f	class:CaptureOpenPanel
 CaptureOpenPanel	components/open_panels.hpp	/^class CaptureOpenPanel: public OpenPanel$/;"	c
 Cdda	components/open_panels.hpp	/^        Cdda,$/;"	e	enum:DiscOpenPanel::DiscType
@@ -426,10 +432,10 @@ ConfigControl	components/preferences_widgets.hpp	/^    ConfigControl( vlc_object
 ConfigControl	components/preferences_widgets.hpp	/^    ConfigControl( vlc_object_t *_p_this, module_config_t *_p_conf,$/;"	f	class:ConfigControl
 ConfigControl	components/preferences_widgets.hpp	/^class ConfigControl : public QObject$/;"	c
 ControlBroadcast	dialogs/vlm.cpp	/^void VLMWrapper::ControlBroadcast( const QString& name, int BroadcastStatus,$/;"	f	class:VLMWrapper
-ControlBroadcastPause	dialogs/vlm.hpp	/^    ControlBroadcastPause,$/;"	e	enum:__anon20
-ControlBroadcastPlay	dialogs/vlm.hpp	/^    ControlBroadcastPlay,$/;"	e	enum:__anon20
-ControlBroadcastSeek	dialogs/vlm.hpp	/^    ControlBroadcastSeek$/;"	e	enum:__anon20
-ControlBroadcastStop	dialogs/vlm.hpp	/^    ControlBroadcastStop,$/;"	e	enum:__anon20
+ControlBroadcastPause	dialogs/vlm.hpp	/^    ControlBroadcastPause,$/;"	e	enum:__anon7
+ControlBroadcastPlay	dialogs/vlm.hpp	/^    ControlBroadcastPlay,$/;"	e	enum:__anon7
+ControlBroadcastSeek	dialogs/vlm.hpp	/^    ControlBroadcastSeek$/;"	e	enum:__anon7
+ControlBroadcastStop	dialogs/vlm.hpp	/^    ControlBroadcastStop,$/;"	e	enum:__anon7
 ControlsWidget	components/controller.cpp	/^ControlsWidget::ControlsWidget( intf_thread_t *_p_i,$/;"	f	class:ControlsWidget
 ControlsWidget	components/controller.hpp	/^class ControlsWidget : public AbstractController$/;"	c
 ConvertDialog	dialogs/convert.cpp	/^ConvertDialog::ConvertDialog( QWidget *parent, intf_thread_t *_p_intf,$/;"	f	class:ConvertDialog
@@ -448,7 +454,7 @@ DC1394_CFLAGS	Makefile	/^DC1394_CFLAGS = $/;"	m
 DC1394_LIBS	Makefile	/^DC1394_LIBS = $/;"	m
 DCA_CFLAGS	Makefile	/^DCA_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/libdca  $/;"	m
 DCA_LIBS	Makefile	/^DCA_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -ldca  $/;"	m
-DCONNECT	qt4.hpp	94;"	d
+DCONNECT	qt4.hpp	95;"	d
 DEBUG_QT	dialogs/open.cpp	38;"	d	file:
 DECKBUTTONLAYOUT_H	util/buttons/DeckButtonsLayout.hpp	23;"	d
 DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
@@ -468,9 +474,9 @@ DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EX
 DIST_COMMON	Makefile	/^DIST_COMMON = $(top_srcdir)\/modules\/common.am $(srcdir)\/Modules.am \\$/;"	m
 DIST_SOURCES	Makefile	/^DIST_SOURCES = $(am__libqt4_plugin_la_SOURCES_DIST)$/;"	m
 DLLTOOL	Makefile	/^DLLTOOL = i586-mingw32msvc-dlltool$/;"	m
-DSHOW_DEVICE	components/open_panels.hpp	/^    DSHOW_DEVICE,$/;"	e	enum:__anon5
+DSHOW_DEVICE	components/open_panels.hpp	/^    DSHOW_DEVICE,$/;"	e	enum:__anon14
 DSYMUTIL	Makefile	/^DSYMUTIL = $/;"	m
-DTV_DEVICE	components/open_panels.hpp	/^    DTV_DEVICE,$/;"	e	enum:__anon5
+DTV_DEVICE	components/open_panels.hpp	/^    DTV_DEVICE,$/;"	e	enum:__anon14
 DUMPBIN	Makefile	/^DUMPBIN = $/;"	m
 DVBPSI_CFLAGS	Makefile	/^DVBPSI_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
 DVBPSI_LIBS	Makefile	/^DVBPSI_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -ldvbpsi  $/;"	m
@@ -492,8 +498,8 @@ DestroyWidget	dialogs/extensions.cpp	/^void ExtensionDialog::DestroyWidget( exte
 DialogCallback	dialogs/extensions.cpp	/^static int DialogCallback( vlc_object_t *p_this, const char *psz_variable,$/;"	f	file:
 DialogEvent	dialogs_provider.hpp	/^    DialogEvent( int _i_dialog, int _i_arg, intf_dialog_args_t *_p_arg ) :$/;"	f	class:DialogEvent
 DialogEvent	dialogs_provider.hpp	/^class DialogEvent : public QEvent$/;"	c
-DialogEventType	qt4.hpp	/^    DialogEventType = 0,$/;"	e	enum:__anon28
-DialogEvent_Type	dialogs_provider.hpp	/^    DialogEvent_Type = QEvent::User + DialogEventType + 1,$/;"	e	enum:__anon23
+DialogEventType	qt4.hpp	/^    DialogEventType = 0,$/;"	e	enum:__anon9
+DialogEvent_Type	dialogs_provider.hpp	/^    DialogEvent_Type = QEvent::User + DialogEventType + 1,$/;"	e	enum:__anon27
 DialogHandler	dialogs/external.cpp	/^DialogHandler::DialogHandler (intf_thread_t *intf, QObject *_parent)$/;"	f	class:DialogHandler
 DialogHandler	dialogs/external.hpp	/^class DialogHandler : public QObject$/;"	c
 DialogsProvider	dialogs_provider.cpp	/^DialogsProvider::DialogsProvider( intf_thread_t *_p_intf ) :$/;"	f	class:DialogsProvider
@@ -519,15 +525,15 @@ ENABLE_ON_INPUT	components/controller.cpp	216;"	d	file:
 ENABLE_ON_INPUT	components/controller.cpp	633;"	d	file:
 ENABLE_ON_VIDEO	components/controller.cpp	212;"	d	file:
 ENABLE_ON_VIDEO	components/controller.cpp	632;"	d	file:
-ENCODE_MSG	remoteControlServer.hpp	117;"	d
-ENCODE_MSG_WITH_RETURN	remoteControlServer.hpp	123;"	d
+ENCODE_MSG	remoteControlServer.hpp	39;"	d
+ENCODE_MSG_WITH_RETURN	remoteControlServer.hpp	45;"	d
 END_SPREFS_CAT	components/simple_preferences.cpp	189;"	d	file:
 END_SPREFS_CAT	components/simple_preferences.cpp	728;"	d	file:
 EPGCHANNELS_HPP	components/epg/EPGChannels.hpp	24;"	d
 EPGChannels	components/epg/EPGChannels.cpp	/^EPGChannels::EPGChannels( QWidget *parent, EPGView *m_epgView )$/;"	f	class:EPGChannels
 EPGChannels	components/epg/EPGChannels.hpp	/^class EPGChannels : public QWidget$/;"	c
 EPGEventByTimeQMap	components/epg/EPGView.hpp	/^typedef QMap<QDateTime, EPGItem *> EPGEventByTimeQMap;$/;"	t
-EPGEvent_Type	input_manager.hpp	/^    EPGEvent_Type,$/;"	e	enum:__anon24
+EPGEvent_Type	input_manager.hpp	/^    EPGEvent_Type,$/;"	e	enum:__anon1
 EPGGraphicsScene	components/epg/EPGView.cpp	/^EPGGraphicsScene::EPGGraphicsScene( QObject *parent ) : QGraphicsScene( parent )$/;"	f	class:EPGGraphicsScene
 EPGGraphicsScene	components/epg/EPGView.hpp	/^class EPGGraphicsScene : public QGraphicsScene$/;"	c
 EPGITEM_H	components/epg/EPGItem.hpp	25;"	d
@@ -538,7 +544,7 @@ EPGRuler	components/epg/EPGRuler.cpp	/^EPGRuler::EPGRuler( QWidget* parent )$/;"
 EPGRuler	components/epg/EPGRuler.hpp	/^class EPGRuler : public QWidget$/;"	c
 EPGTimeMapByChannelQMap	components/epg/EPGView.hpp	/^typedef QMap<QString, EPGEventByTimeQMap* > EPGTimeMapByChannelQMap;$/;"	t
 EPGVIEW_H	components/epg/EPGView.hpp	25;"	d
-EPGVIEW_WIDGET	components/epg/EPGWidget.cpp	/^    EPGVIEW_WIDGET = 0,$/;"	e	enum:__anon16	file:
+EPGVIEW_WIDGET	components/epg/EPGWidget.cpp	/^    EPGVIEW_WIDGET = 0,$/;"	e	enum:__anon25	file:
 EPGView	components/epg/EPGView.cpp	/^EPGView::EPGView( QWidget *parent ) : QGraphicsView( parent )$/;"	f	class:EPGView
 EPGView	components/epg/EPGView.hpp	/^class EPGView : public QGraphicsView$/;"	c
 EPGWIDGET_H	components/epg/EPGWidget.hpp	25;"	d
@@ -555,11 +561,11 @@ EXTENSIONS_HPP	dialogs/extensions.hpp	25;"	d
 EXTENSIONS_MANAGER_HPP	extensions_manager.hpp	25;"	d
 EXTRA_DIST	Makefile	/^EXTRA_DIST = Modules.am vlc.qrc ui\/equalizer.ui ui\/video_effects.ui \\$/;"	m
 EXTRA_LTLIBRARIES	Makefile	/^EXTRA_LTLIBRARIES = libqt4_plugin.la$/;"	m
-EXT_FILTER_AUDIO	dialogs_provider.hpp	/^    EXT_FILTER_AUDIO     =  0x04,$/;"	e	enum:__anon22
-EXT_FILTER_MEDIA	dialogs_provider.hpp	/^    EXT_FILTER_MEDIA     =  0x01,$/;"	e	enum:__anon22
-EXT_FILTER_PLAYLIST	dialogs_provider.hpp	/^    EXT_FILTER_PLAYLIST  =  0x08,$/;"	e	enum:__anon22
-EXT_FILTER_SUBTITLE	dialogs_provider.hpp	/^    EXT_FILTER_SUBTITLE  =  0x10,$/;"	e	enum:__anon22
-EXT_FILTER_VIDEO	dialogs_provider.hpp	/^    EXT_FILTER_VIDEO     =  0x02,$/;"	e	enum:__anon22
+EXT_FILTER_AUDIO	dialogs_provider.hpp	/^    EXT_FILTER_AUDIO     =  0x04,$/;"	e	enum:__anon26
+EXT_FILTER_MEDIA	dialogs_provider.hpp	/^    EXT_FILTER_MEDIA     =  0x01,$/;"	e	enum:__anon26
+EXT_FILTER_PLAYLIST	dialogs_provider.hpp	/^    EXT_FILTER_PLAYLIST  =  0x08,$/;"	e	enum:__anon26
+EXT_FILTER_SUBTITLE	dialogs_provider.hpp	/^    EXT_FILTER_SUBTITLE  =  0x10,$/;"	e	enum:__anon26
+EXT_FILTER_VIDEO	dialogs_provider.hpp	/^    EXT_FILTER_VIDEO     =  0x02,$/;"	e	enum:__anon26
 EditBroadcast	dialogs/vlm.cpp	/^void VLMWrapper::EditBroadcast( const QString& name, const QString& input,$/;"	f	class:VLMWrapper
 EditSchedule	dialogs/vlm.cpp	/^void VLMWrapper::EditSchedule( const QString& name, const QString& input,$/;"	f	class:VLMWrapper
 EditVod	dialogs/vlm.cpp	/^void VLMWrapper::EditVod( const QString& name, const QString& input,$/;"	f	class:VLMWrapper
@@ -575,6 +581,7 @@ EqualizerWidget	ui/equalizer.h	/^    class EqualizerWidget: public Ui_EqualizerW
 ErrorsDialog	dialogs/errors.cpp	/^ErrorsDialog::ErrorsDialog( intf_thread_t *_p_intf )$/;"	f	class:ErrorsDialog
 ErrorsDialog	dialogs/errors.hpp	/^class ErrorsDialog : public QVLCDialog, public Singleton<ErrorsDialog>$/;"	c
 Execute	remoteControlServer.cpp	/^void AudioCommand::Execute() {$/;"	f	class:AudioCommand
+Execute	remoteControlServer.cpp	/^void BasicCommand::Execute() {$/;"	f	class:BasicCommand
 Execute	remoteControlServer.cpp	/^void PlayListCommand::Execute() {$/;"	f	class:PlayListCommand
 ExtV4l2	components/extended_panels.cpp	/^ExtV4l2::ExtV4l2( intf_thread_t *_p_intf, QWidget *_parent )$/;"	f	class:ExtV4l2
 ExtV4l2	components/extended_panels.hpp	/^class ExtV4l2 : public QWidget$/;"	c
@@ -611,6 +618,7 @@ FAPPCOMMAND_OEM	main_interface_win32.cpp	63;"	d	file:
 FASTER_ACTION	actions_manager.hpp	/^    FASTER_ACTION,$/;"	e	enum:actionType_e
 FASTER_BUTTON	components/controller.hpp	/^    FASTER_BUTTON,$/;"	e	enum:buttonType_e
 FGREP	Makefile	/^FGREP = \/bin\/grep -F$/;"	m
+FIELD	remoteControlServer.hpp	/^    enum FIELD {$/;"	g	struct:RCInputMRL
 FILE_LIBVLCCORE_DLL	Makefile	/^FILE_LIBVLCCORE_DLL = $/;"	m
 FILE_LIBVLC_DLL	Makefile	/^FILE_LIBVLC_DLL = $/;"	m
 FLAC_CFLAGS	Makefile	/^FLAC_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/FLAC -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
@@ -627,6 +635,7 @@ FRIBIDI_LIBS	Makefile	/^FRIBIDI_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contri
 FSC_HEIGHT	components/controller.hpp	251;"	d
 FSC_TB_DEFAULT	components/controller.hpp	41;"	d
 FSC_WIDTH	components/controller.hpp	249;"	d
+FULL	remoteControlServer.hpp	/^        FULL$/;"	e	enum:RCInputMRL::FIELD
 FULLSCREEN_ACTION	actions_manager.hpp	/^    FULLSCREEN_ACTION,$/;"	e	enum:actionType_e
 FULLSCREEN_BUTTON	components/controller.hpp	/^    FULLSCREEN_BUTTON,$/;"	e	enum:buttonType_e
 FULLSCREEN_NUMBER_LONGTEXT	qt4.cpp	174;"	d	file:
@@ -653,10 +662,10 @@ FloatRangeConfigControl	components/preferences_widgets.hpp	/^class FloatRangeCon
 FontConfigControl	components/preferences_widgets.cpp	/^FontConfigControl::FontConfigControl( vlc_object_t *_p_this,$/;"	f	class:FontConfigControl
 FontConfigControl	components/preferences_widgets.hpp	/^class FontConfigControl : public VStringConfigControl$/;"	c
 Forward	util/buttons/BrowseButton.hpp	/^        Forward = 1$/;"	e	enum:BrowseButton::Type
-FullscreenControlHide_Type	input_manager.hpp	/^    FullscreenControlHide_Type,$/;"	e	enum:__anon24
-FullscreenControlPlanHide_Type	input_manager.hpp	/^    FullscreenControlPlanHide_Type,$/;"	e	enum:__anon24
-FullscreenControlShow_Type	input_manager.hpp	/^    FullscreenControlShow_Type,$/;"	e	enum:__anon24
-FullscreenControlToggle_Type	input_manager.hpp	/^    FullscreenControlToggle_Type = QEvent::User + IMEventType + 20,$/;"	e	enum:__anon24
+FullscreenControlHide_Type	input_manager.hpp	/^    FullscreenControlHide_Type,$/;"	e	enum:__anon1
+FullscreenControlPlanHide_Type	input_manager.hpp	/^    FullscreenControlPlanHide_Type,$/;"	e	enum:__anon1
+FullscreenControlShow_Type	input_manager.hpp	/^    FullscreenControlShow_Type,$/;"	e	enum:__anon1
+FullscreenControlToggle_Type	input_manager.hpp	/^    FullscreenControlToggle_Type = QEvent::User + IMEventType + 20,$/;"	e	enum:__anon1
 FullscreenControllerWidget	components/controller.cpp	/^FullscreenControllerWidget::FullscreenControllerWidget( intf_thread_t *_p_i, QWidget *_parent )$/;"	f	class:FullscreenControllerWidget
 FullscreenControllerWidget	components/controller.hpp	/^class FullscreenControllerWidget : public AbstractController$/;"	c
 FullscreenControllerWidgetFullscreenChanged	components/controller.cpp	/^static int FullscreenControllerWidgetFullscreenChanged( vlc_object_t *vlc_object,$/;"	f	file:
@@ -684,6 +693,7 @@ GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
 GetPort	remoteControlServer.cpp	/^int RCServer::GetPort() {$/;"	f	class:RCServer
 GotoTimeDialog	dialogs/gototime.cpp	/^GotoTimeDialog::GotoTimeDialog( intf_thread_t *_p_intf)$/;"	f	class:GotoTimeDialog
 GotoTimeDialog	dialogs/gototime.hpp	/^class GotoTimeDialog : public QVLCDialog, public Singleton<GotoTimeDialog>$/;"	c
+GuaranteeDisplayRatio	remoteControlServer.cpp	/^int BasicCommand::GuaranteeDisplayRatio(intf_thread_t* p_intf) {$/;"	f	class:BasicCommand
 HAS_QT47	qt4.hpp	43;"	d
 HAVE_TRANSPARENCY	components/controller.hpp	243;"	d
 HEADERS	Makefile	/^HEADERS = $(noinst_HEADERS)$/;"	m
@@ -710,10 +720,11 @@ ICONCHANGE_LONGTEXT	qt4.cpp	202;"	d	file:
 ICONCHANGE_TEXT	qt4.cpp	201;"	d	file:
 ICON_HEIGHT	components/simple_preferences.cpp	50;"	d	file:
 ICON_SCALER	components/playlist/views.cpp	39;"	d	file:
-ICON_VIEW	components/playlist/standardpanel.hpp	/^    enum { ICON_VIEW = 0,$/;"	e	enum:StandardPLPanel::__anon7
+ICON_VIEW	components/playlist/standardpanel.hpp	/^    enum { ICON_VIEW = 0,$/;"	e	enum:StandardPLPanel::__anon16
+ID	remoteControlServer.hpp	/^        ID=0,$/;"	e	enum:RCInputMRL::FIELD
 IMEvent	input_manager.hpp	/^    IMEvent( int type, input_item_t *p_input = NULL )$/;"	f	class:IMEvent
 IMEvent	input_manager.hpp	/^class IMEvent : public QEvent$/;"	c
-IMEventType	qt4.hpp	/^    IMEventType     = 100,$/;"	e	enum:__anon28
+IMEventType	qt4.hpp	/^    IMEventType     = 100,$/;"	e	enum:__anon9
 INFO_ACTION	actions_manager.hpp	/^    INFO_ACTION,$/;"	e	enum:actionType_e
 INFO_BUTTON	components/controller.hpp	/^    INFO_BUTTON,$/;"	e	enum:buttonType_e
 INI_FILE_H_	ini/inifile.h	14;"	d
@@ -727,29 +738,28 @@ INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
 INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
 INTLLIBS	Makefile	/^INTLLIBS = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/libintl.a \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/libiconv.a$/;"	m
 INTL_MACOSX_LIBS	Makefile	/^INTL_MACOSX_LIBS = $/;"	m
-IN_ITEM_ROLE	components/playlist/selector.hpp	/^    IN_ITEM_ROLE,        \/\/input_item_t->i_id$/;"	e	enum:__anon9
+IN_ITEM_ROLE	components/playlist/selector.hpp	/^    IN_ITEM_ROLE,        \/\/input_item_t->i_id$/;"	e	enum:__anon18
 IOCTL_CDROMDISK2	components/open_panels.cpp	413;"	d	file:
 IP	dialogs/mediainfo.hpp	/^    InfoPanel *IP;$/;"	m	class:MediaInfoDialog
 ISP	dialogs/mediainfo.hpp	/^    InputStatsPanel *ISP;$/;"	m	class:MediaInfoDialog
 IS_ML	components/playlist/selector.hpp	/^    IS_ML$/;"	e	enum:SpecialData
 IS_PL	components/playlist/selector.hpp	/^    IS_PL,$/;"	e	enum:SpecialData
 IS_PODCAST	components/playlist/selector.hpp	/^    IS_PODCAST = 1,$/;"	e	enum:SpecialData
-ITEM_CHECK	menus.cpp	/^    ITEM_CHECK,  \/* Checkbox *\/$/;"	e	enum:__anon27	file:
+ITEM_CHECK	menus.cpp	/^    ITEM_CHECK,  \/* Checkbox *\/$/;"	e	enum:__anon28	file:
 ITEM_HEIGHT	components/complete_preferences.cpp	47;"	d	file:
-ITEM_NORMAL	menus.cpp	/^    ITEM_NORMAL, \/* not a checkbox, nor a radio *\/$/;"	e	enum:__anon27	file:
-ITEM_RADIO	menus.cpp	/^    ITEM_RADIO   \/* Radiobox *\/$/;"	e	enum:__anon27	file:
+ITEM_NORMAL	menus.cpp	/^    ITEM_NORMAL, \/* not a checkbox, nor a radio *\/$/;"	e	enum:__anon28	file:
+ITEM_RADIO	menus.cpp	/^    ITEM_RADIO   \/* Radiobox *\/$/;"	e	enum:__anon28	file:
 I_DEVICE_TOOLTIP	components/open_panels.cpp	56;"	d	file:
 I_FILE_SLASH_DIR	components/sout/sout_widgets.cpp	38;"	d	file:
 I_NEW_DIR	components/playlist/playlist_model.cpp	52;"	d	file:
 I_NEW_DIR_NAME	components/playlist/playlist_model.cpp	54;"	d	file:
 I_OP_DIR_WINTITLE	dialogs_provider.cpp	65;"	d	file:
 I_PLAY_TOOLTIP	components/controller.hpp	43;"	d
-InfoChanged_Type	input_manager.hpp	/^    InfoChanged_Type,$/;"	e	enum:__anon24
+InfoChanged_Type	input_manager.hpp	/^    InfoChanged_Type,$/;"	e	enum:__anon1
 InfoPanel	components/info_panels.cpp	/^InfoPanel::InfoPanel( QWidget *parent,$/;"	f	class:InfoPanel
 InfoPanel	components/info_panels.hpp	/^class InfoPanel: public QWidget$/;"	c
 InfoTree	components/info_panels.hpp	/^    QTreeWidget *InfoTree;$/;"	m	class:InfoPanel
 InitForPort	remoteControlServer.cpp	/^bool RCServer::InitForPort(int portNumber)$/;"	f	class:RCServer
-Input	remoteControlServer.cpp	/^int RCHandler::Input(intf_thread_t* p_intf, const char*psz_cmd, rc_value_t newval, char* p_data)$/;"	f	class:RCHandler
 InputAutoMenuBuilder	menus.cpp	/^static int InputAutoMenuBuilder( input_thread_t *p_object,$/;"	f	file:
 InputControlsWidget	components/controller.cpp	/^InputControlsWidget::InputControlsWidget( intf_thread_t *_p_i, QWidget *_parent ) :$/;"	f	class:InputControlsWidget
 InputControlsWidget	components/controller.hpp	/^class InputControlsWidget : public AbstractController$/;"	c
@@ -766,29 +776,29 @@ IntegerRangeConfigControl	components/preferences_widgets.cpp	/^IntegerRangeConfi
 IntegerRangeConfigControl	components/preferences_widgets.hpp	/^class IntegerRangeConfigControl : public IntegerConfigControl$/;"	c
 IntegerRangeSliderConfigControl	components/preferences_widgets.cpp	/^IntegerRangeSliderConfigControl::IntegerRangeSliderConfigControl($/;"	f	class:IntegerRangeSliderConfigControl
 IntegerRangeSliderConfigControl	components/preferences_widgets.hpp	/^class IntegerRangeSliderConfigControl : public VIntConfigControl$/;"	c
-InterfaceAoutUpdate_Type	input_manager.hpp	/^    InterfaceAoutUpdate_Type,$/;"	e	enum:__anon24
+InterfaceAoutUpdate_Type	input_manager.hpp	/^    InterfaceAoutUpdate_Type,$/;"	e	enum:__anon1
 InterfacePreviewWidget	components/preferences_widgets.cpp	/^InterfacePreviewWidget::InterfacePreviewWidget ( QWidget *parent ) : QLabel( parent )$/;"	f	class:InterfacePreviewWidget
 InterfacePreviewWidget	components/preferences_widgets.hpp	/^class InterfacePreviewWidget : public QLabel$/;"	c
-InterfaceVoutUpdate_Type	input_manager.hpp	/^    InterfaceVoutUpdate_Type,$/;"	e	enum:__anon24
+InterfaceVoutUpdate_Type	input_manager.hpp	/^    InterfaceVoutUpdate_Type,$/;"	e	enum:__anon1
 InterfacesMenu	menus.cpp	/^QMenu *VLCMenuBar::InterfacesMenu( intf_thread_t *p_intf, QMenu *current )$/;"	f	class:VLCMenuBar
 IntfBossCB	main_interface.cpp	/^static int IntfBossCB( vlc_object_t *p_this, const char *psz_variable,$/;"	f	file:
 IntfRaiseMainCB	main_interface.cpp	/^static int IntfRaiseMainCB( vlc_object_t *p_this, const char *psz_variable,$/;"	f	file:
 IntfShowCB	main_interface.cpp	/^static int IntfShowCB( vlc_object_t *p_this, const char *psz_variable,$/;"	f	file:
-IsCurrentRole	components/playlist/vlc_model.hpp	/^      IsCurrentRole = Qt::UserRole,$/;"	e	enum:VLCModel::__anon8
-IsCurrentsParentNodeRole	components/playlist/vlc_model.hpp	/^      IsCurrentsParentNodeRole$/;"	e	enum:VLCModel::__anon8
-IsLeafNodeRole	components/playlist/vlc_model.hpp	/^      IsLeafNodeRole,$/;"	e	enum:VLCModel::__anon8
+IsCurrentRole	components/playlist/vlc_model.hpp	/^      IsCurrentRole = Qt::UserRole,$/;"	e	enum:VLCModel::__anon17
+IsCurrentsParentNodeRole	components/playlist/vlc_model.hpp	/^      IsCurrentsParentNodeRole$/;"	e	enum:VLCModel::__anon17
+IsLeafNodeRole	components/playlist/vlc_model.hpp	/^      IsLeafNodeRole,$/;"	e	enum:VLCModel::__anon17
 IsMenuEmpty	menus.cpp	/^static bool IsMenuEmpty( const char *psz_var,$/;"	f	file:
 ItemAction	components/playlist/selector.hpp	/^enum ItemAction {$/;"	g
 ItemChanged	input_manager.cpp	/^static int ItemChanged( vlc_object_t *p_this, const char *psz_var,$/;"	f	file:
-ItemChanged_Type	input_manager.hpp	/^    ItemChanged_Type,$/;"	e	enum:__anon24
-ItemEsChanged_Type	input_manager.hpp	/^    ItemEsChanged_Type,$/;"	e	enum:__anon24
+ItemChanged_Type	input_manager.hpp	/^    ItemChanged_Type,$/;"	e	enum:__anon1
+ItemEsChanged_Type	input_manager.hpp	/^    ItemEsChanged_Type,$/;"	e	enum:__anon1
 ItemIndex	remoteControlServer.cpp	/^int RCUtil::ItemIndex ( playlist_item_t *p_item ) {$/;"	f	class:RCUtil
-ItemRateChanged_Type	input_manager.hpp	/^    ItemRateChanged_Type,$/;"	e	enum:__anon24
-ItemStateChanged_Type	input_manager.hpp	/^    ItemStateChanged_Type,$/;"	e	enum:__anon24
-ItemTeletextChanged_Type	input_manager.hpp	/^    ItemTeletextChanged_Type,$/;"	e	enum:__anon24
-ItemTitleChanged_Type	input_manager.hpp	/^    ItemTitleChanged_Type,$/;"	e	enum:__anon24
+ItemRateChanged_Type	input_manager.hpp	/^    ItemRateChanged_Type,$/;"	e	enum:__anon1
+ItemStateChanged_Type	input_manager.hpp	/^    ItemStateChanged_Type,$/;"	e	enum:__anon1
+ItemTeletextChanged_Type	input_manager.hpp	/^    ItemTeletextChanged_Type,$/;"	e	enum:__anon1
+ItemTitleChanged_Type	input_manager.hpp	/^    ItemTitleChanged_Type,$/;"	e	enum:__anon1
 JACK_CFLAGS	Makefile	/^JACK_CFLAGS = $/;"	m
-JACK_DEVICE	components/open_panels.hpp	/^    JACK_DEVICE$/;"	e	enum:__anon5
+JACK_DEVICE	components/open_panels.hpp	/^    JACK_DEVICE$/;"	e	enum:__anon14
 JACK_LIBS	Makefile	/^JACK_LIBS = $/;"	m
 KAI_LIBS	Makefile	/^KAI_LIBS = $/;"	m
 KATE_CFLAGS	Makefile	/^KATE_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
@@ -1009,9 +1019,9 @@ LINSYS_SDI_CFLAGS	Makefile	/^LINSYS_SDI_CFLAGS = $/;"	m
 LINSYS_SDI_LIBS	Makefile	/^LINSYS_SDI_LIBS = $/;"	m
 LIPO	Makefile	/^LIPO = $/;"	m
 LISTVIEW_ART_SIZE	components/playlist/views.cpp	176;"	d	file:
-LIST_VIEW	components/playlist/standardpanel.hpp	/^           LIST_VIEW,$/;"	e	enum:StandardPLPanel::__anon7
+LIST_VIEW	components/playlist/standardpanel.hpp	/^           LIST_VIEW,$/;"	e	enum:StandardPLPanel::__anon16
 LN_S	Makefile	/^LN_S = ln -s$/;"	m
-LONGNAME_ROLE	components/playlist/selector.hpp	/^    LONGNAME_ROLE,       \/\/QString$/;"	e	enum:__anon9
+LONGNAME_ROLE	components/playlist/selector.hpp	/^    LONGNAME_ROLE,       \/\/QString$/;"	e	enum:__anon18
 LOOP_ACTION	actions_manager.hpp	/^    LOOP_ACTION,$/;"	e	enum:actionType_e
 LOOP_BUTTON	components/controller.hpp	/^    LOOP_BUTTON,$/;"	e	enum:buttonType_e
 LTCOMPILE	Makefile	/^LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
@@ -1159,7 +1169,7 @@ LUAC	Makefile	/^LUAC = \/usr\/bin\/luac$/;"	m
 LUA_CFLAGS	Makefile	/^LUA_CFLAGS = -I\/usr\/local\/include  $/;"	m
 LUA_LIBS	Makefile	/^LUA_LIBS = -L\/usr\/local\/lib -llua -lm  $/;"	m
 LeafToParent	input_manager.cpp	/^static int LeafToParent( vlc_object_t *p_this, const char *psz_var,$/;"	f	file:
-LeafToParent_Type	input_manager.hpp	/^    LeafToParent_Type,$/;"	e	enum:__anon24
+LeafToParent_Type	input_manager.hpp	/^    LeafToParent_Type,$/;"	e	enum:__anon1
 LocationBar	components/playlist/playlist.cpp	/^LocationBar::LocationBar( PLModel *m )$/;"	f	class:LocationBar
 LocationBar	components/playlist/playlist.hpp	/^class LocationBar : public QWidget$/;"	c
 LocationButton	components/playlist/playlist.cpp	/^LocationButton::LocationButton( const QString &text, bool bold,$/;"	f	class:LocationButton
@@ -1167,7 +1177,7 @@ LocationButton	components/playlist/playlist.hpp	/^class LocationButton : public 
 LooknfeelBox	ui/sprefs_interface.h	/^    QGroupBox *LooknfeelBox;$/;"	m	class:Ui_SPrefsInterface
 LoopButton	components/controller_widget.hpp	/^class LoopButton : public QToolButton$/;"	c
 LoopChanged	input_manager.cpp	/^static int LoopChanged$/;"	f	file:
-LoopChanged_Type	input_manager.hpp	/^    LoopChanged_Type,$/;"	e	enum:__anon24
+LoopChanged_Type	input_manager.hpp	/^    LoopChanged_Type,$/;"	e	enum:__anon1
 MACOSX_DEPLOYMENT_TARGET	Makefile	/^MACOSX_DEPLOYMENT_TARGET = $/;"	m
 MAINT	Makefile	/^MAINT = $/;"	m
 MAIN_TB1_DEFAULT	components/controller.hpp	37;"	d
@@ -1177,8 +1187,8 @@ MANIFEST_TOOL	Makefile	/^MANIFEST_TOOL = :$/;"	m
 MARGIN	components/interface_widgets.hpp	/^    static const int MARGIN = 5;$/;"	m	class:BackgroundWidget
 MAXIMUM	util/input_slider.cpp	53;"	d	file:
 MAX_FILE_SIZE	ini/inifile.c	21;"	d	file:
-MAX_LEN	remoteControlServer.hpp	5;"	d
-MAX_SIZE	remoteControlServer.hpp	34;"	d
+MAX_LEN	remoteControlServer.hpp	4;"	d
+MAX_SIZE	remoteControlServer.hpp	36;"	d
 MAX_VIEW	components/playlist/playlist.cpp	128;"	d	file:
 MCE_CFLAGS	Makefile	/^MCE_CFLAGS = $/;"	m
 MCE_LIBS	Makefile	/^MCE_LIBS = $/;"	m
@@ -1217,6 +1227,7 @@ MOSTLYCLEANFILES	Makefile	/^MOSTLYCLEANFILES = $(UIH)$/;"	m
 MOVMux	ui/profiles.h	/^    QRadioButton *MOVMux;$/;"	m	class:Ui_Profiles
 MP	dialogs/mediainfo.hpp	/^    MetaPanel *MP;$/;"	m	class:MediaInfoDialog
 MPEG1Mux	ui/profiles.h	/^    QRadioButton *MPEG1Mux;$/;"	m	class:Ui_Profiles
+MRL	remoteControlServer.hpp	/^        MRL,$/;"	e	enum:RCInputMRL::FIELD
 MSGFMT	Makefile	/^MSGFMT = \/usr\/bin\/msgfmt$/;"	m
 MSGFMT_015	Makefile	/^MSGFMT_015 = \/usr\/bin\/msgfmt$/;"	m
 MSGMERGE	Makefile	/^MSGMERGE = \/usr\/bin\/msgmerge$/;"	m
@@ -1238,7 +1249,7 @@ MenuItemData	menus.hpp	/^    MenuItemData( QObject* parent, vlc_object_t *_p_obj
 MenuItemData	menus.hpp	/^class MenuItemData : public QObject$/;"	c
 MessagesDialog	dialogs/messages.cpp	/^MessagesDialog::MessagesDialog( intf_thread_t *_p_intf)$/;"	f	class:MessagesDialog
 MessagesDialog	dialogs/messages.hpp	/^class MessagesDialog : public QVLCFrame, public Singleton<MessagesDialog>$/;"	c
-MetaChanged_Type	input_manager.hpp	/^    MetaChanged_Type,$/;"	e	enum:__anon24
+MetaChanged_Type	input_manager.hpp	/^    MetaChanged_Type,$/;"	e	enum:__anon1
 MetaPanel	components/info_panels.cpp	/^MetaPanel::MetaPanel( QWidget *parent,$/;"	f	class:MetaPanel
 MetaPanel	components/info_panels.hpp	/^class MetaPanel: public QWidget$/;"	c
 MiscPopupMenu	menus.cpp	/^void VLCMenuBar::MiscPopupMenu( intf_thread_t *p_intf, bool show )$/;"	f	class:VLCMenuBar
@@ -1250,9 +1261,10 @@ ModuleListConfigControl	components/preferences_widgets.hpp	/^class ModuleListCon
 MsgCallback	dialogs/messages.cpp	/^void MessagesDialog::MsgCallback( void *self, int type, const msg_item_t *item,$/;"	f	class:MessagesDialog
 MsgEvent	dialogs/messages.cpp	/^MsgEvent::MsgEvent( int type, const msg_item_t *msg, const char *text )$/;"	f	class:MsgEvent
 MsgEvent	dialogs/messages.cpp	/^class MsgEvent : public QEvent$/;"	c	file:
-MsgEventType	qt4.hpp	/^    MsgEventType    = 300,$/;"	e	enum:__anon28
-MsgEvent_Type	dialogs/messages.cpp	/^    MsgEvent_Type = QEvent::User + MsgEventType + 1,$/;"	e	enum:__anon21	file:
-NAME_ROLE	components/playlist/selector.hpp	/^    NAME_ROLE,           \/\/QString$/;"	e	enum:__anon9
+MsgEventType	qt4.hpp	/^    MsgEventType    = 300,$/;"	e	enum:__anon9
+MsgEvent_Type	dialogs/messages.cpp	/^    MsgEvent_Type = QEvent::User + MsgEventType + 1,$/;"	e	enum:__anon8	file:
+NAME	remoteControlServer.hpp	/^        NAME,$/;"	e	enum:RCInputMRL::FIELD
+NAME_ROLE	components/playlist/selector.hpp	/^    NAME_ROLE,           \/\/QString$/;"	e	enum:__anon18
 NB_PROFILE	components/sout/profiles.hpp	1;"	d
 NCURSES_CFLAGS	Makefile	/^NCURSES_CFLAGS = $/;"	m
 NCURSES_LIBS	Makefile	/^NCURSES_LIBS = $/;"	m
@@ -1262,8 +1274,8 @@ NEXT_BUTTON	components/controller.hpp	/^    NEXT_BUTTON,$/;"	e	enum:buttonType_e
 NEXT_FAST_BUTTON	components/controller.hpp	/^    NEXT_FAST_BUTTON,$/;"	e	enum:buttonType_e
 NM	Makefile	/^NM = \/usr\/bin\/i586-mingw32msvc-nm -B$/;"	m
 NMEDIT	Makefile	/^NMEDIT = $/;"	m
-NOEPG_WIDGET	components/epg/EPGWidget.cpp	/^    NOEPG_WIDGET = 1$/;"	e	enum:__anon16	file:
-NORMAL	input_manager.hpp	/^enum { NORMAL,    \/* loop: 0, repeat: 0 *\/$/;"	e	enum:__anon25
+NOEPG_WIDGET	components/epg/EPGWidget.cpp	/^    NOEPG_WIDGET = 1$/;"	e	enum:__anon25	file:
+NORMAL	input_manager.hpp	/^enum { NORMAL,    \/* loop: 0, repeat: 0 *\/$/;"	e	enum:__anon2
 NORMAL_BUTTON	components/controller.cpp	220;"	d	file:
 NORMAL_BUTTON	components/controller.cpp	505;"	d	file:
 NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
@@ -1275,7 +1287,7 @@ NOTIFY_LIBS	Makefile	/^NOTIFY_LIBS = $/;"	m
 NULL	Makefile	/^NULL = $/;"	m
 NUM_CP_CTRL	components/extended_panels.hpp	40;"	d
 NUM_SP_CTRL	components/extended_panels.hpp	41;"	d
-NameChanged_Type	input_manager.hpp	/^    NameChanged_Type,$/;"	e	enum:__anon24
+NameChanged_Type	input_manager.hpp	/^    NameChanged_Type,$/;"	e	enum:__anon1
 NavigMenu	menus.cpp	/^QMenu *VLCMenuBar::NavigMenu( intf_thread_t *p_intf, QMenu *menu )$/;"	f	class:VLCMenuBar
 NavigMenu	menus.hpp	/^    static QMenu *NavigMenu( intf_thread_t *p_intf, QWidget *parent ) {$/;"	f	class:VLCMenuBar
 NetOpenPanel	components/open_panels.cpp	/^NetOpenPanel::NetOpenPanel( QWidget *_parent, intf_thread_t *_p_intf ) :$/;"	f	class:NetOpenPanel
@@ -1300,23 +1312,23 @@ OPACITY_TEXT	qt4.cpp	126;"	d	file:
 OPENCV_CFLAGS	Makefile	/^OPENCV_CFLAGS = $/;"	m
 OPENCV_LIBS	Makefile	/^OPENCV_LIBS = $/;"	m
 OPEN_ACTION	actions_manager.hpp	/^    OPEN_ACTION,$/;"	e	enum:actionType_e
-OPEN_AND_ENQUEUE	dialogs/open.hpp	/^    OPEN_AND_ENQUEUE,$/;"	e	enum:__anon18
-OPEN_AND_PLAY	dialogs/open.hpp	/^    OPEN_AND_PLAY,$/;"	e	enum:__anon18
-OPEN_AND_SAVE	dialogs/open.hpp	/^    OPEN_AND_SAVE,$/;"	e	enum:__anon18
-OPEN_AND_STREAM	dialogs/open.hpp	/^    OPEN_AND_STREAM,$/;"	e	enum:__anon18
+OPEN_AND_ENQUEUE	dialogs/open.hpp	/^    OPEN_AND_ENQUEUE,$/;"	e	enum:__anon5
+OPEN_AND_PLAY	dialogs/open.hpp	/^    OPEN_AND_PLAY,$/;"	e	enum:__anon5
+OPEN_AND_SAVE	dialogs/open.hpp	/^    OPEN_AND_SAVE,$/;"	e	enum:__anon5
+OPEN_AND_STREAM	dialogs/open.hpp	/^    OPEN_AND_STREAM,$/;"	e	enum:__anon5
 OPEN_BUTTON	components/controller.hpp	/^    OPEN_BUTTON,$/;"	e	enum:buttonType_e
 OPEN_CAPTURE_H	ui/open_capture.h	12;"	d
-OPEN_CAPTURE_TAB	dialogs/open.hpp	/^    OPEN_CAPTURE_TAB,$/;"	e	enum:__anon17
-OPEN_DISC_TAB	dialogs/open.hpp	/^    OPEN_DISC_TAB,$/;"	e	enum:__anon17
+OPEN_CAPTURE_TAB	dialogs/open.hpp	/^    OPEN_CAPTURE_TAB,$/;"	e	enum:__anon4
+OPEN_DISC_TAB	dialogs/open.hpp	/^    OPEN_DISC_TAB,$/;"	e	enum:__anon4
 OPEN_DISK_H	ui/open_disk.h	12;"	d
 OPEN_FILE_H	ui/open_file.h	12;"	d
-OPEN_FILE_TAB	dialogs/open.hpp	/^    OPEN_FILE_TAB,$/;"	e	enum:__anon17
+OPEN_FILE_TAB	dialogs/open.hpp	/^    OPEN_FILE_TAB,$/;"	e	enum:__anon4
 OPEN_H	ui/open.h	12;"	d
-OPEN_NETWORK_TAB	dialogs/open.hpp	/^    OPEN_NETWORK_TAB,$/;"	e	enum:__anon17
+OPEN_NETWORK_TAB	dialogs/open.hpp	/^    OPEN_NETWORK_TAB,$/;"	e	enum:__anon4
 OPEN_NET_H	ui/open_net.h	12;"	d
 OPEN_SUB_ACTION	actions_manager.hpp	/^    OPEN_SUB_ACTION,$/;"	e	enum:actionType_e
 OPEN_SUB_BUTTON	components/controller.hpp	/^    OPEN_SUB_BUTTON,$/;"	e	enum:buttonType_e
-OPEN_TAB_MAX	dialogs/open.hpp	/^    OPEN_TAB_MAX$/;"	e	enum:__anon17
+OPEN_TAB_MAX	dialogs/open.hpp	/^    OPEN_TAB_MAX$/;"	e	enum:__anon4
 OPUS_CFLAGS	Makefile	/^OPUS_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/opus  $/;"	m
 OPUS_LIBS	Makefile	/^OPUS_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -logg -lopus  $/;"	m
 OSDBox	ui/sprefs_subtitles.h	/^    QCheckBox *OSDBox;$/;"	m	class:Ui_SPrefsSubtitles
@@ -1327,6 +1339,7 @@ OSS_LIBS	Makefile	/^OSS_LIBS = $/;"	m
 OTOOL	Makefile	/^OTOOL = $/;"	m
 OTOOL64	Makefile	/^OTOOL64 = $/;"	m
 OggMux	ui/profiles.h	/^    QRadioButton *OggMux;$/;"	m	class:Ui_Profiles
+OnStop	remoteControlServer.cpp	/^void *OnStop( void * data) {$/;"	f
 OneInterfaceBox	ui/sprefs_interface.h	/^    QGroupBox *OneInterfaceBox;$/;"	m	class:Ui_SPrefsInterface
 OneInterfaceMode	ui/sprefs_interface.h	/^    QCheckBox *OneInterfaceMode;$/;"	m	class:Ui_SPrefsInterface
 Open	qt4.cpp	/^static int Open( vlc_object_t *p_this, bool isDialogProvider )$/;"	f	file:
@@ -1359,7 +1372,7 @@ PFREAL_ONE	util/pictureflow.cpp	48;"	d	file:
 PFREAL_SHIFT	util/pictureflow.cpp	47;"	d	file:
 PFreal	util/pictureflow.cpp	/^typedef long PFreal;$/;"	t	file:
 PICTUREFLOW_H	util/pictureflow.hpp	29;"	d
-PICTUREFLOW_VIEW	components/playlist/standardpanel.hpp	/^           PICTUREFLOW_VIEW,$/;"	e	enum:StandardPLPanel::__anon7
+PICTUREFLOW_VIEW	components/playlist/standardpanel.hpp	/^           PICTUREFLOW_VIEW,$/;"	e	enum:StandardPLPanel::__anon16
 PKGDIR	Makefile	/^PKGDIR = vlc$/;"	m
 PKG_CONFIG	Makefile	/^PKG_CONFIG = \/usr\/bin\/pkg-config --static$/;"	m
 PKG_CONFIG_LIBDIR	Makefile	/^PKG_CONFIG_LIBDIR = \/root\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/pkgconfig$/;"	m
@@ -1374,7 +1387,7 @@ PLAppendDir	dialogs_provider.cpp	/^void DialogsProvider::PLAppendDir()$/;"	f	cla
 PLEmpty_Type	input_manager.hpp	/^    PLEmpty_Type$/;"	e	enum:PLEventTypes
 PLEvent	input_manager.hpp	/^    PLEvent( int t, int i, int p = 0 )$/;"	f	class:PLEvent
 PLEvent	input_manager.hpp	/^class PLEvent : public QEvent$/;"	c
-PLEventType	qt4.hpp	/^    PLEventType     = 200,$/;"	e	enum:__anon28
+PLEventType	qt4.hpp	/^    PLEventType     = 200,$/;"	e	enum:__anon9
 PLEventTypes	input_manager.hpp	/^enum PLEventTypes$/;"	g
 PLItem	components/playlist/playlist_item.cpp	/^PLItem::PLItem( playlist_item_t * p_item )$/;"	f	class:PLItem
 PLItem	components/playlist/playlist_item.cpp	/^PLItem::PLItem( playlist_item_t *p_item, PLItem *parent )$/;"	f	class:PLItem
@@ -1391,8 +1404,8 @@ PLSelItem	components/playlist/selector.cpp	/^PLSelItem::PLSelItem ( QTreeWidgetI
 PLSelItem	components/playlist/selector.hpp	/^class PLSelItem : public QWidget$/;"	c
 PLSelector	components/playlist/selector.cpp	/^PLSelector::PLSelector( QWidget *p, intf_thread_t *_p_intf )$/;"	f	class:PLSelector
 PLSelector	components/playlist/selector.hpp	/^class PLSelector: public QTreeWidget$/;"	c
-PL_ITEM_ID_ROLE	components/playlist/selector.hpp	/^    PL_ITEM_ID_ROLE,     \/\/playlist_item_t->i_id$/;"	e	enum:__anon9
-PL_ITEM_ROLE	components/playlist/selector.hpp	/^    PL_ITEM_ROLE,        \/\/playlist_item_t*$/;"	e	enum:__anon9
+PL_ITEM_ID_ROLE	components/playlist/selector.hpp	/^    PL_ITEM_ID_ROLE,     \/\/playlist_item_t->i_id$/;"	e	enum:__anon18
+PL_ITEM_ROLE	components/playlist/selector.hpp	/^    PL_ITEM_ROLE,        \/\/playlist_item_t*$/;"	e	enum:__anon18
 PL_ITEM_TYPE	components/playlist/selector.hpp	/^    PL_ITEM_TYPE,$/;"	e	enum:SelectorItemType
 PODCAST_CONFIGURATION_H	ui/podcast_configuration.h	12;"	d
 POPULATE_WITH_DEVS	components/open_panels.cpp	64;"	d	file:
@@ -1410,7 +1423,7 @@ PREVIOUS_BUTTON	components/controller.hpp	/^    PREVIOUS_BUTTON,$/;"	e	enum:butt
 PREV_SLOW_BUTTON	components/controller.hpp	/^    PREV_SLOW_BUTTON,$/;"	e	enum:buttonType_e
 PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
 PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
-PRINT_ERR	remoteControlServer.hpp	29;"	d
+PRINT_ERR	remoteControlServer.hpp	31;"	d
 PRIVACY_TEXT	qt4.cpp	149;"	d	file:
 PROFILES_H	ui/profiles.h	12;"	d
 PROFILE_NAME_1	dialogs/toolbar.hpp	33;"	d
@@ -1430,7 +1443,7 @@ PULSE_LIBS	Makefile	/^PULSE_LIBS = $/;"	m
 PUSH_INPUTVAR	menus.cpp	209;"	d	file:
 PUSH_VAR	menus.cpp	1145;"	d	file:
 PUSH_VAR	menus.cpp	206;"	d	file:
-PVR_DEVICE	components/open_panels.hpp	/^    PVR_DEVICE,$/;"	e	enum:__anon5
+PVR_DEVICE	components/open_panels.hpp	/^    PVR_DEVICE,$/;"	e	enum:__anon14
 PicFlowView	components/playlist/views.cpp	/^PicFlowView::PicFlowView( PLModel *p_model, QWidget *parent ) : QAbstractItemView( parent )$/;"	f	class:PicFlowView
 PicFlowView	components/playlist/views.hpp	/^class PicFlowView : public QAbstractItemView$/;"	c
 PictureFlow	util/pictureflow.cpp	/^PictureFlow::PictureFlow(QWidget* parent, VLCModel* _p_model): QWidget(parent)$/;"	f	class:PictureFlow
@@ -1482,7 +1495,7 @@ PopupMenuCB	main_interface.cpp	/^static int PopupMenuCB( vlc_object_t *p_this, c
 PopupMenuControlEntries	menus.cpp	/^void VLCMenuBar::PopupMenuControlEntries( QMenu *menu, intf_thread_t *p_intf,$/;"	f	class:VLCMenuBar
 PopupMenuPlaylistEntries	menus.cpp	/^void VLCMenuBar::PopupMenuPlaylistEntries( QMenu *menu,$/;"	f	class:VLCMenuBar
 PopupMenuStaticEntries	menus.cpp	/^void VLCMenuBar::PopupMenuStaticEntries( QMenu *menu )$/;"	f	class:VLCMenuBar
-PositionUpdate_Type	input_manager.hpp	/^    PositionUpdate_Type = QEvent::User + IMEventType + 1,$/;"	e	enum:__anon24
+PositionUpdate_Type	input_manager.hpp	/^    PositionUpdate_Type = QEvent::User + IMEventType + 1,$/;"	e	enum:__anon1
 PostProcLevel	ui/sprefs_input.h	/^    QSpinBox *PostProcLevel;$/;"	m	class:Ui_SPrefsInputAndCodecs
 PrefsDialog	dialogs/preferences.cpp	/^PrefsDialog::PrefsDialog( QWidget *parent, intf_thread_t *_p_intf )$/;"	f	class:PrefsDialog
 PrefsDialog	dialogs/preferences.hpp	/^class PrefsDialog : public QVLCDialog$/;"	c
@@ -1492,7 +1505,7 @@ PrefsTree	components/complete_preferences.cpp	/^PrefsTree::PrefsTree( intf_threa
 PrefsTree	components/complete_preferences.hpp	/^class PrefsTree : public QTreeWidget$/;"	c
 PresetCallback	components/extended_panels.cpp	/^static int PresetCallback( vlc_object_t *p_this, char const *psz_cmd,$/;"	f	file:
 Profiles	ui/profiles.h	/^    class Profiles: public Ui_Profiles {};$/;"	c	namespace:Ui
-ProgramChanged_Type	input_manager.hpp	/^    ProgramChanged_Type,$/;"	e	enum:__anon24
+ProgramChanged_Type	input_manager.hpp	/^    ProgramChanged_Type,$/;"	e	enum:__anon1
 QElidingLabel	util/customwidgets.cpp	/^QElidingLabel::QElidingLabel( const QString &s, Qt::TextElideMode mode, QWidget * parent )$/;"	f	class:QElidingLabel
 QElidingLabel	util/customwidgets.hpp	/^class QElidingLabel : public QLabel$/;"	c
 QFramelessButton	util/customwidgets.cpp	/^QFramelessButton::QFramelessButton( QWidget *parent )$/;"	f	class:QFramelessButton
@@ -1500,8 +1513,8 @@ QFramelessButton	util/customwidgets.hpp	/^class QFramelessButton : public QPushB
 QMenuView	util/qmenuview.cpp	/^QMenuView::QMenuView( QWidget * parent, int _iMaxVisibleCount )$/;"	f	class:QMenuView
 QMenuView	util/qmenuview.hpp	/^class QMenuView : public QMenu$/;"	c
 QModelIndex	util/qmenuview.cpp	/^Q_DECLARE_METATYPE(QModelIndex); \/\/ So we can store it in a QVariant$/;"	v
-QPL_LOCK	qt4.hpp	81;"	d
-QPL_UNLOCK	qt4.hpp	82;"	d
+QPL_LOCK	qt4.hpp	82;"	d
+QPL_UNLOCK	qt4.hpp	83;"	d
 QT4_CFLAGS	Makefile	/^QT4_CFLAGS = -DQT_NODLL -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/qt4 -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/qt4\/QtCore -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/qt4\/QtGui  $/;"	m
 QT4_LIBS	Makefile	/^QT4_LIBS = -Wl,--subsystem,windows -mwindows -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lqjpeg -lqtaccessiblewidgets -lQtGui -lQtCore -lrpcrt4 -loleaut32 -lole32 -luuid -lwinspool -lwinmm -lshell32 -lcomctl32 -lcomdlg32 -ladvapi32 -lgdi32 -limm32 -lwsock32  $/;"	m
 QT_AUTOLOAD_EXTENSIONS_LONGTEXT	qt4.cpp	178;"	d	file:
@@ -1520,7 +1533,7 @@ QT_NATIVEOPEN_TEXT	qt4.cpp	171;"	d	file:
 QT_NO_CAST_TO_ASCII	qt4.hpp	36;"	d
 QT_PAUSE_MINIMIZED_LONGTEXT	qt4.cpp	198;"	d	file:
 QT_PAUSE_MINIMIZED_TEXT	qt4.cpp	197;"	d	file:
-QT_XMAS_JOKE_DAY	qt4.hpp	138;"	d
+QT_XMAS_JOKE_DAY	qt4.hpp	139;"	d
 QToolButtonExt	util/customwidgets.cpp	/^QToolButtonExt::QToolButtonExt(QWidget *parent, int ms )$/;"	f	class:QToolButtonExt
 QToolButtonExt	util/customwidgets.hpp	/^class QToolButtonExt : public QToolButton$/;"	c
 QUIT_ACTION	actions_manager.hpp	/^    QUIT_ACTION,$/;"	e	enum:actionType_e
@@ -1576,12 +1589,12 @@ QVLC_RECENTS_H_	recents.hpp	25;"	d
 QVLC_REGISTRY_H	util/registry.hpp	24;"	d
 QVLC_SOUT_DIALOG_H_	dialogs/sout.hpp	25;"	d
 QVLC_TOOLBAREDIT_DIALOG_H_	dialogs/toolbar.hpp	25;"	d
-QVLC_UDPServer_H_	remoteControlServer.hpp	3;"	d
+QVLC_UDPServer_H_	remoteControlServer.hpp	2;"	d
 QVLC_VARIABLES_H_	variables.hpp	22;"	d
 QVLC_VLM_DIALOG_H_	dialogs/vlm.hpp	26;"	d
-QVLM_Broadcast	dialogs/vlm.hpp	/^    QVLM_Broadcast,$/;"	e	enum:__anon19
-QVLM_Schedule	dialogs/vlm.hpp	/^    QVLM_Schedule,$/;"	e	enum:__anon19
-QVLM_VOD	dialogs/vlm.hpp	/^    QVLM_VOD$/;"	e	enum:__anon19
+QVLM_Broadcast	dialogs/vlm.hpp	/^    QVLM_Broadcast,$/;"	e	enum:__anon6
+QVLM_Schedule	dialogs/vlm.hpp	/^    QVLM_Schedule,$/;"	e	enum:__anon6
+QVLM_VOD	dialogs/vlm.hpp	/^    QVLM_VOD$/;"	e	enum:__anon6
 Q_	ui/about.h	1;"	d
 Q_	ui/equalizer.h	1;"	d
 Q_	ui/messages_panel.h	1;"	d
@@ -1614,8 +1627,9 @@ RAWMux	ui/profiles.h	/^    QRadioButton *RAWMux;$/;"	m	class:Ui_Profiles
 RC	Makefile	/^RC = i586-mingw32msvc-windres$/;"	m
 RCAction	remoteControlServer.hpp	/^struct RCAction {$/;"	s
 RCC	Makefile	/^RCC = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/bin\/rcc$/;"	m
+RCCallback	remoteControlServer.cpp	/^int RCPlayListModel::RCCallback( vlc_object_t *p_this, const char * psz_cmd, vlc_value_t oldval, vlc_value_t newval, void *param) {$/;"	f	class:RCPlayListModel
 RCCommandImpl	remoteControlServer.hpp	/^class RCCommandImpl {$/;"	c
-RCHANDLER_ITEM_NAME	remoteControlServer.cpp	1672;"	d	file:
+RCHANDLER_ITEM_NAME	remoteControlServer.cpp	1480;"	d	file:
 RCHandler	remoteControlServer.cpp	/^RCHandler::RCHandler(intf_thread_t* p_intf) {$/;"	f	class:RCHandler
 RCHandler	remoteControlServer.hpp	/^class RCHandler:public RCHandlerImpl$/;"	c
 RCHandlerImpl	remoteControlServer.hpp	/^class RCHandlerImpl{$/;"	c
@@ -1627,64 +1641,32 @@ RCInvokerImpl	remoteControlServer.hpp	/^class RCInvokerImpl{$/;"	c
 RCPlayListModel	remoteControlServer.cpp	/^RCPlayListModel::RCPlayListModel() {$/;"	f	class:RCPlayListModel
 RCPlayListModel	remoteControlServer.cpp	/^RCPlayListModel::RCPlayListModel(const RCPlayListModel& other) {$/;"	f	class:RCPlayListModel
 RCPlayListModel	remoteControlServer.hpp	/^class RCPlayListModel {$/;"	c
-RCServer	remoteControlServer.cpp	/^RCServer::RCServer(RCHandlerImpl* impl) {$/;"	f	class:RCServer
+RCPlayListThreadPara	remoteControlServer.hpp	/^struct RCPlayListThreadPara {$/;"	s
+RCServer	remoteControlServer.cpp	/^RCServer::RCServer(intf_thread_t* pIntf) {$/;"	f	class:RCServer
 RCServer	remoteControlServer.hpp	/^class RCServer:public Thread {$/;"	c
+RCStateCallback	remoteControlServer.cpp	/^RCStateCallback::RCStateCallback(intf_thread_t* p_intf):BasicCallbackImpl(),m_pIntf(p_intf){$/;"	f	class:RCStateCallback
+RCStateCallback	remoteControlServer.hpp	/^class RCStateCallback:public BasicCallbackImpl {$/;"	c
 RCUtil	remoteControlServer.hpp	/^class RCUtil {$/;"	c
 RC_CONFIG	remoteControlServer.hpp	/^struct RC_CONFIG {$/;"	s
-RC_ITEM_GET_AOUT	remoteControlServer.hpp	/^    RC_ITEM_GET_AOUT,         \/* arg1=audio_output_t **              res=can fail *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_GET_AUDIO_DELAY	remoteControlServer.hpp	/^    RC_ITEM_GET_AUDIO_DELAY,      \/* arg1 = int* res=can fail *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_GET_ES_OBJECTS	remoteControlServer.hpp	/^    RC_ITEM_GET_ES_OBJECTS,   \/* arg1=int id, vlc_object_t **dec, vout_thread_t **, audio_output_t ** *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_GET_LENGTH	remoteControlServer.hpp	/^    RC_ITEM_GET_LENGTH,           \/* arg1= int64_t *      res=can fail    *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_GET_PCR_SYSTEM	remoteControlServer.hpp	/^    RC_ITEM_GET_PCR_SYSTEM,   \/* arg1=mtime_t *, arg2=mtime_t *       res=can fail *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_GET_POSITION	remoteControlServer.hpp	/^    RC_ITEM_GET_POSITION,         \/* arg1= double *       res=    *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_GET_RATE	remoteControlServer.hpp	/^    RC_ITEM_GET_RATE,             \/* arg1= int *          res=    *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_GET_SPU_DELAY	remoteControlServer.hpp	/^    RC_ITEM_GET_SPU_DELAY,        \/* arg1 = int* res=can fail *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_GET_STATE	remoteControlServer.hpp	/^    RC_ITEM_GET_STATE,            \/* arg1= int *          res=    *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_GET_TIME	remoteControlServer.hpp	/^    RC_ITEM_GET_TIME,             \/* arg1= int64_t *      res=    *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_GET_TITLE_INFO	remoteControlServer.hpp	/^    RC_ITEM_GET_TITLE_INFO,     \/* arg1=input_title_t** arg2= int * res=can fail *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_GET_VIDEO_FPS	remoteControlServer.hpp	/^    RC_ITEM_GET_VIDEO_FPS,         \/* arg1= double *        res=can fail *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_GET_VOUTS	remoteControlServer.hpp	/^    RC_ITEM_GET_VOUTS,        \/* arg1=vout_thread_t ***, size_t *        res=can fail *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_MODIFY_PCR_SYSTEM	remoteControlServer.hpp	/^    RC_ITEM_MODIFY_PCR_SYSTEM,\/* arg1=int absolute, arg2=mtime_t      res=can fail *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_PLAYLIST_GET	remoteControlServer.hpp	/^    RC_ITEM_PLAYLIST_GET,$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_PLAYLIST_JUMP	remoteControlServer.hpp	/^    RC_ITEM_PLAYLIST_PREVIOUS, RC_ITEM_PLAYLIST_JUMP$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_PLAYLIST_NEXT	remoteControlServer.hpp	/^    RC_ITEM_PLAYLIST_NEXT,$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_PLAYLIST_PREVIOUS	remoteControlServer.hpp	/^    RC_ITEM_PLAYLIST_PREVIOUS, RC_ITEM_PLAYLIST_JUMP$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_POSITION_BACKWORD	remoteControlServer.hpp	/^    RC_ITEM_POSITION_BACKWORD,$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_POSITION_FORWORD	remoteControlServer.hpp	/^    RC_ITEM_POSITION_FORWORD,$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_RATE_FASTER	remoteControlServer.hpp	/^    RC_ITEM_RATE_FASTER,$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_RATE_NORMAL	remoteControlServer.hpp	/^    RC_ITEM_RATE_NORMAL,$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_RATE_SLOWER	remoteControlServer.hpp	/^    RC_ITEM_RATE_SLOWER,$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_RESTART_ES	remoteControlServer.hpp	/^    RC_ITEM_RESTART_ES,       \/* arg1=int (-AUDIO\/VIDEO\/SPU_ES for the whole category) *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_SET_AUDIO_DELAY	remoteControlServer.hpp	/^    RC_ITEM_SET_AUDIO_DELAY,      \/* arg1 = int  res=can fail *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_SET_POSITION	remoteControlServer.hpp	/^    RC_ITEM_SET_POSITION,         \/* arg1= double         res=can fail    *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_SET_RATE	remoteControlServer.hpp	/^    RC_ITEM_SET_RATE,             \/* arg1= int            res=can fail    *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_SET_SPU_DELAY	remoteControlServer.hpp	/^    RC_ITEM_SET_SPU_DELAY,        \/* arg1 = int  res=can fail *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_SET_STATE	remoteControlServer.hpp	/^    RC_ITEM_SET_STATE,            \/* arg1= int            res=can fail    *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_SET_TIME	remoteControlServer.hpp	/^    RC_ITEM_SET_TIME,             \/* arg1= int64_t        res=can fail    *\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_VOLUME_DOWN	remoteControlServer.hpp	/^    RC_ITEM_VOLUME_DOWN,$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_VOLUME_GET	remoteControlServer.hpp	/^    RC_ITEM_VOLUME_GET,$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_VOLUME_MUTE_SHIFT	remoteControlServer.hpp	/^    RC_ITEM_VOLUME_MUTE_SHIFT,\/*Shift between mute and not mute.*\/$/;"	e	enum:REMOTE_CONTROL_ITEM
-RC_ITEM_VOLUME_UP	remoteControlServer.hpp	/^    RC_ITEM_VOLUME_UP,$/;"	e	enum:REMOTE_CONTROL_ITEM
 RC_LOGGER_MAX_LEN	rclog.h	/^const int RC_LOGGER_MAX_LEN=2000;$/;"	v
 RC_LOGGER_MAX_SIZE	rclog.h	/^const int RC_LOGGER_MAX_SIZE=200;$/;"	v
 RC_TAG	rclog.h	/^typedef int RC_TAG;$/;"	t
-RC_VAR_ARGS	rclog.h	7;"	d
+RC_VAR_ARGS	rclog.h	9;"	d
 RECENTPLAY_FILTER_LONGTEXT	qt4.cpp	154;"	d	file:
 RECENTPLAY_FILTER_TEXT	qt4.cpp	153;"	d	file:
 RECENTPLAY_TEXT	qt4.cpp	151;"	d	file:
 RECENTS_LIST_SIZE	recents.hpp	34;"	d
 RECORD_ACTION	actions_manager.hpp	/^    RECORD_ACTION,$/;"	e	enum:actionType_e
 RECORD_BUTTON	components/controller.hpp	/^    RECORD_BUTTON,$/;"	e	enum:buttonType_e
-REMOTE_CONTROL	remoteControlServer.hpp	8;"	d
-REMOTE_CONTROL_ITEM	remoteControlServer.hpp	/^enum REMOTE_CONTROL_ITEM$/;"	g
-REPEAT_ALL	input_manager.hpp	/^       REPEAT_ALL,\/* loop: 1, repeat: 0 *\/$/;"	e	enum:__anon25
-REPEAT_ONE	input_manager.hpp	/^       REPEAT_ONE,\/* loop: 0, repeat: 1 *\/$/;"	e	enum:__anon25
+REMOTE_CONTROL	remoteControlServer.hpp	7;"	d
+REPEAT_ALL	input_manager.hpp	/^       REPEAT_ALL,\/* loop: 1, repeat: 0 *\/$/;"	e	enum:__anon2
+REPEAT_ONE	input_manager.hpp	/^       REPEAT_ONE,\/* loop: 0, repeat: 1 *\/$/;"	e	enum:__anon2
 REVERSE_ACTION	actions_manager.hpp	/^    REVERSE_ACTION,$/;"	e	enum:actionType_e
 REVERSE_BUTTON	components/controller.hpp	/^    REVERSE_BUTTON,$/;"	e	enum:buttonType_e
 RIGHT_BRACE	ini/inifile.c	23;"	d	file:
 RM_ACTION	components/playlist/selector.hpp	/^    RM_ACTION$/;"	e	enum:ItemAction
 ROUNDBUTTON_H	util/buttons/RoundButton.hpp	23;"	d
-RTL_UNAFFECTED_WIDGET	qt4.hpp	120;"	d
+RTL_UNAFFECTED_WIDGET	qt4.hpp	121;"	d
 RTPDestBox	components/sout/sout_widgets.cpp	/^RTPDestBox::RTPDestBox( QWidget *_parent, const char *_mux )$/;"	f	class:RTPDestBox
 RTPDestBox	components/sout/sout_widgets.hpp	/^class RTPDestBox: public VirtualDestBox$/;"	c
 RTPEdit	components/sout/sout_widgets.hpp	/^        QLineEdit *RTPEdit;$/;"	m	class:RTPDestBox
@@ -1694,14 +1676,14 @@ RTSPDestBox	components/sout/sout_widgets.hpp	/^class RTSPDestBox: public Virtual
 RTSPEdit	components/sout/sout_widgets.hpp	/^        QLineEdit *RTSPEdit;$/;"	m	class:RTSPDestBox
 RTSPPort	components/sout/sout_widgets.hpp	/^        QSpinBox *RTSPPort;$/;"	m	class:RTSPDestBox
 RandomChanged	input_manager.cpp	/^static int RandomChanged$/;"	f	file:
-RandomChanged_Type	input_manager.hpp	/^    RandomChanged_Type,$/;"	e	enum:__anon24
+RandomChanged_Type	input_manager.hpp	/^    RandomChanged_Type,$/;"	e	enum:__anon1
 ReadRegistryDouble	util/registry.cpp	/^double QVLCRegistry::ReadRegistryDouble( const char *path, const char *valueName, double default_value )$/;"	f	class:QVLCRegistry
 ReadRegistryInt	util/registry.cpp	/^int QVLCRegistry::ReadRegistryInt( const char *path, const char *valueName, int default_value ) {$/;"	f	class:QVLCRegistry
 ReadRegistryString	util/registry.cpp	/^char * QVLCRegistry::ReadRegistryString( const char *path, const char *valueName, const char *default_value )$/;"	f	class:QVLCRegistry
 RebuildNavigMenu	menus.cpp	/^QMenu *VLCMenuBar::RebuildNavigMenu( intf_thread_t *p_intf, QMenu *menu, bool b_keep )$/;"	f	class:VLCMenuBar
 RecentsMRL	recents.cpp	/^RecentsMRL::RecentsMRL( intf_thread_t *_p_intf ) : p_intf( _p_intf )$/;"	f	class:RecentsMRL
 RecentsMRL	recents.hpp	/^class RecentsMRL : public QObject$/;"	c
-RecordingEvent_Type	input_manager.hpp	/^    RecordingEvent_Type,$/;"	e	enum:__anon24
+RecordingEvent_Type	input_manager.hpp	/^    RecordingEvent_Type,$/;"	e	enum:__anon1
 ReflectionEffect	util/pictureflow.hpp	/^    enum ReflectionEffect {$/;"	g	class:PictureFlow
 Refresh	components/extended_panels.cpp	/^void ExtV4l2::Refresh( void )$/;"	f	class:ExtV4l2
 RegisterIntf	qt4.cpp	/^static void RegisterIntf( vlc_object_t *p_this )$/;"	f	file:
@@ -1709,17 +1691,17 @@ RegistryKeyExists	util/registry.cpp	/^bool QVLCRegistry::RegistryKeyExists( cons
 RegistryValueExists	util/registry.cpp	/^bool QVLCRegistry::RegistryValueExists( const char *path, const char *valueName )$/;"	f	class:QVLCRegistry
 Remaining	components/interface_widgets.hpp	/^        Remaining,$/;"	e	enum:TimeLabel::Display
 RepeatChanged	input_manager.cpp	/^static int RepeatChanged$/;"	f	file:
-RepeatChanged_Type	input_manager.hpp	/^    RepeatChanged_Type,$/;"	e	enum:__anon24
+RepeatChanged_Type	input_manager.hpp	/^    RepeatChanged_Type,$/;"	e	enum:__anon1
 RoundButton	util/buttons/DeckButtonsLayout.hpp	/^    QPointer<QAbstractButton> RoundButton;$/;"	m	class:DeckButtonsLayout
 RoundButton	util/buttons/RoundButton.cpp	/^RoundButton::RoundButton( QWidget* parent )$/;"	f	class:RoundButton
 RoundButton	util/buttons/RoundButton.hpp	/^class RoundButton : public QToolButton$/;"	c
-Runnable	remoteControlServer.hpp	/^class Runnable {$/;"	c
+Runnable	thpool.h	/^class Runnable {$/;"	c
 SAMPLERATE_CFLAGS	Makefile	/^SAMPLERATE_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
 SAMPLERATE_LIBS	Makefile	/^SAMPLERATE_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lsamplerate  $/;"	m
 SAVEVOL_TEXT	qt4.cpp	147;"	d	file:
 SCHROEDINGER_CFLAGS	Makefile	/^SCHROEDINGER_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/schroedinger-1.0 -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/orc-0.4  $/;"	m
 SCHROEDINGER_LIBS	Makefile	/^SCHROEDINGER_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lschroedinger-1.0 -lorc-0.4 -lm  $/;"	m
-SCREEN_DEVICE	components/open_panels.hpp	/^    SCREEN_DEVICE,$/;"	e	enum:__anon5
+SCREEN_DEVICE	components/open_panels.hpp	/^    SCREEN_DEVICE,$/;"	e	enum:__anon14
 SDL_CFLAGS	Makefile	/^SDL_CFLAGS = -D_GNU_SOURCE=1 -Dmain=SDL_main -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/SDL  $/;"	m
 SDL_IMAGE_CFLAGS	Makefile	/^SDL_IMAGE_CFLAGS = -D_GNU_SOURCE=1 -Dmain=SDL_main -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include\/SDL  $/;"	m
 SDL_IMAGE_LIBS	Makefile	/^SDL_IMAGE_LIBS = -mwindows -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lSDL_image -ljpeg -ltiff -lmingw32 -lSDLmain -lSDL -lm -luser32 -lgdi32 -lwinmm  $/;"	m
@@ -1729,7 +1711,7 @@ SDMenuAction	dialogs_provider.cpp	/^void DialogsProvider::SDMenuAction( const QS
 SD_TYPE	components/playlist/selector.hpp	/^    SD_TYPE,$/;"	e	enum:SelectorItemType
 SED	Makefile	/^SED = \/bin\/sed$/;"	m
 SEEKPOINTS_HPP	adapters/seekpoints.hpp	23;"	d
-SELECT	dialogs/open.hpp	/^    SELECT              \/* Special mode to select a MRL (for VLM or similar *\/$/;"	e	enum:__anon18
+SELECT	dialogs/open.hpp	/^    SELECT              \/* Special mode to select a MRL (for VLM or similar *\/$/;"	e	enum:__anon5
 SETUP_VFILTER	components/extended_panels.cpp	108;"	d	file:
 SETUP_VFILTER	components/extended_panels.cpp	249;"	d	file:
 SETUP_VFILTER_OPTION	components/extended_panels.cpp	130;"	d	file:
@@ -1744,8 +1726,8 @@ SHOUT_LIBS	Makefile	/^SHOUT_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i
 SID_CFLAGS	Makefile	/^SID_CFLAGS = -DHAVE_UNIX -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
 SID_LIBS	Makefile	/^SID_LIBS = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/libsidplay2.la  $/;"	m
 SKINS	components/preferences_widgets.hpp	/^                 SKINS };$/;"	e	enum:InterfacePreviewWidget::enum_style
-SKIPSPACE	remoteControlServer.cpp	327;"	d	file:
-SKIPTRAILINGSPACE	remoteControlServer.cpp	328;"	d	file:
+SKIPSPACE	remoteControlServer.cpp	566;"	d	file:
+SKIPTRAILINGSPACE	remoteControlServer.cpp	567;"	d	file:
 SKIP_BACK_ACTION	actions_manager.hpp	/^    SKIP_BACK_ACTION,$/;"	e	enum:actionType_e
 SKIP_BACK_BUTTON	components/controller.hpp	/^    SKIP_BACK_BUTTON,$/;"	e	enum:buttonType_e
 SKIP_FW_ACTION	actions_manager.hpp	/^    SKIP_FW_ACTION,$/;"	e	enum:actionType_e
@@ -1767,7 +1749,7 @@ SOUT_H	ui/sout.h	12;"	d
 SOUT_WIDGETS_H	components/sout/sout_widgets.hpp	25;"	d
 SPACER	components/playlist/views.cpp	41;"	d	file:
 SPECIAL_MAX	components/controller.hpp	/^    SPECIAL_MAX,$/;"	e	enum:buttonType_e
-SPECIAL_ROLE	components/playlist/selector.hpp	/^    SPECIAL_ROLE,        \/\/SpecialData$/;"	e	enum:__anon9
+SPECIAL_ROLE	components/playlist/selector.hpp	/^    SPECIAL_ROLE,        \/\/SpecialData$/;"	e	enum:__anon18
 SPEED_LABEL	components/controller.hpp	/^    SPEED_LABEL,$/;"	e	enum:buttonType_e
 SPEEXDSP_CFLAGS	Makefile	/^SPEEXDSP_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
 SPEEXDSP_LIBS	Makefile	/^SPEEXDSP_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -lspeexdsp -lm  $/;"	m
@@ -1779,23 +1761,23 @@ SPREFS_INPUT_H	ui/sprefs_input.h	12;"	d
 SPREFS_INTERFACE_H	ui/sprefs_interface.h	12;"	d
 SPREFS_SUBTITLES_H	ui/sprefs_subtitles.h	12;"	d
 SPREFS_VIDEO_H	ui/sprefs_video.h	12;"	d
-SPrefsAudio	components/simple_preferences.hpp	/^    SPrefsAudio,$/;"	e	enum:__anon10
+SPrefsAudio	components/simple_preferences.hpp	/^    SPrefsAudio,$/;"	e	enum:__anon19
 SPrefsAudio	ui/sprefs_audio.h	/^    class SPrefsAudio: public Ui_SPrefsAudio {};$/;"	c	namespace:Ui
 SPrefsAudio_zone	ui/sprefs_audio.h	/^    QWidget *SPrefsAudio_zone;$/;"	m	class:Ui_SPrefsAudio
 SPrefsCatList	components/simple_preferences.cpp	/^SPrefsCatList::SPrefsCatList( intf_thread_t *_p_intf, QWidget *_parent, bool small ) :$/;"	f	class:SPrefsCatList
 SPrefsCatList	components/simple_preferences.hpp	/^class SPrefsCatList : public QWidget$/;"	c
 SPrefsDefaultCat	components/simple_preferences.hpp	55;"	d
-SPrefsHotkeys	components/simple_preferences.hpp	/^    SPrefsHotkeys,$/;"	e	enum:__anon10
-SPrefsInputAndCodecs	components/simple_preferences.hpp	/^    SPrefsInputAndCodecs,$/;"	e	enum:__anon10
+SPrefsHotkeys	components/simple_preferences.hpp	/^    SPrefsHotkeys,$/;"	e	enum:__anon19
+SPrefsInputAndCodecs	components/simple_preferences.hpp	/^    SPrefsInputAndCodecs,$/;"	e	enum:__anon19
 SPrefsInputAndCodecs	ui/sprefs_input.h	/^    class SPrefsInputAndCodecs: public Ui_SPrefsInputAndCodecs {};$/;"	c	namespace:Ui
-SPrefsInterface	components/simple_preferences.hpp	/^    SPrefsInterface = 0,$/;"	e	enum:__anon10
+SPrefsInterface	components/simple_preferences.hpp	/^    SPrefsInterface = 0,$/;"	e	enum:__anon19
 SPrefsInterface	ui/sprefs_interface.h	/^    class SPrefsInterface: public Ui_SPrefsInterface {};$/;"	c	namespace:Ui
-SPrefsMax	components/simple_preferences.hpp	/^    SPrefsMax$/;"	e	enum:__anon10
+SPrefsMax	components/simple_preferences.hpp	/^    SPrefsMax$/;"	e	enum:__anon19
 SPrefsPanel	components/simple_preferences.cpp	/^SPrefsPanel::SPrefsPanel( intf_thread_t *_p_intf, QWidget *_parent,$/;"	f	class:SPrefsPanel
 SPrefsPanel	components/simple_preferences.hpp	/^class SPrefsPanel : public QWidget$/;"	c
-SPrefsSubtitles	components/simple_preferences.hpp	/^    SPrefsSubtitles,$/;"	e	enum:__anon10
+SPrefsSubtitles	components/simple_preferences.hpp	/^    SPrefsSubtitles,$/;"	e	enum:__anon19
 SPrefsSubtitles	ui/sprefs_subtitles.h	/^    class SPrefsSubtitles: public Ui_SPrefsSubtitles {};$/;"	c	namespace:Ui
-SPrefsVideo	components/simple_preferences.hpp	/^    SPrefsVideo,$/;"	e	enum:__anon10
+SPrefsVideo	components/simple_preferences.hpp	/^    SPrefsVideo,$/;"	e	enum:__anon19
 SPrefsVideo	ui/sprefs_video.h	/^    class SPrefsVideo: public Ui_SPrefsVideo {};$/;"	c	namespace:Ui
 SQLITE_CFLAGS	Makefile	/^SQLITE_CFLAGS = $/;"	m
 SQLITE_LIBS	Makefile	/^SQLITE_LIBS = $/;"	m
@@ -1833,15 +1815,16 @@ SeekSlider	util/input_slider.hpp	/^class SeekSlider : public QSlider$/;"	c
 SelectorActionButton	components/playlist/selector.hpp	/^class SelectorActionButton : public QFramelessButton$/;"	c
 SelectorItemType	components/playlist/selector.hpp	/^enum SelectorItemType {$/;"	g
 SeparateEntries	dialogs/open.cpp	/^QStringList OpenDialog::SeparateEntries( const QString& entries )$/;"	f	class:OpenDialog
+Serve	remoteControlServer.cpp	/^void* Serve(void* para) {$/;"	f
 SetSizing	components/interface_widgets.cpp	/^void VideoWidget::SetSizing( unsigned int w, unsigned int h )$/;"	f	class:VideoWidget
-SetVideoOnTopEvent_Type	dialogs_provider.hpp	/^    SetVideoOnTopEvent_Type = QEvent::User + DialogEventType + 4,$/;"	e	enum:__anon23
+SetVideoOnTopEvent_Type	dialogs_provider.hpp	/^    SetVideoOnTopEvent_Type = QEvent::User + DialogEventType + 4,$/;"	e	enum:__anon27
 ShowDialog	qt4.cpp	/^static void ShowDialog( intf_thread_t *p_intf, int i_dialog_event, int i_arg,$/;"	f	file:
 SignalDialog	dialogs/extensions.moc.cpp	/^void ExtensionsDialogProvider::SignalDialog(extension_dialog_t * _t1)$/;"	f	class:ExtensionsDialogProvider
 Singleton	util/singleton.hpp	/^    Singleton(){}$/;"	f	class:Singleton
 Singleton	util/singleton.hpp	/^class       Singleton$/;"	c
 SlideInfo	util/pictureflow.cpp	/^struct SlideInfo {$/;"	s	file:
 SoundMuteChanged	input_manager.cpp	/^static int SoundMuteChanged( vlc_object_t *p_this, const char *psz_var,$/;"	f	file:
-SoundMuteChanged_Type	input_manager.hpp	/^    SoundMuteChanged_Type,$/;"	e	enum:__anon24
+SoundMuteChanged_Type	input_manager.hpp	/^    SoundMuteChanged_Type,$/;"	e	enum:__anon1
 SoundSlider	util/input_slider.cpp	/^SoundSlider::SoundSlider( QWidget *_parent, int _i_step, bool b_hard,$/;"	f	class:SoundSlider
 SoundSlider	util/input_slider.hpp	/^class SoundSlider : public QAbstractSlider$/;"	c
 SoundWidget	components/controller_widget.cpp	/^SoundWidget::SoundWidget( QWidget *_parent, intf_thread_t * _p_intf,$/;"	f	class:SoundWidget
@@ -1866,7 +1849,7 @@ SplitterHandle	components/playlist/playlist.cpp	/^SplitterHandle::SplitterHandle
 SplitterHandle	components/playlist/playlist.hpp	/^class SplitterHandle : public QSplitterHandle$/;"	c
 StandardPLPanel	components/playlist/standardpanel.cpp	/^StandardPLPanel::StandardPLPanel( PlaylistWidget *_parent,$/;"	f	class:StandardPLPanel
 StandardPLPanel	components/playlist/standardpanel.hpp	/^class StandardPLPanel: public QWidget$/;"	c
-StatisticsUpdate_Type	input_manager.hpp	/^    StatisticsUpdate_Type, \/*10*\/$/;"	e	enum:__anon24
+StatisticsUpdate_Type	input_manager.hpp	/^    StatisticsUpdate_Type, \/*10*\/$/;"	e	enum:__anon1
 StatsTree	components/info_panels.hpp	/^    QTreeWidget *StatsTree;$/;"	m	class:InputStatsPanel
 StringConfigControl	components/preferences_widgets.cpp	/^StringConfigControl::StringConfigControl( vlc_object_t *_p_this,$/;"	f	class:StringConfigControl
 StringConfigControl	components/preferences_widgets.hpp	/^class StringConfigControl : public VStringConfigControl$/;"	c
@@ -1879,7 +1862,7 @@ SyncInput	dialogs/extensions.cpp	/^void ExtensionDialog::SyncInput( QObject *obj
 SyncSelection	dialogs/extensions.cpp	/^void ExtensionDialog::SyncSelection( QObject *object )$/;"	f	class:ExtensionDialog
 SyncWidget	components/extended_panels.cpp	/^SyncWidget::SyncWidget( QWidget *_parent ) : QWidget( _parent )$/;"	f	class:SyncWidget
 SyncWidget	components/extended_panels.hpp	/^class SyncWidget : public QWidget$/;"	c
-SynchroChanged_Type	input_manager.hpp	/^    SynchroChanged_Type,$/;"	e	enum:__anon24
+SynchroChanged_Type	input_manager.hpp	/^    SynchroChanged_Type,$/;"	e	enum:__anon1
 TAGLIB_CFLAGS	Makefile	/^TAGLIB_CFLAGS = $/;"	m
 TAGLIB_LIBS	Makefile	/^TAGLIB_LIBS = $/;"	m
 TAG_DEBUG	rclog.h	/^const RC_TAG TAG_DEBUG=0;$/;"	v
@@ -1889,12 +1872,12 @@ TAG_WARNING	rclog.h	/^const RC_TAG TAG_WARNING=2;$/;"	v
 TELETEXT_BUTTONS	components/controller.hpp	/^    TELETEXT_BUTTONS,$/;"	e	enum:buttonType_e
 TEXT_OR_VAR	menus.cpp	1221;"	d	file:
 TEXT_OR_VAR	menus.cpp	1342;"	d	file:
-THEAM	qt4.hpp	86;"	d
-THEDP	qt4.hpp	84;"	d
-THEMIM	qt4.hpp	85;"	d
+THEAM	qt4.hpp	87;"	d
+THEDP	qt4.hpp	85;"	d
+THEMIM	qt4.hpp	86;"	d
 THEORA_CFLAGS	Makefile	/^THEORA_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
 THEORA_LIBS	Makefile	/^THEORA_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -ltheoraenc -ltheoradec -logg  $/;"	m
-THEPL	qt4.hpp	80;"	d
+THEPL	qt4.hpp	81;"	d
 TIGER_CFLAGS	Makefile	/^TIGER_CFLAGS = $/;"	m
 TIGER_LIBS	Makefile	/^TIGER_LIBS = $/;"	m
 TIMETOOLTIP_H	util/timetooltip.hpp	23;"	d
@@ -1911,24 +1894,24 @@ TITLE_EXTENSIONS_SUBTITLE	dialogs_provider.hpp	44;"	d
 TITLE_EXTENSIONS_VIDEO	dialogs_provider.hpp	41;"	d
 TITLE_LONGTEXT	qt4.cpp	114;"	d	file:
 TITLE_TEXT	qt4.cpp	113;"	d	file:
-TOGGLEV	qt4.hpp	116;"	d
+TOGGLEV	qt4.hpp	117;"	d
 TRACKS_HEIGHT	components/epg/EPGView.hpp	36;"	d
-TREE_VIEW	components/playlist/standardpanel.hpp	/^           TREE_VIEW ,$/;"	e	enum:StandardPLPanel::__anon7
+TREE_VIEW	components/playlist/standardpanel.hpp	/^           TREE_VIEW ,$/;"	e	enum:StandardPLPanel::__anon16
 TSMux	ui/profiles.h	/^    QRadioButton *TSMux;$/;"	m	class:Ui_Profiles
 TWOLAME_CFLAGS	Makefile	/^TWOLAME_CFLAGS = -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
 TWOLAME_LIBS	Makefile	/^TWOLAME_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib -ltwolame  $/;"	m
-TYPE_CATEGORY	components/complete_preferences.hpp	/^    TYPE_CATEGORY,$/;"	e	enum:__anon4
-TYPE_CATSUBCAT	components/complete_preferences.hpp	/^    TYPE_CATSUBCAT,$/;"	e	enum:__anon4
-TYPE_MODULE	components/complete_preferences.hpp	/^    TYPE_MODULE$/;"	e	enum:__anon4
-TYPE_ROLE	components/playlist/selector.hpp	/^    TYPE_ROLE = Qt::UserRole + 1,$/;"	e	enum:__anon9
-TYPE_SUBCATEGORY	components/complete_preferences.hpp	/^    TYPE_SUBCATEGORY,$/;"	e	enum:__anon4
+TYPE_CATEGORY	components/complete_preferences.hpp	/^    TYPE_CATEGORY,$/;"	e	enum:__anon13
+TYPE_CATSUBCAT	components/complete_preferences.hpp	/^    TYPE_CATSUBCAT,$/;"	e	enum:__anon13
+TYPE_MODULE	components/complete_preferences.hpp	/^    TYPE_MODULE$/;"	e	enum:__anon13
+TYPE_ROLE	components/playlist/selector.hpp	/^    TYPE_ROLE = Qt::UserRole + 1,$/;"	e	enum:__anon18
+TYPE_SUBCATEGORY	components/complete_preferences.hpp	/^    TYPE_SUBCATEGORY,$/;"	e	enum:__anon13
 Tab	ui/open.h	/^    QTabWidget *Tab;$/;"	m	class:Ui_Open
 TestCaC	components/simple_preferences.cpp	502;"	d	file:
 TestCaC	components/simple_preferences.cpp	515;"	d	file:
 Thread	qt4.cpp	/^static void *Thread( void *obj )$/;"	f	file:
-Thread	remoteControlServer.cpp	/^Thread::Thread():Runnable() {$/;"	f	class:Thread
-Thread	remoteControlServer.cpp	/^Thread::Thread(Runnable* runnable):Runnable(){$/;"	f	class:Thread
-Thread	remoteControlServer.hpp	/^class Thread:public Runnable {$/;"	c
+Thread	thpool.c	/^Thread::Thread():Runnable() {$/;"	f	class:Thread
+Thread	thpool.c	/^Thread::Thread(Runnable* runnable):Runnable(){$/;"	f	class:Thread
+Thread	thpool.h	/^class Thread:public Runnable {$/;"	c
 TimeLabel	components/interface_widgets.cpp	/^TimeLabel::TimeLabel( intf_thread_t *_p_intf, TimeLabel::Display _displayType  )$/;"	f	class:TimeLabel
 TimeLabel	components/interface_widgets.hpp	/^class TimeLabel : public QLabel$/;"	c
 TimeTooltip	util/timetooltip.cpp	/^TimeTooltip::TimeTooltip( QWidget *parent ) :$/;"	f	class:TimeTooltip
@@ -2034,14 +2017,14 @@ UpdateWidget	dialogs/extensions.cpp	/^QWidget* ExtensionDialog::UpdateWidget( ex
 UpdateWidgets	dialogs/extensions.cpp	/^void ExtensionDialog::UpdateWidgets()$/;"	f	class:ExtensionDialog
 UrlValidator	components/open_panels.hpp	/^   UrlValidator( QObject *parent ) : QValidator( parent ) { }$/;"	f	class:UrlValidator
 UrlValidator	components/open_panels.hpp	/^class UrlValidator : public QValidator$/;"	c
-V4L2_DEVICE	components/open_panels.hpp	/^    V4L2_DEVICE,$/;"	e	enum:__anon5
+V4L2_DEVICE	components/open_panels.hpp	/^    V4L2_DEVICE,$/;"	e	enum:__anon14
 VALUE_1	dialogs/toolbar.hpp	34;"	d
 VALUE_2	dialogs/toolbar.hpp	36;"	d
 VALUE_3	dialogs/toolbar.hpp	38;"	d
 VALUE_4	dialogs/toolbar.hpp	40;"	d
 VALUE_5	dialogs/toolbar.hpp	42;"	d
 VALUE_6	dialogs/toolbar.hpp	44;"	d
-VAL_RC_CONFIG	remoteControlServer.hpp	/^static RC_CONFIG VAL_RC_CONFIG;$/;"	v
+VAL_RC_CONFIG	qt4.cpp	/^RC_CONFIG VAL_RC_CONFIG;$/;"	v
 VAL_RC_DEFAULT_PORT	remoteControlServer.hpp	/^const int VAL_RC_DEFAULT_PORT=6000;$/;"	v
 VERSION	Makefile	/^VERSION = 2.0.6$/;"	m
 VERSION_EXTRA	Makefile	/^VERSION_EXTRA = 0$/;"	m
@@ -2053,8 +2036,8 @@ VFloatConfigControl	components/preferences_widgets.hpp	/^    VFloatConfigControl
 VFloatConfigControl	components/preferences_widgets.hpp	/^    VFloatConfigControl( vlc_object_t *a, module_config_t *b, QWidget *c ) :$/;"	f	class:VFloatConfigControl
 VFloatConfigControl	components/preferences_widgets.hpp	/^class VFloatConfigControl : public ConfigControl$/;"	c
 VIDEO_EFFECTS_H	ui/video_effects.h	12;"	d
-VIEW_COUNT	components/playlist/standardpanel.hpp	/^           VIEW_COUNT };$/;"	e	enum:StandardPLPanel::__anon7
-VISIBLE	qt4.hpp	114;"	d
+VIEW_COUNT	components/playlist/standardpanel.hpp	/^           VIEW_COUNT };$/;"	e	enum:StandardPLPanel::__anon16
+VISIBLE	qt4.hpp	115;"	d
 VIntConfigControl	components/preferences_widgets.hpp	/^    VIntConfigControl( vlc_object_t *a, module_config_t *b ) :$/;"	f	class:VIntConfigControl
 VIntConfigControl	components/preferences_widgets.hpp	/^    VIntConfigControl( vlc_object_t *a, module_config_t *b, QWidget *c ) :$/;"	f	class:VIntConfigControl
 VIntConfigControl	components/preferences_widgets.hpp	/^class VIntConfigControl : public ConfigControl$/;"	c
@@ -2102,16 +2085,16 @@ VirtualDestBox	components/sout/sout_widgets.hpp	/^        VirtualDestBox( QWidge
 VirtualDestBox	components/sout/sout_widgets.hpp	/^class VirtualDestBox : public QWidget$/;"	c
 Vlm	ui/vlm.h	/^    class Vlm: public Ui_Vlm {};$/;"	c	namespace:Ui
 VolumeChanged	input_manager.cpp	/^static int VolumeChanged( vlc_object_t *p_this, const char *psz_var,$/;"	f	file:
-VolumeChanged_Type	input_manager.hpp	/^    VolumeChanged_Type,$/;"	e	enum:__anon24
+VolumeChanged_Type	input_manager.hpp	/^    VolumeChanged_Type,$/;"	e	enum:__anon1
 VolumeEntries	menus.cpp	/^static inline void VolumeEntries( intf_thread_t *p_intf, QMenu *current )$/;"	f	file:
 WAVMux	ui/profiles.h	/^    QRadioButton *WAVMux;$/;"	m	class:Ui_Profiles
 WEBMux	ui/profiles.h	/^    QRadioButton *WEBMux;$/;"	m	class:Ui_Profiles
 WHEIGHT	util/input_slider.cpp	565;"	d	file:
-WIDGET_BIG	components/controller.hpp	/^   WIDGET_BIG    = 0x2,$/;"	e	enum:__anon1
-WIDGET_FLAT	components/controller.hpp	/^   WIDGET_FLAT   = 0x1,$/;"	e	enum:__anon1
+WIDGET_BIG	components/controller.hpp	/^   WIDGET_BIG    = 0x2,$/;"	e	enum:__anon10
+WIDGET_FLAT	components/controller.hpp	/^   WIDGET_FLAT   = 0x1,$/;"	e	enum:__anon10
 WIDGET_MAX	components/controller.hpp	/^    WIDGET_MAX,$/;"	e	enum:buttonType_e
-WIDGET_NORMAL	components/controller.hpp	/^   WIDGET_NORMAL = 0x0,$/;"	e	enum:__anon1
-WIDGET_SHINY	components/controller.hpp	/^   WIDGET_SHINY  = 0x4,$/;"	e	enum:__anon1
+WIDGET_NORMAL	components/controller.hpp	/^   WIDGET_NORMAL = 0x0,$/;"	e	enum:__anon10
+WIDGET_SHINY	components/controller.hpp	/^   WIDGET_SHINY  = 0x4,$/;"	e	enum:__anon10
 WIDGET_SPACER	components/controller.hpp	/^    WIDGET_SPACER = 0x40,$/;"	e	enum:buttonType_e
 WIDGET_SPACER_EXTEND	components/controller.hpp	/^    WIDGET_SPACER_EXTEND,$/;"	e	enum:buttonType_e
 WINDRES	Makefile	/^WINDRES = i586-mingw32msvc-windres$/;"	m
@@ -2193,6 +2176,7 @@ _SEARCHLINEEDIT_H_	util/searchlineedit.hpp	28;"	d
 _SIMPLEPREFS_H_	components/simple_preferences.hpp	25;"	d
 _SINGLETON_HPP_	util/singleton.hpp	24;"	d
 _SORTING_H_	components/playlist/sorting.h	25;"	d
+_THPOOL_	thpool.h	2;"	d
 _VLC_MODEL_H_	components/playlist/vlc_model.hpp	25;"	d
 __STDC_CONSTANT_MACROS	components/info_panels.cpp	27;"	d	file:
 __STDC_CONSTANT_MACROS	input_manager.cpp	27;"	d	file:
@@ -2204,7 +2188,6 @@ __STDC_FORMAT_MACROS	menus.cpp	30;"	d	file:
 _inputItems	components/playlist/playlist_model.hpp	/^    QList<input_item_t*> _inputItems;$/;"	m	class:PlMimeData
 _mimeData	components/playlist/playlist_model.hpp	/^    QMimeData *_mimeData;$/;"	m	class:PlMimeData
 _name	components/preferences_widgets.hpp	/^    QString _name;$/;"	m	class:ConfigControl
-_rc_para	remoteControlServer.hpp	/^typedef struct _rc_para$/;"	s
 aBitrateLabel	ui/profiles.h	/^    QLabel *aBitrateLabel;$/;"	m	class:Ui_Profiles
 aBitrateSpin	ui/profiles.h	/^    QSpinBox *aBitrateSpin;$/;"	m	class:Ui_Profiles
 aChannelsLabel	ui/profiles.h	/^    QLabel *aChannelsLabel;$/;"	m	class:Ui_Profiles
@@ -2265,6 +2248,8 @@ addActionWithSubmenu	menus.cpp	/^static inline QMenu *addActionWithSubmenu( QMen
 addAsso	components/simple_preferences.cpp	/^void addAsso( QVLCRegistry *qvReg, const char *psz_ext )$/;"	f
 addButton	ui/sout.h	/^    QPushButton *addButton;$/;"	m	class:Ui_Sout
 addButton	ui/vlm.h	/^    QPushButton *addButton;$/;"	m	class:Ui_Vlm
+addCallback	remoteControlServer.cpp	/^void RCPlayListModel::addCallback(input_thread_t* p_input) {$/;"	f	class:RCPlayListModel
+addCallback	remoteControlServer.cpp	/^void RCPlayListModel::addCallback(intf_thread_t* p_intf) {$/;"	f	class:RCPlayListModel
 addCallbacks	components/extended_panels.cpp	/^void Equalizer::addCallbacks( vlc_object_t *p_aout )$/;"	f	class:Equalizer
 addCallbacks	components/extended_panels.cpp	/^void Spatializer::addCallbacks( vlc_object_t *p_aout )$/;"	f	class:Spatializer
 addCallbacks	input_manager.cpp	/^inline void InputManager::addCallbacks()$/;"	f	class:InputManager
@@ -2334,7 +2319,7 @@ am__install_max	Makefile	/^am__install_max = 40$/;"	m
 am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(libvlcdir)"$/;"	m
 am__is_gnu_make	Makefile	/^am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'$/;"	m
 am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
-am__libqt4_plugin_la_SOURCES_DIST	Makefile	/^am__libqt4_plugin_la_SOURCES_DIST = qt4.cpp menus.cpp rclog.cpp remoteControlServer.cpp ini\/inifiles.c\\$/;"	m
+am__libqt4_plugin_la_SOURCES_DIST	Makefile	/^am__libqt4_plugin_la_SOURCES_DIST = qt4.cpp menus.cpp rclog.cpp remoteControlServer.cpp thpool.c ini\/inifiles.c\\$/;"	m
 am__make_dryrun	Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m
 am__make_keepgoing	Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m
 am__make_running_with_option	Makefile	/^am__make_running_with_option = \\$/;"	m
@@ -2440,9 +2425,10 @@ audioControl	components/simple_preferences.cpp	326;"	d	file:
 audioControl2	components/simple_preferences.cpp	283;"	d	file:
 audioControl2	components/simple_preferences.cpp	325;"	d	file:
 audioLabel	ui/open_disk.h	/^    QLabel *audioLabel;$/;"	m	class:Ui_OpenDisk
-audioOutCoB	components/simple_preferences.hpp	/^       audioOutCoB,$/;"	e	enum:__anon12
+audioOutCoB	components/simple_preferences.hpp	/^       audioOutCoB,$/;"	e	enum:__anon21
 audioSpin	ui/open_disk.h	/^    QSpinBox *audioSpin;$/;"	m	class:Ui_OpenDisk
 author	dialogs/plugins.cpp	/^    QString name, title, description, shortdesc, author, version, url;$/;"	m	class:ExtensionCopy	file:
+author	remoteControlServer.hpp	/^    std::string author;$/;"	m	struct:RCInputMRL
 authorsEdit	ui/about.h	/^    QTextEdit *authorsEdit;$/;"	m	class:Ui_aboutWidget
 autoscaleBox	ui/sprefs_audio.h	/^    QCheckBox *autoscaleBox;$/;"	m	class:Ui_SPrefsAudio
 aviLabel	ui/sprefs_input.h	/^    QLabel *aviLabel;$/;"	m	class:Ui_SPrefsInputAndCodecs
@@ -2493,7 +2479,7 @@ b_video	input_manager.hpp	/^    bool            b_video;$/;"	m	class:InputManage
 b_videoEmbedded	main_interface.hpp	/^    bool                 b_videoEmbedded;       \/\/\/< Want an external Video Window$/;"	m	class:MainInterface
 b_videoFullScreen	main_interface.hpp	/^    bool                 b_videoFullScreen;     \/\/\/< --fullscreen$/;"	m	class:MainInterface
 b_withart	components/interface_widgets.hpp	/^    bool b_withart;$/;"	m	class:BackgroundWidget
-backgroundCB	components/simple_preferences.hpp	/^enum { shadowCB, backgroundCB };$/;"	e	enum:__anon15
+backgroundCB	components/simple_preferences.hpp	/^enum { shadowCB, backgroundCB };$/;"	e	enum:__anon24
 backgroundCheck	ui/sprefs_subtitles.h	/^    QCheckBox *backgroundCheck;$/;"	m	class:Ui_SPrefsSubtitles
 backgroundColor	util/pictureflow.cpp	/^    QRgb backgroundColor;$/;"	m	class:PictureFlowState	file:
 backgroundColor	util/pictureflow.cpp	/^QColor PictureFlow::backgroundColor() const$/;"	f	class:PictureFlow
@@ -2566,7 +2552,7 @@ cacheLabel	ui/open.h	/^    QLabel *cacheLabel;$/;"	m	class:Ui_Open
 cacheSpinBox	ui/open.h	/^    QSpinBox *cacheSpinBox;$/;"	m	class:Ui_Open
 cachedLength	components/interface_widgets.hpp	/^    int cachedLength;$/;"	m	class:TimeLabel
 cachingChanged	input_manager.moc.cpp	/^void InputManager::cachingChanged(float _t1)$/;"	f	class:InputManager
-cachingCoB	components/simple_preferences.hpp	/^enum { inputLE, cachingCoB };$/;"	e	enum:__anon13
+cachingCoB	components/simple_preferences.hpp	/^enum { inputLE, cachingCoB };$/;"	e	enum:__anon22
 cachingCombo	ui/sprefs_input.h	/^    QComboBox *cachingCombo;$/;"	m	class:Ui_SPrefsInputAndCodecs
 callback	variables.cpp	/^int QVLCVariable::callback (vlc_object_t *object, const char *,$/;"	f	class:QVLCVariable
 canEdit	components/playlist/playlist_model.cpp	/^bool PLModel::canEdit() const$/;"	f	class:PLModel
@@ -2704,7 +2690,7 @@ combo	components/preferences_widgets.hpp	/^    QComboBox *combo;$/;"	m	class:Mod
 combo	components/preferences_widgets.hpp	/^    QComboBox *combo;$/;"	m	class:StringListConfigControl
 compCtrl	components/extended_panels.hpp	/^    QSlider *compCtrl[NUM_CP_CTRL];$/;"	m	class:Compressor
 comp_controls	components/extended_panels.cpp	/^static const comp_controls_t comp_controls[] =$/;"	v	file:
-comp_controls_t	components/extended_panels.cpp	/^} comp_controls_t;$/;"	t	typeref:struct:__anon2	file:
+comp_controls_t	components/extended_panels.cpp	/^} comp_controls_t;$/;"	t	typeref:struct:__anon11	file:
 compareMeta	components/playlist/ml_item.cpp	/^static int compareMeta( const ml_media_t *a, const ml_media_t *b,$/;"	f	file:
 computeMinimumSize	main_interface.cpp	/^void MainInterface::computeMinimumSize()$/;"	f	class:MainInterface
 configList	components/open_panels.hpp	/^    QStringList configList;$/;"	m	class:CaptureOpenPanel
@@ -2819,6 +2805,7 @@ delCallbacks	components/extended_panels.cpp	/^void Spatializer::delCallbacks( vl
 delCallbacks	input_manager.cpp	/^inline void InputManager::delCallbacks()$/;"	f	class:InputManager
 delChild	components/playlist/ml_item.cpp	/^void MLItem::delChild( int row )$/;"	f	class:MLItem
 delInput	input_manager.cpp	/^void InputManager::delInput()$/;"	f	class:InputManager
+delay	remoteControlServer.hpp	/^    mtime_t delay;$/;"	m	struct:RCPlayListThreadPara
 deleteButton	ui/streampanel.h	/^    QPushButton *deleteButton;$/;"	m	class:Ui_BroadcastPanel
 deleteProfile	components/sout/profile_selector.cpp	/^void VLCProfileSelector::deleteProfile()$/;"	f	class:VLCProfileSelector
 deleteProfile	dialogs/toolbar.cpp	/^void ToolbarEditDialog::deleteProfile()$/;"	f	class:ToolbarEditDialog
@@ -2826,7 +2813,6 @@ deleteSelection	components/playlist/standardpanel.cpp	/^void StandardPLPanel::de
 demuxed_stat	components/info_panels.hpp	/^    QTreeWidgetItem *demuxed_stat;$/;"	m	class:InputStatsPanel
 depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/autotools\/depcomp$/;"	m
 desaturate	util/input_slider.cpp	608;"	d	file:
-descr	remoteControlServer.hpp	/^    char	descr[50];$/;"	m	struct:_rc_para
 described	dialogs/external.moc.cpp	/^void QVLCProgressDialog::described(const QString & _t1)$/;"	f	class:QVLCProgressDialog
 description	components/epg/EPGItem.cpp	/^QString EPGItem::description()$/;"	f	class:EPGItem
 description	dialogs/epg.hpp	/^    QTextEdit *description;$/;"	m	class:EpgDialog
@@ -2846,7 +2832,7 @@ dialogBox	components/open_panels.hpp	/^    FileOpenBox *dialogBox;$/;"	m	class:F
 dir	Makefile	/^dir = gui\/qt4$/;"	m
 dirLabel	ui/sprefs_video.h	/^    QLabel *dirLabel;$/;"	m	class:Ui_SPrefsVideo
 directXBox	ui/sprefs_video.h	/^    QGroupBox *directXBox;$/;"	m	class:Ui_SPrefsVideo
-directxW	components/simple_preferences.hpp	/^       directxW,$/;"	e	enum:__anon12
+directxW	components/simple_preferences.hpp	/^       directxW,$/;"	e	enum:__anon21
 dirty	util/pictureflow.cpp	/^    bool dirty;$/;"	m	class:PictureFlowAbstractRenderer	file:
 disable_volume_keys	qt4.hpp	/^    bool disable_volume_keys;$/;"	m	struct:intf_sys_t
 discFrame	components/controller.cpp	/^QFrame *AbstractController::discFrame()$/;"	f	class:AbstractController
@@ -2961,6 +2947,7 @@ enableCheck	ui/equalizer.h	/^    QCheckBox *enableCheck;$/;"	m	class:Ui_Equalize
 enableCheck	ui/vlm.h	/^    QCheckBox *enableCheck;$/;"	m	class:Ui_Vlm
 enableVideo	ui/sprefs_video.h	/^    QCheckBox *enableVideo;$/;"	m	class:Ui_SPrefsVideo
 encodLabel	ui/sprefs_subtitles.h	/^    QLabel *encodLabel;$/;"	m	class:Ui_SPrefsSubtitles
+encode	remoteControlServer.hpp	/^    const char* encode() {$/;"	f	struct:RCInputMRL
 encodedby_text	components/info_panels.hpp	/^    QLineEdit *encodedby_text;$/;"	m	class:MetaPanel
 encoding	ui/sprefs_subtitles.h	/^    QComboBox *encoding;$/;"	m	class:Ui_SPrefsSubtitles
 encryptionChanged	input_manager.moc.cpp	/^void InputManager::encryptionChanged(bool _t1)$/;"	f	class:InputManager
@@ -3008,13 +2995,13 @@ extractEnable	ui/video_effects.h	/^    QGroupBox *extractEnable;$/;"	m	class:Ui_
 f_buffering	util/input_slider.hpp	/^    float f_buffering;$/;"	m	class:SeekSlider
 f_cache	input_manager.hpp	/^    float           f_cache;$/;"	m	class:InputManager
 f_float	remoteControlServer.hpp	/^    double              f_float;$/;"	m	struct:rc_value_t
-f_max	components/extended_panels.cpp	/^    const float f_max;      \/\/ max$/;"	m	struct:__anon2	file:
-f_min	components/extended_panels.cpp	/^    const float f_min;      \/\/ min$/;"	m	struct:__anon2	file:
+f_max	components/extended_panels.cpp	/^    const float f_max;      \/\/ max$/;"	m	struct:__anon11	file:
+f_min	components/extended_panels.cpp	/^    const float f_min;      \/\/ min$/;"	m	struct:__anon11	file:
 f_opacity	components/controller.hpp	/^    float f_opacity;$/;"	m	class:FullscreenControllerWidget
 f_rate	input_manager.hpp	/^    float           f_rate;$/;"	m	class:InputManager
-f_resolution	components/extended_panels.cpp	/^    const float f_resolution; \/\/ resolution$/;"	m	struct:__anon2	file:
+f_resolution	components/extended_panels.cpp	/^    const float f_resolution; \/\/ resolution$/;"	m	struct:__anon11	file:
 f_step	util/input_slider.hpp	/^    float f_step; \/* How much do we increase each time we wheel *\/$/;"	m	class:SoundSlider
-f_value	components/extended_panels.cpp	/^    const float f_value;    \/\/ value$/;"	m	struct:__anon2	file:
+f_value	components/extended_panels.cpp	/^    const float f_value;    \/\/ value$/;"	m	struct:__anon11	file:
 faster	input_manager.cpp	/^void InputManager::faster()$/;"	f	class:InputManager
 fcos	util/pictureflow.cpp	/^inline PFreal fcos(int iangle)$/;"	f
 fdiv	util/pictureflow.cpp	/^inline PFreal fdiv(PFreal num, PFreal den)$/;"	f
@@ -3030,7 +3017,7 @@ fileListWidg	ui/open_file.h	/^    QListWidget *fileListWidg;$/;"	m	class:Ui_Open
 fileName	ui/sprefs_audio.h	/^    QLineEdit *fileName;$/;"	m	class:Ui_SPrefsAudio
 fileOpenPanel	dialogs/open.hpp	/^    FileOpenPanel *fileOpenPanel;$/;"	m	class:OpenDialog
 fileSkin	ui/sprefs_interface.h	/^    QLineEdit *fileSkin;$/;"	m	class:Ui_SPrefsInterface
-fileW	components/simple_preferences.hpp	/^       fileW,$/;"	e	enum:__anon12
+fileW	components/simple_preferences.hpp	/^       fileW,$/;"	e	enum:__anon21
 filename	rclog.h	/^    std::string filename;$/;"	m	class:logger
 filepath	qt4.hpp	/^    QString filepath;        \/* Last path used in dialogs *\/$/;"	m	struct:intf_sys_t
 fillProfile	components/sout/profile_selector.cpp	/^void VLCProfileEditor::fillProfile( const QString& qs )$/;"	f	class:VLCProfileEditor
@@ -3111,6 +3098,7 @@ getControlsVisibilityStatus	main_interface.cpp	/^int MainInterface::getControlsV
 getCurrentAudioOutput	remoteControlServer.cpp	/^char* AudioCommand::getCurrentAudioOutput(vlc_object_t* p_aout) {$/;"	f	class:AudioCommand
 getCurrentAudioOutput	remoteControlServer.cpp	/^char* AudioCommand::getCurrentAudioOutput(vlc_object_t* p_aout,char* psz_config_name) {$/;"	f	class:AudioCommand
 getCurrentAudioOutputDeviceList	remoteControlServer.cpp	/^char* AudioCommand::getCurrentAudioOutputDeviceList(vlc_object_t* p_aout,char* psz_name,char* result) {$/;"	f	class:AudioCommand
+getCurrentCount	remoteControlServer.cpp	/^int RCPlayListModel::getCurrentCount(const char* name) {$/;"	f	class:RCPlayListModel
 getCurrentItemCategory	components/playlist/selector.cpp	/^int PLSelector::getCurrentItemCategory()$/;"	f	class:PLSelector
 getCurrentItemInfos	components/playlist/selector.cpp	/^void PLSelector::getCurrentItemInfos( int* type, bool* can_delay_search, QString *string)$/;"	f	class:PLSelector
 getCurrentPlayListItem	remoteControlServer.cpp	/^playlist_item_t* PlayListCommand::getCurrentPlayListItem(playlist_t *p_playlist)$/;"	f	class:PlayListCommand
@@ -3132,6 +3120,7 @@ getIntf	remoteControlServer.cpp	/^intf_thread_t* RCHandler::getIntf() {$/;"	f	cl
 getIntf	remoteControlServer.cpp	/^intf_thread_t* RCInvoker::getIntf() {$/;"	f	class:RCInvoker
 getItem	components/playlist/ml_model.hpp	/^    inline MLItem *getItem( QModelIndex index ) const$/;"	f	class:MLModel
 getItem	components/playlist/playlist_model.hpp	/^    PLItem *getItem( const QModelIndex & index ) const$/;"	f	class:PLModel
+getItem	remoteControlServer.cpp	/^const char* RCPlayListModel::getItem(const char* name) {$/;"	f	class:RCPlayListModel
 getLastState	remoteControlServer.cpp	/^const char* RCInvoker::getLastState() {$/;"	f	class:RCInvoker
 getMRL	components/sout/sout_widgets.cpp	/^QString FileDestBox::getMRL( const QString& mux, const int, const bool,$/;"	f	class:FileDestBox
 getMRL	components/sout/sout_widgets.cpp	/^QString HTTPDestBox::getMRL( const QString& mux, const int, const bool,$/;"	f	class:HTTPDestBox
@@ -3141,6 +3130,7 @@ getMRL	components/sout/sout_widgets.cpp	/^QString RTPDestBox::getMRL( const QStr
 getMRL	components/sout/sout_widgets.cpp	/^QString RTSPDestBox::getMRL( const QString&, const int, const bool,$/;"	f	class:RTSPDestBox
 getMRL	components/sout/sout_widgets.cpp	/^QString UDPDestBox::getMRL( const QString& mux, const int ttl, const bool sap,$/;"	f	class:UDPDestBox
 getMRL	dialogs/open.cpp	/^QString OpenDialog::getMRL( bool b_all )$/;"	f	class:OpenDialog
+getMRL	remoteControlServer.cpp	/^const char* RCPlayListModel::getMRL(const char* name) {$/;"	f	class:RCPlayListModel
 getManager	extensions_manager.hpp	/^    extensions_manager_t* getManager()$/;"	f	class:ExtensionsManager
 getMedia	components/playlist/ml_item.cpp	/^ml_media_t* MLItem::getMedia() const$/;"	f	class:MLItem
 getMeta	components/playlist/vlc_model.cpp	/^QString VLCModel::getMeta( const QModelIndex & index, int meta )$/;"	f	class:VLCModel
@@ -3151,6 +3141,7 @@ getMux	components/sout/profile_selector.hpp	/^    QString getMux() { return mux;
 getName	components/preferences_widgets.hpp	/^    const char * getName() const { return  p_item->psz_name; }$/;"	f	class:ConfigControl
 getName	input_manager.hpp	/^    QString getName() { return oldName; }$/;"	f	class:InputManager
 getName	remoteControlServer.cpp	/^const char* AudioCommand::getName() {$/;"	f	class:AudioCommand
+getName	remoteControlServer.cpp	/^const char* BasicCommand::getName() {$/;"	f	class:BasicCommand
 getName	remoteControlServer.cpp	/^const char* PlayListCommand::getName() {$/;"	f	class:PlayListCommand
 getObject	remoteControlServer.cpp	/^int RCUtil::getObject(vlc_object_t* object,const char* psz_variable,vlc_value_t& val,vlc_value_t& text,int& i_value,int option){$/;"	f	class:RCUtil
 getOptions	dialogs/open.cpp	/^QString OpenDialog::getOptions()$/;"	f	class:OpenDialog
@@ -3161,7 +3152,8 @@ getParentPosInLayout	dialogs/toolbar.cpp	/^inline int DroppingController::getPar
 getPlayExitState	input_manager.cpp	/^bool MainInputManager::getPlayExitState()$/;"	f	class:MainInputManager
 getPlayListItem	remoteControlServer.cpp	/^playlist_item_t* PlayListCommand::getPlayListItem(playlist_t *p_playlist,int index) {$/;"	f	class:PlayListCommand
 getPoints	adapters/seekpoints.cpp	/^QList<SeekPoint> const SeekPoints::getPoints()$/;"	f	class:SeekPoints
-getSettings	qt4.hpp	122;"	d
+getRatio	remoteControlServer.cpp	/^const char* BasicCommand::getRatio(int width,int height) {$/;"	f	class:BasicCommand
+getSettings	qt4.hpp	123;"	d
 getStaticMetaObject	actions_manager.moc.cpp	/^const QMetaObject &ActionsManager::getStaticMetaObject() { return staticMetaObject; }$/;"	f	class:ActionsManager
 getStaticMetaObject	adapters/seekpoints.moc.cpp	/^const QMetaObject &SeekPoints::getStaticMetaObject() { return staticMetaObject; }$/;"	f	class:SeekPoints
 getStaticMetaObject	components/complete_preferences.moc.cpp	/^const QMetaObject &AdvPrefsPanel::getStaticMetaObject() { return staticMetaObject; }$/;"	f	class:AdvPrefsPanel
@@ -3308,6 +3300,8 @@ getStaticMetaObject	variables.moc.cpp	/^const QMetaObject &QVLCVariable::getStat
 getSysTray	main_interface.hpp	/^    QSystemTrayIcon *getSysTray() { return sysTray; }$/;"	f	class:MainInterface
 getSysTrayMenu	main_interface.hpp	/^    QMenu *getSysTrayMenu() { return systrayMenu; }$/;"	f	class:MainInterface
 getTotalPlayList	remoteControlServer.cpp	/^char* PlayListCommand::getTotalPlayList(playlist_item_t *p_item, int i_level,char* result)$/;"	f	class:PlayListCommand
+getTotalPlayListDetail	remoteControlServer.cpp	/^char* PlayListCommand::getTotalPlayListDetail(playlist_item_t *p_item, int i_level,char* result,int field){$/;"	f	class:PlayListCommand
+getTotalPlayListIdList	remoteControlServer.cpp	/^char* PlayListCommand::getTotalPlayListIdList(playlist_item_t *p_item, int i_level,char* result)$/;"	f	class:PlayListCommand
 getTotalTrackList	remoteControlServer.cpp	/^const char* RCUtil::getTotalTrackList(const vlc_value_t&val,const vlc_value_t& text,char* result)$/;"	f	class:RCUtil
 getTrack	remoteControlServer.cpp	/^const char* RCUtil::getTrack(const char* psz_cmd)$/;"	f	class:RCUtil
 getTrackTextValueByIndex	remoteControlServer.cpp	/^const char* RCUtil::getTrackTextValueByIndex(const vlc_value_t& val,const vlc_value_t& text,int index)$/;"	f	class:RCUtil
@@ -3466,7 +3460,7 @@ hboxLayout1	ui/streampanel.h	/^    QHBoxLayout *hboxLayout1;$/;"	m	class:Ui_Broa
 header	dialogs/messages.cpp	/^    QString header;$/;"	m	class:MsgEvent	file:
 headerData	components/playlist/ml_model.cpp	/^QVariant MLModel::headerData( int section, Qt::Orientation orientation,$/;"	f	class:MLModel
 headerData	components/playlist/playlist_model.cpp	/^QVariant PLModel::headerData( int section, Qt::Orientation orientation,$/;"	f	class:PLModel
-headphoneB	components/simple_preferences.hpp	/^       headphoneB,$/;"	e	enum:__anon12
+headphoneB	components/simple_preferences.hpp	/^       headphoneB,$/;"	e	enum:__anon21
 headphoneEffect	ui/sprefs_audio.h	/^    QCheckBox *headphoneEffect;$/;"	m	class:Ui_SPrefsAudio
 heightBox	ui/profiles.h	/^    QLineEdit *heightBox;$/;"	m	class:Ui_Profiles
 heightLabel	ui/profiles.h	/^    QLabel *heightLabel;$/;"	m	class:Ui_Profiles
@@ -3565,6 +3559,7 @@ i_popup_item	components/playlist/playlist_model.hpp	/^    int i_popup_item, i_po
 i_popup_parent	components/playlist/playlist_model.hpp	/^    int i_popup_item, i_popup_parent;$/;"	m	class:PLModel
 i_row	components/epg/EPGItem.hpp	/^    unsigned int i_row;$/;"	m	class:EPGItem
 i_screenHeight	qt4.hpp	/^    int  i_screenHeight;     \/* Detection of Small screens *\/$/;"	m	struct:intf_sys_t
+i_screenWidth	qt4.hpp	/^    int  i_screenWidth;     \/* Detection of Small screens *\/$/;"	m	struct:intf_sys_t
 i_screennumber	components/controller.hpp	/^    int i_screennumber;$/;"	m	class:FullscreenControllerWidget
 i_slow_hide_timeout	components/controller.hpp	/^    int  i_slow_hide_timeout;$/;"	m	class:FullscreenControllerWidget
 i_subcat_id	components/complete_preferences.hpp	/^    int i_subcat_id;$/;"	m	class:PrefsItemData
@@ -3602,6 +3597,7 @@ infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
 init	components/playlist/playlist_item.cpp	/^void PLItem::init( playlist_item_t *_playlist_item, PLItem *parent )$/;"	f	class:PLItem
 init	dialogs/ml_configuration.cpp	/^void MLConfDialog::init()$/;"	f	class:MLConfDialog
 init	util/pictureflow.cpp	/^void PictureFlowSoftwareRenderer::init()$/;"	f	class:PictureFlowSoftwareRenderer
+initCallback	remoteControlServer.cpp	/^void RCPlayListModel::initCallback(intf_thread_t* p_intf) {$/;"	f	class:RCPlayListModel
 initComboBoxItems	components/extended_panels.cpp	/^void ExtVideo::initComboBoxItems( QObject *widget )$/;"	f	class:ExtVideo
 initSubsDuration	components/extended_panels.cpp	/^void SyncControls::initSubsDuration()$/;"	f	class:SyncControls
 initSystray	main_interface.cpp	/^inline void MainInterface::initSystray()$/;"	f	class:MainInterface
@@ -3619,7 +3615,7 @@ inputIsTrickPlayable	components/controller.moc.cpp	/^void AbstractController::in
 inputItem	components/playlist/playlist_item.hpp	/^    input_item_t *inputItem() const { return p_input; }$/;"	f	class:PLItem
 inputItemUpdate	components/playlist/selector.cpp	/^void PLSelector::inputItemUpdate( input_item_t *arg )$/;"	f	class:PLSelector
 inputItems	components/playlist/playlist_model.cpp	/^QList<input_item_t*> PlMimeData::inputItems() const$/;"	f	class:PlMimeData
-inputLE	components/simple_preferences.hpp	/^enum { inputLE, cachingCoB };$/;"	e	enum:__anon13
+inputLE	components/simple_preferences.hpp	/^enum { inputLE, cachingCoB };$/;"	e	enum:__anon22
 inputLabel	ui/vlm.h	/^    QLabel *inputLabel;$/;"	m	class:Ui_Vlm
 inputLedit	ui/vlm.h	/^    QLineEdit *inputLedit;$/;"	m	class:Ui_Vlm
 inputLength	util/input_slider.hpp	/^    int inputLength;                           \/* InputLength that can change *\/$/;"	m	class:SeekSlider
@@ -3669,6 +3665,7 @@ isActive	recents.hpp	/^    bool          isActive;$/;"	m	class:RecentsMRL
 isAdvanced	components/preferences_widgets.hpp	/^    bool isAdvanced() const { return p_item->b_advanced; }$/;"	f	class:ConfigControl
 isAlive	dialogs_provider.hpp	/^    static bool isAlive()$/;"	f	class:DialogsProvider
 isAnimationRunning	util/input_slider.cpp	/^bool SeekSlider::isAnimationRunning() const$/;"	f	class:SeekSlider
+isAutoMatchScreen	remoteControlServer.hpp	/^    int isAutoMatchScreen;$/;"	m	struct:RC_CONFIG
 isCurrent	components/playlist/playlist_model.cpp	/^bool PLModel::isCurrent( const QModelIndex &index ) const$/;"	f	class:PLModel
 isDebug	rclog.cpp	/^int logger::isDebug() {$/;"	f	class:logger
 isDebug	remoteControlServer.hpp	/^    int isDebug;$/;"	m	struct:RC_CONFIG
@@ -3682,13 +3679,15 @@ isJumping	util/input_slider.hpp	/^    bool isJumping;              \/* if we req
 isLoaded	extensions_manager.hpp	/^    inline bool isLoaded() { return p_extensions_manager != NULL; }$/;"	f	class:ExtensionsManager
 isMainInputInfo	dialogs/mediainfo.hpp	/^    bool isMainInputInfo;$/;"	m	class:MediaInfoDialog
 isNameGenuine	dialogs/vlm.cpp	/^bool VLMDialog::isNameGenuine( const QString& name )$/;"	f	class:VLMDialog
+isNeedCheckRatio	remoteControlServer.cpp	/^bool RCInvoker::isNeedCheckRatio(RCAction& action) {$/;"	f	class:RCInvoker
 isNumber	remoteControlServer.cpp	/^bool isNumber(const char* s) {$/;"	f
 isParent	components/playlist/playlist_model.cpp	/^bool PLModel::isParent( const QModelIndex &index, const QModelIndex &current ) const$/;"	f	class:PLModel
 isPlDocked	main_interface.hpp	/^    bool isPlDocked() { return ( b_plDocked != false ); }$/;"	f	class:MainInterface
 isPlaying	util/customwidgets.hpp	/^    inline bool isPlaying()$/;"	f	class:AnimatedIcon
+isServerAutoStart	remoteControlServer.hpp	/^    int isServerAutoStart;$/;"	m	struct:RC_CONFIG
 isSliding	util/input_slider.hpp	/^    bool isSliding;        \/* Whether we are currently sliding by user action *\/$/;"	m	class:SeekSlider
 isSliding	util/input_slider.hpp	/^    bool isSliding; \/* Whether we are currently sliding by user action *\/$/;"	m	class:SoundSlider
-isSocketOpen	remoteControlServer.cpp	/^bool RCServer::isSocketOpen()$/;"	f	class:RCServer
+isSocketOpen	remoteControlServer.cpp	/^bool RCServer::isSocketOpen() {$/;"	f	class:RCServer
 isUnloading	extensions_manager.hpp	/^    inline bool isUnloading() { return b_unloading; }$/;"	f	class:ExtensionsManager
 isWideFSC	components/controller.hpp	/^    bool isWideFSC;$/;"	m	class:FullscreenControllerWidget
 isdebug	rclog.h	/^    int isdebug;$/;"	m	class:logger
@@ -3706,7 +3705,7 @@ jackChannels	components/open_panels.hpp	/^    QSpinBox *jackChannels;$/;"	m	clas
 jackConnect	components/open_panels.hpp	/^    QCheckBox *jackPace, *jackConnect;$/;"	m	class:CaptureOpenPanel
 jackPace	components/open_panels.hpp	/^    QCheckBox *jackPace, *jackConnect;$/;"	m	class:CaptureOpenPanel
 jackPortsSelected	components/open_panels.hpp	/^    QLineEdit *jackPortsSelected;$/;"	m	class:CaptureOpenPanel
-join	remoteControlServer.cpp	/^void Thread::join() {$/;"	f	class:Thread
+join	thpool.c	/^void Thread::join() {$/;"	f	class:Thread
 jumpBwd	input_manager.cpp	/^void InputManager::jumpBwd()$/;"	f	class:InputManager
 jumpFwd	input_manager.cpp	/^void InputManager::jumpFwd()$/;"	f	class:InputManager
 jumpTo	adapters/seekpoints.cpp	/^bool SeekPoints::jumpTo( int i_chapterindex )$/;"	f	class:SeekPoints
@@ -3912,7 +3911,7 @@ longClicked	util/customwidgets.moc.cpp	/^void QToolButtonExt::longClicked()$/;"	
 loopBCast	ui/vlm.h	/^    QCheckBox *loopBCast;$/;"	m	class:Ui_Vlm
 loopButton	dialogs/vlm.hpp	/^    QToolButton *loopButton, *playButton;$/;"	m	class:VLMBroadcast
 loopFilterBox	ui/sprefs_input.h	/^    QComboBox *loopFilterBox;$/;"	m	class:Ui_SPrefsInputAndCodecs
-loopFunc	remoteControlServer.cpp	/^void *Thread::loopFunc(void* arg) {$/;"	f	class:Thread
+loopFunc	thpool.c	/^void *Thread::loopFunc(void* arg) {$/;"	f	class:Thread
 loopRepeatLoopStatus	input_manager.cpp	/^void MainInputManager::loopRepeatLoopStatus()$/;"	f	class:MainInputManager
 mBox	util/timetooltip.hpp	/^    QRect mBox;$/;"	m	class:TimeTooltip
 mClickMessage	util/searchlineedit.hpp	/^    QString mClickMessage;$/;"	m	class:ClickLineEdit
@@ -3935,46 +3934,52 @@ mTimeTooltip	util/input_slider.hpp	/^    TimeTooltip *mTimeTooltip;$/;"	m	class:
 mTimer	util/customwidgets.hpp	/^    QTimer mTimer;$/;"	m	class:AnimatedIcon
 mType	util/buttons/BrowseButton.hpp	/^    BrowseButton::Type mType;$/;"	m	class:BrowseButton
 m_RootKey	util/registry.hpp	/^    HKEY m_RootKey;$/;"	m	class:QVLCRegistry
-m_actions	remoteControlServer.hpp	/^        std::queue<RCAction> m_actions;$/;"	m	class:RCInvoker
-m_audioCommand	remoteControlServer.hpp	/^        RCCommandImpl* m_audioCommand;$/;"	m	class:RCHandler
+m_actions	remoteControlServer.hpp	/^        std::stack<RCAction> m_actions;$/;"	m	class:RCInvoker
 m_baseTime	components/epg/EPGView.hpp	/^    QDateTime       m_baseTime;$/;"	m	class:EPGView
 m_boundingRect	components/epg/EPGItem.hpp	/^    QRectF      m_boundingRect;$/;"	m	class:EPGItem
+m_callback	remoteControlServer.hpp	/^        BasicCallbackImpl* m_callback;$/;"	m	class:BasicCommand
+m_callback	remoteControlServer.hpp	/^        std::auto_ptr<BasicCallbackImpl> m_callback;$/;"	m	class:RCPlayListModel
 m_channelsWidget	components/epg/EPGWidget.hpp	/^    EPGChannels *m_channelsWidget;$/;"	m	class:EPGWidget
 m_commands	remoteControlServer.hpp	/^        std::map<std::string,RCCommandImpl*> m_commands;$/;"	m	class:RCInvoker
 m_current	components/epg/EPGItem.hpp	/^    bool        m_current;$/;"	m	class:EPGItem
 m_description	components/epg/EPGItem.hpp	/^    QString     m_description;$/;"	m	class:EPGItem
 m_discType	components/open_panels.hpp	/^    DiscType m_discType;$/;"	m	class:DiscOpenPanel
 m_doc	remoteControlServer.hpp	/^        RCInvokerImpl* m_doc;$/;"	m	class:AudioCommand
+m_doc	remoteControlServer.hpp	/^        RCInvokerImpl* m_doc;$/;"	m	class:BasicCommand
 m_doc	remoteControlServer.hpp	/^        RCInvokerImpl* m_doc;$/;"	m	class:PlayListCommand
 m_duration	components/epg/EPGItem.hpp	/^    int         m_duration;$/;"	m	class:EPGItem
 m_duration	components/epg/EPGRuler.hpp	/^    int m_duration;$/;"	m	class:EPGRuler
 m_duration	components/epg/EPGView.hpp	/^    int             m_duration;$/;"	m	class:EPGView
 m_epgView	components/epg/EPGChannels.hpp	/^    EPGView *m_epgView;$/;"	m	class:EPGChannels
 m_epgView	components/epg/EPGWidget.hpp	/^    EPGView* m_epgView;$/;"	m	class:EPGWidget
-m_handlerImpl	remoteControlServer.hpp	/^        RCHandlerImpl* m_handlerImpl;$/;"	m	class:RCServer
 m_instance	util/singleton.hpp	/^    static T*      m_instance;$/;"	m	class:Singleton
 m_instance	util/singleton.hpp	/^T*  Singleton<T>::m_instance = NULL;$/;"	m	class:Singleton
+m_intf	remoteControlServer.hpp	/^        intf_thread_t* m_intf;$/;"	m	class:RCServer
+m_invoker	remoteControlServer.hpp	/^        std::auto_ptr<RCInvokerImpl> m_invoker;$/;"	m	class:RCHandler
 m_model	util/qmenuview.hpp	/^    QAbstractItemModel *m_model;$/;"	m	class:QMenuView
+m_mutex	rclog.h	/^    pthread_mutex_t m_mutex;$/;"	m	class:logger
+m_mutex	remoteControlServer.hpp	/^        pthread_mutex_t m_mutex;$/;"	m	class:RCPlayListModel
 m_name	components/epg/EPGItem.hpp	/^    QString     m_name;$/;"	m	class:EPGItem
 m_netSocket	remoteControlServer.hpp	/^        SOCKET m_netSocket;$/;"	m	class:RCServer
 m_offset	components/epg/EPGChannels.hpp	/^    int m_offset;$/;"	m	class:EPGChannels
 m_offset	components/epg/EPGRuler.hpp	/^    int m_offset;$/;"	m	class:EPGRuler
+m_pInput	remoteControlServer.hpp	/^        input_thread_t* m_pInput;$/;"	m	class:RCPlayListModel
 m_pIntf	remoteControlServer.hpp	/^        intf_thread_t* m_pIntf;$/;"	m	class:RCHandler
 m_pIntf	remoteControlServer.hpp	/^        intf_thread_t* m_pIntf;$/;"	m	class:RCInvoker
+m_pIntf	remoteControlServer.hpp	/^        intf_thread_t* m_pIntf;$/;"	m	class:RCStateCallback
 m_pathBuffer	util/registry.hpp	/^    char m_pathBuffer[256];$/;"	m	class:QVLCRegistry
-m_playListCommand	remoteControlServer.hpp	/^        RCCommandImpl* m_playListCommand;$/;"	m	class:RCHandler
 m_port	remoteControlServer.hpp	/^        int m_port;$/;"	m	class:RCServer
-m_ret	remoteControlServer.hpp	/^        int m_ret;$/;"	m	class:Thread
+m_ret	thpool.h	/^        int m_ret;$/;"	m	class:Thread
 m_rulerWidget	components/epg/EPGWidget.hpp	/^    EPGRuler* m_rulerWidget;$/;"	m	class:EPGWidget
-m_runnable	remoteControlServer.hpp	/^        Runnable* m_runnable;    $/;"	m	class:Thread
+m_runnable	thpool.h	/^        Runnable* m_runnable;    $/;"	m	class:Thread
 m_scale	components/epg/EPGRuler.hpp	/^    qreal m_scale;$/;"	m	class:EPGRuler
 m_scaleFactor	components/epg/EPGView.hpp	/^    int             m_scaleFactor;$/;"	m	class:EPGView
 m_shortDescription	components/epg/EPGItem.hpp	/^    QString     m_shortDescription;$/;"	m	class:EPGItem
 m_start	components/epg/EPGItem.hpp	/^    QDateTime   m_start;$/;"	m	class:EPGItem
 m_startTime	components/epg/EPGRuler.hpp	/^    QDateTime m_startTime;$/;"	m	class:EPGRuler
 m_startTime	components/epg/EPGView.hpp	/^    QDateTime       m_startTime;$/;"	m	class:EPGView
-m_states	remoteControlServer.hpp	/^        std::queue<std::string> m_states;$/;"	m	class:RCInvoker
-m_tid	remoteControlServer.hpp	/^        pthread_t m_tid;$/;"	m	class:Thread
+m_states	remoteControlServer.hpp	/^        std::stack<std::string> m_states;$/;"	m	class:RCInvoker
+m_tid	thpool.h	/^        pthread_t m_tid;$/;"	m	class:Thread
 m_view	components/epg/EPGItem.hpp	/^    EPGView     *m_view;$/;"	m	class:EPGItem
 magnifyEnable	ui/video_effects.h	/^    QCheckBox *magnifyEnable;$/;"	m	class:Ui_ExtVideoWidget
 main	ini/main.c	/^int main()$/;"	f
@@ -4265,7 +4270,7 @@ nodist_libqt4_plugin_la_OBJECTS	Makefile	/^nodist_libqt4_plugin_la_OBJECTS = $(a
 nodist_libqt4_plugin_la_SOURCES	Makefile	/^nodist_libqt4_plugin_la_SOURCES = $(nodist_SOURCES_qt4)$/;"	m
 noinst_HEADERS	Makefile	/^noinst_HEADERS = \\$/;"	m
 normalRate	input_manager.cpp	/^void InputManager::normalRate()$/;"	f	class:InputManager
-normalizerChB	components/simple_preferences.hpp	/^       normalizerChB,$/;"	e	enum:__anon12
+normalizerChB	components/simple_preferences.hpp	/^       normalizerChB,$/;"	e	enum:__anon21
 notifyRepeatLoop	input_manager.cpp	/^void MainInputManager::notifyRepeatLoop()$/;"	f	class:MainInputManager
 nowplaying_text	components/info_panels.hpp	/^    QLineEdit *nowplaying_text;$/;"	m	class:MetaPanel
 number	components/simple_preferences.hpp	/^    int number;$/;"	m	class:SPrefsPanel
@@ -4287,6 +4292,8 @@ onAccept	components/open_panels.hpp	/^    virtual void onAccept() {}$/;"	f	class
 onFocus	components/open_panels.cpp	/^void DiscOpenPanel::onFocus()$/;"	f	class:DiscOpenPanel
 onFocus	components/open_panels.cpp	/^void NetOpenPanel::onFocus()$/;"	f	class:NetOpenPanel
 onFocus	components/open_panels.hpp	/^    virtual void onFocus() {}$/;"	f	class:OpenPanel
+onStart	remoteControlServer.cpp	/^int RCStateCallback::onStart( vlc_object_t *p_this, const char *, vlc_value_t, vlc_value_t newval, void *param) {$/;"	f	class:RCStateCallback
+onStop	remoteControlServer.cpp	/^int RCStateCallback::onStop( vlc_object_t *p_this, const char * psz_cmd, vlc_value_t, vlc_value_t newval, void *param) {$/;"	f	class:RCStateCallback
 onTimerTick	util/customwidgets.cpp	/^void AnimatedIcon::onTimerTick()$/;"	f	class:AnimatedIcon
 onUpdate	components/preferences_widgets.cpp	/^void ModuleListConfigControl::onUpdate()$/;"	f	class:ModuleListConfigControl
 openAPlaylist	dialogs_provider.cpp	/^void DialogsProvider::openAPlaylist()$/;"	f	class:DialogsProvider
@@ -4386,6 +4393,7 @@ p_intf	extensions_manager.hpp	/^    intf_thread_t *p_intf;$/;"	m	class:Extension
 p_intf	input_manager.hpp	/^    intf_thread_t           *p_intf;$/;"	m	class:MainInputManager
 p_intf	input_manager.hpp	/^    intf_thread_t  *p_intf;$/;"	m	class:InputManager
 p_intf	recents.hpp	/^    intf_thread_t *p_intf;$/;"	m	class:RecentsMRL
+p_intf	remoteControlServer.hpp	/^    intf_thread_t* p_intf;$/;"	m	struct:RCPlayListThreadPara
 p_intf	util/qvlcframe.hpp	/^    intf_thread_t *p_intf;$/;"	m	class:QVLCDialog
 p_intf	util/qvlcframe.hpp	/^    intf_thread_t *p_intf;$/;"	m	class:QVLCFrame
 p_intf	util/qvlcframe.hpp	/^    intf_thread_t *p_intf;$/;"	m	class:QVLCMW
@@ -4445,6 +4453,7 @@ parent	dialogs/vlm.hpp	/^    VLMDialog *parent;$/;"	m	class:VLMAWidget
 parentDestroyed	dialogs/extensions.cpp	/^void ExtensionDialog::parentDestroyed()$/;"	f	class:ExtensionDialog
 parentItem	components/playlist/ml_item.hpp	/^    MLItem *parentItem;$/;"	m	class:MLItem
 parentItem	components/playlist/playlist_item.hpp	/^    PLItem *parentItem;$/;"	m	class:PLItem
+parse	remoteControlServer.cpp	/^bool RCPlayListModel::parse(const char* cmd,vector<string>& result) {$/;"	f	class:RCPlayListModel
 parseAndCreate	components/controller.cpp	/^void AbstractController::parseAndCreate( const QString& config,$/;"	f	class:AbstractController
 parseFullMrl	remoteControlServer.cpp	/^const char* RCPlayListModel::parseFullMrl(const char* rcmrl){$/;"	f	class:RCPlayListModel
 parseList	remoteControlServer.cpp	/^int RCUtil::parseList(std::string src,std::vector<std::string>& dst) {$/;"	f	class:RCUtil
@@ -4489,6 +4498,8 @@ playListMove	remoteControlServer.cpp	/^int PlayListCommand::playListMove(playlis
 playListMove	remoteControlServer.cpp	/^int PlayListCommand::playListMove(playlist_t* p_playlist,int to,vector<string>& item) {$/;"	f	class:PlayListCommand
 playListRemove	remoteControlServer.cpp	/^int PlayListCommand::playListRemove(playlist_t* p_playlist,int index) {$/;"	f	class:PlayListCommand
 playListRemove	remoteControlServer.cpp	/^int PlayListCommand::playListRemove(playlist_t* p_playlist,vector<string>& indexes){$/;"	f	class:PlayListCommand
+playListRemoveAll	remoteControlServer.cpp	/^int PlayListCommand::playListRemoveAll(playlist_t* p_playlist){$/;"	f	class:PlayListCommand
+playListTop	remoteControlServer.cpp	/^int PlayListCommand::playListTop(playlist_t* p_playlist,int from) {$/;"	f	class:PlayListCommand
 playMRL	dialogs_provider.cpp	/^void DialogsProvider::playMRL( const QString &mrl )$/;"	f	class:DialogsProvider
 playPauseBox	ui/sprefs_interface.h	/^    QCheckBox *playPauseBox;$/;"	m	class:Ui_SPrefsInterface
 playPauseButton	ui/streampanel.h	/^    QPushButton *playPauseButton;$/;"	m	class:Ui_BroadcastPanel
@@ -4519,6 +4530,8 @@ podcastsParentId	components/playlist/selector.hpp	/^    int               podcas
 pointerChanged	variables.moc.cpp	/^void QVLCPointer::pointerChanged(vlc_object_t * _t1, void * _t2)$/;"	f	class:QVLCPointer
 pointerChanged	variables.moc.cpp	/^void QVLCPointer::pointerChanged(vlc_object_t * _t1, void * _t2, void * _t3)$/;"	f	class:QVLCPointer
 pointsList	adapters/seekpoints.hpp	/^    QList<SeekPoint> pointsList;$/;"	m	class:SeekPoints
+popAction	remoteControlServer.cpp	/^void RCInvoker::popAction() {$/;"	f	class:RCInvoker
+popState	remoteControlServer.cpp	/^void RCInvoker::popState() {$/;"	f	class:RCInvoker
 popup	components/playlist/ml_model.cpp	/^bool MLModel::popup( const QModelIndex & index, const QPoint &point, const QModelIndexList &list )$/;"	f	class:MLModel
 popup	components/playlist/playlist_model.cpp	/^bool PLModel::popup( const QModelIndex & index, const QPoint &point, const QModelIndexList &list )$/;"	f	class:PLModel
 popupAddNode	components/playlist/playlist_model.cpp	/^void PLModel::popupAddNode()$/;"	f	class:PLModel
@@ -4585,19 +4598,19 @@ psz_cddadiscpath	components/open_panels.hpp	/^    char *psz_dvddiscpath, *psz_vc
 psz_cmd	remoteControlServer.hpp	/^    std::string psz_cmd;$/;"	m	struct:RCAction
 psz_column_meta	components/playlist/sorting.h	/^static inline char * psz_column_meta( input_item_t *p_item, uint32_t i_column )$/;"	f
 psz_column_title	components/playlist/sorting.h	/^static inline const char * psz_column_title( uint32_t i_column )$/;"	f
-psz_desc	components/extended_panels.cpp	/^    const char *psz_desc;$/;"	m	struct:__anon3	file:
-psz_descs	components/extended_panels.cpp	/^    const char *psz_descs;$/;"	m	struct:__anon2	file:
+psz_desc	components/extended_panels.cpp	/^    const char *psz_desc;$/;"	m	struct:__anon12	file:
+psz_descs	components/extended_panels.cpp	/^    const char *psz_descs;$/;"	m	struct:__anon11	file:
 psz_devModule	components/open_panels.cpp	/^static const char psz_devModule[][8] = { "v4l2", "pvr", "dtv",$/;"	v	file:
 psz_dvddiscpath	components/open_panels.hpp	/^    char *psz_dvddiscpath, *psz_vcddiscpath, *psz_cddadiscpath;$/;"	m	class:DiscOpenPanel
 psz_length	components/interface_widgets.hpp	/^    char psz_length[MSTRTIME_MAX_SIZE];$/;"	m	class:TimeLabel
 psz_length	util/input_slider.hpp	/^    char psz_length[MSTRTIME_MAX_SIZE];               \/* Used for the ToolTip *\/$/;"	m	class:SeekSlider
 psz_module	components/preferences_widgets.hpp	/^    char *psz_module;$/;"	m	struct:checkBoxListItem
 psz_name	components/complete_preferences.hpp	/^    char *psz_name;$/;"	m	class:PrefsItemData
-psz_name	components/extended_panels.cpp	/^    const char *psz_name;$/;"	m	struct:__anon2	file:
-psz_name	components/extended_panels.cpp	/^    const char *psz_name;$/;"	m	struct:__anon3	file:
+psz_name	components/extended_panels.cpp	/^    const char *psz_name;$/;"	m	struct:__anon11	file:
+psz_name	components/extended_panels.cpp	/^    const char *psz_name;$/;"	m	struct:__anon12	file:
 psz_string	remoteControlServer.hpp	/^    std::string         psz_string;$/;"	m	struct:rc_value_t
 psz_time	components/interface_widgets.hpp	/^    char psz_time[MSTRTIME_MAX_SIZE];$/;"	m	class:TimeLabel
-psz_units	components/extended_panels.cpp	/^    const char *psz_units;$/;"	m	struct:__anon2	file:
+psz_units	components/extended_panels.cpp	/^    const char *psz_units;$/;"	m	struct:__anon11	file:
 psz_var	menus.hpp	/^    char *psz_var;$/;"	m	class:MenuItemData
 psz_vcddiscpath	components/open_panels.hpp	/^    char *psz_dvddiscpath, *psz_vcddiscpath, *psz_cddadiscpath;$/;"	m	class:DiscOpenPanel
 publisher_text	components/info_panels.hpp	/^    QLineEdit *publisher_text;$/;"	m	class:MetaPanel
@@ -4614,14 +4627,14 @@ pvrNormBox	components/open_panels.hpp	/^    QComboBox *v4l2StdBox, *pvrNormBox;$
 pvrRadioDevice	components/open_panels.hpp	/^    QLineEdit *pvrDevice, *pvrRadioDevice;$/;"	m	class:CaptureOpenPanel
 qCleanupResources_vlc	resources.cpp	/^int QT_MANGLE_NAMESPACE(qCleanupResources_vlc)()$/;"	f
 qInitResources_vlc	resources.cpp	/^int QT_MANGLE_NAMESPACE(qInitResources_vlc)()$/;"	f
-qfu	qt4.hpp	88;"	d
+qfu	qt4.hpp	89;"	d
 qitem	components/playlist/selector.hpp	/^    QTreeWidgetItem*     qitem;$/;"	m	class:PLSelItem
 qs_filter	components/simple_preferences.hpp	/^    QStringList qs_filter;$/;"	m	class:SPrefsPanel
-qt	util/customwidgets.cpp	/^    int      qt;$/;"	m	struct:__anon29	file:
+qt	util/customwidgets.cpp	/^    int      qt;$/;"	m	struct:__anon3	file:
 qt4	ui/sprefs_interface.h	/^    QRadioButton *qt4;$/;"	m	class:Ui_SPrefsInterface
 qtEventToVLCKey	util/customwidgets.cpp	/^int qtEventToVLCKey( QKeyEvent *e )$/;"	f
 qtKeyModifiersToVLC	util/customwidgets.cpp	/^int qtKeyModifiersToVLC( QInputEvent* e )$/;"	f
-qtRB	components/simple_preferences.hpp	/^enum { skinRB, qtRB, styleCB };$/;"	e	enum:__anon14
+qtRB	components/simple_preferences.hpp	/^enum { skinRB, qtRB, styleCB };$/;"	e	enum:__anon23
 qtWheelEventToVLCKey	util/customwidgets.cpp	/^int qtWheelEventToVLCKey( QWheelEvent *e )$/;"	f
 qt_meta_data_AboutDialog	dialogs/help.moc.cpp	/^static const uint qt_meta_data_AboutDialog[] = {$/;"	v	file:
 qt_meta_data_AbstractController	components/controller.moc.cpp	/^static const uint qt_meta_data_AbstractController[] = {$/;"	v	file:
@@ -5341,9 +5354,8 @@ qt_static_metacall	util/timetooltip.moc.cpp	/^void TimeTooltip::qt_static_metaca
 qt_static_metacall	variables.moc.cpp	/^void QVLCInteger::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:QVLCInteger
 qt_static_metacall	variables.moc.cpp	/^void QVLCPointer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:QVLCPointer
 qt_static_metacall	variables.moc.cpp	/^void QVLCVariable::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:QVLCVariable
-qtr	qt4.hpp	89;"	d
-qtu	qt4.hpp	90;"	d
-query_id	remoteControlServer.hpp	/^    int		query_id;$/;"	m	struct:_rc_para
+qtr	qt4.hpp	90;"	d
+qtu	qt4.hpp	91;"	d
 question	dialogs/external.hpp	/^    QVLCPointer question;$/;"	m	class:DialogHandler
 quit	dialogs_provider.cpp	/^void DialogsProvider::quit()$/;"	f	class:DialogsProvider
 quitSignal	util/qvlcapp.moc.cpp	/^void QVLCApp::quitSignal()$/;"	f	class:QVLCApp
@@ -5355,10 +5367,8 @@ rateChanged	input_manager.moc.cpp	/^void InputManager::rateChanged(float _t1)$/;
 rays	util/pictureflow.cpp	/^    QVector<PFreal> rays;$/;"	m	class:PictureFlowSoftwareRenderer	file:
 rc_debug_buf	rclog.cpp	/^char rc_debug_buf[RC_LOGGER_MAX_LEN];$/;"	v
 rc_log_buf	rclog.cpp	/^char rc_log_buf[RC_LOGGER_MAX_LEN];$/;"	v
-rc_para	remoteControlServer.hpp	/^} rc_para;$/;"	t	typeref:struct:_rc_para
 rc_value_t	remoteControlServer.hpp	/^    rc_value_t() {$/;"	f	struct:rc_value_t
 rc_value_t	remoteControlServer.hpp	/^struct rc_value_t$/;"	s
-readConfig	remoteControlServer.cpp	/^void RCHandler::readConfig(RC_CONFIG& config,const char* file)$/;"	f	class:RCHandler
 readConfig	remoteControlServer.cpp	/^void readConfig(RC_CONFIG& config,const char* file) {$/;"	f
 readSettings	util/qvlcframe.hpp	/^    void readSettings( QSettings *settings )$/;"	f	class:QVLCMW
 readSettings	util/qvlcframe.hpp	/^    void readSettings( QSettings *settings, QSize defSize)$/;"	f	class:QVLCMW
@@ -5399,6 +5409,9 @@ reloadPrefs	main_interface.cpp	/^void MainInterface::reloadPrefs()$/;"	f	class:M
 remove	components/playlist/ml_model.cpp	/^void MLModel::remove( MLItem *item )$/;"	f	class:MLModel
 remove	components/playlist/ml_model.cpp	/^void MLModel::remove( QModelIndex idx )$/;"	f	class:MLModel
 remove	dialogs/podcast_configuration.cpp	/^void PodcastConfigDialog::remove()$/;"	f	class:PodcastConfigDialog
+remove	remoteControlServer.cpp	/^int RCPlayListModel::remove(const char* name) {$/;"	f	class:RCPlayListModel
+removeCallback	remoteControlServer.cpp	/^void RCPlayListModel::removeCallback(input_thread_t* p_input) {$/;"	f	class:RCPlayListModel
+removeCallback	remoteControlServer.cpp	/^void RCPlayListModel::removeCallback(intf_thread_t* p_intf) {$/;"	f	class:RCPlayListModel
 removeChannel	components/epg/EPGChannels.cpp	/^void EPGChannels::removeChannel( QString channelName )$/;"	f	class:EPGChannels
 removeChild	components/playlist/playlist_item.cpp	/^void PLItem::removeChild( PLItem *item )$/;"	f	class:PLItem
 removeChildren	components/playlist/playlist_item.cpp	/^void PLItem::removeChildren()$/;"	f	class:PLItem
@@ -5483,7 +5496,7 @@ rowCount	dialogs/plugins.cpp	/^int ExtensionListModel::rowCount( const QModelInd
 rowOfChild	components/playlist/ml_item.cpp	/^int MLItem::rowOfChild( MLItem *item ) const$/;"	f	class:MLItem
 rubberband	dialogs/toolbar.hpp	/^    QRubberBand *rubberband;$/;"	m	class:DroppingController
 run	remoteControlServer.cpp	/^void RCServer::run(void *p) {$/;"	f	class:RCServer
-run	remoteControlServer.cpp	/^void Thread::run(void* arg) {$/;"	f	class:Thread
+run	thpool.c	/^void Thread::run(void* arg) {$/;"	f	class:Thread
 sap	ui/sout.h	/^    QCheckBox *sap;$/;"	m	class:Ui_Sout
 sapGroup	ui/sout.h	/^    QLineEdit *sapGroup;$/;"	m	class:Ui_Sout
 sapGroupLabel	ui/sout.h	/^    QLabel *sapGroupLabel;$/;"	m	class:Ui_Sout
@@ -5590,6 +5603,7 @@ setIndex	components/playlist/playlist.cpp	/^void LocationBar::setIndex( const QM
 setInitValues	components/extended_panels.cpp	/^void Compressor::setInitValues()$/;"	f	class:Compressor
 setInitValues	components/extended_panels.cpp	/^void Spatializer::setInitValues()$/;"	f	class:Spatializer
 setInput	input_manager.cpp	/^void InputManager::setInput( input_thread_t *_p_input )$/;"	f	class:InputManager
+setInput	remoteControlServer.cpp	/^void RCPlayListModel::setInput(input_thread_t* p_input) {$/;"	f	class:RCPlayListModel
 setInterfaceFullScreen	main_interface.cpp	/^void MainInterface::setInterfaceFullScreen( bool fs )$/;"	f	class:MainInterface
 setMRL	components/sout/sout_widgets.cpp	/^void SoutInputBox::setMRL( const QString& mrl )$/;"	f	class:SoutInputBox
 setMaximumItemCount	util/qmenuview.hpp	/^    void setMaximumItemCount( int count ) { iMaxVisibleCount = count; }$/;"	f	class:QMenuView
@@ -5669,7 +5683,7 @@ setupUi	ui/streampanel.h	/^    void setupUi(QWidget *BroadcastPanel)$/;"	f	class
 setupUi	ui/update.h	/^    void setupUi(QWidget *updateWidget)$/;"	f	class:Ui_updateWidget
 setupUi	ui/video_effects.h	/^    void setupUi(QTabWidget *ExtVideoWidget)$/;"	f	class:Ui_ExtVideoWidget
 setupUi	ui/vlm.h	/^    void setupUi(QWidget *Vlm)$/;"	f	class:Ui_Vlm
-shadowCB	components/simple_preferences.hpp	/^enum { shadowCB, backgroundCB };$/;"	e	enum:__anon15
+shadowCB	components/simple_preferences.hpp	/^enum { shadowCB, backgroundCB };$/;"	e	enum:__anon24
 shadowCheck	ui/sprefs_subtitles.h	/^    QCheckBox *shadowCheck;$/;"	m	class:Ui_SPrefsSubtitles
 sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
 sharpenEnable	ui/video_effects.h	/^    QGroupBox *sharpenEnable;$/;"	m	class:Ui_ExtVideoWidget
@@ -5737,7 +5751,7 @@ sizeHint	util/input_slider.cpp	/^QSize SeekSlider::sizeHint() const$/;"	f	class:
 sizeHint	util/searchlineedit.hpp	/^    virtual QSize sizeHint() const { return QSize(150, 40); }$/;"	f	class:SearchLineEdit
 skinBrowse	ui/sprefs_interface.h	/^    QPushButton *skinBrowse;$/;"	m	class:Ui_SPrefsInterface
 skinFileLabel	ui/sprefs_interface.h	/^    QLabel *skinFileLabel;$/;"	m	class:Ui_SPrefsInterface
-skinRB	components/simple_preferences.hpp	/^enum { skinRB, qtRB, styleCB };$/;"	e	enum:__anon14
+skinRB	components/simple_preferences.hpp	/^enum { skinRB, qtRB, styleCB };$/;"	e	enum:__anon23
 skins	ui/sprefs_interface.h	/^    QRadioButton *skins;$/;"	m	class:Ui_SPrefsInterface
 skinsLabel	ui/sprefs_interface.h	/^    QLabel *skinsLabel;$/;"	m	class:Ui_SPrefsInterface
 skinsPage	ui/sprefs_interface.h	/^    QWidget *skinsPage;$/;"	m	class:Ui_SPrefsInterface
@@ -5793,9 +5807,9 @@ spacerItem4	ui/open_disk.h	/^    QSpacerItem *spacerItem4;$/;"	m	class:Ui_OpenDi
 spacing	util/pictureflow.cpp	/^    int spacing;$/;"	m	class:PictureFlowState	file:
 spatCtrl	components/extended_panels.hpp	/^    QSlider *spatCtrl[NUM_SP_CTRL];$/;"	m	class:Spatializer
 spat_controls	components/extended_panels.cpp	/^static const spat_controls_t spat_controls[] =$/;"	v	file:
-spat_controls_t	components/extended_panels.cpp	/^} spat_controls_t;$/;"	t	typeref:struct:__anon3	file:
+spat_controls_t	components/extended_panels.cpp	/^} spat_controls_t;$/;"	t	typeref:struct:__anon12	file:
 spdifBox	ui/sprefs_audio.h	/^    QCheckBox *spdifBox;$/;"	m	class:Ui_SPrefsAudio
-spdifChB	components/simple_preferences.hpp	/^       spdifChB,$/;"	e	enum:__anon12
+spdifChB	components/simple_preferences.hpp	/^       spdifChB,$/;"	e	enum:__anon21
 speedControl	components/interface_widgets.hpp	/^    SpeedControlWidget *speedControl;$/;"	m	class:SpeedLabel
 speedControlMenu	components/interface_widgets.hpp	/^    QMenu *speedControlMenu;$/;"	m	class:SpeedLabel
 speedSlider	components/interface_widgets.hpp	/^    QSlider* speedSlider;$/;"	m	class:SpeedControlWidget
@@ -5816,7 +5830,7 @@ stackCentralW	main_interface.hpp	/^    QStackedWidget      *stackCentralW;$/;"	m
 stackWidgetsSizes	main_interface.hpp	/^    QMap<QWidget *, QSize> stackWidgetsSizes;$/;"	m	class:MainInterface
 stackedWidget	ui/update.h	/^    QStackedWidget *stackedWidget;$/;"	m	class:Ui_updateWidget
 start	components/epg/EPGItem.cpp	/^const QDateTime& EPGItem::start() const$/;"	f	class:EPGItem
-start	remoteControlServer.cpp	/^void Thread::start() {$/;"	f	class:Thread
+start	thpool.c	/^void Thread::start() {$/;"	f	class:Thread
 start	util/pictureflow.cpp	/^void PictureFlowAnimator::start(int slide)$/;"	f	class:PictureFlowAnimator
 startDrag	components/playlist/views.cpp	/^void PlIconView::startDrag ( Qt::DropActions supportedActions )$/;"	f	class:PlIconView
 startDrag	components/playlist/views.cpp	/^void PlListView::startDrag ( Qt::DropActions supportedActions )$/;"	f	class:PlListView
@@ -6134,7 +6148,7 @@ stream_bitrate_stat	components/info_panels.hpp	/^    QTreeWidgetItem *stream_bit
 streaming	components/info_panels.hpp	/^    QTreeWidgetItem *streaming;$/;"	m	class:InputStatsPanel
 streamingDialog	dialogs_provider.cpp	/^void DialogsProvider::streamingDialog( QWidget *parent,$/;"	f	class:DialogsProvider
 stuffBox	ui/streampanel.h	/^    QGroupBox *stuffBox;$/;"	m	class:Ui_BroadcastPanel
-styleCB	components/simple_preferences.hpp	/^enum { skinRB, qtRB, styleCB };$/;"	e	enum:__anon14
+styleCB	components/simple_preferences.hpp	/^enum { skinRB, qtRB, styleCB };$/;"	e	enum:__anon23
 styleStackedWidget	ui/sprefs_interface.h	/^    QStackedWidget *styleStackedWidget;$/;"	m	class:Ui_SPrefsInterface
 stylesCombo	ui/sprefs_interface.h	/^    QComboBox *stylesCombo;$/;"	m	class:Ui_SPrefsInterface
 stylesLabel	ui/sprefs_interface.h	/^    QLabel *stylesLabel;$/;"	m	class:Ui_SPrefsInterface
@@ -6212,6 +6226,7 @@ text	dialogs/messages.cpp	/^    QString text;$/;"	m	class:MsgEvent	file:
 textFromValue	util/customwidgets.cpp	/^QString QVLCDebugLevelSpinBox::textFromValue( int v ) const$/;"	f	class:QVLCDebugLevelSpinBox
 thanksEdit	ui/about.h	/^    QTextEdit *thanksEdit;$/;"	m	class:Ui_aboutWidget
 thread	qt4.hpp	/^    vlc_thread_t thread;$/;"	m	struct:intf_sys_t
+threadpool	thpool.h	/^typedef struct thpool_* threadpool;$/;"	t	typeref:struct:thpool_
 time	adapters/seekpoints.hpp	/^    int64_t time;$/;"	m	class:SeekPoint
 time	dialogs/vlm.hpp	/^    QDateTimeEdit *time, *date, *repeatTime;$/;"	m	class:VLMDialog
 timeA	input_manager.hpp	/^    mtime_t         timeA, timeB;$/;"	m	class:InputManager
@@ -6359,6 +6374,7 @@ updateFilterOptions	components/extended_panels.cpp	/^void ExtVideo::updateFilter
 updateFilters	components/extended_panels.cpp	/^void ExtVideo::updateFilters()$/;"	f	class:ExtVideo
 updateFullwidthGeometry	components/controller.cpp	/^void FullscreenControllerWidget::updateFullwidthGeometry( int number )$/;"	f	class:FullscreenControllerWidget
 updateInfos	dialogs/epg.cpp	/^void EpgDialog::updateInfos()$/;"	f	class:EpgDialog
+updateInput	remoteControlServer.cpp	/^void RCPlayListModel::updateInput(playlist_t* p_playlist) {$/;"	f	class:RCPlayListModel
 updateList	dialogs/plugins.cpp	/^void ExtensionListModel::updateList()$/;"	f	class:ExtensionListModel
 updateMRL	components/open_panels.cpp	/^void CaptureOpenPanel::updateMRL()$/;"	f	class:CaptureOpenPanel
 updateMRL	components/open_panels.cpp	/^void DiscOpenPanel::updateMRL()$/;"	f	class:DiscOpenPanel
@@ -6413,7 +6429,6 @@ vFrameLabel	ui/profiles.h	/^    QLabel *vFrameLabel;$/;"	m	class:Ui_Profiles
 vScaleBox	ui/profiles.h	/^    QComboBox *vScaleBox;$/;"	m	class:Ui_Profiles
 vScaleLabel	ui/profiles.h	/^    QLabel *vScaleLabel;$/;"	m	class:Ui_Profiles
 val	menus.hpp	/^    vlc_value_t val;$/;"	m	class:MenuItemData
-val	remoteControlServer.hpp	/^    char	val[MAX_SIZE];$/;"	m	struct:_rc_para
 validate	components/open_panels.cpp	/^QValidator::State UrlValidator::validate( QString& str, int& ) const$/;"	f	class:UrlValidator
 valueChanged	components/extended_panels.moc.cpp	/^void SyncWidget::valueChanged(double _t1)$/;"	f	class:SyncWidget
 valueChangedFilter	components/controller_widget.cpp	/^void SoundWidget::valueChangedFilter( int i_val )$/;"	f	class:SoundWidget
@@ -6472,8 +6487,8 @@ visuLabel	ui/sprefs_audio.h	/^    QLabel *visuLabel;$/;"	m	class:Ui_SPrefsAudio
 visualRect	components/playlist/views.cpp	/^QRect PicFlowView::visualRect(const QModelIndex & ) const$/;"	f	class:PicFlowView
 visualRegionForSelection	components/playlist/views.cpp	/^QRegion PicFlowView::visualRegionForSelection(const QItemSelection &) const$/;"	f	class:PicFlowView
 visualisation	ui/sprefs_audio.h	/^    QComboBox *visualisation;$/;"	m	class:Ui_SPrefsAudio
-vlc	util/customwidgets.cpp	/^    uint32_t vlc;$/;"	m	struct:__anon29	file:
-vlc_qt_key_t	util/customwidgets.cpp	/^} vlc_qt_key_t;$/;"	t	typeref:struct:__anon29	file:
+vlc	util/customwidgets.cpp	/^    uint32_t vlc;$/;"	m	struct:__anon3	file:
+vlc_qt_key_t	util/customwidgets.cpp	/^} vlc_qt_key_t;$/;"	t	typeref:struct:__anon3	file:
 vlcdatadir	Makefile	/^vlcdatadir = ${datadir}\/${PKGDIR}$/;"	m
 vlclibdir	Makefile	/^vlclibdir = ${libdir}\/${PKGDIR}$/;"	m
 vlmDialog	dialogs_provider.cpp	/^void DialogsProvider::vlmDialog()$/;"	f	class:DialogsProvider
@@ -6485,7 +6500,7 @@ vlmListItem	ui/vlm.h	/^    QListWidget *vlmListItem;$/;"	m	class:Ui_Vlm
 vlmWrapper	dialogs/vlm.hpp	/^    VLMWrapper *vlmWrapper;$/;"	m	class:VLMDialog
 vlost_frames_stat	components/info_panels.hpp	/^    QTreeWidgetItem *vlost_frames_stat;$/;"	m	class:InputStatsPanel
 vodBox	ui/vlm.h	/^    QGroupBox *vodBox;$/;"	m	class:Ui_Vlm
-volLW	components/simple_preferences.hpp	/^       volLW,$/;"	e	enum:__anon12
+volLW	components/simple_preferences.hpp	/^       volLW,$/;"	e	enum:__anon21
 volMuteLabel	components/controller_widget.hpp	/^    QLabel              *volMuteLabel;$/;"	m	class:SoundWidget
 volNormBox	ui/sprefs_audio.h	/^    QCheckBox *volNormBox;$/;"	m	class:Ui_SPrefsAudio
 volNormSpin	ui/sprefs_audio.h	/^    QDoubleSpinBox *volNormSpin;$/;"	m	class:Ui_SPrefsAudio

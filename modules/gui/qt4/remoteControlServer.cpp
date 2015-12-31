@@ -273,28 +273,39 @@ RCPlayListModel* RCPlayListModel::inst() {
 }
 const char* RCPlayListModel::add(const char* rcmrl) {
     pthread_mutex_lock(&m_mutex);
+    vector<string> augmented_info;
     RCInputMRL item;
-    const char* mrl=parseFullMrl(rcmrl);
-    const char* name=parseName(mrl);
-    std::map<std::string,RCInputMRL>::iterator iter=mMRLItem.find(name);
+    int result=parse(rcmrl,augmented_info);
+    if(result) {
+        item.id=augmented_info[0];
+        item.mrl=augmented_info[1];
+        item.name=augmented_info[2];
+        item.author=augmented_info[3];
+    }
+    else {
+        const char* mrl=parseFullMrl(rcmrl);
+        int len=mrl-rcmrl;
+        if(len>=2) {
+            char temp[MAX_SIZE];
+            memcpy(temp,rcmrl,len-1);
+            temp[len-1]='\0';
+            item.id=temp;
+        }
+        else
+            item.id="-1";
+        item.mrl=mrl;
+        item.name="-1";
+        item.author="-1";
+    }
+    const char* key=parseName(item.mrl.c_str());
+    std::map<std::string,RCInputMRL>::iterator iter=mMRLItem.find(key);
     if(iter!=mMRLItem.end())
         item.counter=iter->second.counter+1;
     else
         item.counter=1;
-    int len=mrl-rcmrl;
-    if(len>=2) {
-        char temp[MAX_SIZE];
-        memcpy(temp,rcmrl,len-1);
-        temp[len-1]='\0';
-        item.id=temp;
-    }
-    else
-        item.id="-1";
-    item.name=name;
-    item.mrl=mrl;
-    mMRLItem[item.name]=item;
+    mMRLItem[key]=item;
     pthread_mutex_unlock(&m_mutex);
-    return mrl;
+    return item.mrl.c_str();
 }
 int RCPlayListModel::remove(const char* name) {
     pthread_mutex_lock(&m_mutex);
@@ -528,11 +539,32 @@ const char* RCPlayListModel::parseName(const char* mrl) {
     }
     return pre?pre+1:mrl;
 }
+bool RCPlayListModel::parse(const char* cmd,vector<string>& result) {
+    string src=cmd;
+    int pre=0,cur;
+    int n=src.length();
+    for(int i=0;i<n;i++) {
+        if(src[i]!='`')
+            continue;
+        if(pre<n&&i-pre)
+            result.push_back(src.substr(pre,i-pre));
+        pre=i+1;
+    }
+    if(pre<n)
+        result.push_back(src.substr(pre,n-pre));
+    return result.size()==4;
+}
 const char* RCPlayListModel::getID(const char* name) {
     std::map<std::string,RCInputMRL>::iterator iter=mMRLItem.find(name);
     if(iter==mMRLItem.end())
         return NULL;
     return iter->second.id.c_str();
+}
+const char* RCPlayListModel::getName(const char* name) {
+    std::map<std::string,RCInputMRL>::iterator iter=mMRLItem.find(name);
+    if(iter==mMRLItem.end())
+        return NULL;
+    return iter->second.name.c_str();
 }
 const char* RCPlayListModel::getMRL(const char* name) {
     std::map<std::string,RCInputMRL>::iterator iter=mMRLItem.find(name);
@@ -1462,15 +1494,13 @@ int PlayListCommand::playListRemoveAll(playlist_t* p_playlist){
     return result;
 }
 int PlayListCommand::playListMove(playlist_t* p_playlist,int from,int to) {
-#define RCHANDLER_ITEM_NAME(playlist_item_t) (playlist_item_t->p_input->psz_name)
+    #define RCHANDLER_ITEM_NAME(playlist_item_t) (playlist_item_t->p_input->psz_name)
     if(!p_playlist||to<0||to>=p_playlist->items.i_size)
         return VLC_ENOOBJ;
-    PL_LOCK;
     int i=1;
     playlist_item_t* p_target=this->getPlayListItem(p_playlist,from);
     if(!p_target) {
         logger::inst()->log(TAG_DEBUG,"playListMove [%s]\n","failed to find target");
-        PL_UNLOCK;
         return VLC_ENOOBJ;
     }
     logger::inst()->log(TAG_DEBUG,"playListMove [target_input_uri:%s]\n",p_target->p_input->psz_uri);
@@ -1481,20 +1511,12 @@ int PlayListCommand::playListMove(playlist_t* p_playlist,int from,int to) {
             logger::inst()->log(TAG_DEBUG,"playListMove [%s]\n","target_parent not found");
         else
             logger::inst()->log(TAG_DEBUG,"playListMove [%s]\n","target_parent doesn't have children");
-        PL_UNLOCK;
         return VLC_ENOOBJ;
     }
     int new_pos=to==-1?p_parent->i_children:to;
     playlist_item_t* pp_items[1];
     pp_items[0]=p_target;
-    char* temp;
-    asprintf(&temp,"[%s] [parent:%s][parent.i_children:%d][count:%d] [new_pos:%d]","RCHandler playListMove",p_parent->p_input->psz_name,p_parent->i_children,i,new_pos);
-    logger::inst()->log(TAG_DEBUG,"%s\n",temp);
-    free(temp);
-    if(p_parent->i_children==-1)
-        logger::inst()->log(TAG_DEBUG,"%s\n","parent invalid.size==-1");
     playlist_TreeMoveMany( p_playlist, i, pp_items, p_parent, new_pos+1);
-    PL_UNLOCK;
     return VLC_SUCCESS;
 }
 int PlayListCommand::playListTop(playlist_t* p_playlist,int from) {
@@ -1503,9 +1525,16 @@ int PlayListCommand::playListTop(playlist_t* p_playlist,int from) {
     //already on top
     if(from==0||p_playlist->items.i_size==1)
         return VLC_SUCCESS;
-    int result=playListMove(p_playlist,from,0);
-    if(result==VLC_SUCCESS)
-        result=playListMove(p_playlist,0,1);
+    int current=getCurrentPlayListItemId(p_playlist);
+    int result=VLC_SUCCESS;
+    //if the item currently played is not top,we should perfrom the setTop operation
+    if(current!=0) {
+        result=playListMove(p_playlist,current,0);
+        if(result==VLC_SUCCESS)
+            result=playListMove(p_playlist,0,1);
+    }
+    //move the target item to the back of the first one
+    result=playListMove(p_playlist,from,0);
     return result;
 }
 int PlayListCommand::playListMove(playlist_t* p_playlist,int to,vector<string>& item) {
@@ -2185,12 +2214,12 @@ bool RCInvoker::isNeedCheckRatio(RCAction& action) {
         strstr(psz_cmd,"setPlayList");
 }
 void RCInvoker::invoke(RCAction& action){
-    writeAction(action);
     logger::inst()->log(TAG_DEBUG,"[action:%s]\n",action.psz_cmd.c_str());
     int known=0;
     for(std::map<std::string,RCCommandImpl*>::iterator iter=m_commands.begin();iter!=m_commands.end();iter++) {
         if(strstr(action.psz_cmd.c_str(),iter->first.c_str())) {
             if(iter->second) {
+                writeAction(action);
                 iter->second->Execute();
             }
             known=1;
@@ -2201,8 +2230,10 @@ void RCInvoker::invoke(RCAction& action){
     std::map<std::string,RCCommandImpl*>::iterator iter=m_commands.find(misc);
     if(iter!=m_commands.end()) 
     {
-        if(!known)
+        if(!known) {
+            writeAction(action);
             iter->second->Execute();
+        }
         if(VAL_RC_CONFIG.isAutoMatchScreen&&isNeedCheckRatio(action)) {
             action.psz_cmd="matchscreen";
             writeAction(action);

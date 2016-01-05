@@ -348,7 +348,7 @@ void RCPlayListModel::removeCallback(intf_thread_t* p_intf) {
 void RCPlayListModel::setInput(input_thread_t* p_input) {
     if(m_pInput)
         removeCallback(m_pInput);
-    if(p_input&&!p_input->b_dead&&vlc_object_alive(p_input)) {
+    if(p_input) {
         m_pInput=p_input;
         addCallback(m_pInput);
     }
@@ -364,6 +364,7 @@ void RCPlayListModel::updateInput(playlist_t* p_playlist) {
     }
 }
 void RCPlayListModel::addCallback(input_thread_t* p_input) {
+    logger::inst()->log(TAG_DEBUG,"%s\n","addCallback");
     pthread_mutex_lock(&m_mutex);
     if(p_input&&m_callback.get())
         var_AddCallback(p_input, "intf-event", RCPlayListModel::RCCallback, m_callback.get());
@@ -372,6 +373,7 @@ void RCPlayListModel::addCallback(input_thread_t* p_input) {
     pthread_mutex_unlock(&m_mutex);
 }
 void RCPlayListModel::removeCallback(input_thread_t* p_input) {
+    logger::inst()->log(TAG_DEBUG,"%s\n","removeCallback");
     pthread_mutex_lock(&m_mutex);
     if(p_input&&m_callback.get())
         var_DelCallback( p_input, "intf-event", RCPlayListModel::RCCallback, m_callback.get());
@@ -1591,7 +1593,8 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
         ENCODE_MSG_WITH_RETURN(p_data, "%s","Add or ReOpen a File First");
         return result;
     }
-    RCPlayListModel::inst()->setInput(p_input);
+    if(strcmp(psz_cmd,"updateAutoDeleteCallback"))
+        RCPlayListModel::inst()->setInput(p_input);
     if ((!strcmp(psz_cmd, "setAdd")||!strcmp(psz_cmd, "setOpen"))&&newval.psz_string.c_str()){
         const char* mrl=RCPlayListModel::inst()->add(newval.psz_string.c_str());
         input_item_t *p_item = RCUtil::parse_MRL(mrl);
@@ -1604,8 +1607,12 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
         RCPlayListModel::inst()->updateInput(p_playlist);
         ENCODE_MSG(p_data, result);
     }
-    else if (!strcmp(psz_cmd, "getState")) 
-    {
+    else if(!strcmp(psz_cmd,"updateAutoDeleteCallback")) {
+        RCPlayListModel::inst()->setInput(p_input);
+        result=VLC_SUCCESS;
+        ENCODE_MSG(p_data, result);
+    }
+    else if (!strcmp(psz_cmd, "getState")) {
         int state = var_GetInteger(p_input, "state");
         switch (state)
         {
@@ -2071,11 +2078,20 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
 RCStateCallback::RCStateCallback(intf_thread_t* p_intf):BasicCallbackImpl(),m_pIntf(p_intf){
 }
 int RCStateCallback::onStart( vlc_object_t *p_this, const char *, vlc_value_t, vlc_value_t newval, void *param) {
+    /*
     logger::inst()->log(TAG_DEBUG,"%s\n","RCStateCallback::onStart");
+    RCInvokerImpl* pInvoker=new RCInvoker(m_pIntf);
+    std::auto_ptr<RCInvokerImpl> invoker(pInvoker);
+    RCCommandImpl* pBasicCommand=new BasicCommand(invoker.get());
+    std::auto_ptr<RCCommandImpl> basicCommand(pBasicCommand);
+    invoker->addCommand("Basic",basicCommand.get());
+    RCAction action;
+    action.psz_cmd="updateAutoDeleteCallback";
+    invoker->invoke(action);
+    */
     return VLC_SUCCESS;
 }
 void *OnStop( void * data) {
-    logger::inst()->log(TAG_DEBUG,"onStop thread:%s\n","step in");
     RCPlayListThreadPara* para=reinterpret_cast<RCPlayListThreadPara*>(data);
     if(!para) {
         return NULL;
@@ -2087,17 +2103,22 @@ void *OnStop( void * data) {
     RCCommandImpl* pPlayListCmd=new PlayListCommand(invoker.get());
     std::auto_ptr<RCCommandImpl> playlistCommand(pPlayListCmd);
     invoker->addCommand("PlayList",playlistCommand.get());
+    RCCommandImpl* pBasicCommand=new BasicCommand(invoker.get());
+    std::auto_ptr<RCCommandImpl> basicCommand(pBasicCommand);
+    invoker->addCommand("Basic",basicCommand.get());
     RCAction action;
     //get index of playing item
     action.psz_cmd="getPlayListItem";
     invoker->invoke(action);
     msleep(para->delay);
-
     const char* index=invoker->getLastState();
     logger::inst()->log(TAG_DEBUG,"last state:%s\n",index);
     action.psz_cmd="setPlayListRemove";
     action.newval.psz_string=index;
     action.newval.f_float=atof(index);
+    invoker->invoke(action);
+    logger::inst()->log(TAG_DEBUG,"last state:%s\n",invoker->getLastState());
+    action.psz_cmd="updateAutoDeleteCallback";
     invoker->invoke(action);
     logger::inst()->log(TAG_DEBUG,"last state:%s\n",invoker->getLastState());
     free(data);

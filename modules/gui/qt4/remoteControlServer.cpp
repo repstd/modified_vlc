@@ -348,7 +348,7 @@ void RCPlayListModel::removeCallback(intf_thread_t* p_intf) {
 void RCPlayListModel::setInput(input_thread_t* p_input) {
     if(m_pInput)
         removeCallback(m_pInput);
-    if(p_input) {
+    if(p_input&&vlc_object_alive(p_input)) {
         m_pInput=p_input;
         addCallback(m_pInput);
     }
@@ -1929,7 +1929,7 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
         result = playlist_Next(p_playlist);
         ENCODE_MSG(p_data, result);
     }
-    else if (!strcmp(psz_cmd, "repeat"))
+    else if (!strcmp(psz_cmd, "setRepeat"))
     {
         bool b_update = true;
         vlc_value_t val;
@@ -1955,7 +1955,7 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
         ENCODE_MSG(p_data, result);
 
     }
-    else if (!strcmp(psz_cmd, "loop"))
+    else if (!strcmp(psz_cmd, "setLoop"))
     {
         bool b_update = true;
         vlc_value_t val;
@@ -1980,7 +1980,7 @@ int BasicCommand::BasicControl(intf_thread_t* p_intf, const char*psz_cmd, rc_val
         ENCODE_MSG(p_data, result);
 
     }
-    else if (!strcmp(psz_cmd, "random"))
+    else if (!strcmp(psz_cmd, "setRandom"))
     {
         bool b_update = true;
         vlc_value_t val;

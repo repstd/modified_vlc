@@ -321,7 +321,7 @@ int RCPlayListModel::remove(const char* name) {
         if(encode_name)
             logger::inst()->log(TAG_DEBUG,"%s\n",encode_name);
         else
-            logger::inst()->log(TAG_DEBUG,"%s\n","logger error in RCPlayListMode::Add");
+            logger::inst()->log(TAG_DEBUG,"%s\n","logger error in RCPlayListMode::Remove");
         free(encode_name);
         if(iter->second.counter==1)
             mMRLItem.erase(name);
@@ -348,7 +348,7 @@ void RCPlayListModel::removeCallback(intf_thread_t* p_intf) {
 void RCPlayListModel::setInput(input_thread_t* p_input) {
     if(m_pInput)
         removeCallback(m_pInput);
-    if(p_input&&vlc_object_alive(p_input)) {
+    if(p_input) {
         m_pInput=p_input;
         addCallback(m_pInput);
     }
@@ -1462,10 +1462,6 @@ int PlayListCommand::playListRemove(playlist_t* p_playlist,vector<string>& index
         if(playListJump(p_playlist,idle+1)!=VLC_SUCCESS)
             return VLC_ENOOBJ;
     }
-    char* encode_name;
-    asprintf(&encode_name,"[%s][%d]","remove in batch",targetId.size());
-    logger::inst()->log(TAG_DEBUG,"%s\n",encode_name);
-    free(encode_name);
     int result=VLC_SUCCESS;
     for(int i=0;i<target.size();i++) {
         int cur=targetId[i]-i;

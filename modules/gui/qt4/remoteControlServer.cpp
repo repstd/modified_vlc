@@ -152,21 +152,13 @@ bool RCServer::InitForPort(int portNumber)
     wVersionRequested = MAKEWORD(2, 2);
     err = WSAStartup(wVersionRequested, &wsaData);
 
-    if (err != 0) {
+    if (err != 0)
         return false;
-
-    }
-
-    if (LOBYTE(wsaData.wVersion) != 2 ||
-
-            HIBYTE(wsaData.wVersion) != 2) {
-
+    if (LOBYTE(wsaData.wVersion) != 2 || HIBYTE(wsaData.wVersion) != 2) {
         WSACleanup();
         return false;
-
     }
     m_netSocket = socket(AF_INET, SOCK_DGRAM, 0);
-
     if (m_netSocket <= 0)
         return false;
     m_port = portNumber;
@@ -175,13 +167,9 @@ bool RCServer::InitForPort(int portNumber)
     //u_long mode = 0;
     //ioctlsocket(m_netSocket, FIONBIO, &mode);
     addr.sin_family = AF_INET;
-
     addr.sin_port = htons((u_short)m_port);
-
     addr.sin_addr.S_un.S_addr = htonl(INADDR_ANY);
-
     int len = sizeof(sockaddr);
-
     if (bind(m_netSocket, (SOCKADDR *)&addr, len) == SOCKET_ERROR) {
         logger::inst()->log(TAG_ERROR,"%s\n","error in ::initForPort.Failed to bind socket.");
         return false;
@@ -1311,6 +1299,10 @@ int PlayListCommand::PlayListConfig(intf_thread_t* p_intf, const char *psz_cmd,r
         ENCODE_MSG_WITH_RETURN(p_data,"%d",count);
         PL_UNLOCK;
     }
+    else if(!strcmp(psz_cmd,"getPlayListLength")) {
+        int length=getPlayListLength(p_playlist);
+        ENCODE_MSG_WITH_RETURN(p_data,"%d",length);
+    }
     else if(!strcmp(psz_cmd,"setPlayListRemove")) {
         vector<string> indexes;
         int failed=RCUtil::parseList(newval.psz_string,indexes);
@@ -1370,6 +1362,11 @@ char* PlayListCommand::getCurrentPlayListItemName(playlist_t *p_playlist)
     if(!p_item)
         return NULL;
     return p_item->p_input->psz_name;
+}
+int PlayListCommand::getPlayListLength(playlist_t *p_playlist) {
+    if(!p_playlist)
+        return -1;
+    return p_playlist->items.i_size;
 }
 char* PlayListCommand::getTotalPlayList(playlist_item_t *p_item, int i_level,char* result)
 {
@@ -2124,7 +2121,7 @@ int RCStateCallback::onStop( vlc_object_t *p_this, const char * psz_cmd, vlc_val
     logger::inst()->log(TAG_DEBUG,"%s\n","RCStateCallback::onStop");
     RCPlayListThreadPara* para=(RCPlayListThreadPara*)malloc(sizeof(RCPlayListThreadPara));
     para->p_intf=m_pIntf;
-    para->delay=100000;
+    para->delay=1000000;
     vlc_thread_t tid;
     if(vlc_clone(&tid,OnStop,para,VLC_THREAD_PRIORITY_HIGHEST))
         logger::inst()->log(TAG_DEBUG,"%s\n","failed to create onStop serving thread");

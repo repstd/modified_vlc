@@ -201,6 +201,7 @@ class PlayListCommand: public RCCommandImpl {
         char* getTotalPlayListDetail(playlist_item_t *p_item, int i_level,char* result,int field);
         char* getTotalPlayList(playlist_item_t *p_item, int i_level,char* result);
         char* getTotalPlayListIdList(playlist_item_t *p_item, int i_level,char* result);
+        int getPlayListLength(playlist_t *p_playlist);
         int playListRemove(playlist_t* p_playlist,int index);
         int playListRemove(playlist_t* p_playlist,std::vector<std::string>& indexes);
         int playListRemoveAll(playlist_t* p_playlist);

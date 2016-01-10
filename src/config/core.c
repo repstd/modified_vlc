@@ -241,7 +241,7 @@ void config_PutPsz( vlc_object_t *p_this,
 
     vlc_rwlock_wrlock (&config_lock);
     oldstr = (char *)p_config->value.psz;
-    p_confi:->value.psz = str;
+    p_config->value.psz = str;
     p_config->b_dirty = true;
     vlc_rwlock_unlock (&config_lock);
     free (oldstr);

@@ -83,6 +83,7 @@ void readConfig(RC_CONFIG& config,const char* file) {
     const char* isDebug_key="IsDebug";
     const char* isAutoStart_key="IsAutoStarting";
     const char* isAutoMatchScreen_key="IsAutoMatchScreen";
+    const char* autoDeleteDelay_key="AutoDeleteDelay";
     memset(buf,0,sizeof(buf));
     config.port=VAL_RC_DEFAULT_PORT;
     if(read_profile_string(server_setting_section,port_key,buf,MAX_SIZE,"",file)) {
@@ -98,10 +99,16 @@ void readConfig(RC_CONFIG& config,const char* file) {
     config.isAutoMatchScreen=1;
     if(read_profile_string(server_setting_section,isAutoMatchScreen_key,buf,MAX_SIZE,"",file))
         config.isAutoMatchScreen=atoi(buf);
+
     memset(buf,0,sizeof(buf));
     config.isServerAutoStart=1;
     if(read_profile_string(server_setting_section,isAutoStart_key,buf,MAX_SIZE,"",file))
         config.isServerAutoStart=atoi(buf);
+
+    memset(buf,0,sizeof(buf));
+    config.autoDeleteDelayMilliSeconds=1000;
+    if(read_profile_string(server_setting_section,autoDeleteDelay_key,buf,MAX_SIZE,"",file))
+        config.autoDeleteDelayMilliSeconds=atoi(buf);
 
     const char* audio_setting_section="AudioOutputSetting";
     const char* movie_audio_output_index_key="Movie";
@@ -2168,7 +2175,7 @@ int RCStateCallback::onStop( vlc_object_t *p_this, const char * psz_cmd, vlc_val
     logger::inst()->log(TAG_DEBUG,"%s\n","RCStateCallback::onStop");
     RCPlayListThreadPara* para=(RCPlayListThreadPara*)malloc(sizeof(RCPlayListThreadPara));
     para->p_intf=m_pIntf;
-    para->delay=1000000;
+    para->delay=VAL_RC_CONFIG.autoDeleteDelayMilliSeconds*1000;
     vlc_thread_t tid;
     if(vlc_clone(&tid,OnStop,para,VLC_THREAD_PRIORITY_HIGHEST))
         logger::inst()->log(TAG_DEBUG,"%s\n","failed to create onStop serving thread");

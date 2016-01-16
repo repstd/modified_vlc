@@ -51,6 +51,7 @@ struct RC_CONFIG {
     int audioConfigKTVIndex;
     int isServerAutoStart;
     int isAutoMatchScreen;
+    int64_t autoDeleteDelayMilliSeconds;
     //Information
     std::vector<std::pair<std::string,std::string> >  audioConfigInfo;
 };

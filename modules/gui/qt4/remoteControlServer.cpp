@@ -226,8 +226,20 @@ int RCServer::GetPort() {
 bool RCServer::isSocketOpen() {
     return m_netSocket <= 0 ? false : true;
 }
-void* Serve(void* para) {
-    return 0;
+intf_thread_t* RCServer::getIntf() {
+    return m_intf;
+}
+void *Serve(void* p) {
+    RCServerPara* psp=reinterpret_cast<RCServerPara*>(p);
+    if(!psp)
+        return NULL;
+    char msgSent[MAX_SIZE] = { 0 };
+    memset(msgSent, 0, MAX_SIZE);
+    RCServer* pServer = reinterpret_cast<RCServer*>(psp->m_server);
+    RCHandlerImpl* p_handler=new RCHandler(pServer->getIntf());
+    std::auto_ptr<RCHandlerImpl> handler(p_handler);
+    handler->handle(psp->m_msgRcv,msgSent);
+    pServer->sendPacket(*(sockaddr*)&psp->m_client, msgSent,strlen(msgSent)+1,MAX_LEN);
 }
 void RCServer::run(void *p) {
     RCServer* pServer = reinterpret_cast<RCServer*>(p);
@@ -235,9 +247,9 @@ void RCServer::run(void *p) {
     char msgRcv[MAX_SIZE] = { 0 };
     char msgSent[MAX_SIZE] = { 0 };
     int msgSize = -1;
+    RCPlayListModel::inst()->initCallback(m_intf);
     RCHandlerImpl* p_handler=new RCHandler(m_intf);
     std::auto_ptr<RCHandlerImpl> handler(p_handler);
-    RCPlayListModel::inst()->initCallback(m_intf);
     while (pServer->isSocketOpen()&&m_intf&&vlc_object_alive(m_intf)) {
         logger::inst()->log(TAG_DEBUG,"%s\n","waiting....");
         memset(msgRcv, 0, MAX_SIZE);
@@ -698,8 +710,10 @@ char* RCUtil::addItem(char* item,char* dst) {
     if(!(p+len+1))
         return NULL;
     *(p++)='{';
-    memcpy(p,item,len);
-    p+=len;
+    if(strcmp(item,"{}")) {
+        memcpy(p,item,len);
+        p+=len;
+    }
     *(p++)='}';
     return p;
 
@@ -2244,6 +2258,9 @@ RCHandler::RCHandler(intf_thread_t* p_intf) {
     m_invoker->addCommand("PlayList",new PlayListCommand(m_invoker.get()));
     m_invoker->addCommand("Audio",new AudioCommand(m_invoker.get()));
     m_invoker->addCommand("Basic",new BasicCommand(m_invoker.get()));
+}
+RCHandler::~RCHandler() {
+
 }
 int RCHandler::handle(char *psz_cmd,char* p_data) {
     int result=VLC_EGENERIC;

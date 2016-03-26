@@ -96,11 +96,17 @@ char* CheckMessage(char* src);
 bool isNumber(const char* s);
 std::wstring widen( const std::string& str );
 std::string narrow( const std::wstring& str );
+class RCServer;
 struct RCPlayListThreadPara {
     intf_thread_t* p_intf;
     mtime_t delay;
 };
-static  void *Serve( void * rcserver);
+struct RCServerPara {
+    RCServer* m_server;
+    SOCKADDR_IN m_client;
+    char m_msgRcv[MAX_SIZE];
+};
+static  void *Serve( void * rcserverPara);
 static  void *OnStop( void * delay);
 class RCCommandImpl {
     public:
@@ -153,16 +159,17 @@ class RCServer:public Thread {
         bool isSocketOpen();
         bool getPacket(sockaddr& from, void *data, int &size, int maxSize);
         bool sendPacket(sockaddr to, void *data, int size, int maxSize);
+        intf_thread_t* getIntf();
     private:
         void run(void* p);
         int m_port;
         SOCKET m_netSocket;
         intf_thread_t* m_intf;
 };
-class RCHandler:public RCHandlerImpl
-{
+class RCHandler:public RCHandlerImpl {
     public:
         RCHandler(intf_thread_t* pIntf);
+        ~RCHandler();
         virtual int handle(char *psz_cmd,char* p_data);
         intf_thread_t* getIntf(); 
     private:

@@ -1,1 +1,1 @@
-const char psz_vlc_changeset[] = "3ecee25";
+const char psz_vlc_changeset[] = "e8e1d3a";

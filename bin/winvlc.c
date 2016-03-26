@@ -175,7 +175,8 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance,
     argc = j;
     argv[argc] = NULL;
     LocalFree (wargv);
-
+    //disable crash_handling
+    crash_handling=FALSE;
     if(crash_handling)
     {
         static wchar_t path[MAX_PATH];

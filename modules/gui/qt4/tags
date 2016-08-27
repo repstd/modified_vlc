@@ -5,7 +5,7 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 ABOUT_H	ui/about.h	12;"	d
-ABS	remoteControlServer.cpp	2103;"	d	file:
+ABS	remoteControlServer.cpp	2224;"	d	file:
 ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/ylwang\/msvc\/vlc-2.0.6\/autotools\/missing aclocal-1.14$/;"	m
 ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
 ACTION_ALWAYS_ENABLED	menus.hpp	/^        ACTION_ALWAYS_ENABLED = 0x1,$/;"	e	enum:VLCMenuBar::actionflag
@@ -635,6 +635,7 @@ FRIBIDI_LIBS	Makefile	/^FRIBIDI_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contri
 FSC_HEIGHT	components/controller.hpp	251;"	d
 FSC_TB_DEFAULT	components/controller.hpp	41;"	d
 FSC_WIDTH	components/controller.hpp	249;"	d
+FULL	remoteControlServer.hpp	/^            FULL$/;"	e	enum:RCUtil::TrackType
 FULL	remoteControlServer.hpp	/^        FULL$/;"	e	enum:RCInputMRL::FIELD
 FULLSCREEN_ACTION	actions_manager.hpp	/^    FULLSCREEN_ACTION,$/;"	e	enum:actionType_e
 FULLSCREEN_BUTTON	components/controller.hpp	/^    FULLSCREEN_BUTTON,$/;"	e	enum:buttonType_e
@@ -736,6 +737,7 @@ INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
 INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
 INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
 INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INT	remoteControlServer.hpp	/^            INT,$/;"	e	enum:RCUtil::TrackType
 INTLLIBS	Makefile	/^INTLLIBS = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/libintl.a \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/libiconv.a$/;"	m
 INTL_MACOSX_LIBS	Makefile	/^INTL_MACOSX_LIBS = $/;"	m
 IN_ITEM_ROLE	components/playlist/selector.hpp	/^    IN_ITEM_ROLE,        \/\/input_item_t->i_id$/;"	e	enum:__anon18
@@ -1170,6 +1172,7 @@ LUA_CFLAGS	Makefile	/^LUA_CFLAGS = -I\/usr\/local\/include  $/;"	m
 LUA_LIBS	Makefile	/^LUA_LIBS = -L\/usr\/local\/lib -llua -lm  $/;"	m
 LeafToParent	input_manager.cpp	/^static int LeafToParent( vlc_object_t *p_this, const char *psz_var,$/;"	f	file:
 LeafToParent_Type	input_manager.hpp	/^    LeafToParent_Type,$/;"	e	enum:__anon1
+LoadAudioOutputDevice	remoteControlServer.cpp	/^void AudioCommand::LoadAudioOutputDevice(intf_thread_t* p_intf,RC_CONFIG& config,const char* file)$/;"	f	class:AudioCommand
 LocationBar	components/playlist/playlist.cpp	/^LocationBar::LocationBar( PLModel *m )$/;"	f	class:LocationBar
 LocationBar	components/playlist/playlist.hpp	/^class LocationBar : public QWidget$/;"	c
 LocationButton	components/playlist/playlist.cpp	/^LocationButton::LocationButton( const QString &text, bool bold,$/;"	f	class:LocationButton
@@ -1629,9 +1632,9 @@ RCAction	remoteControlServer.hpp	/^struct RCAction {$/;"	s
 RCC	Makefile	/^RCC = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/bin\/rcc$/;"	m
 RCCallback	remoteControlServer.cpp	/^int RCPlayListModel::RCCallback( vlc_object_t *p_this, const char * psz_cmd, vlc_value_t oldval, vlc_value_t newval, void *param) {$/;"	f	class:RCPlayListModel
 RCCommandImpl	remoteControlServer.hpp	/^class RCCommandImpl {$/;"	c
-RCHANDLER_ITEM_NAME	remoteControlServer.cpp	1480;"	d	file:
+RCHANDLER_ITEM_NAME	remoteControlServer.cpp	1583;"	d	file:
 RCHandler	remoteControlServer.cpp	/^RCHandler::RCHandler(intf_thread_t* p_intf) {$/;"	f	class:RCHandler
-RCHandler	remoteControlServer.hpp	/^class RCHandler:public RCHandlerImpl$/;"	c
+RCHandler	remoteControlServer.hpp	/^class RCHandler:public RCHandlerImpl {$/;"	c
 RCHandlerImpl	remoteControlServer.hpp	/^class RCHandlerImpl{$/;"	c
 RCInputMRL	remoteControlServer.hpp	/^    RCInputMRL() {$/;"	f	struct:RCInputMRL
 RCInputMRL	remoteControlServer.hpp	/^struct RCInputMRL {$/;"	s
@@ -1644,6 +1647,7 @@ RCPlayListModel	remoteControlServer.hpp	/^class RCPlayListModel {$/;"	c
 RCPlayListThreadPara	remoteControlServer.hpp	/^struct RCPlayListThreadPara {$/;"	s
 RCServer	remoteControlServer.cpp	/^RCServer::RCServer(intf_thread_t* pIntf) {$/;"	f	class:RCServer
 RCServer	remoteControlServer.hpp	/^class RCServer:public Thread {$/;"	c
+RCServerPara	remoteControlServer.hpp	/^struct RCServerPara {$/;"	s
 RCStateCallback	remoteControlServer.cpp	/^RCStateCallback::RCStateCallback(intf_thread_t* p_intf):BasicCallbackImpl(),m_pIntf(p_intf){$/;"	f	class:RCStateCallback
 RCStateCallback	remoteControlServer.hpp	/^class RCStateCallback:public BasicCallbackImpl {$/;"	c
 RCUtil	remoteControlServer.hpp	/^class RCUtil {$/;"	c
@@ -1726,8 +1730,8 @@ SHOUT_LIBS	Makefile	/^SHOUT_LIBS = -L\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i
 SID_CFLAGS	Makefile	/^SID_CFLAGS = -DHAVE_UNIX -I\/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/include  $/;"	m
 SID_LIBS	Makefile	/^SID_LIBS = \/home\/ylwang\/msvc\/vlc-2.0.6\/contrib\/i586-mingw32msvc\/lib\/libsidplay2.la  $/;"	m
 SKINS	components/preferences_widgets.hpp	/^                 SKINS };$/;"	e	enum:InterfacePreviewWidget::enum_style
-SKIPSPACE	remoteControlServer.cpp	566;"	d	file:
-SKIPTRAILINGSPACE	remoteControlServer.cpp	567;"	d	file:
+SKIPSPACE	remoteControlServer.cpp	593;"	d	file:
+SKIPTRAILINGSPACE	remoteControlServer.cpp	594;"	d	file:
 SKIP_BACK_ACTION	actions_manager.hpp	/^    SKIP_BACK_ACTION,$/;"	e	enum:actionType_e
 SKIP_BACK_BUTTON	components/controller.hpp	/^    SKIP_BACK_BUTTON,$/;"	e	enum:buttonType_e
 SKIP_FW_ACTION	actions_manager.hpp	/^    SKIP_FW_ACTION,$/;"	e	enum:actionType_e
@@ -1787,6 +1791,7 @@ START_SPREFS_CAT	components/simple_preferences.cpp	729;"	d	file:
 STOP_ACTION	actions_manager.hpp	/^    STOP_ACTION,$/;"	e	enum:actionType_e
 STOP_BUTTON	components/controller.hpp	/^    STOP_BUTTON,$/;"	e	enum:buttonType_e
 STREAMPANEL_H	ui/streampanel.h	12;"	d
+STRING	remoteControlServer.hpp	/^            STRING=0,$/;"	e	enum:RCUtil::TrackType
 STRIP	Makefile	/^STRIP = i586-mingw32msvc-strip$/;"	m
 SUBSDELAY_CFG_FACTOR	components/extended_panels.cpp	1486;"	d	file:
 SUBSDELAY_CFG_MODE	components/extended_panels.cpp	1485;"	d	file:
@@ -1815,7 +1820,7 @@ SeekSlider	util/input_slider.hpp	/^class SeekSlider : public QSlider$/;"	c
 SelectorActionButton	components/playlist/selector.hpp	/^class SelectorActionButton : public QFramelessButton$/;"	c
 SelectorItemType	components/playlist/selector.hpp	/^enum SelectorItemType {$/;"	g
 SeparateEntries	dialogs/open.cpp	/^QStringList OpenDialog::SeparateEntries( const QString& entries )$/;"	f	class:OpenDialog
-Serve	remoteControlServer.cpp	/^void* Serve(void* para) {$/;"	f
+Serve	remoteControlServer.cpp	/^void *Serve(void* p) {$/;"	f
 SetSizing	components/interface_widgets.cpp	/^void VideoWidget::SetSizing( unsigned int w, unsigned int h )$/;"	f	class:VideoWidget
 SetVideoOnTopEvent_Type	dialogs_provider.hpp	/^    SetVideoOnTopEvent_Type = QEvent::User + DialogEventType + 4,$/;"	e	enum:__anon27
 ShowDialog	qt4.cpp	/^static void ShowDialog( intf_thread_t *p_intf, int i_dialog_event, int i_arg,$/;"	f	file:
@@ -1921,6 +1926,7 @@ ToolbarEditDialog	dialogs/toolbar.hpp	/^class ToolbarEditDialog : public QVLCDia
 ToolsMenu	menus.cpp	/^QMenu *VLCMenuBar::ToolsMenu( QMenu *menu )$/;"	f	class:VLCMenuBar
 ToolsMenu	menus.hpp	/^    static QMenu *ToolsMenu( QWidget *parent ) { return ToolsMenu( new QMenu( parent ) ); }$/;"	f	class:VLCMenuBar
 TrackListCmp	qt4.cpp	/^struct TrackListCmp{$/;"	s	file:
+TrackType	remoteControlServer.hpp	/^        enum TrackType {$/;"	g	class:RCUtil
 TriggerClick	dialogs/extensions.cpp	/^int ExtensionDialog::TriggerClick( QObject *object )$/;"	f	class:ExtensionDialog
 Type	util/buttons/BrowseButton.hpp	/^    enum Type {$/;"	g	class:BrowseButton
 U2D	Makefile	/^U2D = unix2dos$/;"	m
@@ -2265,6 +2271,7 @@ addFromSimple	dialogs_provider.cpp	/^void DialogsProvider::addFromSimple( bool p
 addInputButton	ui/streampanel.h	/^    QPushButton *addInputButton;$/;"	m	class:Ui_BroadcastPanel
 addItem	components/playlist/selector.cpp	/^PLSelItem * PLSelector::addItem ($/;"	f	class:PLSelector
 addItem	remoteControlServer.cpp	/^char* RCUtil::addItem(char* item,char* dst) {$/;"	f	class:RCUtil
+addItem	remoteControlServer.cpp	/^char* RCUtil::addItem(int item,char* dst) {$/;"	f	class:RCUtil
 addItem	util/buttons/DeckButtonsLayout.cpp	/^void DeckButtonsLayout::addItem( QLayoutItem* item )$/;"	f	class:DeckButtonsLayout
 addMIMStaticEntry	menus.cpp	/^QAction* addMIMStaticEntry( intf_thread_t *p_intf,$/;"	f
 addMenuToMainbar	menus.cpp	/^static inline void addMenuToMainbar( QMenu *func, QString title, QMenuBar *bar ) {$/;"	f	file:
@@ -2430,6 +2437,7 @@ audioSpin	ui/open_disk.h	/^    QSpinBox *audioSpin;$/;"	m	class:Ui_OpenDisk
 author	dialogs/plugins.cpp	/^    QString name, title, description, shortdesc, author, version, url;$/;"	m	class:ExtensionCopy	file:
 author	remoteControlServer.hpp	/^    std::string author;$/;"	m	struct:RCInputMRL
 authorsEdit	ui/about.h	/^    QTextEdit *authorsEdit;$/;"	m	class:Ui_aboutWidget
+autoDeleteDelayMilliSeconds	remoteControlServer.hpp	/^    int64_t autoDeleteDelayMilliSeconds;$/;"	m	struct:RC_CONFIG
 autoscaleBox	ui/sprefs_audio.h	/^    QCheckBox *autoscaleBox;$/;"	m	class:Ui_SPrefsAudio
 aviLabel	ui/sprefs_input.h	/^    QLabel *aviLabel;$/;"	m	class:Ui_SPrefsInputAndCodecs
 bClipboard	dialogs/openurl.hpp	/^    bool bClipboard, bShouldEnqueue;$/;"	m	class:OpenUrlDialog
@@ -2695,6 +2703,7 @@ compareMeta	components/playlist/ml_item.cpp	/^static int compareMeta( const ml_m
 computeMinimumSize	main_interface.cpp	/^void MainInterface::computeMinimumSize()$/;"	f	class:MainInterface
 configList	components/open_panels.hpp	/^    QStringList configList;$/;"	m	class:CaptureOpenPanel
 configML	components/simple_preferences.cpp	/^void SPrefsPanel::configML()$/;"	f	class:SPrefsPanel
+configMap	remoteControlServer.hpp	/^    std::map<int,int> configMap;$/;"	m	struct:RC_CONFIG
 conflicts	components/preferences_widgets.hpp	/^    bool conflicts;$/;"	m	class:KeyInputDialog
 contains	components/complete_preferences.cpp	/^bool PrefsItemData::contains( const QString &text, Qt::CaseSensitivity cs )$/;"	f	class:PrefsItemData
 contextMenuEvent	components/interface_widgets.cpp	/^void BackgroundWidget::contextMenuEvent( QContextMenuEvent *event )$/;"	f	class:BackgroundWidget
@@ -3118,6 +3127,7 @@ getInstance	recents.hpp	/^    static RecentsMRL* getInstance( intf_thread_t* p_i
 getInstance	util/singleton.hpp	/^    static T*      getInstance( intf_thread_t *p_intf = NULL )$/;"	f	class:Singleton
 getIntf	remoteControlServer.cpp	/^intf_thread_t* RCHandler::getIntf() {$/;"	f	class:RCHandler
 getIntf	remoteControlServer.cpp	/^intf_thread_t* RCInvoker::getIntf() {$/;"	f	class:RCInvoker
+getIntf	remoteControlServer.cpp	/^intf_thread_t* RCServer::getIntf() {$/;"	f	class:RCServer
 getItem	components/playlist/ml_model.hpp	/^    inline MLItem *getItem( QModelIndex index ) const$/;"	f	class:MLModel
 getItem	components/playlist/playlist_model.hpp	/^    PLItem *getItem( const QModelIndex & index ) const$/;"	f	class:PLModel
 getItem	remoteControlServer.cpp	/^const char* RCPlayListModel::getItem(const char* name) {$/;"	f	class:RCPlayListModel
@@ -3143,6 +3153,7 @@ getName	input_manager.hpp	/^    QString getName() { return oldName; }$/;"	f	clas
 getName	remoteControlServer.cpp	/^const char* AudioCommand::getName() {$/;"	f	class:AudioCommand
 getName	remoteControlServer.cpp	/^const char* BasicCommand::getName() {$/;"	f	class:BasicCommand
 getName	remoteControlServer.cpp	/^const char* PlayListCommand::getName() {$/;"	f	class:PlayListCommand
+getName	remoteControlServer.cpp	/^const char* RCPlayListModel::getName(const char* name) {$/;"	f	class:RCPlayListModel
 getObject	remoteControlServer.cpp	/^int RCUtil::getObject(vlc_object_t* object,const char* psz_variable,vlc_value_t& val,vlc_value_t& text,int& i_value,int option){$/;"	f	class:RCUtil
 getOptions	dialogs/open.cpp	/^QString OpenDialog::getOptions()$/;"	f	class:OpenDialog
 getOptions	dialogs/toolbar.hpp	/^    int getOptions() { return flatBox->isChecked() * WIDGET_FLAT +$/;"	f	class:ToolbarEditDialog
@@ -3151,6 +3162,7 @@ getPacket	remoteControlServer.cpp	/^bool RCServer::getPacket(sockaddr& from, voi
 getParentPosInLayout	dialogs/toolbar.cpp	/^inline int DroppingController::getParentPosInLayout( QPoint point )$/;"	f	class:DroppingController
 getPlayExitState	input_manager.cpp	/^bool MainInputManager::getPlayExitState()$/;"	f	class:MainInputManager
 getPlayListItem	remoteControlServer.cpp	/^playlist_item_t* PlayListCommand::getPlayListItem(playlist_t *p_playlist,int index) {$/;"	f	class:PlayListCommand
+getPlayListLength	remoteControlServer.cpp	/^int PlayListCommand::getPlayListLength(playlist_t *p_playlist) {$/;"	f	class:PlayListCommand
 getPoints	adapters/seekpoints.cpp	/^QList<SeekPoint> const SeekPoints::getPoints()$/;"	f	class:SeekPoints
 getRatio	remoteControlServer.cpp	/^const char* BasicCommand::getRatio(int width,int height) {$/;"	f	class:BasicCommand
 getSettings	qt4.hpp	123;"	d
@@ -3302,7 +3314,7 @@ getSysTrayMenu	main_interface.hpp	/^    QMenu *getSysTrayMenu() { return systray
 getTotalPlayList	remoteControlServer.cpp	/^char* PlayListCommand::getTotalPlayList(playlist_item_t *p_item, int i_level,char* result)$/;"	f	class:PlayListCommand
 getTotalPlayListDetail	remoteControlServer.cpp	/^char* PlayListCommand::getTotalPlayListDetail(playlist_item_t *p_item, int i_level,char* result,int field){$/;"	f	class:PlayListCommand
 getTotalPlayListIdList	remoteControlServer.cpp	/^char* PlayListCommand::getTotalPlayListIdList(playlist_item_t *p_item, int i_level,char* result)$/;"	f	class:PlayListCommand
-getTotalTrackList	remoteControlServer.cpp	/^const char* RCUtil::getTotalTrackList(const vlc_value_t&val,const vlc_value_t& text,char* result)$/;"	f	class:RCUtil
+getTotalTrackList	remoteControlServer.cpp	/^const char* RCUtil::getTotalTrackList(const vlc_value_t& val,const vlc_value_t& text,char* result,int type)$/;"	f	class:RCUtil
 getTrack	remoteControlServer.cpp	/^const char* RCUtil::getTrack(const char* psz_cmd)$/;"	f	class:RCUtil
 getTrackTextValueByIndex	remoteControlServer.cpp	/^const char* RCUtil::getTrackTextValueByIndex(const vlc_value_t& val,const vlc_value_t& text,int index)$/;"	f	class:RCUtil
 getTranscode	components/sout/profile_selector.hpp	/^    QString getTranscode() { return transcode; }$/;"	f	class:VLCProfileSelector
@@ -3940,6 +3952,7 @@ m_boundingRect	components/epg/EPGItem.hpp	/^    QRectF      m_boundingRect;$/;"	
 m_callback	remoteControlServer.hpp	/^        BasicCallbackImpl* m_callback;$/;"	m	class:BasicCommand
 m_callback	remoteControlServer.hpp	/^        std::auto_ptr<BasicCallbackImpl> m_callback;$/;"	m	class:RCPlayListModel
 m_channelsWidget	components/epg/EPGWidget.hpp	/^    EPGChannels *m_channelsWidget;$/;"	m	class:EPGWidget
+m_client	remoteControlServer.hpp	/^    SOCKADDR_IN m_client;$/;"	m	struct:RCServerPara
 m_commands	remoteControlServer.hpp	/^        std::map<std::string,RCCommandImpl*> m_commands;$/;"	m	class:RCInvoker
 m_current	components/epg/EPGItem.hpp	/^    bool        m_current;$/;"	m	class:EPGItem
 m_description	components/epg/EPGItem.hpp	/^    QString     m_description;$/;"	m	class:EPGItem
@@ -3957,6 +3970,7 @@ m_instance	util/singleton.hpp	/^T*  Singleton<T>::m_instance = NULL;$/;"	m	class
 m_intf	remoteControlServer.hpp	/^        intf_thread_t* m_intf;$/;"	m	class:RCServer
 m_invoker	remoteControlServer.hpp	/^        std::auto_ptr<RCInvokerImpl> m_invoker;$/;"	m	class:RCHandler
 m_model	util/qmenuview.hpp	/^    QAbstractItemModel *m_model;$/;"	m	class:QMenuView
+m_msgRcv	remoteControlServer.hpp	/^    char m_msgRcv[MAX_SIZE];$/;"	m	struct:RCServerPara
 m_mutex	rclog.h	/^    pthread_mutex_t m_mutex;$/;"	m	class:logger
 m_mutex	remoteControlServer.hpp	/^        pthread_mutex_t m_mutex;$/;"	m	class:RCPlayListModel
 m_name	components/epg/EPGItem.hpp	/^    QString     m_name;$/;"	m	class:EPGItem
@@ -3974,6 +3988,7 @@ m_rulerWidget	components/epg/EPGWidget.hpp	/^    EPGRuler* m_rulerWidget;$/;"	m	
 m_runnable	thpool.h	/^        Runnable* m_runnable;    $/;"	m	class:Thread
 m_scale	components/epg/EPGRuler.hpp	/^    qreal m_scale;$/;"	m	class:EPGRuler
 m_scaleFactor	components/epg/EPGView.hpp	/^    int             m_scaleFactor;$/;"	m	class:EPGView
+m_server	remoteControlServer.hpp	/^    RCServer* m_server;$/;"	m	struct:RCServerPara
 m_shortDescription	components/epg/EPGItem.hpp	/^    QString     m_shortDescription;$/;"	m	class:EPGItem
 m_start	components/epg/EPGItem.hpp	/^    QDateTime   m_start;$/;"	m	class:EPGItem
 m_startTime	components/epg/EPGRuler.hpp	/^    QDateTime m_startTime;$/;"	m	class:EPGRuler
@@ -4283,6 +4298,7 @@ offsetY	util/pictureflow.cpp	/^    PFreal offsetY;$/;"	m	class:PictureFlowState	
 ok	dialogs/sout.cpp	/^void SoutDialog::ok()$/;"	f	class:SoutDialog
 okButton	dialogs/sout.hpp	/^    QPushButton *okButton;$/;"	m	class:SoutDialog
 okCancel	ui/podcast_configuration.h	/^    QDialogButtonBox *okCancel;$/;"	m	class:Ui_PodcastConfiguration
+oldAudioConfigInfo	remoteControlServer.hpp	/^    std::vector<std::pair<std::string,std::string> >  oldAudioConfigInfo;$/;"	m	struct:RC_CONFIG
 oldControlVars	components/extended_panels.hpp	/^    float oldControlVars[5];$/;"	m	class:Spatializer
 oldControlVars	components/extended_panels.hpp	/^    float oldControlVars[NUM_CP_CTRL];$/;"	m	class:Compressor
 oldName	input_manager.hpp	/^    QString         oldName;$/;"	m	class:InputManager
@@ -6609,6 +6625,7 @@ x264profileLabel	ui/sprefs_input.h	/^    QLabel *x264profileLabel;$/;"	m	class:U
 ~QVLCFrame	util/qvlcframe.hpp	/^    virtual ~QVLCFrame()   {};$/;"	f	class:QVLCFrame
 ~QVLCRegistry	util/registry.cpp	/^QVLCRegistry::~QVLCRegistry( void )$/;"	f	class:QVLCRegistry
 ~QVLCVariable	variables.cpp	/^QVLCVariable::~QVLCVariable (void)$/;"	f	class:QVLCVariable
+~RCHandler	remoteControlServer.cpp	/^RCHandler::~RCHandler() {$/;"	f	class:RCHandler
 ~RCPlayListModel	remoteControlServer.cpp	/^RCPlayListModel::~RCPlayListModel() {$/;"	f	class:RCPlayListModel
 ~RCServer	remoteControlServer.cpp	/^RCServer::~RCServer() {$/;"	f	class:RCServer
 ~RecentsMRL	recents.cpp	/^RecentsMRL::~RecentsMRL()$/;"	f	class:RecentsMRL

@@ -40,6 +40,7 @@
 #include <QSettings>
 #include <QTextCodec>
 #include <QString>
+#include <QStringList>
 using namespace std;
 /*common functions*/
 wstring widen( const string& str )
@@ -780,31 +781,31 @@ const char* RCUtil::getTrackTextValueByIndex(const vlc_value_t& val,const vlc_va
 
 }
 /*
-const char* RCUtil::getTotalTrackList(const vlc_value_t&val,const vlc_value_t& text,char* result)
-{
-    memset(result,0,MAX_SIZE);
-    char* p=result;
-    char temp[1000];
-    int len;
-    vector<pair<int,string> > track;
-    for(int i=0;i<val.p_list->i_count;i++) {
-        if(!text.p_list->p_values[i].psz_string||!strlen(text.p_list->p_values[i].psz_string))
-            continue;
-        memset(temp,0,sizeof(temp));
-        len=strlen(text.p_list->p_values[i].psz_string);
-        memcpy(temp,text.p_list->p_values[i].psz_string,len);
-        track.push_back(std::make_pair(text.p_list->p_values[i].i_int+1,temp));
-    }
-    //sort(track.begin(),track.end(),TrackListCmp());
-    for(vector<pair<int,string> >::iterator iter=track.begin();iter!=track.end();iter++)
-        p=RCUtil::addItem(const_cast<char*>(iter->second.c_str()),p);
-    if(p==result)
-        p=RCUtil::addItem("{}",p);
-    *(p++)='\0';
-    return result;
+   const char* RCUtil::getTotalTrackList(const vlc_value_t&val,const vlc_value_t& text,char* result)
+   {
+   memset(result,0,MAX_SIZE);
+   char* p=result;
+   char temp[1000];
+   int len;
+   vector<pair<int,string> > track;
+   for(int i=0;i<val.p_list->i_count;i++) {
+   if(!text.p_list->p_values[i].psz_string||!strlen(text.p_list->p_values[i].psz_string))
+   continue;
+   memset(temp,0,sizeof(temp));
+   len=strlen(text.p_list->p_values[i].psz_string);
+   memcpy(temp,text.p_list->p_values[i].psz_string,len);
+   track.push_back(std::make_pair(text.p_list->p_values[i].i_int+1,temp));
+   }
+//sort(track.begin(),track.end(),TrackListCmp());
+for(vector<pair<int,string> >::iterator iter=track.begin();iter!=track.end();iter++)
+p=RCUtil::addItem(const_cast<char*>(iter->second.c_str()),p);
+if(p==result)
+p=RCUtil::addItem("{}",p);
+ *(p++)='\0';
+ return result;
 
-}
-*/
+ }
+ */
 const char* RCUtil::getTotalTrackList(const vlc_value_t& val,const vlc_value_t& text,char* result,int type)
 {
     memset(result,0,MAX_SIZE);
@@ -893,9 +894,15 @@ void AudioCommand::SaveAudioOutputDevice(intf_thread_t* p_intf,RC_CONFIG& config
 void AudioCommand::SaveAudioOutputDevice(intf_thread_t* p_intf,RC_CONFIG& config,const char* file)
 {
     SaveAudioOutputDevice(p_intf,config);
-    FILE* f=fopen(file,"w");
-    fclose(f);
+    LoadAudioOutputDevice(p_intf,config,file);
     char* audio_information_section="AudioOutputInformation";
+    //If we found that we have a old audio info already, then map the old index to new AudioInfoMap
+    bool overwrite=config.oldAudioConfigInfo.empty();
+    if(overwrite)
+    {
+        FILE* f=fopen(file,"w");
+        fclose(f);
+    }
     QSettings profile(file,QSettings::IniFormat);
     profile.setIniCodec("UTF-8");
     //QTextCodec* gbk_codec=QTextCodec::codecForName("GBK");
@@ -920,20 +927,54 @@ void AudioCommand::SaveAudioOutputDevice(intf_thread_t* p_intf,RC_CONFIG& config
         }
         QString qkey=QString::fromUtf8(key);
         QString qvalue=QString::fromUtf8(value);
-        profile.setValue(qkey,qvalue);
         char* encode_name;
-        asprintf(&encode_name,"write_profile:[%s][%s]",key,value);
-        logger::inst()->log(TAG_INFO,"%s\n",encode_name);
+        if(overwrite)
+        {
+            profile.setValue(qkey,qvalue);
+            asprintf(&encode_name,"write_profile:[%s][%s]",key,value);
+            logger::inst()->log(TAG_INFO,"%s\n",encode_name);
+            if(key)
+                free(key);
+            if(value)
+                free(value);
+            config.configMap[i]=i;
+        }
+        else
+        {
+            int oldIndex=config.oldAudioConfigInfo[qvalue.toLocal8Bit().constData()];
+            if(oldIndex)
+            {
+                config.configMap[oldIndex-1]=i;
+                asprintf(&encode_name,"remap_audioInfo:[%d][%d]",oldIndex-1,i);
+                logger::inst()->log(TAG_INFO,"%s\n",encode_name);
+            }
+        }
         if(encode_name)
             free(encode_name);
-        if(key)
-            free(key);
-        if(value)
-            free(value);
     }
 
 }
 
+void AudioCommand::LoadAudioOutputDevice(intf_thread_t* p_intf,RC_CONFIG& config,const char* file)
+{
+    FILE* f=fopen(file,"r");
+    if(f==NULL)
+        return;
+    char* audio_information_section="AudioOutputInformation";
+    QSettings profile(file,QSettings::IniFormat);
+    profile.setIniCodec("UTF-8");
+    profile.beginGroup(audio_information_section);
+    foreach(const QString& qs,profile.allKeys())
+    {
+        int index;
+        std::string key=qs.toLocal8Bit().constData();
+        std::string value=profile.value(qs).toString().toLocal8Bit().constData();
+        sscanf(key.c_str(),"%d",&index);
+        config.oldAudioConfigInfo[value]=index+1;
+    }
+    profile.endGroup();
+    fclose(f);
+}
 bool RCUtil::parseMsg(char* msgRcv,rc_value_t& val){
     char* delimeter="#";
     char* p=strstr(msgRcv,delimeter);
@@ -1198,7 +1239,8 @@ char* AudioCommand::getAudioOutputList(vlc_object_t* p_aout,char* result) {
 
         if( module_provides( p_module, "audio output" ) )
         {
-            char* psz_name= strdup( module_get_object( p_module ) ); char* psz_description= strdup( module_get_name( p_module, true )  );
+            char* psz_name= strdup( module_get_object( p_module ) ); 
+            char* psz_description= strdup( module_get_name( p_module, true )  );
             if(psz_name) {
                 if(p!=NULL)
                     (*p++)='{';
@@ -1254,7 +1296,8 @@ int AudioCommand::setAudioOutput(intf_thread_t* p_intf, input_thread_t *p_input,
 {
     int result=-1;
     int index=(int)val.f_float;
-    if(index<0||index>=VAL_RC_CONFIG.audioConfigInfo.size())
+    index=VAL_RC_CONFIG.configMap[index];
+    if(!index)
         return VLC_EGENERIC;
     char* device_config_key=strdup(VAL_RC_CONFIG.audioConfigInfo[index].first.c_str());
     char* device_config_val=strdup(VAL_RC_CONFIG.audioConfigInfo[index].second.c_str());
@@ -1555,7 +1598,7 @@ int PlayListCommand::playListRemoveAll(playlist_t* p_playlist){
     return result;
 }
 int PlayListCommand::playListMove(playlist_t* p_playlist,int from,int to) {
-    #define RCHANDLER_ITEM_NAME(playlist_item_t) (playlist_item_t->p_input->psz_name)
+#define RCHANDLER_ITEM_NAME(playlist_item_t) (playlist_item_t->p_input->psz_name)
     if(!p_playlist||to<0||to>=p_playlist->items.i_size)
         return VLC_ENOOBJ;
     int i=1;
@@ -2140,16 +2183,16 @@ RCStateCallback::RCStateCallback(intf_thread_t* p_intf):BasicCallbackImpl(),m_pI
 }
 int RCStateCallback::onStart( vlc_object_t *p_this, const char *, vlc_value_t, vlc_value_t newval, void *param) {
     /*
-    logger::inst()->log(TAG_DEBUG,"%s\n","RCStateCallback::onStart");
-    RCInvokerImpl* pInvoker=new RCInvoker(m_pIntf);
-    std::auto_ptr<RCInvokerImpl> invoker(pInvoker);
-    RCCommandImpl* pBasicCommand=new BasicCommand(invoker.get());
-    std::auto_ptr<RCCommandImpl> basicCommand(pBasicCommand);
-    invoker->addCommand("Basic",basicCommand.get());
-    RCAction action;
-    action.psz_cmd="updateAutoDeleteCallback";
-    invoker->invoke(action);
-    */
+       logger::inst()->log(TAG_DEBUG,"%s\n","RCStateCallback::onStart");
+       RCInvokerImpl* pInvoker=new RCInvoker(m_pIntf);
+       std::auto_ptr<RCInvokerImpl> invoker(pInvoker);
+       RCCommandImpl* pBasicCommand=new BasicCommand(invoker.get());
+       std::auto_ptr<RCCommandImpl> basicCommand(pBasicCommand);
+       invoker->addCommand("Basic",basicCommand.get());
+       RCAction action;
+       action.psz_cmd="updateAutoDeleteCallback";
+       invoker->invoke(action);
+       */
     return VLC_SUCCESS;
 }
 void *OnStop( void * data) {

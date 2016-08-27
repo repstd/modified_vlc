@@ -252,7 +252,14 @@ libqt4_plugin_la-remoteControlServer.lo \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qpair.h \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QTextCodec \
   /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qtextcodec.h \
-  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/codecs/qtextcodec.h
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/codecs/qtextcodec.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QStringList \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstringlist.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qstringlist.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qregexp.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qregexp.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstringmatcher.h \
+  /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qstringmatcher.h
 
 ../../../config.h:
 
@@ -801,3 +808,17 @@ qt4.hpp:
 /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qtextcodec.h:
 
 /home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/codecs/qtextcodec.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/QStringList:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstringlist.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qstringlist.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qregexp.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qregexp.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/qstringmatcher.h:
+
+/home/ylwang/msvc/vlc-2.0.6/contrib/i586-mingw32msvc/include/qt4/QtCore/../src/corelib/tools/qstringmatcher.h:

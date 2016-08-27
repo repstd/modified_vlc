@@ -54,6 +54,8 @@ struct RC_CONFIG {
     int64_t autoDeleteDelayMilliSeconds;
     //Information
     std::vector<std::pair<std::string,std::string> >  audioConfigInfo;
+    std::map<std::string,int> oldAudioConfigInfo;
+    std::map<int,int> configMap;
 };
 struct rc_value_t
 {
@@ -195,6 +197,7 @@ class AudioCommand: public RCCommandImpl {
         char* getCurrentAudioOutput(vlc_object_t* p_aout);
         void SaveAudioOutputDevice(intf_thread_t* p_intf,RC_CONFIG& config);
         void SaveAudioOutputDevice(intf_thread_t* p_intf,RC_CONFIG& config,const char* file);
+        void LoadAudioOutputDevice(intf_thread_t* p_intf,RC_CONFIG& config,const char* file);
         int setAudioOutput(intf_thread_t* p_intf, input_thread_t *p_input,vlc_object_t* p_aout,const rc_value_t& val);
         int setAudioOutputOld(intf_thread_t* p_intf, input_thread_t *p_input,vlc_object_t* p_aout,const rc_value_t& val);
         RCInvokerImpl* m_doc;
